@@ -19,3 +19,7 @@ raw: `tabula_sapiens_v2` (54 GB), `cd4_perturbseq` (58 GB, 2025 genome-scale CD4
 derived (ready matrices, gene lists alongside): DepMap 20Q4 (raw/GLS/PCA/robust-PCA), expression (GTEx, HPA tissue, HPA single cell), Perturb-seq signatures
 (K562 GWPS + essential, RPE1, HepG2, Jurkat, CD4 2025 rest/stim; pc10 / systema variants), OpenCell pairs, temporal GO pairs, AFDB pLDDT, IntAct 2021/current.
 ## /mnt/msadb/databases: `uniref30_2302` (455 GB, for MSA)
+
+## ~/biotools/data/evidence/raw (current evidence sources, mostly 2025-2026: label-like, use with leakage class)
+`cpic (92K),genetable2026 (3.4M),ncbi_gene_info (5.0M),celltype_lake2018_cerebellum (6.1M),gtex (6.7M),monarch (16M),gencc (26M),disgenet (30M),impc (30M),pubmed_mesh (35M),mondo (51M),hpo (66M),pubmed_status (71M),gnomad (96M),orphanet (107M),mgi (120M),celltype_yadav2023_spinalcord (124M),ncbi_gene_orthologs (125M),celltype_heming2025_suralnerve (131M),mesh (148M),biogrid (181M),opentargets (184M),string (273M),clinvar (436M),ncbi_taxdump (602M),pubtator3 (3.1G),celltype_census_h5ad (3.3G),paperqa_corpus (5.0G),opentargets_assoc (5.6G),`
+HF cache: Qwen3-Embedding-0.6B/8B, bge-m3, MedCPT, ESMC-300M, borzoi, Qwen3.8-27B-INT4, gemma-4-31B (check weights complete before use).

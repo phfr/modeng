@@ -1,0 +1,15 @@
+esmc	seq	256	19137	/home/ph/code/modet/data/processed/features/esmc.parquet
+prott5	seq	256	19126	uniprot per-protein.h5
+esm2_15b	seq	256	18807	UCE ESM2-15B
+depmap20q4	pre21	256	17518	/mnt/msadb/subex/derived/depmap20q4
+hpa_sc	modern	154	18788	/mnt/msadb/subex/derived/expr_hpa_sc
+gtex	modern	68	18879	/mnt/msadb/subex/derived/expr_gtex
+hpa_tissue	modern	51	18904	/mnt/msadb/subex/derived/expr_hpa_tissue
+ps_k562	modern	256	9820	/mnt/msadb/subex/derived/ps_k562_gwps_pc10
+ps_rpe1	modern	256	2379	/mnt/msadb/subex/derived/ps_rpe1_ess_pc10
+ps_cd4	modern	256	12258	/mnt/msadb/subex/derived/ps_cd4_2025
+ps_hepg2	modern	256	2379	/mnt/msadb/subex/derived/ps_hepg2_nadig
+ps_jurkat	modern	256	2379	/mnt/msadb/subex/derived/ps_jurkat_nadig
+phylo_npp	seq	256	18202	CladeOScope NPP
+go_t0	annot	128	15876	/home/ph/code/modet/data/processed/features/go_t0.parquet
+reactome_t0	annot	128	10646	/home/ph/code/modet/data/processed/features/reactome_t0.parquet
