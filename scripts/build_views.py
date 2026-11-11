@@ -9,7 +9,7 @@ import sys, os, numpy as np, pandas as pd
 from pathlib import Path
 
 OUT = Path("/home/ph/code/modeng/data/views"); OUT.mkdir(parents=True, exist_ok=True)
-U = pd.read_parquet("/home/ph/code/modet/data/processed/hgnc_protein_coding.parquet")
+U = pd.read_parquet("/home/ph/code/modet/data/processed/hgnc_protein_coding.parquet").sort_values("ensembl_gene_id").reset_index(drop=True)  # harness order
 ENSG = U.ensembl_gene_id.values; idx_ensg = {g: i for i, g in enumerate(ENSG)}
 idx_sym = {s: i for i, s in enumerate(U.symbol.values)}
 acc2i = {}

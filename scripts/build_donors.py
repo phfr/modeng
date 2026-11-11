@@ -9,7 +9,7 @@ from pathlib import Path
 
 OUT = Path("/home/ph/code/modeng/data/donors"); OUT.mkdir(parents=True, exist_ok=True)
 RAW = Path("/home/ph/code/modet/data/raw")
-U = pd.read_parquet("/home/ph/code/modet/data/processed/hgnc_protein_coding.parquet")
+U = pd.read_parquet("/home/ph/code/modet/data/processed/hgnc_protein_coding.parquet").sort_values("ensembl_gene_id").reset_index(drop=True)  # harness order
 N = len(U)
 i_ensg = {g: i for i, g in enumerate(U.ensembl_gene_id)}
 i_sym = {s: i for i, s in enumerate(U.symbol)}
