@@ -1,0 +1,7 @@
+data/
+results/**/*.parquet
+results/**/*.npz
+results/**/*.npy
+__pycache__/
+*.pyc
+.pytest_cache/
