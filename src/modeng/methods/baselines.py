@@ -101,6 +101,10 @@ def _transfer(tasks, B, k=50, onto=False, floor=0.0):
         wfull = np.zeros(len(sim), np.float32)
         wfull[top] = w
         np.subtract.at(out[i], t.mask_c, wfull[t.mask_r])
+        # float residue after the subtraction would leave hidden pairs at ~1e-8 > 0 (a leak; found by the R1 statistician):
+        # snap tiny values to exactly zero
+        # also residue on non-zero genes breaks ties in favour of hidden targets: quantise to 1e-5
+        out[i] = np.round(out[i], 5)
     return out
 
 

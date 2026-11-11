@@ -271,7 +271,35 @@ def build_holdout(min_genes=15, max_genes=1000, n_max=600, frac=0.2, seed=0) -> 
     return Benchmark("holdout", tasks, L, ids, NETWORK["holdout"], UNION["holdout"], LEAKAGE_CLASS["holdout"])
 
 
-BUILDERS = {"temporal": build_temporal, "forward": build_forward, "holdout": build_holdout}
+# ----------------------------------------------------------------------------------------------------------- past
+def build_past(min_seeds=3, max_seeds=1000, min_new=3) -> Benchmark:
+    """TRAINING episodes for the temporal benchmark (all information <= T0): seeds = OT 19.04 sets (propagated over the
+    21.04 descendants), targets = genes new in 21.04, context = 19.04 matrix. Sealed ids and relatives excluded.
+    Every task has split 'train'. Never an evaluation benchmark."""
+    L0, ids0 = D.label_matrix("1904")
+    L1, ids1 = D.label_matrix("2104")
+    excl = D.excluded_task_ids()
+    keep = ~ids0.isin(excl)
+    L0, ids0 = L0[np.flatnonzero(keep)].tocsr(), ids0[keep]
+    i1 = {d: i for i, d in enumerate(ids1)}
+    i0 = {d: i for i, d in enumerate(ids0)}
+    names = D.disease_names("2104") if True else {}
+    clus = _cluster_map()
+    tasks = []
+    for i, d in enumerate(ids0):
+        if d not in i1:
+            continue
+        rows = [i] + [i0[x] for x in D.descendants(d, ("2104",)) if x in i0]
+        seeds = np.unique(L0[rows].indices).astype(np.int64)
+        new = np.setdiff1d(L1[i1[d]].indices, seeds).astype(np.int64)
+        if not (min_seeds <= len(seeds) <= max_seeds and len(new) >= min_new):
+            continue
+        tasks.append(Task(d, str(names.get(d, d)), "train", np.sort(seeds), new, np.sort(seeds), cluster=clus.get(d, d)))
+    attach_families(tasks, L0, ids0, "self+desc")
+    return Benchmark("past", tasks, L0, ids0, NETWORK["temporal"], UNION["temporal"], "training only (<= T0)")
+
+
+BUILDERS = {"past": build_past, "temporal": build_temporal, "forward": build_forward, "holdout": build_holdout}
 
 
 @lru_cache(None)
