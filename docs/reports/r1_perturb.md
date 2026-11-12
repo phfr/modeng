@@ -88,7 +88,13 @@ Positive control: G_bdv reproduces stackP_bdv exactly (dev AP 0.1018 / nuAP 0.12
 | G_bdv_pg (all 10) | confirm | 0.0920 | 0.1466 | 0.8248 | 0.2607 | 0.1018 | +0.0007 [-0.0037, +0.0046] | -0.0040 [-0.0116, +0.0017] |
 | G_bdv_pgrs (co-response only) | dev | 0.0988 | 0.1213 | 0.8085 | 0.2480 | 0.1153 | -0.0030 [-0.0087, +0.0025] | -0.0023 [-0.0103, +0.0050] |
 | G_bdv_pgrs (co-response only) | confirm | 0.0901 | 0.1474 | 0.8229 | 0.2558 | 0.0983 | -0.0011 [-0.0049, +0.0026] | -0.0032 [-0.0102, +0.0026] |
-PGNEG_ROWS
+| G_bdv_pgnegrs (neg. control: permuted ids) | dev | 0.0979 | 0.1177 | 0.8097 | 0.2528 | 0.1149 | -0.0040 [-0.0079, -0.0005] | -0.0060 [-0.0114, -0.0013] |
+| G_bdv_pgnegrs (neg. control: permuted ids) | confirm | 0.0898 | 0.1497 | 0.8239 | 0.2524 | 0.0970 | -0.0015 [-0.0051, +0.0020] | -0.0009 [-0.0082, +0.0047] |
+
+Real vs negative control (pgrs - pgnegrs): dev AP +0.0010 [-0.0034, +0.0059], nuAP +0.0037 [-0.0034, +0.0122]; confirm AP +0.0003
+[-0.0021, +0.0028], nuAP -0.0023 [-0.0053, +0.0013]. Adding two pure-noise channels costs the past-trained stacker about 0.004 AP /
+0.006 nuAP on dev, so the stacker noise floor for a 2-channel add is of the order of the effects seen; the real co-response channel
+is indistinguishable from its permuted control.
 
 Zero-transfer-support stratum (G_bdv_pg vs G_bdv): dev R@100 0.0259 vs 0.0242 (+0.0017 [-0.0036, +0.0069]), AP 0.0121 vs 0.0146
 (-0.0025 [-0.0081, +0.0013]); confirm R@100 0.0280 vs 0.0295 (-0.0015 [-0.0046, +0.0019]), AP 0.0111 vs 0.0121 (-0.0010 [-0.0024, -0.0000]).
@@ -107,6 +113,12 @@ stacker used the routing/coherence statistic as a task descriptor, not the gene 
 Not run to completion: the forward CV stack with the date-fair `pgnc_*` set was OOM-killed once (machine at 83-90 GB) and the
 lead's one-stacker rule plus the 06:40 deadline left no slot. The forward evidence is the channel-alone kill test above
 (forward dev, 842 tasks). Not claimed.
+
+## Verdict
+**Discard** the regulator / responder / routing channels (CI-01, SC-1 as specified, SC-3/SC-9 lite): at chance among covered genes on
+842 forward tasks, no increment on temporal (dev significantly negative with all 10 channels). The co-response view has a real alone
+signal (covered AUROC 0.58, zero-support 0.55, permuted 0.48) but no increment over bdv: **promising only as a view** (see New ideas),
+not as a stacker channel. Forward (cv) increment not run (memory / deadline).
 
 ## Leakage class
 No labels and no context are read; seeds only. Every atlas is dated after OT 21.04 (Replogle 2022; Nadig GEO 2024-05; CD4 bioRxiv
