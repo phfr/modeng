@@ -1,0 +1,8 @@
+holdout dev transfer_jaccard         AP 0.2052 nuAP 0.1979 AUROC 0.9054 R@100 0.5065 onnet AP 0.2150 nuAP 0.2093 nan_tasks 0 (1s)
+holdout dev dc_ridge                 AP 0.2972 nuAP 0.3206 AUROC 0.9029 R@100 0.5520 onnet AP 0.2998 nuAP 0.3131 nan_tasks 0 (40s)
+holdout dev dc_ridge_pos             AP 0.3118 nuAP 0.3103 AUROC 0.9173 R@100 0.5685 onnet AP 0.3234 nuAP 0.3260 nan_tasks 0 (56s)
+holdout confirm transfer_jaccard         AP 0.2174 nuAP 0.1911 AUROC 0.8946 R@100 0.5206 onnet AP 0.2294 nuAP 0.2136 nan_tasks 0 (1s)
+holdout confirm dc_ridge                 AP 0.2997 nuAP 0.3052 AUROC 0.8962 R@100 0.5629 onnet AP 0.3049 nuAP 0.3028 nan_tasks 0 (50s)
+holdout confirm dc_ridge_pos             AP 0.3225 nuAP 0.2986 AUROC 0.9088 R@100 0.5787 onnet AP 0.3373 nuAP 0.3229 nan_tasks 0 (39s)
+holdout dev dc_ridge_rel             AP 0.3052 nuAP 0.3054 AUROC 0.9047 R@100 0.5648 onnet AP 0.3161 nuAP 0.3197 nan_tasks 0 (91s)
+holdout confirm dc_ridge_rel             AP 0.3195 nuAP 0.2959 AUROC 0.8994 R@100 0.5729 onnet AP 0.3344 nuAP 0.3198 nan_tasks 0 (35s)

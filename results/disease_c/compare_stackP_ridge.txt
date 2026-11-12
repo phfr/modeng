@@ -1,0 +1,8 @@
+temporal/dev nuap: stackP_dc_ridge 0.1220 vs stackP_dcref_base 0.1187  delta +0.0034 [-0.0100, +0.0160]  P(delta<=0) 0.2940  win 0.60  (n=53, clusters=35)
+temporal/dev ap: stackP_dc_ridge 0.0877 vs stackP_dcref_base 0.0778  delta +0.0100 [+0.0022, +0.0181]  P(delta<=0) 0.0066  win 0.70  (n=53, clusters=35)
+temporal/dev auroc: stackP_dc_ridge 0.7816 vs stackP_dcref_base 0.7785  delta +0.0031 [-0.0008, +0.0078]  P(delta<=0) 0.0640  win 0.60  (n=53, clusters=35)
+temporal/dev onnet_nuap: stackP_dc_ridge 0.1810 vs stackP_dcref_base 0.1857  delta -0.0047 [-0.0249, +0.0147]  P(delta<=0) 0.6826  win 0.55  (n=53, clusters=35)
+temporal/confirm nuap: stackP_dc_ridge 0.1550 vs stackP_dcref_base 0.1341  delta +0.0209 [+0.0103, +0.0327]  P(delta<=0) 0.0000  win 0.69  (n=138, clusters=41)
+temporal/confirm ap: stackP_dc_ridge 0.0982 vs stackP_dcref_base 0.0810  delta +0.0172 [+0.0101, +0.0244]  P(delta<=0) 0.0000  win 0.75  (n=138, clusters=41)
+temporal/confirm auroc: stackP_dc_ridge 0.7986 vs stackP_dcref_base 0.7920  delta +0.0065 [+0.0020, +0.0104]  P(delta<=0) 0.0018  win 0.61  (n=138, clusters=41)
+temporal/confirm onnet_nuap: stackP_dc_ridge 0.1782 vs stackP_dcref_base 0.1610  delta +0.0173 [+0.0057, +0.0305]  P(delta<=0) 0.0008  win 0.65  (n=138, clusters=41)

@@ -1,0 +1,13 @@
+=== --bench temporal --train past --channels base --tag dcref_base
+[past] 5 channels, 1371887 rows, 21887 pos (13s)
+temporal  dev      stackP_dcref_base      AP 0.0778 nuAP 0.1187 AUROC 0.7785 R@100 0.2229 | onnet AP 0.0961 nuAP 0.1857
+temporal  confirm  stackP_dcref_base      AP 0.0810 nuAP 0.1341 AUROC 0.7920 R@100 0.2358 | onnet AP 0.0877 nuAP 0.1610
+transfer_jaccard      297861.873675
+r_degree              113677.069691
+log_nseeds             97997.076895
+r_popularity           85347.771274
+r_transfer_jaccard     78139.806293
+popularity             53394.389397
+r_transfer_onto        43316.435901
+rwr_string             31923.650988
+degree                 24176.128546

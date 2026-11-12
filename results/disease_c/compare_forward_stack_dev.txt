@@ -1,0 +1,4 @@
+forward/dev nuap: stack_dc_ridge 0.1677 vs stack_base_w05 0.1447  delta +0.0230 [+0.0180, +0.0282]  P(delta<=0) 0.0000  win 0.64  (n=842, clusters=842)
+forward/dev ap: stack_dc_ridge 0.0955 vs stack_base_w05 0.0809  delta +0.0146 [+0.0115, +0.0177]  P(delta<=0) 0.0000  win 0.70  (n=842, clusters=842)
+forward/dev auroc: stack_dc_ridge 0.8292 vs stack_base_w05 0.8231  delta +0.0061 [+0.0048, +0.0073]  P(delta<=0) 0.0000  win 0.65  (n=842, clusters=842)
+forward/dev onnet_nuap: stack_dc_ridge 0.1806 vs stack_base_w05 0.1602  delta +0.0204 [+0.0152, +0.0255]  P(delta<=0) 0.0000  win 0.66  (n=841, clusters=841)

@@ -1,0 +1,8 @@
+temporal/dev nuap: stackP_bdv_dc_ridge 0.1416 vs stackP_bdv 0.1237  delta +0.0179 [+0.0048, +0.0335]  P(delta<=0) 0.0032  win 0.75  (n=53, clusters=35)
+temporal/dev ap: stackP_bdv_dc_ridge 0.1175 vs stackP_bdv 0.1018  delta +0.0157 [+0.0079, +0.0251]  P(delta<=0) 0.0000  win 0.70  (n=53, clusters=35)
+temporal/dev auroc: stackP_bdv_dc_ridge 0.8137 vs stackP_bdv 0.8103  delta +0.0033 [+0.0003, +0.0065]  P(delta<=0) 0.0164  win 0.60  (n=53, clusters=35)
+temporal/dev onnet_nuap: stackP_bdv_dc_ridge 0.1856 vs stackP_bdv 0.1731  delta +0.0125 [-0.0028, +0.0285]  P(delta<=0) 0.0548  win 0.62  (n=53, clusters=35)
+temporal/confirm nuap: stackP_bdv_dc_ridge 0.1686 vs stackP_bdv 0.1506  delta +0.0180 [+0.0078, +0.0280]  P(delta<=0) 0.0006  win 0.68  (n=138, clusters=41)
+temporal/confirm ap: stackP_bdv_dc_ridge 0.1033 vs stackP_bdv 0.0913  delta +0.0120 [+0.0058, +0.0176]  P(delta<=0) 0.0006  win 0.67  (n=138, clusters=41)
+temporal/confirm auroc: stackP_bdv_dc_ridge 0.8288 vs stackP_bdv 0.8252  delta +0.0036 [+0.0017, +0.0054]  P(delta<=0) 0.0000  win 0.59  (n=138, clusters=41)
+temporal/confirm onnet_nuap: stackP_bdv_dc_ridge 0.1885 vs stackP_bdv 0.1712  delta +0.0173 [+0.0074, +0.0276]  P(delta<=0) 0.0010  win 0.64  (n=138, clusters=41)

@@ -1,0 +1,12 @@
+[past] 7 channels, 1371887 rows, 21887 pos (51s)
+temporal  dev      stackP_dc_negperm      AP 0.0742 nuAP 0.1165 AUROC 0.7774 R@100 0.2182 | onnet AP 0.0941 nuAP 0.1807
+temporal  confirm  stackP_dc_negperm      AP 0.0796 nuAP 0.1309 AUROC 0.7917 R@100 0.2339 | onnet AP 0.0888 nuAP 0.1628
+transfer_jaccard             292991.583676
+r_degree                     107853.148265
+log_nseeds                    96233.915432
+r_popularity                  80023.533951
+r_transfer_jaccard            71407.378272
+popularity                    54704.072289
+r_transfer_onto               38758.567123
+rwr_string                    31545.770048
+r_dc_negperm_dc_ridge_pos     24899.973150

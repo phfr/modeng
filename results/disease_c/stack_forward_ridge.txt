@@ -1,0 +1,12 @@
+[forward] 7 channels built (18s)
+forward   dev      stack_dc_ridge         AP 0.0955 nuAP 0.1677 AUROC 0.8292 R@100 0.2440 | onnet AP 0.1008 nuAP 0.1806
+forward   confirm  stack_dc_ridge         AP 0.0866 nuAP 0.1513 AUROC 0.8184 R@100 0.2246 | onnet AP 0.0911 nuAP 0.1700
+transfer_jaccard      1.064321e+06
+transfer_onto         6.379209e+05
+log_nseeds            4.869338e+05
+dc_ridge              3.257179e+05
+r_degree              2.386608e+05
+r_transfer_onto       8.622831e+04
+r_popularity          7.775618e+04
+popularity            7.284964e+04
+r_dc_ridge_pos        5.426794e+04
