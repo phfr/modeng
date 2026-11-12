@@ -57,7 +57,7 @@ Status: NEW | SHORTLIST | IMPLEMENTING | TESTED-POSITIVE | TESTED-NEGATIVE | KIL
 | SC-7 | Set-completion model pretrained on experimental gene sets | R1 singlecell | NEW | `docs/ideation/r1_singlecell.md` |
 | SC-8 | Within-cell-type state programs as the unit for GWAS arrivals | R1 singlecell | NEW | `docs/ideation/r1_singlecell.md` |
 | SC-9 | Module cutoff and layers from perturbational coherence | R1 singlecell | NEW | `docs/ideation/r1_singlecell.md` |
-| SG-1 | Locus-space transfer plus within-locus gene choice | R1 statgen | NEW | `docs/ideation/r1_statgen.md` |
+| SG-1 | Locus-space transfer plus within-locus gene choice | R1 statgen | TESTED-NEGATIVE (sub-threshold loci, no strict-a gain) | `docs/ideation/r1_statgen.md` |
 | SG-2 | Phenome fingerprints: dense sub-threshold gene x trait matrix | R1 statgen | NEW | `docs/ideation/r1_statgen.md` |
 | SG-3 | Gene-level multivariate shrinkage forecast of the next GWAS | R1 statgen | NEW | `docs/ideation/r1_statgen.md` |
 | SG-4 | Phenotype-decomposed quantitative-trait GWAS for rare diseases | R1 statgen | NEW | `docs/ideation/r1_statgen.md` |
@@ -88,7 +88,7 @@ Status: NEW | SHORTLIST | IMPLEMENTING | TESTED-POSITIVE | TESTED-NEGATIVE | KIL
 | F2-3 | Evolved transfer kernel: LLM-driven program search over the function that dominates | R2 island2 | TESTED-NEGATIVE as stacker channel (alone +0.035 nuAP but AP halves; degree effect) | `docs/ideation/r2_island2.md` |
 | F2-4 | Text-to-sequence retrieval: reach proteins nobody has written about | R2 island2 | NEW | `docs/ideation/r2_island2.md` |
 | F2-5 | Seedless anchors: an agent reads the clinic, code maps anchors to genes | R2 island2 | NEW | `docs/ideation/r2_island2.md` |
-| F2-6 | Sequence-model verdicts at sub-threshold loci: which gene, in which tissue | R2 island2 | NEW | `docs/ideation/r2_island2.md` |
+| F2-6 | Sequence-model verdicts at sub-threshold loci: which gene, in which tissue | R2 island2 | PARKED (sub-threshold loci too few; Borzoi not run) | `docs/ideation/r2_island2.md` |
 | F2-7 | Literature as a perturbation atlas: an LLM extracts experiment outcomes, disease words removed | R2 island2 | NEW | `docs/ideation/r2_island2.md` |
 | F2-8 | Critic by self-play: a set-level verifier trained on the ranker's confident errors, then search over modules | R2 island2 | NEW | `docs/ideation/r2_island2.md` |
 | C-RIDGE | Disease-disease ridge regression (EASE/SLIM) of the seed vector on masked disease rows | R1 implementer C (from critic eng.) | TESTED-POSITIVE (Pareto, temporal + forward) | docs/reports/r1_disease.md |

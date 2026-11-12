@@ -102,3 +102,10 @@ module output (calibrated cutoff + subex `leiden_anno` decomposition), round-2 e
 - **Module calibration refit** for modeng-v1; dev-only shrink 0.8-0.9 (confirm ~0.72).
 - **Sealed-fold recommendation: not now.** The robust claim (nuAP and onnet AP over transfer and over modet's headline, also prospectively) is on all
   arrivals; modet's sealed-fold primary is strict-a, where every variant ties. Use the next OT release as the fresh fold; make the no-label-process arm co-primary.
+
+## 10. r4 wave (09:12-10:40)
+- **Modules** (`docs/reports/r4_modules.md`, descriptive on temporal confirm): at matched size, modeng-v1 modules (tau 0.2, shrink 0.8) contain 359 future
+  targets vs 259 (transfer) / 221 (modet headline), precision 0.29 vs 0.21 / 0.18 (predicted 0.31); subex leiden_anno submodules are seed-anchored; 22 % of correct
+  additions are off STRING-T0 and fall in no submodule.
+- **Strict-a programme closed for now:** GWAS power forecasting (ML-4) and sub-threshold loci -> gene both add nothing on confirm; together with gating, class-A
+  head and catalog transfer, strict-a is limited by T0 GWAS coverage of the target diseases (34/71 confirm strict-a diseases have their own T0 study).
