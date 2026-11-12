@@ -12,3 +12,28 @@ r_popularity          36794.836143
 vmax_prott5           31598.013707
 degree                20760.010826
 === --bench temporal --channels base --tag dcref_base
+[temporal] 5 channels built (1s)
+temporal  dev      stack_dcref_base       AP 0.0811 nuAP 0.1026 AUROC 0.7784 R@100 0.2389 | onnet AP 0.0989 nuAP 0.1601
+temporal  confirm  stack_dcref_base       AP 0.0921 nuAP 0.1331 AUROC 0.7982 R@100 0.2556 | onnet AP 0.1027 nuAP 0.1684
+transfer_jaccard      23441.363494
+r_transfer_jaccard    21731.465537
+log_nseeds            18121.206595
+r_popularity          17120.406268
+r_degree              13439.556490
+r_transfer_onto        8711.660041
+r_rwr_string           8037.659475
+popularity             6443.046959
+rwr_string             2983.378065
+=== --bench temporal --channels base,dc_trend,dc_delta,dc_directed --tag dc_prev
+[temporal] 8 channels built (1s)
+temporal  dev      stack_dc_prev          AP 0.0881 nuAP 0.1145 AUROC 0.7820 R@100 0.2415 | onnet AP 0.1024 nuAP 0.1680
+temporal  confirm  stack_dc_prev          AP 0.0935 nuAP 0.1353 AUROC 0.7999 R@100 0.2658 | onnet AP 0.1043 nuAP 0.1700
+r_dc_directed         18476.471801
+log_nseeds            17154.988899
+r_popularity          13152.006798
+transfer_jaccard      12772.348524
+r_degree              11401.916915
+r_transfer_jaccard     8289.713810
+r_rwr_string           7393.534054
+dc_directed            7217.747081
+popularity             7133.560978

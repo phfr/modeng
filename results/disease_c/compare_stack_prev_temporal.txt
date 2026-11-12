@@ -1,0 +1,4 @@
+temporal/dev nuap: stack_dc_prev 0.1145 vs stack_dcref_base 0.1026  delta +0.0119 [+0.0006, +0.0242]  P(delta<=0) 0.0182  win 0.60  (n=53, clusters=35)
+temporal/dev ap: stack_dc_prev 0.0881 vs stack_dcref_base 0.0811  delta +0.0070 [+0.0012, +0.0122]  P(delta<=0) 0.0094  win 0.57  (n=53, clusters=35)
+temporal/confirm nuap: stack_dc_prev 0.1353 vs stack_dcref_base 0.1331  delta +0.0023 [-0.0038, +0.0100]  P(delta<=0) 0.2658  win 0.45  (n=138, clusters=41)
+temporal/confirm ap: stack_dc_prev 0.0935 vs stack_dcref_base 0.0921  delta +0.0014 [-0.0026, +0.0062]  P(delta<=0) 0.2572  win 0.49  (n=138, clusters=41)
