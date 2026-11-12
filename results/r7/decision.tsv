@@ -1,0 +1,4 @@
+bench	split	dAP	dnuAP	d_newdata_ap	d_newdata_nuap	overall_ok	newdata_better	product
+temporal	dev	-0.0077	-0.0081	0.0063	0.0031	False	True	
+temporal_wide	wide_dev	0.0115	0.0157	-0.0123	-0.0217	True	False	
+both	dev+wide_dev					False	False	False

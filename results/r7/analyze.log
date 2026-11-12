@@ -1,0 +1,229 @@
+        bench    split           method     ap   nuap  newdata_ap  newdata_nuap  labelproc_ap  labelproc_nuap  sa_ap  sa_nuap
+     temporal      dev transfer_jaccard 0.1223 0.0956      0.0257        0.0324        0.1719          0.1892 0.0307   0.0402
+     temporal      dev             W_s0 0.1909 0.1796      0.0533        0.0553        0.2590          0.3087 0.0601   0.0785
+     temporal      dev             W_s1 0.1876 0.1806      0.0581        0.0662        0.2524          0.3060 0.0654   0.0917
+     temporal      dev            W@avg 0.1893 0.1801      0.0557        0.0607        0.2557          0.3073 0.0628   0.0851
+     temporal      dev            EB_s0 0.1610 0.1568      0.0423        0.0455        0.2104          0.2527 0.0358   0.0522
+     temporal      dev            EB_s1 0.1594 0.1540      0.0464        0.0501        0.2034          0.2458 0.0384   0.0538
+     temporal      dev           EB@avg 0.1602 0.1554      0.0443        0.0478        0.2069          0.2493 0.0371   0.0530
+     temporal      dev            EL_s0 0.0616 0.0602      0.0333        0.0381        0.0953          0.1366 0.0476   0.0509
+     temporal      dev            EL_s1 0.0643 0.0616      0.0337        0.0369        0.0999          0.1426 0.0475   0.0500
+     temporal      dev           EL@avg 0.0630 0.0609      0.0335        0.0375        0.0976          0.1396 0.0476   0.0505
+     temporal      dev             G_s0 0.1803 0.1736      0.0612        0.0625        0.2295          0.2731 0.0598   0.0736
+     temporal      dev             G_s1 0.1829 0.1704      0.0627        0.0650        0.2330          0.2722 0.0613   0.0753
+     temporal      dev            G@avg 0.1816 0.1720      0.0619        0.0638        0.2313          0.2727 0.0605   0.0744
+temporal_wide wide_dev transfer_jaccard 0.0996 0.1294      0.0114        0.0112        0.1406          0.1823 0.0257   0.0342
+temporal_wide wide_dev             W_s0 0.1240 0.1828      0.0374        0.0470        0.1625          0.2431 0.0503   0.0712
+temporal_wide wide_dev             W_s1 0.1324 0.1844      0.0387        0.0493        0.1790          0.2540 0.0629   0.0881
+temporal_wide wide_dev            W@avg 0.1282 0.1836      0.0381        0.0482        0.1707          0.2486 0.0566   0.0797
+temporal_wide wide_dev            EB_s0 0.1293 0.1964      0.0292        0.0340        0.1712          0.2477 0.0336   0.0523
+temporal_wide wide_dev            EB_s1 0.1288 0.1950      0.0161        0.0209        0.1693          0.2490 0.0273   0.0434
+temporal_wide wide_dev           EB@avg 0.1291 0.1957      0.0227        0.0274        0.1702          0.2484 0.0305   0.0479
+temporal_wide wide_dev            EL_s0 0.0318 0.0338      0.0186        0.0087        0.0379          0.0937 0.0256   0.0114
+temporal_wide wide_dev            EL_s1 0.0298 0.0304      0.0162        0.0086        0.0359          0.0868 0.0243   0.0122
+temporal_wide wide_dev           EL@avg 0.0308 0.0321      0.0174        0.0087        0.0369          0.0902 0.0250   0.0118
+temporal_wide wide_dev             G_s0 0.1373 0.1957      0.0280        0.0278        0.1783          0.2638 0.0544   0.0687
+temporal_wide wide_dev             G_s1 0.1422 0.2028      0.0235        0.0251        0.1814          0.2704 0.0440   0.0566
+temporal_wide wide_dev            G@avg 0.1397 0.1993      0.0258        0.0265        0.1799          0.2671 0.0492   0.0626
+     temporal  confirm transfer_jaccard 0.1189 0.1042      0.0472        0.0424        0.1515          0.1676 0.0579   0.0523
+     temporal  confirm             W_s0 0.1720 0.2039      0.0543        0.0661        0.2248          0.3111 0.0725   0.0896
+     temporal  confirm             W_s1 0.1720 0.2060      0.0537        0.0680        0.2194          0.3089 0.0733   0.0945
+     temporal  confirm            W@avg 0.1720 0.2049      0.0540        0.0671        0.2221          0.3100 0.0729   0.0920
+     temporal  confirm            EB_s0 0.1559 0.1847      0.0438        0.0525        0.1961          0.2671 0.0532   0.0686
+     temporal  confirm            EB_s1 0.1582 0.1876      0.0445        0.0555        0.2016          0.2783 0.0567   0.0708
+     temporal  confirm           EB@avg 0.1571 0.1862      0.0442        0.0540        0.1989          0.2727 0.0550   0.0697
+     temporal  confirm            EL_s0 0.0442 0.0447      0.0285        0.0356        0.0640          0.0841 0.0363   0.0405
+     temporal  confirm            EL_s1 0.0447 0.0463      0.0285        0.0358        0.0691          0.0926 0.0366   0.0394
+     temporal  confirm           EL@avg 0.0444 0.0455      0.0285        0.0357        0.0665          0.0884 0.0365   0.0400
+     temporal  confirm             G_s0 0.1696 0.1960      0.0588        0.0665        0.2166          0.2908 0.0750   0.0880
+     temporal  confirm             G_s1 0.1716 0.1991      0.0580        0.0677        0.2225          0.3028 0.0777   0.0899
+     temporal  confirm            G@avg 0.1706 0.1976      0.0584        0.0671        0.2196          0.2968 0.0763   0.0889
+        bench    split                a     b         metric  n_tasks  mean_a  mean_b   delta   ci_lo   ci_hi
+     temporal      dev            G@avg W@avg             ap       53  0.1816  0.1893 -0.0077 -0.0223  0.0029
+     temporal      dev            G@avg W@avg           nuap       53  0.1720  0.1801 -0.0081 -0.0195  0.0014
+     temporal      dev            G@avg W@avg     newdata_ap       33  0.0619  0.0557  0.0063  0.0000  0.0132
+     temporal      dev            G@avg W@avg   newdata_nuap       33  0.0638  0.0607  0.0031 -0.0062  0.0129
+     temporal      dev            G@avg W@avg   labelproc_ap       46  0.2313  0.2557 -0.0245 -0.0566 -0.0015
+     temporal      dev            G@avg W@avg labelproc_nuap       46  0.2727  0.3073 -0.0347 -0.0670 -0.0087
+     temporal      dev            G@avg W@avg          sa_ap       28  0.0605  0.0628 -0.0022 -0.0124  0.0071
+     temporal      dev            G@avg W@avg        sa_nuap       28  0.0744  0.0851 -0.0107 -0.0313  0.0040
+     temporal      dev           EB@avg W@avg             ap       53  0.1602  0.1893 -0.0290 -0.0505 -0.0135
+     temporal      dev           EB@avg W@avg           nuap       53  0.1554  0.1801 -0.0247 -0.0461 -0.0088
+     temporal      dev           EB@avg W@avg     newdata_ap       33  0.0443  0.0557 -0.0113 -0.0305  0.0019
+     temporal      dev           EB@avg W@avg   newdata_nuap       33  0.0478  0.0607 -0.0129 -0.0386  0.0063
+     temporal      dev           EB@avg W@avg   labelproc_ap       46  0.2069  0.2557 -0.0488 -0.0946 -0.0173
+     temporal      dev           EB@avg W@avg labelproc_nuap       46  0.2493  0.3073 -0.0581 -0.1180 -0.0152
+     temporal      dev           EB@avg W@avg          sa_ap       28  0.0371  0.0628 -0.0257 -0.0478 -0.0079
+     temporal      dev           EB@avg W@avg        sa_nuap       28  0.0530  0.0851 -0.0321 -0.0677 -0.0048
+     temporal      dev           EL@avg W@avg             ap       53  0.0630  0.1893 -0.1263 -0.1839 -0.0751
+     temporal      dev           EL@avg W@avg           nuap       53  0.0609  0.1801 -0.1192 -0.1707 -0.0748
+     temporal      dev           EL@avg W@avg     newdata_ap       33  0.0335  0.0557 -0.0222 -0.0513  0.0017
+     temporal      dev           EL@avg W@avg   newdata_nuap       33  0.0375  0.0607 -0.0232 -0.0713  0.0030
+     temporal      dev           EL@avg W@avg   labelproc_ap       46  0.0976  0.2557 -0.1581 -0.2423 -0.0784
+     temporal      dev           EL@avg W@avg labelproc_nuap       46  0.1396  0.3073 -0.1677 -0.2588 -0.0804
+     temporal      dev           EL@avg W@avg          sa_ap       28  0.0476  0.0628 -0.0152 -0.0507  0.0053
+     temporal      dev           EL@avg W@avg        sa_nuap       28  0.0505  0.0851 -0.0347 -0.0899 -0.0005
+     temporal      dev transfer_jaccard W@avg             ap       53  0.1223  0.1893 -0.0669 -0.0887 -0.0472
+     temporal      dev transfer_jaccard W@avg           nuap       53  0.0956  0.1801 -0.0845 -0.1086 -0.0633
+     temporal      dev transfer_jaccard W@avg     newdata_ap       33  0.0257  0.0557 -0.0300 -0.0539 -0.0065
+     temporal      dev transfer_jaccard W@avg   newdata_nuap       33  0.0324  0.0607 -0.0283 -0.0584 -0.0060
+     temporal      dev transfer_jaccard W@avg   labelproc_ap       46  0.1719  0.2557 -0.0838 -0.1262 -0.0462
+     temporal      dev transfer_jaccard W@avg labelproc_nuap       46  0.1892  0.3073 -0.1181 -0.1760 -0.0681
+     temporal      dev transfer_jaccard W@avg          sa_ap       28  0.0307  0.0628 -0.0321 -0.0593 -0.0103
+     temporal      dev transfer_jaccard W@avg        sa_nuap       28  0.0402  0.0851 -0.0449 -0.0834 -0.0155
+     temporal      dev             G_s1  G_s0             ap       53  0.1829  0.1803  0.0026 -0.0049  0.0094
+     temporal      dev             G_s1  G_s0           nuap       53  0.1704  0.1736 -0.0032 -0.0122  0.0044
+     temporal      dev             G_s1  G_s0     newdata_ap       33  0.0627  0.0612  0.0016 -0.0036  0.0068
+     temporal      dev             G_s1  G_s0   newdata_nuap       33  0.0650  0.0625  0.0025 -0.0050  0.0102
+     temporal      dev             G_s1  G_s0   labelproc_ap       46  0.2330  0.2295  0.0035 -0.0071  0.0147
+     temporal      dev             G_s1  G_s0 labelproc_nuap       46  0.2722  0.2731 -0.0009 -0.0159  0.0108
+     temporal      dev             G_s1  G_s0          sa_ap       28  0.0613  0.0598  0.0015 -0.0047  0.0070
+     temporal      dev             G_s1  G_s0        sa_nuap       28  0.0753  0.0736  0.0017 -0.0073  0.0095
+     temporal      dev             W_s1  W_s0             ap       53  0.1876  0.1909 -0.0034 -0.0118  0.0046
+     temporal      dev             W_s1  W_s0           nuap       53  0.1806  0.1796  0.0010 -0.0067  0.0089
+     temporal      dev             W_s1  W_s0     newdata_ap       33  0.0581  0.0533  0.0048 -0.0015  0.0144
+     temporal      dev             W_s1  W_s0   newdata_nuap       33  0.0662  0.0553  0.0109  0.0016  0.0249
+temporal_wide wide_dev            G@avg W@avg             ap       45  0.1397  0.1282  0.0115 -0.0062  0.0302
+temporal_wide wide_dev            G@avg W@avg           nuap       45  0.1993  0.1836  0.0157 -0.0081  0.0426
+temporal_wide wide_dev            G@avg W@avg     newdata_ap       19  0.0258  0.0381 -0.0123 -0.0422  0.0053
+temporal_wide wide_dev            G@avg W@avg   newdata_nuap       19  0.0265  0.0482 -0.0217 -0.0579  0.0025
+temporal_wide wide_dev            G@avg W@avg   labelproc_ap       33  0.1799  0.1707  0.0091 -0.0120  0.0303
+temporal_wide wide_dev            G@avg W@avg labelproc_nuap       33  0.2671  0.2486  0.0186 -0.0132  0.0559
+temporal_wide wide_dev            G@avg W@avg          sa_ap       10  0.0492  0.0566 -0.0074 -0.0296  0.0127
+temporal_wide wide_dev            G@avg W@avg        sa_nuap       10  0.0626  0.0797 -0.0170 -0.0557  0.0094
+temporal_wide wide_dev           EB@avg W@avg             ap       45  0.1291  0.1282  0.0008 -0.0184  0.0187
+temporal_wide wide_dev           EB@avg W@avg           nuap       45  0.1957  0.1836  0.0121 -0.0119  0.0378
+temporal_wide wide_dev           EB@avg W@avg     newdata_ap       19  0.0227  0.0381 -0.0154 -0.0301 -0.0042
+temporal_wide wide_dev           EB@avg W@avg   newdata_nuap       19  0.0274  0.0482 -0.0207 -0.0444 -0.0021
+temporal_wide wide_dev           EB@avg W@avg   labelproc_ap       33  0.1702  0.1707 -0.0005 -0.0206  0.0181
+temporal_wide wide_dev           EB@avg W@avg labelproc_nuap       33  0.2484  0.2486 -0.0002 -0.0301  0.0309
+temporal_wide wide_dev           EB@avg W@avg          sa_ap       10  0.0305  0.0566 -0.0261 -0.0546 -0.0047
+temporal_wide wide_dev           EB@avg W@avg        sa_nuap       10  0.0479  0.0797 -0.0318 -0.0772 -0.0014
+temporal_wide wide_dev           EL@avg W@avg             ap       45  0.0308  0.1282 -0.0975 -0.1602 -0.0383
+temporal_wide wide_dev           EL@avg W@avg           nuap       45  0.0321  0.1836 -0.1515 -0.2596 -0.0544
+temporal_wide wide_dev           EL@avg W@avg     newdata_ap       19  0.0174  0.0381 -0.0207 -0.0659  0.0066
+temporal_wide wide_dev           EL@avg W@avg   newdata_nuap       19  0.0087  0.0482 -0.0395 -0.1003  0.0019
+temporal_wide wide_dev           EL@avg W@avg   labelproc_ap       33  0.0369  0.1707 -0.1338 -0.2280 -0.0463
+temporal_wide wide_dev           EL@avg W@avg labelproc_nuap       33  0.0902  0.2486 -0.1583 -0.3310  0.0070
+temporal_wide wide_dev           EL@avg W@avg          sa_ap       10  0.0250  0.0566 -0.0316 -0.1052  0.0114
+temporal_wide wide_dev           EL@avg W@avg        sa_nuap       10  0.0118  0.0797 -0.0678 -0.2009 -0.0007
+temporal_wide wide_dev transfer_jaccard W@avg             ap       45  0.0996  0.1282 -0.0287 -0.0576 -0.0042
+temporal_wide wide_dev transfer_jaccard W@avg           nuap       45  0.1294  0.1836 -0.0541 -0.0917 -0.0252
+temporal_wide wide_dev transfer_jaccard W@avg     newdata_ap       19  0.0114  0.0381 -0.0267 -0.0629 -0.0033
+temporal_wide wide_dev transfer_jaccard W@avg   newdata_nuap       19  0.0112  0.0482 -0.0369 -0.0830 -0.0031
+temporal_wide wide_dev transfer_jaccard W@avg   labelproc_ap       33  0.1406  0.1707 -0.0302 -0.0603 -0.0020
+temporal_wide wide_dev transfer_jaccard W@avg labelproc_nuap       33  0.1823  0.2486 -0.0663 -0.1085 -0.0338
+temporal_wide wide_dev transfer_jaccard W@avg          sa_ap       10  0.0257  0.0566 -0.0309 -0.0742 -0.0017
+temporal_wide wide_dev transfer_jaccard W@avg        sa_nuap       10  0.0342  0.0797 -0.0455 -0.1133 -0.0022
+temporal_wide wide_dev             G_s1  G_s0             ap       45  0.1422  0.1373  0.0049 -0.0076  0.0196
+temporal_wide wide_dev             G_s1  G_s0           nuap       45  0.2028  0.1957  0.0071 -0.0090  0.0264
+temporal_wide wide_dev             G_s1  G_s0     newdata_ap       19  0.0235  0.0280 -0.0045 -0.0080 -0.0017
+temporal_wide wide_dev             G_s1  G_s0   newdata_nuap       19  0.0251  0.0278 -0.0026 -0.0069  0.0001
+temporal_wide wide_dev             G_s1  G_s0   labelproc_ap       33  0.1814  0.1783  0.0031 -0.0112  0.0195
+temporal_wide wide_dev             G_s1  G_s0 labelproc_nuap       33  0.2704  0.2638  0.0067 -0.0097  0.0278
+temporal_wide wide_dev             G_s1  G_s0          sa_ap       10  0.0440  0.0544 -0.0104 -0.0241 -0.0014
+temporal_wide wide_dev             G_s1  G_s0        sa_nuap       10  0.0566  0.0687 -0.0121 -0.0374  0.0011
+temporal_wide wide_dev             W_s1  W_s0             ap       45  0.1324  0.1240  0.0084 -0.0076  0.0259
+temporal_wide wide_dev             W_s1  W_s0           nuap       45  0.1844  0.1828  0.0016 -0.0182  0.0211
+temporal_wide wide_dev             W_s1  W_s0     newdata_ap       19  0.0387  0.0374  0.0013 -0.0024  0.0058
+temporal_wide wide_dev             W_s1  W_s0   newdata_nuap       19  0.0493  0.0470  0.0023 -0.0029  0.0091
+     temporal  confirm            G@avg W@avg             ap      138  0.1706  0.1720 -0.0014 -0.0062  0.0044
+     temporal  confirm            G@avg W@avg           nuap      138  0.1976  0.2049 -0.0074 -0.0148 -0.0003
+     temporal  confirm            G@avg W@avg     newdata_ap       94  0.0584  0.0540  0.0044 -0.0014  0.0103
+     temporal  confirm            G@avg W@avg   newdata_nuap       94  0.0671  0.0671  0.0001 -0.0062  0.0070
+     temporal  confirm            G@avg W@avg   labelproc_ap      117  0.2196  0.2221 -0.0025 -0.0119  0.0082
+     temporal  confirm            G@avg W@avg labelproc_nuap      117  0.2968  0.3100 -0.0133 -0.0302  0.0013
+     temporal  confirm            G@avg W@avg          sa_ap       71  0.0763  0.0729  0.0034 -0.0042  0.0118
+     temporal  confirm            G@avg W@avg        sa_nuap       71  0.0889  0.0920 -0.0031 -0.0102  0.0045
+     temporal  confirm           EB@avg W@avg             ap      138  0.1571  0.1720 -0.0149 -0.0238 -0.0077
+     temporal  confirm           EB@avg W@avg           nuap      138  0.1862  0.2049 -0.0188 -0.0313 -0.0086
+     temporal  confirm           EB@avg W@avg     newdata_ap       94  0.0442  0.0540 -0.0098 -0.0171 -0.0041
+     temporal  confirm           EB@avg W@avg   newdata_nuap       94  0.0540  0.0671 -0.0131 -0.0202 -0.0066
+     temporal  confirm           EB@avg W@avg   labelproc_ap      117  0.1989  0.2221 -0.0232 -0.0400 -0.0112
+     temporal  confirm           EB@avg W@avg labelproc_nuap      117  0.2727  0.3100 -0.0373 -0.0617 -0.0190
+     temporal  confirm           EB@avg W@avg          sa_ap       71  0.0550  0.0729 -0.0179 -0.0296 -0.0092
+     temporal  confirm           EB@avg W@avg        sa_nuap       71  0.0697  0.0920 -0.0223 -0.0361 -0.0108
+     temporal  confirm           EL@avg W@avg             ap      138  0.0444  0.1720 -0.1276 -0.1594 -0.0964
+     temporal  confirm           EL@avg W@avg           nuap      138  0.0455  0.2049 -0.1595 -0.2027 -0.1189
+     temporal  confirm           EL@avg W@avg     newdata_ap       94  0.0285  0.0540 -0.0255 -0.0471 -0.0043
+     temporal  confirm           EL@avg W@avg   newdata_nuap       94  0.0357  0.0671 -0.0313 -0.0657  0.0002
+     temporal  confirm           EL@avg W@avg   labelproc_ap      117  0.0665  0.2221 -0.1556 -0.1897 -0.1170
+     temporal  confirm           EL@avg W@avg labelproc_nuap      117  0.0884  0.3100 -0.2216 -0.2622 -0.1726
+     temporal  confirm           EL@avg W@avg          sa_ap       71  0.0365  0.0729 -0.0364 -0.0612 -0.0145
+     temporal  confirm           EL@avg W@avg        sa_nuap       71  0.0400  0.0920 -0.0521 -0.0907 -0.0198
+     temporal  confirm transfer_jaccard W@avg             ap      138  0.1189  0.1720 -0.0530 -0.0705 -0.0362
+     temporal  confirm transfer_jaccard W@avg           nuap      138  0.1042  0.2049 -0.1008 -0.1268 -0.0772
+     temporal  confirm transfer_jaccard W@avg     newdata_ap       94  0.0472  0.0540 -0.0068 -0.0225  0.0061
+     temporal  confirm transfer_jaccard W@avg   newdata_nuap       94  0.0424  0.0671 -0.0247 -0.0451 -0.0062
+     temporal  confirm transfer_jaccard W@avg   labelproc_ap      117  0.1515  0.2221 -0.0706 -0.0946 -0.0491
+     temporal  confirm transfer_jaccard W@avg labelproc_nuap      117  0.1676  0.3100 -0.1425 -0.1849 -0.1073
+     temporal  confirm transfer_jaccard W@avg          sa_ap       71  0.0579  0.0729 -0.0150 -0.0387  0.0037
+     temporal  confirm transfer_jaccard W@avg        sa_nuap       71  0.0523  0.0920 -0.0397 -0.0699 -0.0140
+     temporal  confirm             G_s1  G_s0             ap      138  0.1716  0.1696  0.0019 -0.0027  0.0061
+     temporal  confirm             G_s1  G_s0           nuap      138  0.1991  0.1960  0.0031 -0.0025  0.0082
+     temporal  confirm             G_s1  G_s0     newdata_ap       94  0.0580  0.0588 -0.0007 -0.0070  0.0069
+     temporal  confirm             G_s1  G_s0   newdata_nuap       94  0.0677  0.0665  0.0012 -0.0022  0.0054
+     temporal  confirm             G_s1  G_s0   labelproc_ap      117  0.2225  0.2166  0.0059 -0.0016  0.0127
+     temporal  confirm             G_s1  G_s0 labelproc_nuap      117  0.3028  0.2908  0.0120  0.0051  0.0174
+     temporal  confirm             G_s1  G_s0          sa_ap       71  0.0777  0.0750  0.0027 -0.0036  0.0114
+     temporal  confirm             G_s1  G_s0        sa_nuap       71  0.0899  0.0880  0.0020 -0.0031  0.0080
+     temporal  confirm             W_s1  W_s0             ap      138  0.1720  0.1720 -0.0000 -0.0045  0.0045
+     temporal  confirm             W_s1  W_s0           nuap      138  0.2060  0.2039  0.0021 -0.0032  0.0083
+     temporal  confirm             W_s1  W_s0     newdata_ap       94  0.0537  0.0543 -0.0006 -0.0047  0.0027
+     temporal  confirm             W_s1  W_s0   newdata_nuap       94  0.0680  0.0661  0.0019 -0.0040  0.0084
+                           0         1              2
+bench               temporal  temporal  temporal_wide
+split                confirm       dev       wide_dev
+n_tasks                  122        49             32
+n_newdata_targets     1306.0     501.0          151.0
+prec_n_lp           0.190656  0.263265        0.06125
+prec_dis_new        0.002049  0.000612       0.000313
+prec_dis_lp         0.002951   0.00449       0.002812
+prec_dis_all        0.008934  0.010612        0.00375
+prec_W_new          0.032049   0.02898       0.018437
+prec_W_lp           0.073279  0.117755          0.025
+prec_W_all              0.14  0.179592       0.047188
+prec_EB_new         0.025246  0.021837       0.013125
+prec_EB_lp           0.06623  0.092245       0.024688
+prec_EB_all         0.124508  0.143061       0.040313
+prec_poolrand_new   0.007361  0.005612       0.002781
+prec_poolrand_all   0.026926  0.028857        0.00775
+prec_popmatch_new   0.000536  0.000528       0.000203
+prec_popmatch_all   0.001787  0.001869       0.000579
+d_vs_W_new             -0.03 -0.028367      -0.018125
+ci_lo_W_new        -0.042046 -0.050682      -0.031053
+ci_hi_W_new        -0.019652  -0.01311      -0.006667
+d_vs_popmatch_new   0.001513  0.000084       0.000109
+ci_lo_popmatch_new  0.000329 -0.000511      -0.000273
+ci_hi_popmatch_new  0.002918  0.001068       0.000856
+d_vs_poolrand_new  -0.005311    -0.005      -0.002469
+ci_lo_poolrand_new -0.007505    -0.008      -0.004057
+ci_hi_poolrand_new -0.003458 -0.002591      -0.001069
+newshare_dis        0.229358  0.057692       0.083333
+newshare_W          0.228923  0.161364       0.390728
+newshare_EB         0.202765  0.152639       0.325581
+medpop_dis               6.0       5.0          7.125
+medpop_W              42.875     39.75         51.375
+        bench        split       dAP     dnuAP  d_newdata_ap  d_newdata_nuap  overall_ok  newdata_better product
+     temporal          dev -0.007662 -0.008102      0.006281        0.003055       False            True     NaN
+temporal_wide     wide_dev  0.011494  0.015681     -0.012335       -0.021696        True           False     NaN
+         both dev+wide_dev       NaN       NaN           NaN             NaN       False           False   False
+seed-wise list precision:
+                dis_new   W_new  EB_new  popmatch_new  poolrand_new
+split    seed                                                     
+confirm  _s0    0.0020  0.0316  0.0249        0.0005        0.0074
+         _s1    0.0021  0.0325  0.0256        0.0005        0.0073
+dev      _s0    0.0008  0.0286  0.0216        0.0005        0.0056
+         _s1    0.0004  0.0294  0.0220        0.0005        0.0056
+wide_dev _s0    0.0006  0.0188  0.0138        0.0002        0.0029
+         _s1    0.0000  0.0181  0.0125        0.0002        0.0027
+split     disease_id     name                            
+dev       EFO_1001176    sensorineural hearing loss          1
+          MONDO_0100329  primary viral infectious disease    1
+wide_dev  MONDO_0015978  functional neutrophil defect        1
+   bench split  disease_id                       name gene            ensg     rB    rL  W_rank     fy           ev
+temporal   dev EFO_1001176 sensorineural hearing loss  HGF ENSG00000019991 0.9766 0.746     518 2025.0 clinvar_only
+   bench split    disease_id                             name gene            ensg     rB     rL  W_rank     fy        ev
+temporal   dev MONDO_0100329 primary viral infectious disease CCR1 ENSG00000163823 0.9894 0.5791     653 2023.0 gwas_only
+        bench    split    disease_id                         name  gene            ensg     rB    rL  W_rank     fy        ev
+temporal_wide wide_dev MONDO_0015978 functional neutrophil defect ITGA4 ENSG00000115232 0.9789 0.699     222 2024.0 gwas_only

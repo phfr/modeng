@@ -1,0 +1,16 @@
+bench	split	disease_id	name	gene	ensg	rB	rL	W_rank	fy	ev
+temporal	dev	EFO_1001176	sensorineural hearing loss	HGF	ENSG00000019991	0.9766	0.746	518	2025.0	clinvar_only
+temporal	dev	MONDO_0100329	primary viral infectious disease	CCR1	ENSG00000163823	0.9894	0.5791	653	2023.0	gwas_only
+temporal_wide	wide_dev	MONDO_0015978	functional neutrophil defect	ITGA4	ENSG00000115232	0.9789	0.699	222	2024.0	gwas_only
+temporal	confirm	EFO_0000195	metabolic syndrome	PLTP	ENSG00000100979	0.9938	0.2535	131	2024.0	gwas_only
+temporal	confirm	EFO_0004698	insomnia	SEC11C	ENSG00000166562	0.9917	0.5896	701	2022.0	gwas_only
+temporal	confirm	EFO_0004274	gout	XDH	ENSG00000158125	0.9979	0.536	93	2024.0	gwas_only
+temporal	confirm	EFO_0000275	atrial fibrillation	POPDC1	ENSG00000112276	0.9863	0.4256	413	2025.0	gwas_only
+temporal	confirm	EFO_0000275	atrial fibrillation	LDB3	ENSG00000122367	0.9919	0.5896	150	2025.0	gwas_only
+temporal	confirm	MONDO_0043839	ulcer disease	MST1	ENSG00000173531	0.9844	0.4602	1449	2023.0	gwas_only
+temporal	confirm	MONDO_0037748	hyperlipoproteinemia	SORT1	ENSG00000134243	0.991	0.4237	162	2023.0	gwas_only
+temporal	confirm	MONDO_0018612	congenital hypothyroidism	DUOXA1	ENSG00000140254	0.9992	0.3959	20	2025.0	clinvar_only
+temporal	confirm	MONDO_0001056	gastric cancer	HOXB13	ENSG00000159184	0.9958	0.616	702	2023.0	clinvar_only
+temporal	confirm	MONDO_0005129	cataract	SCD	ENSG00000099194	0.977	0.5942	812	2024.0	gwas_only
+temporal	confirm	EFO_0004288	colonic neoplasm	PLEKHG6	ENSG00000008323	0.995	0.2562	220	2024.0	gwas_only
+temporal	confirm	MONDO_0000652	integumentary system benign neoplasm	PARP1	ENSG00000143799	0.9859	0.6782	706	2024.0	gwas_only

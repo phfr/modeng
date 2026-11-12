@@ -1,0 +1,48 @@
+[wide_train] 712 tasks, 43 channels, 839966 rows, 8966 pos; guard dropped 12202 positive pairs in 506 tasks (53s)
+temporal  dev      stackW_E_B             AP 0.1610 nuAP 0.1568 AUROC 0.8375 R@100 0.3130 | onnet AP 0.1767 nuAP 0.2017
+temporal  confirm  stackW_E_B             AP 0.1559 nuAP 0.1847 AUROC 0.8544 R@100 0.3345 | onnet AP 0.1613 nuAP 0.1998
+temporal_wide wide_dev stackW_E_B             AP 0.1293 nuAP 0.1964 AUROC 0.8596 R@100 0.3779 | onnet AP 0.1379 nuAP 0.2266
+[wide_train] 712 tasks, 8 channels, 839966 rows, 8966 pos; guard dropped 12202 positive pairs in 506 tasks (4s)
+temporal  dev      stackW_E_L             AP 0.0616 nuAP 0.0602 AUROC 0.8310 R@100 0.1569 | onnet AP 0.0734 nuAP 0.0956
+temporal  confirm  stackW_E_L             AP 0.0442 nuAP 0.0447 AUROC 0.8313 R@100 0.1470 | onnet AP 0.0494 nuAP 0.0564
+temporal_wide wide_dev stackW_E_L             AP 0.0318 nuAP 0.0338 AUROC 0.8176 R@100 0.1672 | onnet AP 0.0242 nuAP 0.0210
+[wide_train] 712 tasks, 43 channels, 839966 rows, 8966 pos; guard dropped 12202 positive pairs in 506 tasks (28s)
+temporal  dev      stackW_E_B_s1          AP 0.1595 nuAP 0.1541 AUROC 0.8394 R@100 0.3193 | onnet AP 0.1743 nuAP 0.1971
+temporal  confirm  stackW_E_B_s1          AP 0.1582 nuAP 0.1877 AUROC 0.8551 R@100 0.3336 | onnet AP 0.1646 nuAP 0.2046
+temporal_wide wide_dev stackW_E_B_s1          AP 0.1288 nuAP 0.1950 AUROC 0.8630 R@100 0.3756 | onnet AP 0.1383 nuAP 0.2232
+[wide_train] 712 tasks, 8 channels, 839966 rows, 8966 pos; guard dropped 12202 positive pairs in 506 tasks (3s)
+temporal  dev      stackW_E_L_s1          AP 0.0643 nuAP 0.0616 AUROC 0.8301 R@100 0.1611 | onnet AP 0.0757 nuAP 0.0978
+temporal  confirm  stackW_E_L_s1          AP 0.0447 nuAP 0.0463 AUROC 0.8313 R@100 0.1467 | onnet AP 0.0495 nuAP 0.0589
+temporal_wide wide_dev stackW_E_L_s1          AP 0.0298 nuAP 0.0304 AUROC 0.8174 R@100 0.1753 | onnet AP 0.0277 nuAP 0.0246
+[oof B] fold 0 rows 575481 (66s)
+[oof B] fold 1 rows 634477 (94s)
+[oof B] fold 2 rows 631507 (120s)
+[oof B] fold 3 rows 642488 (145s)
+[oof B] fold 4 rows 604788 (173s)
+[oof L] fold 0 rows 575481 (190s)
+[oof L] fold 1 rows 634477 (200s)
+[oof L] fold 2 rows 631507 (213s)
+[oof L] fold 3 rows 642488 (225s)
+[oof L] fold 4 rows 604788 (235s)
+lB            1.062
+lL            0.384
+rB           -0.137
+rL            0.047
+c_gwas        0.005
+c_nseeds     -0.155
+c_catcov      0.068
+c_seedpop     0.067
+lB*gwas      -0.784
+lB*nseeds     0.188
+lB*catcov    -0.198
+lB*seedpop    0.058
+lL*gwas       0.602
+lL*nseeds    -0.261
+lL*catcov     0.139
+lL*seedpop    0.163
+temporal  dev      stackW_G               AP 0.1803 nuAP 0.1736 AUROC 0.8655 R@100 0.3366 | onnet AP 0.1995 nuAP 0.2299
+temporal  dev      stackW_G_s1            AP 0.1830 nuAP 0.1704 AUROC 0.8657 R@100 0.3451 | onnet AP 0.2040 nuAP 0.2298
+temporal  confirm  stackW_G               AP 0.1696 nuAP 0.1960 AUROC 0.8746 R@100 0.3499 | onnet AP 0.1750 nuAP 0.2130
+temporal  confirm  stackW_G_s1            AP 0.1716 nuAP 0.1992 AUROC 0.8749 R@100 0.3506 | onnet AP 0.1772 nuAP 0.2177
+temporal_wide wide_dev stackW_G               AP 0.1373 nuAP 0.1957 AUROC 0.8811 R@100 0.3947 | onnet AP 0.1487 nuAP 0.2253
+temporal_wide wide_dev stackW_G_s1            AP 0.1422 nuAP 0.2028 AUROC 0.8837 R@100 0.3729 | onnet AP 0.1558 nuAP 0.2318

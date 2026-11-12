@@ -1,0 +1,407 @@
+bench	split	seed	disease_id	cluster	name	n_new	n_lp	n_t	dis_new	dis_lp	dis_all	W_new	W_lp	W_all	EB_new	EB_lp	EB_all	poolrand_new	poolrand_all	popmatch_new	popmatch_all	dis_medpop	W_medpop
+temporal	dev	_s0	EFO_0004799	c16	cholelithiasis	16	2	54	0	0	0	4	0	7	3	0	6	0.7000	1.4000	0.0363	0.1117	2.5000	38.0000
+temporal	dev	_s0	EFO_0004616	c34	osteoarthritis, knee	60	2	116	0	0	1	11	0	18	6	0	10	2.4000	4.3000	0.1739	0.3560	10.0000	76.5000
+temporal	dev	_s0	EFO_0000731	c0	uterine fibroid	26	1	64	0	0	0	0	1	3	1	0	4	0.6000	1.5000	0.1008	0.2425	10.0000	64.5000
+temporal	dev	_s0	MONDO_0021661	c8	coronary atherosclerosis	53	1	83	0	0	0	21	0	28	12	0	16	2.1000	3.0000	0.0930	0.1823	4.5000	37.5000
+temporal	dev	_s0	EFO_1001176	c66	sensorineural hearing loss	17	17	68	1	0	2	1	4	11	1	3	8	0.4000	2.8000	0.0817	0.2497	10.0000	44.5000
+temporal	dev	_s0	MONDO_0004235	c9	diverticulitis	7	3	16	0	0	0	2	1	4	2	0	3	0.2000	0.4000	0.0116	0.0326	5.0000	77.5000
+temporal	dev	_s0	EFO_0001422	c14	cirrhosis of liver	5	5	22	0	0	0	1	0	2	0	0	3	0.2000	0.8000	0.0064	0.0361	8.0000	51.0000
+temporal	dev	_s0	Orphanet_307055	c7	Rare parkinsonian syndrome due to genetic neurodegenerative disease	4	7	11	0	0	0	1	5	6	1	5	6	0.1000	0.7000	0.0051	0.0063	1.0000	30.0000
+temporal	dev	_s0	MONDO_0005301	c74	multiple sclerosis	6	24	43	0	0	0	1	17	18	1	4	5	0.1000	1.5000	0.0000	0.0460	2.5000	46.0000
+temporal	dev	_s0	MONDO_0004979	c36	asthma	29	41	106	0	0	1	1	24	25	1	6	7	0.4000	2.8000	0.0651	0.1682	3.0000	35.0000
+temporal	dev	_s0	MONDO_0005277	c73	migraine disorder	11	5	45	0	0	0	1	5	10	1	0	6	0.2000	1.1000	0.0146	0.0888	4.0000	44.0000
+temporal	dev	_s0	EFO_0000274	c44	atopic eczema	22	20	61	0	0	1	1	7	11	1	4	7	0.7000	2.7000	0.0365	0.1085	4.0000	44.0000
+temporal	dev	_s0	MONDO_0004892	c70	refractive error	1	42	48	0	0	1	0	27	29	0	17	19	0.0000	3.4000	0.0016	0.1760	11.5000	33.5000
+temporal	dev	_s0	MONDO_0100576	c91	hereditary generalized epilepsy	2	4	11	0	1	2	0	4	6	0	4	6	0.0000	0.6000	0.0063	0.0256	4.0000	39.5000
+temporal	dev	_s0	MONDO_0018614	c10	undetermined early-onset epileptic encephalopathy	2	41	47	0	1	1	0	25	26	0	25	26	0.1000	4.0000	0.0086	0.0776	5.0000	32.0000
+temporal	dev	_s0	MONDO_0004634	c2	vein disorder	36	6	91	0	2	2	5	1	12	3	2	10	1.1000	2.9000	0.0980	0.2898	8.0000	39.0000
+temporal	dev	_s0	MONDO_0005180	c0	Parkinson disease	8	23	48	0	0	1	1	5	6	1	2	3	0.2000	0.7000	0.0174	0.1052	3.0000	33.0000
+temporal	dev	_s0	MONDO_0031520	c28	familial severe combined immunodeficiency	1	10	12	0	0	0	0	9	9	0	9	9	0.0000	0.9000	0.0000	0.0301	3.0000	24.0000
+temporal	dev	_s0	MONDO_0020135	c1	pontocerebellar hypoplasia	1	9	12	0	1	1	0	3	3	0	3	3	0.0000	0.5000	0.0000	0.0181	0.5000	33.0000
+temporal	dev	_s0	EFO_0009554	c23	malabsorption syndrome	5	2	23	0	0	0	0	0	0	0	0	0	0.0000	0.1000	0.0043	0.0711	8.0000	42.0000
+temporal	dev	_s0	MONDO_0018751	c3	hereditary otorhinolaryngologic disease	8	7	30	0	0	0	1	3	4	0	3	3	0.2000	1.2000	0.0195	0.0927	6.0000	42.0000
+temporal	dev	_s0	EFO_0006788	c11	anxiety disorder	11	26	71	0	0	0	0	3	7	0	0	1	0.1000	1.4000	0.0317	0.1903	9.0000	70.5000
+temporal	dev	_s0	EFO_0002618	c0	pancreatic carcinoma	3	3	17	0	0	0	1	2	6	1	2	5	0.2000	0.8000	0.0047	0.0268	2.0000	80.0000
+temporal	dev	_s0	MONDO_0021189	c89	intestinal motility disease	1	8	12	0	0	0	0	1	1	0	1	1	0.0000	0.3000	0.0031	0.0372	8.0000	76.5000
+temporal	dev	_s0	EFO_0005531	c2	urticaria	3	9	14	0	0	0	0	0	0	0	1	1	0.0000	0.1000	0.0063	0.0330	4.0000	47.5000
+temporal	dev	_s0	MONDO_0001713	c2	inherited aplastic anemia	3	29	37	0	3	3	1	12	14	2	10	13	0.3000	3.2000	0.0045	0.0885	1.0000	32.5000
+temporal	dev	_s0	MONDO_0018158	c4	mitochondrial DNA depletion syndrome	1	13	20	0	0	0	0	10	13	0	11	14	0.0000	1.6000	0.0000	0.0183	0.0000	43.0000
+temporal	dev	_s0	MONDO_0015653	c78	monogenic epilepsy	1	10	14	0	0	0	0	2	2	0	2	2	0.1000	0.8000	0.0094	0.0612	13.0000	49.0000
+temporal	dev	_s0	Orphanet_140162	c0	Inherited cancer-predisposing syndrome	4	12	17	0	0	0	0	5	5	0	5	5	0.2000	1.0000	0.0086	0.0262	2.5000	41.0000
+temporal	dev	_s0	MONDO_0002279	c68	iron metabolism disease	5	1	17	0	0	0	0	1	1	0	1	1	0.0000	0.1000	0.0074	0.0571	8.0000	38.5000
+temporal	dev	_s0	EFO_0000625	c0	nevus	6	4	13	0	0	0	2	2	5	1	2	4	0.2000	0.6000	0.0031	0.0037	8.0000	80.5000
+temporal	dev	_s0	Orphanet_98640	c6	Rare cataract	3	9	14	0	0	0	0	6	6	0	6	6	0.0000	0.7000	0.0062	0.0352	5.0000	21.5000
+temporal	dev	_s0	Orphanet_399980	c1	Rare genetic male infertility	5	8	19	0	0	0	0	3	3	0	4	4	0.0000	0.6000	0.0153	0.0340	8.0000	41.0000
+temporal	dev	_s0	MONDO_0000066	c4	mitochondrial complex deficiency	1	22	28	0	1	4	1	16	19	1	16	19	0.1000	2.3000	0.0000	0.0457	0.0000	34.0000
+temporal	dev	_s0	MONDO_0008903	c76	lung cancer	7	6	22	0	0	0	0	3	4	1	3	5	0.1000	0.9000	0.0193	0.0668	9.5000	83.5000
+temporal	dev	_s0	MONDO_0020380	c86	autosomal dominant cerebellar ataxia	2	11	16	0	0	0	1	4	7	1	4	7	0.1000	1.2000	0.0034	0.0410	4.0000	25.0000
+temporal	dev	_s0	EFO_0005269	c21	congenital heart malformation	1	14	23	0	1	1	0	3	4	0	4	5	0.1000	1.0000	0.0006	0.0589	4.0000	29.5000
+temporal	dev	_s0	EFO_0009601	c61	testicular disease	6	1	13	0	0	1	0	1	2	0	1	1	0.1000	0.5000	0.0168	0.0400	10.0000	93.0000
+temporal	dev	_s0	Orphanet_98054	c4	Rare genetic cardiac disease	2	12	17	0	0	0	0	4	5	0	4	5	0.0000	0.6000	0.0012	0.0421	1.5000	25.0000
+temporal	dev	_s0	Orphanet_183518	c7	Rare hereditary ataxia	2	8	11	0	0	0	0	2	2	0	1	1	0.0000	0.5000	0.0045	0.0295	3.0000	31.5000
+temporal	dev	_s0	MONDO_0015469	c3	craniosynostosis	2	15	23	0	0	0	0	3	4	0	2	3	0.2000	1.3000	0.0011	0.0426	6.0000	40.5000
+temporal	dev	_s0	MONDO_0100062	c10	developmental and epileptic encephalopathy	6	36	50	0	0	1	3	16	20	4	16	22	0.4000	3.1000	0.0098	0.1011	2.5000	31.0000
+temporal	dev	_s0	MONDO_0015962	c5	inherited renal tubular disease	5	12	28	0	0	1	2	5	13	2	6	14	0.3000	1.8000	0.0034	0.0485	1.0000	39.0000
+temporal	dev	_s0	EFO_0003824	c49	eye neoplasm	16	4	29	0	0	0	1	0	4	1	0	3	0.1000	0.7000	0.0683	0.1050	10.5000	81.0000
+temporal	dev	_s0	Orphanet_364526	c3	Primary bone dysplasia	1	14	17	0	0	0	0	3	3	0	3	3	0.0000	0.8000	0.0040	0.0489	5.0000	26.5000
+temporal	dev	_s0	MONDO_0019046	c6	leukodystrophy	6	38	56	0	0	2	0	20	21	0	21	22	0.2000	3.0000	0.0182	0.1322	3.0000	30.5000
+temporal	dev	_s0	MONDO_0100329	c9	primary viral infectious disease	69	27	172	1	0	1	3	9	13	2	3	6	0.8000	2.5000	0.2233	0.5746	6.0000	72.5000
+temporal	dev	_s0	MONDO_0000761	c41	syndrome caused by partial chromosomal deletion	7	13	26	0	0	0	3	4	9	3	4	9	0.4000	1.3000	0.0085	0.0289	3.0000	30.5000
+temporal	dev	_s0	EFO_1000541	c37	Soft Tissue Neoplasm	2	8	13	0	0	0	0	4	5	0	5	5	0.1000	0.8000	0.0052	0.0392	9.0000	60.5000
+temporal	dev	_s1	EFO_0004799	c16	cholelithiasis	16	2	54	0	0	0	5	0	8	3	0	6	0.7000	1.4000	0.0345	0.1029	2.0000	37.5000
+temporal	dev	_s1	EFO_0004616	c34	osteoarthritis, knee	60	2	116	0	0	0	11	0	19	5	0	9	2.3000	3.9000	0.1613	0.3276	8.0000	79.0000
+temporal	dev	_s1	EFO_0000731	c0	uterine fibroid	26	1	64	0	0	0	1	1	3	1	0	4	0.4000	1.2000	0.0974	0.2390	8.0000	65.0000
+temporal	dev	_s1	MONDO_0021661	c8	coronary atherosclerosis	53	1	83	0	0	0	20	0	28	13	0	17	2.1000	3.0000	0.1308	0.2261	5.5000	37.5000
+temporal	dev	_s1	EFO_1001176	c66	sensorineural hearing loss	17	17	68	1	0	3	1	3	11	1	3	11	0.4000	3.1000	0.0832	0.2760	10.0000	35.0000
+temporal	dev	_s1	MONDO_0004235	c9	diverticulitis	7	3	16	0	0	0	1	1	3	2	0	3	0.2000	0.3000	0.0168	0.0368	6.5000	77.5000
+temporal	dev	_s1	EFO_0001422	c14	cirrhosis of liver	5	5	22	0	0	0	1	0	1	0	0	2	0.2000	0.9000	0.0064	0.0366	8.0000	44.5000
+temporal	dev	_s1	Orphanet_307055	c7	Rare parkinsonian syndrome due to genetic neurodegenerative disease	4	7	11	0	0	0	1	5	6	1	5	6	0.1000	0.7000	0.0057	0.0068	1.0000	26.0000
+temporal	dev	_s1	MONDO_0005301	c74	multiple sclerosis	6	24	43	0	0	0	1	18	19	1	3	4	0.1000	1.3000	0.0000	0.0406	2.0000	44.5000
+temporal	dev	_s1	MONDO_0004979	c36	asthma	29	41	106	0	0	1	2	25	27	2	4	6	0.3000	2.7000	0.0696	0.1755	1.0000	44.0000
+temporal	dev	_s1	MONDO_0005277	c73	migraine disorder	11	5	45	0	0	0	1	5	9	1	1	9	0.1000	1.1000	0.0135	0.0915	5.0000	44.0000
+temporal	dev	_s1	EFO_0000274	c44	atopic eczema	22	20	61	0	0	0	1	7	11	1	4	7	0.7000	2.7000	0.0381	0.1144	4.0000	42.0000
+temporal	dev	_s1	MONDO_0004892	c70	refractive error	1	42	48	0	0	1	0	28	29	0	15	17	0.0000	3.2000	0.0005	0.1546	11.0000	34.0000
+temporal	dev	_s1	MONDO_0100576	c91	hereditary generalized epilepsy	2	4	11	0	1	2	0	4	6	0	4	6	0.0000	0.6000	0.0080	0.0285	4.0000	40.5000
+temporal	dev	_s1	MONDO_0018614	c10	undetermined early-onset epileptic encephalopathy	2	41	47	0	1	1	0	29	30	0	26	27	0.1000	4.0000	0.0108	0.0884	5.0000	29.0000
+temporal	dev	_s1	MONDO_0004634	c2	vein disorder	36	6	91	0	2	2	5	1	11	3	2	10	1.1000	3.0000	0.1258	0.3350	8.0000	45.5000
+temporal	dev	_s1	MONDO_0005180	c0	Parkinson disease	8	23	48	0	0	1	1	6	7	1	2	3	0.3000	0.7000	0.0209	0.1169	3.0000	30.5000
+temporal	dev	_s1	MONDO_0031520	c28	familial severe combined immunodeficiency	1	10	12	0	0	0	0	9	9	0	9	9	0.0000	0.9000	0.0000	0.0336	3.0000	20.5000
+temporal	dev	_s1	MONDO_0020135	c1	pontocerebellar hypoplasia	1	9	12	0	1	1	0	3	3	0	3	3	0.0000	0.5000	0.0006	0.0289	1.5000	35.5000
+temporal	dev	_s1	EFO_0009554	c23	malabsorption syndrome	5	2	23	0	0	0	0	0	0	0	0	0	0.0000	0.1000	0.0032	0.0710	10.0000	45.0000
+temporal	dev	_s1	MONDO_0018751	c3	hereditary otorhinolaryngologic disease	8	7	30	0	0	0	1	4	5	0	3	4	0.2000	1.1000	0.0246	0.1099	7.0000	47.0000
+temporal	dev	_s1	EFO_0006788	c11	anxiety disorder	11	26	71	0	0	0	0	2	6	0	0	1	0.1000	1.5000	0.0312	0.1898	9.0000	64.0000
+temporal	dev	_s1	EFO_0002618	c0	pancreatic carcinoma	3	3	17	0	0	0	1	2	5	1	2	6	0.2000	0.8000	0.0047	0.0205	0.0000	84.0000
+temporal	dev	_s1	MONDO_0021189	c89	intestinal motility disease	1	8	12	0	0	0	0	1	1	0	1	1	0.0000	0.4000	0.0010	0.0256	9.5000	78.0000
+temporal	dev	_s1	EFO_0005531	c2	urticaria	3	9	14	0	0	0	0	0	0	0	0	0	0.0000	0.1000	0.0052	0.0330	3.0000	50.0000
+temporal	dev	_s1	MONDO_0001713	c2	inherited aplastic anemia	3	29	37	0	2	2	2	11	14	2	12	14	0.3000	3.2000	0.0034	0.0533	0.0000	34.5000
+temporal	dev	_s1	MONDO_0018158	c4	mitochondrial DNA depletion syndrome	1	13	20	0	0	0	0	11	14	0	11	14	0.0000	1.6000	0.0000	0.0154	0.0000	39.0000
+temporal	dev	_s1	MONDO_0015653	c78	monogenic epilepsy	1	10	14	0	0	0	0	2	2	0	2	2	0.1000	0.9000	0.0115	0.0638	16.0000	49.0000
+temporal	dev	_s1	Orphanet_140162	c0	Inherited cancer-predisposing syndrome	4	12	17	0	0	0	1	4	5	0	4	4	0.4000	1.2000	0.0108	0.0279	4.5000	39.5000
+temporal	dev	_s1	MONDO_0002279	c68	iron metabolism disease	5	1	17	0	0	0	0	1	1	0	1	1	0.0000	0.1000	0.0074	0.0550	8.0000	36.0000
+temporal	dev	_s1	EFO_0000625	c0	nevus	6	4	13	0	0	0	2	2	5	2	2	5	0.2000	0.6000	0.0063	0.0073	8.5000	72.5000
+temporal	dev	_s1	Orphanet_98640	c6	Rare cataract	3	9	14	0	0	0	0	6	6	0	7	7	0.0000	0.7000	0.0085	0.0459	8.0000	21.0000
+temporal	dev	_s1	Orphanet_399980	c1	Rare genetic male infertility	5	8	19	0	0	0	0	3	3	0	3	3	0.0000	0.7000	0.0125	0.0289	7.5000	38.5000
+temporal	dev	_s1	MONDO_0000066	c4	mitochondrial complex deficiency	1	22	28	0	1	3	1	15	19	1	16	18	0.1000	2.3000	0.0000	0.0452	0.0000	34.0000
+temporal	dev	_s1	MONDO_0008903	c76	lung cancer	7	6	22	0	0	0	0	3	4	1	3	5	0.2000	1.0000	0.0230	0.0759	8.5000	80.0000
+temporal	dev	_s1	MONDO_0020380	c86	autosomal dominant cerebellar ataxia	2	11	16	0	0	0	1	4	7	1	4	7	0.1000	1.0000	0.0023	0.0353	4.5000	23.5000
+temporal	dev	_s1	EFO_0005269	c21	congenital heart malformation	1	14	23	0	2	2	0	3	4	1	3	5	0.1000	1.0000	0.0000	0.0612	5.5000	36.0000
+temporal	dev	_s1	EFO_0009601	c61	testicular disease	6	1	13	0	0	0	0	1	2	0	1	1	0.1000	0.5000	0.0189	0.0447	13.0000	104.0000
+temporal	dev	_s1	Orphanet_98054	c4	Rare genetic cardiac disease	2	12	17	0	0	0	0	4	5	0	4	5	0.0000	0.6000	0.0023	0.0456	1.0000	31.0000
+temporal	dev	_s1	Orphanet_183518	c7	Rare hereditary ataxia	2	8	11	0	0	0	0	2	2	0	2	2	0.0000	0.5000	0.0068	0.0375	3.0000	31.5000
+temporal	dev	_s1	MONDO_0015469	c3	craniosynostosis	2	15	23	0	0	0	0	3	4	0	2	3	0.2000	1.3000	0.0000	0.0318	5.0000	37.5000
+temporal	dev	_s1	MONDO_0100062	c10	developmental and epileptic encephalopathy	6	36	50	0	0	1	4	17	23	4	18	24	0.4000	3.1000	0.0080	0.0976	0.0000	33.5000
+temporal	dev	_s1	MONDO_0015962	c5	inherited renal tubular disease	5	12	28	0	1	2	2	5	13	2	6	14	0.3000	1.9000	0.0034	0.0422	0.0000	40.5000
+temporal	dev	_s1	EFO_0003824	c49	eye neoplasm	16	4	29	0	0	0	0	0	3	0	2	4	0.1000	0.9000	0.0636	0.0977	9.5000	83.0000
+temporal	dev	_s1	Orphanet_364526	c3	Primary bone dysplasia	1	14	17	0	0	0	0	3	3	0	3	3	0.0000	0.6000	0.0040	0.0438	5.5000	27.0000
+temporal	dev	_s1	MONDO_0019046	c6	leukodystrophy	6	38	56	0	1	3	0	20	21	0	21	22	0.2000	3.1000	0.0182	0.1259	4.0000	27.5000
+temporal	dev	_s1	MONDO_0100329	c9	primary viral infectious disease	69	27	172	0	0	0	2	9	12	2	3	6	0.9000	2.5000	0.2016	0.5268	6.0000	54.5000
+temporal	dev	_s1	MONDO_0000761	c41	syndrome caused by partial chromosomal deletion	7	13	26	0	0	0	3	4	9	2	5	8	0.3000	1.3000	0.0057	0.0289	2.0000	40.5000
+temporal	dev	_s1	EFO_1000541	c37	Soft Tissue Neoplasm	2	8	13	0	0	0	0	5	6	0	5	6	0.1000	0.8000	0.0058	0.0403	9.0000	54.0000
+temporal_wide	wide_dev	_s0	EFO_0001067	comp:EFO_0001067	parasitic infection	13	7	35	0	0	0	0	1	1	0	1	1	0.0000	0.1000	0.0373	0.1098	4.0000	53.0000
+temporal_wide	wide_dev	_s0	EFO_0004192	comp:EFO_0004192	alopecia areata	7	0	21	0	0	1	0	0	0	0	0	0	0.0000	0.1000	0.0173	0.0686	8.0000	44.0000
+temporal_wide	wide_dev	_s0	EFO_0005773	comp:EFO_0005773	retinal detachment	3	1	4	0	0	0	0	0	0	0	0	0	0.1000	0.2000	0.0102	0.0148	8.0000	45.5000
+temporal_wide	wide_dev	_s0	EFO_1000356	comp:EFO_1000356	Malignant Mixed Neoplasm	1	2	3	0	0	0	1	0	1	1	1	2	0.1000	0.2000	0.0005	0.0099	9.0000	79.5000
+temporal_wide	wide_dev	_s0	EFO_1000646	comp:EFO_1000646	papillary carcinoma	12	4	19	0	0	0	4	2	6	2	1	3	0.5000	0.8000	0.0225	0.0235	8.5000	79.0000
+temporal_wide	wide_dev	_s0	EFO_1001502	comp:EFO_1001502	rasopathy	3	4	8	0	1	1	1	0	1	1	0	1	0.1000	0.4000	0.0068	0.0306	9.5000	52.5000
+temporal_wide	wide_dev	_s0	MONDO_0000728	comp:MONDO_0000728	ptosis	3	2	5	0	1	1	0	0	0	0	1	1	0.0000	0.2000	0.0052	0.0188	20.0000	61.5000
+temporal_wide	wide_dev	_s0	MONDO_0001519	comp:MONDO_0001519	entropion	2	4	6	0	0	0	0	3	3	0	3	3	0.0000	0.3000	0.0042	0.0230	13.5000	41.5000
+temporal_wide	wide_dev	_s0	MONDO_0001700	comp:MONDO_0001700	megaloblastic anemia	6	3	22	0	0	0	2	3	5	2	3	5	0.2000	0.6000	0.0148	0.0553	6.5000	55.5000
+temporal_wide	wide_dev	_s0	MONDO_0002052	comp:MONDO_0002052	lymphadenitis	2	1	18	0	0	0	0	0	0	0	0	0	0.0000	0.1000	0.0005	0.0512	10.0000	74.0000
+temporal_wide	wide_dev	_s0	MONDO_0002281	comp:MONDO_0001700	macrocytic anemia	6	3	22	0	0	0	2	2	4	2	2	4	0.2000	0.6000	0.0148	0.0569	7.0000	52.0000
+temporal_wide	wide_dev	_s0	MONDO_0002428	comp:EFO_0001067	protozoa infectious disease	6	2	17	0	0	0	0	0	0	0	0	0	0.0000	0.0000	0.0227	0.0507	3.0000	57.0000
+temporal_wide	wide_dev	_s0	MONDO_0002512	comp:EFO_1000646	papillary adenocarcinoma	10	4	17	0	0	0	4	1	5	3	2	5	0.5000	0.8000	0.0152	0.0167	7.5000	67.5000
+temporal_wide	wide_dev	_s0	MONDO_0004928	comp:MONDO_0002052	lymph node disorder	2	5	22	0	0	0	0	0	0	0	0	0	0.0000	0.2000	0.0005	0.0575	12.0000	82.0000
+temporal_wide	wide_dev	_s0	MONDO_0015978	comp:MONDO_0015978	functional neutrophil defect	10	2	15	1	0	1	1	2	3	1	2	3	0.4000	0.6000	0.0230	0.0350	11.5000	29.5000
+temporal_wide	wide_dev	_s0	MONDO_0016112	comp:MONDO_0016112	hereditary inclusion-body myopathy	1	3	4	0	0	0	1	2	3	1	2	3	0.1000	0.4000	0.0000	0.0045	4.0000	26.5000
+temporal_wide	wide_dev	_s0	MONDO_0018134	comp:MONDO_0018134	disorder of melanin metabolism	3	6	9	0	1	1	0	4	4	0	4	4	0.2000	0.7000	0.0000	0.0148	2.0000	26.0000
+temporal_wide	wide_dev	_s0	MONDO_0018174	comp:MONDO_0018174	hereditary glaucoma	3	3	8	0	0	0	1	2	4	2	1	3	0.3000	0.6000	0.0103	0.0160	6.0000	40.5000
+temporal_wide	wide_dev	_s0	MONDO_0018800	comp:MONDO_0018800	Kallmann syndrome	2	4	7	0	0	0	1	3	5	1	3	5	0.1000	0.5000	0.0074	0.0136	5.0000	42.5000
+temporal_wide	wide_dev	_s0	MONDO_0018914	comp:MONDO_0018914	hypotrichosis simplex	1	1	3	0	0	0	1	0	1	1	0	1	0.1000	0.2000	0.0000	0.0000	0.0000	24.5000
+temporal_wide	wide_dev	_s0	MONDO_0018998	comp:MONDO_0018998	Leber congenital amaurosis	2	3	5	0	0	0	0	1	1	0	1	1	0.1000	0.3000	0.0011	0.0029	3.0000	15.0000
+temporal_wide	wide_dev	_s0	MONDO_0019296	comp:MONDO_0019296	subcutaneous tissue disorder	2	3	6	0	0	0	0	0	0	0	0	0	0.0000	0.2000	0.0063	0.0130	10.5000	56.0000
+temporal_wide	wide_dev	_s0	MONDO_0020366	comp:MONDO_0018174	congenital glaucoma	1	1	4	0	0	0	0	1	3	0	0	2	0.1000	0.4000	0.0023	0.0137	7.0000	29.0000
+temporal_wide	wide_dev	_s0	MONDO_0021043	comp:EFO_1000356	mixed neoplasm	1	2	3	0	0	0	1	0	1	1	1	2	0.1000	0.2000	0.0005	0.0109	9.5000	92.0000
+temporal_wide	wide_dev	_s0	MONDO_0021079	comp:MONDO_0021079	childhood neoplasm	2	3	7	0	2	2	1	0	2	1	1	3	0.1000	0.4000	0.0000	0.0177	8.0000	76.5000
+temporal_wide	wide_dev	_s0	MONDO_0021096	comp:EFO_1000646	papillary epithelial neoplasm	12	5	20	0	0	0	3	3	6	1	2	3	0.5000	0.9000	0.0230	0.0235	7.0000	68.0000
+temporal_wide	wide_dev	_s0	MONDO_0021106	comp:MONDO_0021106	laminopathy	3	4	7	0	0	0	0	2	2	0	2	2	0.0000	0.2000	0.0108	0.0232	3.0000	30.5000
+temporal_wide	wide_dev	_s0	MONDO_0024294	comp:MONDO_0024294	skin disorder caused by infection	20	0	36	0	0	0	5	0	6	1	0	1	0.6000	0.8000	0.0569	0.0918	7.5000	56.5000
+temporal_wide	wide_dev	_s0	MONDO_0044992	comp:MONDO_0044992	mouth mucosa disorder	4	3	11	0	0	0	0	0	0	0	0	0	0.0000	0.0000	0.0000	0.0236	12.0000	77.5000
+temporal_wide	wide_dev	_s0	Orphanet_183576	comp:Orphanet_183576	Genetic branchial arch or oral-acral syndrome	1	4	5	0	0	0	1	4	5	1	4	5	0.1000	0.5000	0.0017	0.0085	6.5000	57.5000
+temporal_wide	wide_dev	_s0	Orphanet_2924	comp:Orphanet_2924	Isolated polycystic liver disease	4	2	6	0	0	0	0	2	2	0	2	2	0.1000	0.3000	0.0102	0.0102	6.0000	51.0000
+temporal_wide	wide_dev	_s0	Orphanet_98671	comp:Orphanet_98671	Optic neuropathy	3	7	10	0	0	0	0	2	2	0	2	2	0.0000	0.6000	0.0045	0.0125	9.5000	46.0000
+temporal_wide	wide_dev	_s1	EFO_0001067	comp:EFO_0001067	parasitic infection	13	7	35	0	0	0	0	1	1	0	1	1	0.0000	0.1000	0.0395	0.1125	4.0000	53.0000
+temporal_wide	wide_dev	_s1	EFO_0004192	comp:EFO_0004192	alopecia areata	7	0	21	0	0	1	0	0	0	0	0	0	0.0000	0.1000	0.0196	0.0710	6.0000	41.5000
+temporal_wide	wide_dev	_s1	EFO_0005773	comp:EFO_0005773	retinal detachment	3	1	4	0	0	0	0	0	0	0	0	0	0.1000	0.2000	0.0074	0.0131	7.0000	46.0000
+temporal_wide	wide_dev	_s1	EFO_1000356	comp:EFO_1000356	Malignant Mixed Neoplasm	1	2	3	0	0	0	1	0	1	1	1	2	0.1000	0.2000	0.0005	0.0120	9.5000	70.5000
+temporal_wide	wide_dev	_s1	EFO_1000646	comp:EFO_1000646	papillary carcinoma	12	4	19	0	0	0	4	2	6	1	0	1	0.5000	0.8000	0.0209	0.0225	8.0000	68.0000
+temporal_wide	wide_dev	_s1	EFO_1001502	comp:EFO_1001502	rasopathy	3	4	8	0	1	1	1	0	1	1	0	1	0.1000	0.4000	0.0051	0.0238	6.0000	41.5000
+temporal_wide	wide_dev	_s1	MONDO_0000728	comp:MONDO_0000728	ptosis	3	2	5	0	0	0	0	0	0	0	1	1	0.0000	0.2000	0.0021	0.0188	21.0000	59.5000
+temporal_wide	wide_dev	_s1	MONDO_0001519	comp:MONDO_0001519	entropion	2	4	6	0	0	0	0	3	3	0	3	3	0.0000	0.3000	0.0037	0.0235	12.5000	42.5000
+temporal_wide	wide_dev	_s1	MONDO_0001700	comp:MONDO_0001700	megaloblastic anemia	6	3	22	0	0	0	2	3	5	2	3	5	0.2000	0.6000	0.0148	0.0522	6.0000	48.0000
+temporal_wide	wide_dev	_s1	MONDO_0002052	comp:MONDO_0002052	lymphadenitis	2	1	18	0	0	0	0	0	0	0	0	0	0.0000	0.1000	0.0005	0.0570	12.0000	84.5000
+temporal_wide	wide_dev	_s1	MONDO_0002281	comp:MONDO_0001700	macrocytic anemia	6	3	22	0	0	0	2	2	4	2	2	4	0.2000	0.7000	0.0158	0.0548	6.0000	42.0000
+temporal_wide	wide_dev	_s1	MONDO_0002428	comp:EFO_0001067	protozoa infectious disease	6	2	17	0	0	0	0	0	0	0	0	0	0.0000	0.0000	0.0264	0.0586	4.0000	51.0000
+temporal_wide	wide_dev	_s1	MONDO_0002512	comp:EFO_1000646	papillary adenocarcinoma	10	4	17	0	0	0	4	2	6	2	1	3	0.4000	0.7000	0.0147	0.0162	7.0000	67.5000
+temporal_wide	wide_dev	_s1	MONDO_0004928	comp:MONDO_0002052	lymph node disorder	2	5	22	0	0	0	0	0	0	0	0	0	0.0000	0.2000	0.0011	0.0639	13.0000	84.5000
+temporal_wide	wide_dev	_s1	MONDO_0015978	comp:MONDO_0015978	functional neutrophil defect	10	2	15	0	0	0	0	2	2	1	2	3	0.4000	0.6000	0.0178	0.0266	10.0000	31.0000
+temporal_wide	wide_dev	_s1	MONDO_0016112	comp:MONDO_0016112	hereditary inclusion-body myopathy	1	3	4	0	0	0	1	2	3	1	2	3	0.1000	0.4000	0.0006	0.0068	4.0000	25.5000
+temporal_wide	wide_dev	_s1	MONDO_0018134	comp:MONDO_0018134	disorder of melanin metabolism	3	6	9	0	1	1	0	4	4	0	4	4	0.1000	0.6000	0.0011	0.0137	1.5000	24.5000
+temporal_wide	wide_dev	_s1	MONDO_0018174	comp:MONDO_0018174	hereditary glaucoma	3	3	8	0	0	0	1	2	4	2	1	3	0.3000	0.6000	0.0097	0.0154	4.5000	42.0000
+temporal_wide	wide_dev	_s1	MONDO_0018800	comp:MONDO_0018800	Kallmann syndrome	2	4	7	0	0	0	1	3	5	1	3	5	0.1000	0.5000	0.0051	0.0085	4.0000	41.0000
+temporal_wide	wide_dev	_s1	MONDO_0018914	comp:MONDO_0018914	hypotrichosis simplex	1	1	3	0	0	0	1	0	1	1	0	1	0.1000	0.3000	0.0000	0.0000	0.0000	26.5000
+temporal_wide	wide_dev	_s1	MONDO_0018998	comp:MONDO_0018998	Leber congenital amaurosis	2	3	5	0	0	0	0	1	1	0	1	1	0.1000	0.3000	0.0000	0.0011	0.0000	15.5000
+temporal_wide	wide_dev	_s1	MONDO_0019296	comp:MONDO_0019296	subcutaneous tissue disorder	2	3	6	0	0	0	0	0	0	0	0	0	0.0000	0.2000	0.0047	0.0125	10.0000	53.0000
+temporal_wide	wide_dev	_s1	MONDO_0020366	comp:MONDO_0018174	congenital glaucoma	1	1	4	0	0	0	0	1	3	0	0	2	0.1000	0.4000	0.0006	0.0086	5.0000	32.0000
+temporal_wide	wide_dev	_s1	MONDO_0021043	comp:EFO_1000356	mixed neoplasm	1	2	3	0	0	0	1	0	1	1	0	1	0.1000	0.2000	0.0005	0.0141	9.5000	89.5000
+temporal_wide	wide_dev	_s1	MONDO_0021079	comp:MONDO_0021079	childhood neoplasm	2	3	7	0	2	2	1	0	2	1	2	4	0.1000	0.4000	0.0000	0.0167	6.0000	74.5000
+temporal_wide	wide_dev	_s1	MONDO_0021096	comp:EFO_1000646	papillary epithelial neoplasm	12	5	20	0	0	0	3	3	6	1	1	2	0.5000	0.9000	0.0219	0.0230	7.0000	67.5000
+temporal_wide	wide_dev	_s1	MONDO_0021106	comp:MONDO_0021106	laminopathy	3	4	7	0	0	0	0	1	1	0	2	2	0.0000	0.2000	0.0119	0.0266	3.0000	31.5000
+temporal_wide	wide_dev	_s1	MONDO_0024294	comp:MONDO_0024294	skin disorder caused by infection	20	0	36	0	0	0	5	0	6	1	0	1	0.4000	0.7000	0.0510	0.0880	9.0000	73.0000
+temporal_wide	wide_dev	_s1	MONDO_0044992	comp:MONDO_0044992	mouth mucosa disorder	4	3	11	0	0	0	0	0	0	0	0	0	0.0000	0.0000	0.0000	0.0215	11.0000	80.0000
+temporal_wide	wide_dev	_s1	Orphanet_183576	comp:Orphanet_183576	Genetic branchial arch or oral-acral syndrome	1	4	5	0	0	0	1	4	5	1	4	5	0.1000	0.5000	0.0017	0.0085	10.0000	59.5000
+temporal_wide	wide_dev	_s1	Orphanet_2924	comp:Orphanet_2924	Isolated polycystic liver disease	4	2	6	0	0	0	0	2	2	0	2	2	0.2000	0.4000	0.0113	0.0113	6.0000	51.0000
+temporal_wide	wide_dev	_s1	Orphanet_98671	comp:Orphanet_98671	Optic neuropathy	3	7	10	0	0	0	0	2	2	0	2	2	0.0000	0.6000	0.0102	0.0261	10.0000	50.5000
+temporal	confirm	_s0	EFO_1000391	c64	Nasal Cavity Polyp	8	0	12	0	0	0	2	0	4	1	0	3	0.5000	0.8000	0.0042	0.0084	3.0000	62.0000
+temporal	confirm	_s0	EFO_1001494	c13	psoriasis vulgaris	10	2	17	0	0	0	2	1	3	2	1	3	0.5000	1.0000	0.0196	0.0398	7.0000	41.5000
+temporal	confirm	_s0	Orphanet_145	c0	Hereditary breast and ovarian cancer syndrome	2	1	13	0	0	0	0	0	1	0	0	1	0.1000	0.5000	0.0000	0.0167	0.0000	39.5000
+temporal	confirm	_s0	EFO_0003758	c33	autism	5	8	21	0	1	1	0	0	3	0	0	3	0.1000	0.8000	0.0157	0.0673	6.0000	34.5000
+temporal	confirm	_s0	EFO_0009959	c62	diverticular disease	33	10	62	0	0	1	2	2	5	1	1	3	0.3000	1.3000	0.1090	0.2019	6.0000	57.5000
+temporal	confirm	_s0	EFO_0000195	c8	metabolic syndrome	35	34	109	1	0	1	5	25	36	5	10	23	1.3000	5.0000	0.0385	0.1607	6.0000	45.0000
+temporal	confirm	_s0	EFO_0004143	c6	carpal tunnel syndrome	7	1	19	0	0	0	3	0	3	1	0	2	0.5000	0.8000	0.0189	0.0889	10.5000	47.5000
+temporal	confirm	_s0	Orphanet_1872	c1	Cone rod dystrophy	2	3	12	0	0	0	1	2	5	1	2	5	0.1000	0.7000	0.0091	0.0324	4.0000	17.0000
+temporal	confirm	_s0	EFO_0003898	c13	ankylosing spondylitis	6	8	34	0	1	1	0	1	1	0	1	1	0.0000	0.3000	0.0173	0.0866	2.5000	33.0000
+temporal	confirm	_s0	EFO_0001063	c3	deafness	6	14	25	0	0	1	2	5	11	2	5	11	0.4000	1.8000	0.0105	0.0619	4.5000	32.5000
+temporal	confirm	_s0	EFO_0004698	c11	insomnia	72	0	138	1	0	1	9	0	19	6	0	15	3.2000	6.5000	0.2876	0.5378	8.0000	59.5000
+temporal	confirm	_s0	EFO_0004274	c57	gout	98	2	172	1	0	2	14	1	25	12	1	24	3.8000	6.2000	0.2540	0.4507	7.0000	55.0000
+temporal	confirm	_s0	EFO_0000401	c7	diabetic nephropathy	18	2	34	0	0	0	5	0	7	3	0	4	1.0000	1.5000	0.0133	0.0479	5.5000	44.0000
+temporal	confirm	_s0	EFO_0003948	c0	gastroesophageal reflux disease	15	1	37	0	0	0	3	0	8	1	0	6	0.6000	1.3000	0.0450	0.1201	6.0000	63.0000
+temporal	confirm	_s0	EFO_0004214	c26	Abdominal Aortic Aneurysm	24	4	42	0	0	0	3	1	4	4	1	5	0.7000	1.3000	0.0749	0.1450	7.5000	68.5000
+temporal	confirm	_s0	EFO_0003888	c11	attention deficit hyperactivity disorder	23	11	136	0	0	0	4	6	23	1	1	10	1.0000	5.0000	0.0607	0.3913	7.0000	53.0000
+temporal	confirm	_s0	EFO_0004253	c16	nephrolithiasis	24	1	41	0	0	0	2	0	6	1	0	6	0.6000	1.4000	0.0201	0.0401	0.0000	20.0000
+temporal	confirm	_s0	MONDO_0005090	c71	schizophrenia	18	38	91	0	0	1	1	10	14	0	2	5	0.4000	2.4000	0.0208	0.2448	7.0000	42.5000
+temporal	confirm	_s0	MONDO_0018097	c10	West syndrome	6	3	13	0	0	1	2	1	4	2	1	5	0.5000	0.8000	0.0220	0.0592	11.5000	41.0000
+temporal	confirm	_s0	MONDO_0019625	c85	familial thoracic aortic aneurysm and aortic dissection	5	6	11	0	0	0	5	4	9	4	4	8	0.5000	0.9000	0.0000	0.0017	3.0000	39.5000
+temporal	confirm	_s0	MONDO_0016660	c1	autosomal recessive primary microcephaly	1	11	13	0	0	0	0	3	3	0	0	0	0.0000	0.6000	0.0000	0.0355	0.0000	23.0000
+temporal	confirm	_s0	MONDO_0009723	c4	Leigh syndrome	3	13	21	0	0	0	0	5	6	0	6	7	0.0000	1.2000	0.0166	0.0338	0.0000	20.5000
+temporal	confirm	_s0	MONDO_0023113	c4	familial colorectal cancer	3	8	12	0	0	0	0	2	3	0	2	3	0.2000	1.1000	0.0069	0.0103	0.0000	48.0000
+temporal	confirm	_s0	EFO_0001065	c0	endometriosis	15	1	34	0	0	0	1	0	3	1	0	3	0.6000	1.3000	0.0579	0.1357	17.5000	87.0000
+temporal	confirm	_s0	EFO_0004273	c56	scoliosis	4	5	24	0	0	0	0	0	1	0	0	1	0.1000	0.3000	0.0139	0.1041	14.0000	54.0000
+temporal	confirm	_s0	EFO_0003882	c19	osteoporosis	4	2	17	0	0	1	3	0	8	1	0	8	0.4000	1.6000	0.0046	0.0418	5.5000	34.5000
+temporal	confirm	_s0	EFO_0000612	c8	myocardial infarction	12	7	63	0	0	0	1	0	11	0	0	10	0.0000	1.6000	0.0306	0.1444	4.0000	63.0000
+temporal	confirm	_s0	EFO_0000275	c45	atrial fibrillation	75	9	144	2	0	3	6	1	10	6	2	11	2.0000	3.7000	0.2183	0.4468	7.0000	23.5000
+temporal	confirm	_s0	MONDO_0043839	c23	ulcer disease	25	8	80	1	0	1	0	3	5	0	0	1	0.3000	0.7000	0.0548	0.2111	4.0000	56.5000
+temporal	confirm	_s0	EFO_0000389	c22	cutaneous melanoma	10	19	59	0	0	0	3	3	12	1	2	9	0.5000	2.6000	0.0427	0.2179	15.0000	63.5000
+temporal	confirm	_s0	MONDO_0024352	c9	viral respiratory tract infection	4	7	18	0	0	0	0	3	3	0	0	1	0.0000	0.1000	0.0122	0.0625	10.5000	63.0000
+temporal	confirm	_s0	MONDO_0037748	c8	hyperlipoproteinemia	19	4	41	1	0	1	13	3	21	13	3	21	1.4000	2.5000	0.0279	0.0652	5.0000	37.5000
+temporal	confirm	_s0	EFO_0000384	c13	Crohn's disease	19	2	33	0	0	1	4	0	7	3	0	6	0.6000	1.2000	0.0589	0.1010	6.0000	33.5000
+temporal	confirm	_s0	EFO_0003890	c11	drug dependence	9	1	18	0	0	0	2	0	4	2	0	3	0.4000	0.8000	0.0153	0.0386	4.0000	60.5000
+temporal	confirm	_s0	EFO_0003875	c8	peripheral vascular disease	7	2	16	0	0	0	1	1	3	0	1	1	0.2000	0.3000	0.0229	0.0490	7.5000	56.5000
+temporal	confirm	_s0	EFO_1001512	c0	endometrial carcinoma	9	8	18	0	0	0	2	4	6	3	5	8	0.8000	1.6000	0.0429	0.0895	16.5000	64.5000
+temporal	confirm	_s0	EFO_0004128	c5	hereditary nephritis	6	4	15	0	1	1	1	4	5	0	4	5	0.1000	0.7000	0.0092	0.0212	5.0000	44.0000
+temporal	confirm	_s0	EFO_0004251	c2	myeloproliferative disorder	2	13	21	0	0	0	0	4	5	0	7	8	0.0000	1.0000	0.0029	0.0332	5.0000	48.0000
+temporal	confirm	_s0	EFO_0005708	c0	renal cell adenocarcinoma	21	3	37	0	0	0	6	1	8	5	1	6	0.7000	1.3000	0.0543	0.0754	8.0000	61.5000
+temporal	confirm	_s0	EFO_0001365	c1	age-related macular degeneration	12	8	30	0	0	0	2	2	5	2	3	6	0.7000	1.5000	0.0190	0.0635	2.5000	17.0000
+temporal	confirm	_s0	EFO_0001663	c0	prostate carcinoma	62	10	155	0	0	1	3	1	5	3	0	3	1.0000	2.2000	0.2670	0.5975	18.5000	74.5000
+temporal	confirm	_s0	MONDO_0013099	c1	combined pituitary hormone deficiencies, genetic form	3	7	10	0	0	0	1	3	4	1	3	4	0.1000	0.6000	0.0017	0.0102	6.0000	42.5000
+temporal	confirm	_s0	MONDO_0002185	c19	hyperostosis	12	4	67	0	0	0	0	0	0	0	0	0	0.1000	0.7000	0.0087	0.2484	9.0000	37.0000
+temporal	confirm	_s0	EFO_0005804	c2	polycythemia	5	4	16	0	0	0	0	2	3	0	2	3	0.3000	0.8000	0.0000	0.0137	3.0000	59.0000
+temporal	confirm	_s0	MONDO_0018612	c20	congenital hypothyroidism	2	8	13	1	0	2	2	6	10	1	6	9	0.2000	1.2000	0.0021	0.0221	4.5000	46.5000
+temporal	confirm	_s0	EFO_0000536	c30	hyperplasia	15	0	30	0	0	0	2	0	5	0	0	2	0.5000	1.1000	0.0629	0.1152	17.0000	84.0000
+temporal	confirm	_s0	MONDO_0000358	c40	orofacial cleft	1	16	21	0	0	0	0	8	10	0	9	11	0.0000	1.4000	0.0028	0.0722	7.0000	42.5000
+temporal	confirm	_s0	MONDO_0016575	c5	primary ciliary dyskinesia	4	12	24	0	1	1	0	3	5	0	4	6	0.0000	1.0000	0.0000	0.0555	0.0000	11.5000
+temporal	confirm	_s0	MONDO_0043878	c7	hereditary optic atrophy	3	8	11	0	0	0	0	1	1	0	1	1	0.1000	0.2000	0.0034	0.0187	0.0000	36.0000
+temporal	confirm	_s0	MONDO_0100137	c14	telomere syndrome	2	12	22	0	0	0	0	3	5	0	3	4	0.0000	1.0000	0.0000	0.0598	11.0000	42.0000
+temporal	confirm	_s0	MONDO_0002462	c5	glomerulonephritis	20	4	82	0	0	0	0	1	1	0	0	0	0.2000	0.2000	0.0418	0.1924	3.5000	22.0000
+temporal	confirm	_s0	MONDO_0019200	c1	retinitis pigmentosa	4	12	25	0	0	0	0	4	4	0	3	4	0.1000	1.4000	0.0035	0.0490	0.0000	25.5000
+temporal	confirm	_s0	MONDO_0019313	c4	lymphatic malformation	1	10	13	0	1	1	1	6	8	1	6	8	0.1000	1.1000	0.0017	0.0321	5.5000	48.0000
+temporal	confirm	_s0	MONDO_0003406	c11	sleep-wake disorder	32	5	67	0	0	0	3	1	8	2	0	3	0.8000	1.3000	0.0668	0.1179	3.0000	55.5000
+temporal	confirm	_s0	EFO_0008615	c5	cystic kidney disease	5	15	29	0	0	0	0	8	8	0	7	7	0.0000	1.4000	0.0157	0.0865	8.0000	77.5000
+temporal	confirm	_s0	EFO_1001511	c12	monogenic diabetes	1	10	15	0	0	1	0	3	5	0	3	5	0.0000	0.9000	0.0082	0.0503	2.0000	17.5000
+temporal	confirm	_s0	MONDO_0015185	c0	intestinal polyposis syndrome	3	9	12	0	1	1	1	5	6	1	5	6	0.2000	0.8000	0.0011	0.0125	2.0000	41.0000
+temporal	confirm	_s0	MONDO_0042973	c19	familial osteosclerosis	1	9	11	0	0	0	0	6	7	0	6	7	0.0000	0.8000	0.0062	0.0301	5.0000	26.0000
+temporal	confirm	_s0	MONDO_0001926	c16	ureteral disorder	6	5	24	0	0	0	1	0	4	2	0	4	0.2000	0.8000	0.0131	0.0681	12.0000	70.5000
+temporal	confirm	_s0	EFO_0001075	c0	ovarian carcinoma	6	6	16	0	0	0	0	4	4	0	4	4	0.1000	0.5000	0.0185	0.0470	12.0000	75.5000
+temporal	confirm	_s0	Orphanet_183628	c1	Rare genetic hypothalamic or pituitary disease	3	10	14	0	0	0	0	5	5	0	5	5	0.0000	1.0000	0.0023	0.0193	8.0000	36.5000
+temporal	confirm	_s0	MONDO_0016624	c12	inherited deficiency anemia	2	8	12	0	0	0	0	7	8	0	7	8	0.1000	0.9000	0.0074	0.0415	4.0000	33.5000
+temporal	confirm	_s0	MONDO_0020248	c7	vitreoretinal degeneration	2	10	17	0	0	1	1	4	7	1	4	7	0.2000	1.1000	0.0017	0.0404	8.5000	27.0000
+temporal	confirm	_s0	MONDO_0015929	c5	thoracic malformation	2	10	12	0	0	0	0	1	1	1	2	3	0.1000	0.5000	0.0084	0.0542	15.0000	76.5000
+temporal	confirm	_s0	MONDO_0002311	c7	retinal vascular disorder	39	14	69	0	0	1	5	7	12	0	6	6	1.0000	2.2000	0.0454	0.0775	6.5000	58.5000
+temporal	confirm	_s0	EFO_0009455	c1	lacrimal apparatus disease	3	4	20	0	0	0	0	0	0	0	0	0	0.0000	0.1000	0.0079	0.0551	8.0000	68.5000
+temporal	confirm	_s0	MONDO_0002108	c0	thyroid cancer	8	3	17	0	0	0	2	2	4	2	1	3	0.3000	0.5000	0.0143	0.0404	9.5000	69.5000
+temporal	confirm	_s0	MONDO_0020249	c7	hereditary optic neuropathy	3	11	16	0	0	0	1	3	4	1	3	4	0.1000	0.8000	0.0052	0.0297	0.0000	47.5000
+temporal	confirm	_s0	MONDO_0002078	c21	heart septal defect	6	7	23	0	0	1	0	4	5	0	3	4	0.3000	1.1000	0.0352	0.0865	12.5000	39.5000
+temporal	confirm	_s0	MONDO_0001475	c2	neutropenia	2	11	17	0	0	0	0	6	6	0	6	6	0.0000	0.8000	0.0042	0.0597	12.0000	34.0000
+temporal	confirm	_s0	MONDO_0015168	c3	arthrogryposis multiplex congenita	1	22	27	0	0	0	1	13	17	1	13	17	0.1000	2.1000	0.0000	0.0758	8.0000	22.5000
+temporal	confirm	_s0	MONDO_0003832	c6	complement deficiency	5	9	17	0	0	0	1	8	10	1	8	10	0.4000	1.4000	0.0028	0.0358	3.5000	16.5000
+temporal	confirm	_s0	MONDO_0000577	c2	congenital anemia	2	9	11	0	0	0	0	0	0	0	0	0	0.1000	0.6000	0.0094	0.0459	9.0000	51.0000
+temporal	confirm	_s0	Orphanet_207015	c6	Rare hereditary disease with peripheral neuropathy	4	6	13	0	0	0	1	0	1	1	0	1	0.2000	0.4000	0.0113	0.0386	3.0000	27.0000
+temporal	confirm	_s0	Orphanet_108987	c1	Syndromic developmental defect of the eye	5	6	13	0	0	0	1	4	5	0	3	3	0.3000	0.8000	0.0096	0.0136	9.5000	45.5000
+temporal	confirm	_s0	MONDO_0015905	c8	syndromic dyslipidemia	17	7	42	0	0	0	7	1	9	5	2	9	1.0000	2.3000	0.0205	0.0399	3.0000	27.5000
+temporal	confirm	_s0	MONDO_0019587	c3	autosomal dominant nonsyndromic hearing loss	2	12	25	0	1	1	0	4	13	0	3	12	0.0000	1.5000	0.0011	0.0410	4.5000	31.0000
+temporal	confirm	_s0	MONDO_0001056	c0	gastric cancer	27	6	34	1	0	1	13	2	16	15	2	18	2.3000	2.7000	0.0305	0.0421	7.0000	79.0000
+temporal	confirm	_s0	EFO_1001990	c4	ocular motility disease	11	6	27	0	0	0	6	1	8	6	1	8	0.6000	1.2000	0.0320	0.0845	8.0000	51.0000
+temporal	confirm	_s0	EFO_0005569	c1	microphthalmia	2	15	21	0	0	0	0	8	9	0	8	9	0.1000	1.4000	0.0125	0.0667	9.0000	61.0000
+temporal	confirm	_s0	MONDO_0020073	c10	adolescent-onset epilepsy syndrome	1	28	35	0	0	0	0	20	25	0	18	23	0.0000	3.2000	0.0000	0.0581	8.0000	40.0000
+temporal	confirm	_s0	MONDO_0005129	c6	cataract	14	12	63	1	0	3	2	2	6	0	1	2	0.2000	1.4000	0.0232	0.1316	4.0000	44.0000
+temporal	confirm	_s0	Orphanet_269564	c1	Genetic syndrome with a central nervous system malformation as major feature	3	9	14	0	0	0	1	3	4	1	2	3	0.2000	0.8000	0.0085	0.0498	11.5000	48.0000
+temporal	confirm	_s0	MONDO_0003689	c2	familial hemolytic anemia	2	9	29	0	0	0	0	6	7	0	6	7	0.1000	1.1000	0.0046	0.0600	0.0000	19.0000
+temporal	confirm	_s0	MONDO_0020242	c1	hereditary macular dystrophy	2	19	32	0	0	0	0	11	16	0	11	17	0.1000	2.5000	0.0057	0.0821	4.0000	18.0000
+temporal	confirm	_s0	MONDO_0100241	c17	inherited thrombocytopenia	11	19	36	0	0	0	3	12	17	3	13	17	0.4000	2.3000	0.0153	0.0750	5.5000	18.5000
+temporal	confirm	_s0	EFO_0009551	c26	heart valve disease	17	8	46	0	0	0	2	5	7	0	3	3	0.5000	1.8000	0.0419	0.1009	6.0000	53.5000
+temporal	confirm	_s0	MONDO_0021002	c3	syndactyly	2	12	18	0	0	0	0	8	8	0	9	9	0.1000	1.2000	0.0006	0.0198	5.0000	46.5000
+temporal	confirm	_s0	MONDO_0019852	c1	inherited primary ovarian failure	5	20	29	0	2	2	1	8	10	1	8	10	0.3000	1.5000	0.0074	0.0709	4.0000	40.5000
+temporal	confirm	_s0	MONDO_0020592	c87	disorder of pharynx	14	1	43	0	0	0	1	0	2	2	0	3	0.5000	0.9000	0.0467	0.1413	9.0000	48.5000
+temporal	confirm	_s0	EFO_0009682	c10	pregnancy disorder	23	18	60	0	0	0	5	2	9	3	1	6	0.7000	2.0000	0.0574	0.1516	11.5000	77.0000
+temporal	confirm	_s0	Orphanet_98560	c1	Rare palpebral disease	1	6	16	0	0	0	0	3	5	0	1	3	0.0000	0.7000	0.0034	0.0471	5.5000	35.5000
+temporal	confirm	_s0	MONDO_0017754	c13	inborn disorder of porphyrin metabolism	3	13	16	0	0	0	0	5	5	0	5	5	0.0000	0.7000	0.0000	0.0228	0.0000	20.5000
+temporal	confirm	_s0	EFO_0008525	c6	spinal muscular atrophy	3	8	15	0	0	0	0	3	5	0	3	5	0.0000	0.6000	0.0068	0.0267	4.5000	22.5000
+temporal	confirm	_s0	EFO_0005754	c59	parathyroid disease	5	5	19	0	0	0	0	4	4	0	3	3	0.0000	0.7000	0.0116	0.0384	8.5000	32.0000
+temporal	confirm	_s0	EFO_0008499	c2	DNA repair deficiency	3	10	14	0	0	0	1	4	5	1	4	5	0.1000	1.0000	0.0063	0.0125	0.0000	37.5000
+temporal	confirm	_s0	MONDO_0019713	c3	non-syndromic limb reduction defect	3	8	12	0	0	0	0	6	7	0	7	8	0.0000	0.9000	0.0108	0.0210	8.5000	54.5000
+temporal	confirm	_s0	EFO_1001951	c0	colorectal carcinoma	7	2	19	0	0	1	1	0	5	1	0	5	0.5000	1.2000	0.0016	0.0375	4.0000	53.5000
+temporal	confirm	_s0	MONDO_0056803	c12	sulfur metabolism disease	3	12	18	0	0	0	0	10	10	0	10	10	0.0000	1.2000	0.0110	0.0680	7.0000	22.0000
+temporal	confirm	_s0	MONDO_0021003	c3	polydactyly	2	10	18	0	0	0	0	4	5	1	4	6	0.2000	1.1000	0.0011	0.0347	5.5000	51.5000
+temporal	confirm	_s0	MONDO_0021205	c3	disorder of ear	22	17	70	0	1	1	0	6	6	0	4	4	0.0000	1.7000	0.0709	0.2094	9.0000	30.0000
+temporal	confirm	_s0	EFO_0004288	c0	colonic neoplasm	18	12	51	1	0	5	0	5	8	0	6	10	1.1000	3.6000	0.0303	0.0992	7.5000	74.5000
+temporal	confirm	_s0	MONDO_0024635	c23	small intestine disorder	22	22	89	0	1	1	1	4	5	0	4	4	0.4000	1.4000	0.0710	0.2863	9.0000	44.5000
+temporal	confirm	_s0	EFO_1001216	c38	tooth disease	17	13	67	0	0	1	0	2	3	0	2	3	0.3000	1.2000	0.0551	0.1385	4.0000	41.5000
+temporal	confirm	_s0	MONDO_0002691	c0	liver cancer	4	8	17	0	1	1	0	5	5	0	5	5	0.0000	0.8000	0.0000	0.0227	10.0000	87.0000
+temporal	confirm	_s0	EFO_0000222	c2	acute myeloid leukemia	1	11	14	0	0	0	0	4	5	1	2	3	0.1000	0.7000	0.0050	0.0659	13.5000	56.0000
+temporal	confirm	_s0	MONDO_0017757	c12	disorder of metabolite absorption and transport	3	14	28	0	0	1	0	7	13	0	7	14	0.2000	2.0000	0.0074	0.0696	3.0000	21.5000
+temporal	confirm	_s0	EFO_1001456	c9	central nervous system infection	6	1	31	0	0	0	1	0	1	1	1	2	0.3000	0.6000	0.0122	0.1023	8.0000	67.5000
+temporal	confirm	_s0	MONDO_0002887	c13	bile duct disorder	7	26	48	0	1	1	0	1	2	0	2	2	0.2000	1.2000	0.0119	0.0953	7.0000	36.0000
+temporal	confirm	_s0	MONDO_0000652	c0	integumentary system benign neoplasm	14	8	34	1	0	1	2	3	7	1	2	3	0.6000	1.4000	0.0296	0.0619	11.0000	80.0000
+temporal	confirm	_s0	MONDO_0015160	c4	multiple congenital anomalies/dysmorphic syndrome-variable intellectual disability syndrome	7	31	41	0	1	1	1	2	3	0	2	2	0.3000	2.2000	0.0413	0.2806	21.5000	84.5000
+temporal	confirm	_s0	Orphanet_404571	c3	Dysostosis of genetic origin with limb anomaly as a major feature	1	9	11	0	0	0	0	5	6	0	4	5	0.1000	1.0000	0.0017	0.0250	6.5000	41.0000
+temporal	confirm	_s0	Orphanet_98056	c5	Rare genetic renal disease	1	25	33	0	0	0	0	9	9	0	10	10	0.0000	1.5000	0.0051	0.0854	5.5000	28.0000
+temporal	confirm	_s0	EFO_1000774	c9	vesiculobullous skin disease	10	5	30	0	0	0	1	4	6	0	4	4	0.1000	0.7000	0.0144	0.0626	5.0000	27.0000
+temporal	confirm	_s0	EFO_1001901	c22	neuroendocrine neoplasm	3	4	23	0	0	0	0	1	1	0	1	1	0.0000	0.3000	0.0053	0.0415	4.0000	69.5000
+temporal	confirm	_s0	MONDO_0016139	c15	qualitative or quantitative protein defects in neuromuscular diseases	4	9	17	0	0	1	1	7	10	1	7	10	0.1000	1.1000	0.0057	0.0167	4.0000	28.0000
+temporal	confirm	_s0	MONDO_0000314	c9	primary bacterial infectious disease	1	1	14	0	0	0	0	0	4	0	0	4	0.0000	0.7000	0.0037	0.0279	7.0000	50.0000
+temporal	confirm	_s0	MONDO_0015286	c15	congenital disorder of glycosylation	4	24	33	0	1	1	0	12	14	0	12	14	0.1000	2.0000	0.0046	0.0382	0.0000	21.0000
+temporal	confirm	_s0	Orphanet_183500	c7	Genetic neurodegenerative disease	5	16	25	0	1	1	0	1	1	0	1	1	0.0000	0.7000	0.0165	0.0809	4.0000	28.0000
+temporal	confirm	_s0	MONDO_0019287	c82	ectodermal dysplasia syndrome	5	19	32	0	0	0	1	4	5	1	5	6	0.1000	1.4000	0.0160	0.0798	4.0000	14.0000
+temporal	confirm	_s0	MONDO_0020119	c24	X-linked syndromic intellectual disability	5	7	20	0	1	1	2	1	4	2	1	4	0.4000	1.0000	0.0245	0.0639	9.0000	21.5000
+temporal	confirm	_s0	MONDO_0020049	c41	autosomal anomaly	11	16	33	0	0	0	3	7	11	3	7	11	0.5000	1.6000	0.0215	0.0724	6.0000	41.5000
+temporal	confirm	_s1	EFO_1000391	c64	Nasal Cavity Polyp	8	0	12	0	0	0	2	0	4	1	0	3	0.4000	0.8000	0.0105	0.0169	4.0000	62.0000
+temporal	confirm	_s1	EFO_1001494	c13	psoriasis vulgaris	10	2	17	0	0	0	2	1	3	2	1	3	0.5000	1.0000	0.0190	0.0363	4.0000	41.0000
+temporal	confirm	_s1	Orphanet_145	c0	Hereditary breast and ovarian cancer syndrome	2	1	13	0	0	0	0	0	1	0	0	1	0.1000	0.6000	0.0000	0.0138	0.0000	41.0000
+temporal	confirm	_s1	EFO_0003758	c33	autism	5	8	21	0	1	1	0	0	3	0	0	3	0.1000	0.9000	0.0163	0.0722	5.0000	33.0000
+temporal	confirm	_s1	EFO_0009959	c62	diverticular disease	33	10	62	0	0	1	2	2	5	1	1	4	0.3000	1.3000	0.1175	0.2211	8.0000	75.5000
+temporal	confirm	_s1	EFO_0000195	c8	metabolic syndrome	35	34	109	1	0	1	4	24	33	5	9	22	1.3000	4.9000	0.0423	0.1710	4.0000	48.5000
+temporal	confirm	_s1	EFO_0004143	c6	carpal tunnel syndrome	7	1	19	0	0	0	3	0	4	1	0	1	0.5000	0.8000	0.0195	0.0763	8.5000	56.5000
+temporal	confirm	_s1	Orphanet_1872	c1	Cone rod dystrophy	2	3	12	0	0	0	1	2	6	1	2	5	0.1000	0.8000	0.0085	0.0273	3.0000	18.5000
+temporal	confirm	_s1	EFO_0003898	c13	ankylosing spondylitis	6	8	34	0	1	1	0	1	1	0	1	1	0.0000	0.3000	0.0129	0.0749	0.0000	31.5000
+temporal	confirm	_s1	EFO_0001063	c3	deafness	6	14	25	0	1	1	2	5	11	2	4	10	0.4000	1.8000	0.0136	0.0640	6.5000	31.5000
+temporal	confirm	_s1	EFO_0004698	c11	insomnia	72	0	138	0	0	0	10	0	17	6	0	15	3.1000	6.3000	0.2557	0.4768	9.0000	48.5000
+temporal	confirm	_s1	EFO_0004274	c57	gout	98	2	172	1	0	2	16	1	28	12	1	22	3.6000	5.9000	0.2700	0.4727	7.5000	55.0000
+temporal	confirm	_s1	EFO_0000401	c7	diabetic nephropathy	18	2	34	0	0	0	6	0	8	3	0	4	1.2000	1.7000	0.0181	0.0479	4.0000	46.0000
+temporal	confirm	_s1	EFO_0003948	c0	gastroesophageal reflux disease	15	1	37	0	0	0	3	0	9	0	0	4	0.6000	1.4000	0.0450	0.1189	6.0000	63.0000
+temporal	confirm	_s1	EFO_0004214	c26	Abdominal Aortic Aneurysm	24	4	42	0	0	0	3	1	4	3	1	4	0.7000	1.4000	0.0813	0.1503	6.0000	74.0000
+temporal	confirm	_s1	EFO_0003888	c11	attention deficit hyperactivity disorder	23	11	136	0	0	0	4	6	23	2	2	11	0.9000	4.6000	0.0485	0.2971	5.0000	47.0000
+temporal	confirm	_s1	EFO_0004253	c16	nephrolithiasis	24	1	41	0	0	0	4	0	9	1	0	6	0.6000	1.4000	0.0216	0.0480	0.0000	20.5000
+temporal	confirm	_s1	MONDO_0005090	c71	schizophrenia	18	38	91	0	0	0	1	7	10	0	2	5	0.4000	2.6000	0.0231	0.2558	7.0000	40.5000
+temporal	confirm	_s1	MONDO_0018097	c10	West syndrome	6	3	13	0	0	1	2	1	4	2	1	5	0.5000	0.8000	0.0267	0.0670	9.5000	38.0000
+temporal	confirm	_s1	MONDO_0019625	c85	familial thoracic aortic aneurysm and aortic dissection	5	6	11	0	0	0	5	4	9	5	4	9	0.5000	0.9000	0.0000	0.0023	3.5000	37.5000
+temporal	confirm	_s1	MONDO_0016660	c1	autosomal recessive primary microcephaly	1	11	13	0	0	0	0	4	4	0	0	0	0.0000	0.6000	0.0000	0.0275	0.0000	28.5000
+temporal	confirm	_s1	MONDO_0009723	c4	Leigh syndrome	3	13	21	0	0	0	0	6	7	0	7	8	0.0000	1.2000	0.0166	0.0344	0.0000	20.0000
+temporal	confirm	_s1	MONDO_0023113	c4	familial colorectal cancer	3	8	12	0	0	0	0	2	3	0	2	3	0.1000	0.9000	0.0063	0.0103	0.0000	47.0000
+temporal	confirm	_s1	EFO_0001065	c0	endometriosis	15	1	34	0	0	0	0	0	2	1	0	3	0.5000	1.2000	0.0800	0.1784	15.5000	87.0000
+temporal	confirm	_s1	EFO_0004273	c56	scoliosis	4	5	24	0	0	0	0	0	1	0	0	1	0.1000	0.4000	0.0116	0.0890	10.5000	55.0000
+temporal	confirm	_s1	EFO_0003882	c19	osteoporosis	4	2	17	0	0	2	2	0	8	1	0	8	0.4000	1.6000	0.0046	0.0401	4.5000	34.5000
+temporal	confirm	_s1	EFO_0000612	c8	myocardial infarction	12	7	63	0	0	0	1	0	11	0	0	10	0.0000	1.6000	0.0327	0.1508	6.5000	64.0000
+temporal	confirm	_s1	EFO_0000275	c45	atrial fibrillation	75	9	144	3	0	4	7	2	12	5	2	11	2.1000	4.0000	0.2262	0.4558	7.5000	25.5000
+temporal	confirm	_s1	MONDO_0043839	c23	ulcer disease	25	8	80	0	0	0	0	3	4	0	0	0	0.3000	0.7000	0.0521	0.2205	6.0000	51.5000
+temporal	confirm	_s1	EFO_0000389	c22	cutaneous melanoma	10	19	59	0	0	0	2	3	10	1	2	9	0.5000	2.5000	0.0294	0.1693	7.5000	74.5000
+temporal	confirm	_s1	MONDO_0024352	c9	viral respiratory tract infection	4	7	18	0	0	0	0	3	3	0	0	1	0.0000	0.1000	0.0164	0.0614	9.5000	58.0000
+temporal	confirm	_s1	MONDO_0037748	c8	hyperlipoproteinemia	19	4	41	2	0	2	13	3	21	13	3	21	1.6000	2.7000	0.0284	0.0637	4.0000	39.0000
+temporal	confirm	_s1	EFO_0000384	c13	Crohn's disease	19	2	33	0	0	1	3	0	6	2	0	5	0.6000	1.2000	0.0517	0.0913	5.0000	32.5000
+temporal	confirm	_s1	EFO_0003890	c11	drug dependence	9	1	18	0	0	0	2	0	3	2	0	4	0.4000	0.7000	0.0174	0.0396	4.5000	56.5000
+temporal	confirm	_s1	EFO_0003875	c8	peripheral vascular disease	7	2	16	0	0	0	1	1	3	1	1	2	0.2000	0.3000	0.0223	0.0447	6.5000	47.0000
+temporal	confirm	_s1	EFO_1001512	c0	endometrial carcinoma	9	8	18	0	0	0	3	4	7	3	4	7	0.8000	1.6000	0.0382	0.0795	16.0000	65.5000
+temporal	confirm	_s1	EFO_0004128	c5	hereditary nephritis	6	4	15	0	1	1	0	4	4	0	4	6	0.1000	0.7000	0.0109	0.0269	5.0000	49.5000
+temporal	confirm	_s1	EFO_0004251	c2	myeloproliferative disorder	2	13	21	0	0	0	0	4	5	0	7	8	0.0000	1.0000	0.0034	0.0344	5.0000	48.5000
+temporal	confirm	_s1	EFO_0005708	c0	renal cell adenocarcinoma	21	3	37	0	0	0	6	1	7	5	1	6	0.7000	1.2000	0.0548	0.0807	9.0000	61.5000
+temporal	confirm	_s1	EFO_0001365	c1	age-related macular degeneration	12	8	30	0	0	0	2	2	7	2	2	7	0.7000	1.4000	0.0121	0.0519	1.5000	16.5000
+temporal	confirm	_s1	EFO_0001663	c0	prostate carcinoma	62	10	155	1	0	2	3	0	4	3	0	4	1.1000	2.2000	0.2754	0.6131	16.0000	74.5000
+temporal	confirm	_s1	MONDO_0013099	c1	combined pituitary hormone deficiencies, genetic form	3	7	10	0	0	0	1	3	4	1	3	4	0.1000	0.5000	0.0017	0.0119	5.5000	41.0000
+temporal	confirm	_s1	MONDO_0002185	c19	hyperostosis	12	4	67	0	1	1	0	0	0	0	0	0	0.0000	0.6000	0.0054	0.2478	11.5000	37.0000
+temporal	confirm	_s1	EFO_0005804	c2	polycythemia	5	4	16	0	0	0	0	2	3	1	2	4	0.2000	0.7000	0.0000	0.0116	3.0000	59.0000
+temporal	confirm	_s1	MONDO_0018612	c20	congenital hypothyroidism	2	8	13	1	0	2	2	6	10	2	6	10	0.2000	1.2000	0.0021	0.0216	4.5000	53.0000
+temporal	confirm	_s1	EFO_0000536	c30	hyperplasia	15	0	30	0	0	0	0	0	2	2	0	5	0.5000	1.1000	0.0639	0.1189	16.0000	80.5000
+temporal	confirm	_s1	MONDO_0000358	c40	orofacial cleft	1	16	21	0	1	1	0	8	10	0	9	11	0.0000	1.4000	0.0034	0.0836	11.0000	39.0000
+temporal	confirm	_s1	MONDO_0016575	c5	primary ciliary dyskinesia	4	12	24	0	1	1	0	4	6	0	4	6	0.0000	0.9000	0.0000	0.0520	0.0000	6.0000
+temporal	confirm	_s1	MONDO_0043878	c7	hereditary optic atrophy	3	8	11	0	0	0	0	1	1	0	1	1	0.0000	0.1000	0.0028	0.0216	0.0000	36.5000
+temporal	confirm	_s1	MONDO_0100137	c14	telomere syndrome	2	12	22	0	1	1	0	2	3	0	3	4	0.0000	1.0000	0.0000	0.0604	11.5000	43.0000
+temporal	confirm	_s1	MONDO_0002462	c5	glomerulonephritis	20	4	82	0	0	0	0	1	1	0	0	0	0.3000	0.5000	0.0440	0.1853	3.0000	20.0000
+temporal	confirm	_s1	MONDO_0019200	c1	retinitis pigmentosa	4	12	25	0	0	0	0	3	4	0	3	4	0.1000	1.4000	0.0052	0.0478	0.0000	28.5000
+temporal	confirm	_s1	MONDO_0019313	c4	lymphatic malformation	1	10	13	0	1	1	1	6	8	1	6	8	0.1000	1.0000	0.0006	0.0230	4.0000	45.5000
+temporal	confirm	_s1	MONDO_0003406	c11	sleep-wake disorder	32	5	67	0	0	0	3	1	8	2	0	3	0.7000	1.5000	0.0668	0.1233	3.0000	68.0000
+temporal	confirm	_s1	EFO_0008615	c5	cystic kidney disease	5	15	29	0	0	0	0	8	8	0	7	7	0.0000	1.4000	0.0152	0.0855	10.0000	68.0000
+temporal	confirm	_s1	EFO_1001511	c12	monogenic diabetes	1	10	15	0	0	1	0	3	5	0	3	5	0.0000	0.8000	0.0064	0.0462	0.5000	18.5000
+temporal	confirm	_s1	MONDO_0015185	c0	intestinal polyposis syndrome	3	9	12	0	1	1	1	5	6	1	5	6	0.2000	0.8000	0.0000	0.0125	0.0000	42.5000
+temporal	confirm	_s1	MONDO_0042973	c19	familial osteosclerosis	1	9	11	0	0	0	0	6	7	0	6	7	0.0000	0.8000	0.0097	0.0341	7.0000	25.0000
+temporal	confirm	_s1	MONDO_0001926	c16	ureteral disorder	6	5	24	0	0	0	2	0	5	2	0	4	0.2000	0.8000	0.0100	0.0545	10.5000	72.0000
+temporal	confirm	_s1	EFO_0001075	c0	ovarian carcinoma	6	6	16	0	0	0	0	4	4	0	4	4	0.2000	0.6000	0.0180	0.0544	12.0000	75.5000
+temporal	confirm	_s1	Orphanet_183628	c1	Rare genetic hypothalamic or pituitary disease	3	10	14	0	0	0	0	5	5	0	5	5	0.0000	1.0000	0.0017	0.0193	8.0000	34.0000
+temporal	confirm	_s1	MONDO_0016624	c12	inherited deficiency anemia	2	8	12	0	0	0	0	7	8	0	7	8	0.1000	0.9000	0.0068	0.0409	4.0000	26.5000
+temporal	confirm	_s1	MONDO_0020248	c7	vitreoretinal degeneration	2	10	17	0	0	1	1	4	7	1	3	6	0.2000	1.1000	0.0023	0.0375	8.0000	25.0000
+temporal	confirm	_s1	MONDO_0015929	c5	thoracic malformation	2	10	12	0	0	0	1	1	2	1	1	2	0.1000	0.5000	0.0079	0.0516	13.5000	73.5000
+temporal	confirm	_s1	MONDO_0002311	c7	retinal vascular disorder	39	14	69	0	0	0	6	7	14	0	6	6	1.0000	2.3000	0.0513	0.0957	7.0000	48.5000
+temporal	confirm	_s1	EFO_0009455	c1	lacrimal apparatus disease	3	4	20	0	0	0	0	0	0	0	0	0	0.0000	0.1000	0.0079	0.0567	6.5000	67.5000
+temporal	confirm	_s1	MONDO_0002108	c0	thyroid cancer	8	3	17	0	0	0	2	2	4	2	2	4	0.3000	0.5000	0.0096	0.0292	8.0000	65.5000
+temporal	confirm	_s1	MONDO_0020249	c7	hereditary optic neuropathy	3	11	16	0	0	0	1	2	3	1	3	4	0.1000	0.8000	0.0073	0.0381	0.0000	46.0000
+temporal	confirm	_s1	MONDO_0002078	c21	heart septal defect	6	7	23	0	0	1	0	4	5	0	4	5	0.1000	1.0000	0.0256	0.0817	10.5000	52.5000
+temporal	confirm	_s1	MONDO_0001475	c2	neutropenia	2	11	17	0	0	0	0	6	6	0	7	7	0.1000	0.9000	0.0000	0.0450	12.0000	31.0000
+temporal	confirm	_s1	MONDO_0015168	c3	arthrogryposis multiplex congenita	1	22	27	0	0	0	1	13	17	0	14	16	0.1000	2.1000	0.0006	0.0696	8.0000	22.5000
+temporal	confirm	_s1	MONDO_0003832	c6	complement deficiency	5	9	17	0	0	0	1	8	10	1	8	10	0.4000	1.4000	0.0040	0.0398	3.5000	16.0000
+temporal	confirm	_s1	MONDO_0000577	c2	congenital anemia	2	9	11	0	1	1	0	0	0	0	0	0	0.1000	0.6000	0.0094	0.0428	7.5000	55.0000
+temporal	confirm	_s1	Orphanet_207015	c6	Rare hereditary disease with peripheral neuropathy	4	6	13	0	0	0	1	0	1	1	0	1	0.1000	0.3000	0.0108	0.0352	0.0000	27.0000
+temporal	confirm	_s1	Orphanet_108987	c1	Syndromic developmental defect of the eye	5	6	13	0	0	0	1	4	5	1	3	4	0.3000	0.8000	0.0074	0.0125	7.0000	40.5000
+temporal	confirm	_s1	MONDO_0015905	c8	syndromic dyslipidemia	17	7	42	0	0	0	6	2	9	7	2	12	1.0000	2.2000	0.0257	0.0405	3.0000	28.0000
+temporal	confirm	_s1	MONDO_0019587	c3	autosomal dominant nonsyndromic hearing loss	2	12	25	0	1	1	0	5	14	0	4	13	0.0000	1.4000	0.0017	0.0479	4.0000	28.0000
+temporal	confirm	_s1	MONDO_0001056	c0	gastric cancer	27	6	34	0	0	0	14	2	17	12	2	15	2.3000	2.7000	0.0284	0.0369	7.0000	90.0000
+temporal	confirm	_s1	EFO_1001990	c4	ocular motility disease	11	6	27	0	0	1	6	1	8	6	1	8	0.6000	1.2000	0.0388	0.0950	9.0000	54.0000
+temporal	confirm	_s1	EFO_0005569	c1	microphthalmia	2	15	21	0	0	0	0	8	9	0	8	9	0.1000	1.4000	0.0115	0.0662	9.0000	61.0000
+temporal	confirm	_s1	MONDO_0020073	c10	adolescent-onset epilepsy syndrome	1	28	35	0	0	0	0	20	24	0	18	22	0.0000	3.2000	0.0000	0.0424	5.0000	39.0000
+temporal	confirm	_s1	MONDO_0005129	c6	cataract	14	12	63	1	0	3	3	2	7	0	1	2	0.3000	1.5000	0.0325	0.1571	5.0000	44.0000
+temporal	confirm	_s1	Orphanet_269564	c1	Genetic syndrome with a central nervous system malformation as major feature	3	9	14	0	0	0	1	2	3	1	3	4	0.2000	0.7000	0.0034	0.0312	11.0000	46.5000
+temporal	confirm	_s1	MONDO_0003689	c2	familial hemolytic anemia	2	9	29	0	0	0	0	6	7	0	7	8	0.1000	1.2000	0.0034	0.0617	0.0000	19.0000
+temporal	confirm	_s1	MONDO_0020242	c1	hereditary macular dystrophy	2	19	32	0	0	0	0	11	16	0	11	17	0.1000	2.5000	0.0068	0.0975	6.0000	18.5000
+temporal	confirm	_s1	MONDO_0100241	c17	inherited thrombocytopenia	11	19	36	0	0	0	3	12	17	3	13	17	0.4000	2.2000	0.0165	0.0796	5.5000	19.5000
+temporal	confirm	_s1	EFO_0009551	c26	heart valve disease	17	8	46	0	0	0	2	4	6	0	3	3	0.5000	1.7000	0.0392	0.1036	7.0000	53.5000
+temporal	confirm	_s1	MONDO_0021002	c3	syndactyly	2	12	18	0	0	0	0	8	8	0	9	9	0.1000	1.2000	0.0011	0.0232	5.0000	50.0000
+temporal	confirm	_s1	MONDO_0019852	c1	inherited primary ovarian failure	5	20	29	0	1	1	1	8	10	1	8	10	0.3000	1.6000	0.0102	0.0749	4.0000	39.5000
+temporal	confirm	_s1	MONDO_0020592	c87	disorder of pharynx	14	1	43	0	0	0	1	0	2	1	0	2	0.5000	0.9000	0.0451	0.1386	9.0000	47.5000
+temporal	confirm	_s1	EFO_0009682	c10	pregnancy disorder	23	18	60	0	0	1	6	2	10	5	1	7	0.7000	2.0000	0.0527	0.1364	12.0000	86.0000
+temporal	confirm	_s1	Orphanet_98560	c1	Rare palpebral disease	1	6	16	0	1	1	0	1	3	0	1	3	0.0000	0.8000	0.0023	0.0499	6.0000	33.0000
+temporal	confirm	_s1	MONDO_0017754	c13	inborn disorder of porphyrin metabolism	3	13	16	0	0	0	0	5	5	0	5	5	0.1000	0.8000	0.0000	0.0267	0.0000	22.5000
+temporal	confirm	_s1	EFO_0008525	c6	spinal muscular atrophy	3	8	15	0	0	0	0	3	5	0	3	5	0.0000	0.6000	0.0057	0.0267	4.5000	26.0000
+temporal	confirm	_s1	EFO_0005754	c59	parathyroid disease	5	5	19	0	0	0	0	3	3	0	3	3	0.1000	0.8000	0.0110	0.0378	8.0000	30.5000
+temporal	confirm	_s1	EFO_0008499	c2	DNA repair deficiency	3	10	14	0	0	0	1	4	5	1	3	4	0.1000	1.0000	0.0057	0.0108	0.0000	37.5000
+temporal	confirm	_s1	MONDO_0019713	c3	non-syndromic limb reduction defect	3	8	12	0	0	0	0	7	8	0	7	8	0.0000	0.9000	0.0114	0.0267	9.0000	57.5000
+temporal	confirm	_s1	EFO_1001951	c0	colorectal carcinoma	7	2	19	0	0	1	1	0	5	1	0	4	0.5000	1.2000	0.0016	0.0338	4.0000	58.0000
+temporal	confirm	_s1	MONDO_0056803	c12	sulfur metabolism disease	3	12	18	0	0	0	0	10	10	0	10	10	0.0000	1.2000	0.0105	0.0644	7.0000	21.5000
+temporal	confirm	_s1	MONDO_0021003	c3	polydactyly	2	10	18	0	0	0	1	4	6	1	4	6	0.2000	1.1000	0.0011	0.0398	7.0000	49.0000
+temporal	confirm	_s1	MONDO_0021205	c3	disorder of ear	22	17	70	0	0	0	0	7	7	0	4	4	0.0000	1.8000	0.0719	0.2164	9.0000	37.0000
+temporal	confirm	_s1	EFO_0004288	c0	colonic neoplasm	18	12	51	1	0	5	0	5	9	0	6	10	1.0000	3.5000	0.0292	0.0971	7.0000	76.0000
+temporal	confirm	_s1	MONDO_0024635	c23	small intestine disorder	22	22	89	0	0	0	0	4	4	0	4	4	0.4000	1.2000	0.0727	0.2841	8.0000	49.0000
+temporal	confirm	_s1	EFO_1001216	c38	tooth disease	17	13	67	0	0	1	1	2	4	0	2	3	0.3000	1.4000	0.0556	0.1358	4.0000	41.5000
+temporal	confirm	_s1	MONDO_0002691	c0	liver cancer	4	8	17	0	1	1	0	5	5	0	5	5	0.0000	0.7000	0.0000	0.0274	10.0000	78.5000
+temporal	confirm	_s1	EFO_0000222	c2	acute myeloid leukemia	1	11	14	1	0	1	0	3	4	1	4	5	0.1000	0.6000	0.0050	0.0665	14.5000	56.0000
+temporal	confirm	_s1	MONDO_0017757	c12	disorder of metabolite absorption and transport	3	14	28	0	0	0	0	7	14	0	7	14	0.2000	2.0000	0.0068	0.0696	3.0000	22.0000
+temporal	confirm	_s1	EFO_1001456	c9	central nervous system infection	6	1	31	0	0	0	1	0	1	0	1	1	0.3000	0.7000	0.0133	0.1044	8.0000	65.0000
+temporal	confirm	_s1	MONDO_0002887	c13	bile duct disorder	7	26	48	0	0	0	0	2	3	0	1	1	0.1000	1.0000	0.0184	0.1008	8.0000	36.0000
+temporal	confirm	_s1	MONDO_0000652	c0	integumentary system benign neoplasm	14	8	34	1	0	1	2	3	6	3	2	6	0.7000	1.5000	0.0317	0.0650	12.0000	79.5000
+temporal	confirm	_s1	MONDO_0015160	c4	multiple congenital anomalies/dysmorphic syndrome-variable intellectual disability syndrome	7	31	41	0	1	1	1	2	3	0	3	3	0.3000	2.2000	0.0397	0.2633	21.5000	86.0000
+temporal	confirm	_s1	Orphanet_404571	c3	Dysostosis of genetic origin with limb anomaly as a major feature	1	9	11	0	0	0	0	5	6	0	3	4	0.1000	1.0000	0.0017	0.0244	5.5000	42.0000
+temporal	confirm	_s1	Orphanet_98056	c5	Rare genetic renal disease	1	25	33	0	0	0	0	8	8	0	10	10	0.0000	1.7000	0.0051	0.0946	7.0000	30.0000
+temporal	confirm	_s1	EFO_1000774	c9	vesiculobullous skin disease	10	5	30	0	0	0	0	4	4	0	3	3	0.1000	0.7000	0.0155	0.0668	4.5000	25.5000
+temporal	confirm	_s1	EFO_1001901	c22	neuroendocrine neoplasm	3	4	23	0	0	0	0	1	1	0	1	1	0.0000	0.2000	0.0032	0.0446	4.0000	54.0000
+temporal	confirm	_s1	MONDO_0016139	c15	qualitative or quantitative protein defects in neuromuscular diseases	4	9	17	0	0	1	1	7	10	1	7	10	0.1000	1.1000	0.0068	0.0188	3.0000	28.5000
+temporal	confirm	_s1	MONDO_0000314	c9	primary bacterial infectious disease	1	1	14	0	0	0	0	0	4	0	0	3	0.0000	0.7000	0.0032	0.0290	8.0000	42.5000
+temporal	confirm	_s1	MONDO_0015286	c15	congenital disorder of glycosylation	4	24	33	0	1	1	0	13	15	0	12	14	0.1000	2.0000	0.0040	0.0388	0.0000	24.0000
+temporal	confirm	_s1	Orphanet_183500	c7	Genetic neurodegenerative disease	5	16	25	0	1	1	0	1	1	0	1	1	0.0000	0.7000	0.0199	0.0826	3.5000	29.5000
+temporal	confirm	_s1	MONDO_0019287	c82	ectodermal dysplasia syndrome	5	19	32	0	0	1	1	5	6	1	5	6	0.1000	1.5000	0.0200	0.0832	6.0000	16.0000
+temporal	confirm	_s1	MONDO_0020119	c24	X-linked syndromic intellectual disability	5	7	20	0	1	1	2	1	4	2	1	4	0.3000	0.9000	0.0154	0.0473	6.0000	24.5000
+temporal	confirm	_s1	MONDO_0020049	c41	autosomal anomaly	11	16	33	0	0	0	3	7	12	3	7	11	0.5000	1.6000	0.0255	0.0821	5.0000	44.0000
