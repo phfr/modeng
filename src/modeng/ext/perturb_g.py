@@ -28,6 +28,8 @@ Channels ([n_tasks, n_genes], NaN = gene not in any usable atlas):
   pg_ups     task-specific upstream: pg_up standardised per gene across the split's tasks (removes "regulates everything",
              e.g. essential / stress genes)
   pg_dns     same for pg_dn
+  pg_rsm     readout co-response (SC-1 lite, the seed module as readout): mean cosine of gene g's response profile across all
+             perturbations to the seed readouts' profiles (max over atlases); pg_rsx = mean of the top-3 cosines
   pg_coh     task-level max coherence (constant over genes; lets the stacker gate the channel)
 Negative control (same code, row ids and readout ids permuted within each atlas, so coverage is unchanged and only the
 gene-content link is broken): `pgneg_*`.
@@ -133,7 +135,10 @@ def load_atlas(key, permute=False):
         for r in range(NRAND):
             M[r, rng.choice(P, n, replace=False)] = 1.0 / n
         sdD[j] = (M @ X).std(0)
-    a = dict(X=X, A=A, ri=ri, ci=ci, strata=strata, mX=mX, mA=mA, sdX=sdX, sdA=sdA, cmu=cmu, sdD=sdD)
+    # readout co-response view: each readout's column across perturbations, centred and unit-norm (cosine)
+    Xc = X - X.mean(0, keepdims=True)
+    Cn = np.ascontiguousarray((Xc / (np.linalg.norm(Xc, axis=0, keepdims=True) + 1e-6)).T)   # [R, P]
+    a = dict(X=X, A=A, ri=ri, ci=ci, strata=strata, mX=mX, mA=mA, sdX=sdX, sdA=sdA, cmu=cmu, sdD=sdD, Cn=Cn)
     _ATL[ck] = a
     return a
 
@@ -183,6 +188,26 @@ def atlas_scores(a, seed_lists):
     return z_up, z_mag, z_dn, coh_up, coh_dn
 
 
+def coresponse(a, seed_lists, topk=3):
+    """readout co-response: cosine of readout g's response profile (across all perturbations) to the seed readouts' profiles.
+    Returns mean cosine [T,R] and mean of the top-k cosines [T,R] (seeds themselves get NaN); needs >= MIN_SEEDS seed readouts."""
+    Cn, ci = a["Cn"], a["ci"]
+    R = Cn.shape[0]
+    pos_c = np.full(len(D.universe()), -1); pos_c[ci] = np.arange(R)
+    T = len(seed_lists)
+    mean, mx = np.full((T, R), np.nan, np.float32), np.full((T, R), np.nan, np.float32)
+    for t, s in enumerate(seed_lists):
+        c = pos_c[s]; c = c[c >= 0]
+        if len(c) < MIN_SEEDS:
+            continue
+        C = Cn @ Cn[c].T                                             # [R, n_s]
+        mean[t] = C.mean(1)
+        k = min(topk, C.shape[1])
+        mx[t] = np.sort(C, 1)[:, -k:].mean(1)
+        mean[t, c] = np.nan; mx[t, c] = np.nan
+    return mean, mx
+
+
 def _nanmax_into(acc, v):
     m = np.isnan(acc)
     acc[m] = v[m]
@@ -206,6 +231,7 @@ def compute_all(B, split_tag, permute=False, atlases=tuple(ATLASES)):
     up, mag, dn, upr, dnr = nan(), nan(), nan(), nan(), nan()
     best_u, best_d = np.full(T, -np.inf), np.full(T, -np.inf)
     coh = np.full(T, np.nan, np.float32)
+    rsm, rsx = nan(), nan()
     for k in atlases:
         a = load_atlas(k, permute)
         z_up, z_mag, z_dn, cu, cd = atlas_scores(a, seeds)
@@ -217,10 +243,14 @@ def compute_all(B, split_tag, permute=False, atlases=tuple(ATLASES)):
         upr[bu] = Mu[bu]; best_u[bu] = su[bu]
         dnr[bd] = Md[bd]; best_d[bd] = sd_[bd]
         coh = np.fmax(coh, cu.astype(np.float32))
+        cm, cx = coresponse(a, seeds)
+        Mc, Mx = nan(), nan()
+        Mc[:, a["ci"]] = cm; Mx[:, a["ci"]] = cx
+        _nanmax_into(rsm, Mc); _nanmax_into(rsx, Mx)
         print(f"[perturb_g] {B.name}/{split_tag} {k}{' PERM' if permute else ''}: P={a['X'].shape[0]} R={a['X'].shape[1]} "
               f"tasks with up {np.isfinite(cu).sum()}/{T}, dn {np.isfinite(cd).sum()}/{T}, median coh {np.nanmedian(cu):.3f}", flush=True)
     out = dict(up=up, upmag=mag, dn=dn, upr=upr, dnr=dnr, ups=_spec(up), dns=_spec(dn),
-               coh=np.repeat(coh[:, None], G, 1).astype(np.float32))
+               rsm=rsm, rsx=rsx, coh=np.repeat(coh[:, None], G, 1).astype(np.float32))
     _MEMO[key] = out
     return out
 
@@ -229,7 +259,7 @@ def _ch(stat, permute=False, atlases=tuple(ATLASES)):
     return lambda B, split_tag: compute_all(B, split_tag, permute, atlases)[stat]
 
 
-STATS = ("up", "upmag", "dn", "upr", "dnr", "ups", "dns", "coh")
+STATS = ("up", "upmag", "dn", "upr", "dnr", "ups", "dns", "coh", "rsm", "rsx")
 CHANNELS = {}
 for _s in STATS:
     CHANNELS[f"pg_{_s}"] = _ch(_s)

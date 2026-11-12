@@ -75,3 +75,19 @@ Status: NEW | SHORTLIST | IMPLEMENTING | TESTED-POSITIVE | TESTED-NEGATIVE | KIL
 | WC-DCA | Inverse-Ising direct couplings between genes, amortised to unseen genes | R1 wildcard | NEW | `docs/ideation/r1_wildcard.md` |
 | WC-UPPERLIM | Upper limits: measured nulls as negative evidence | R1 wildcard | NEW | `docs/ideation/r1_wildcard.md` |
 | WC-MARKET | Revealed preferences of funders and filers as leading indicators | R1 wildcard | NEW | `docs/ideation/r1_wildcard.md` |
+| F1-FLUX | Flux phenocopy in a genome-scale metabolic model | R2 island1 | NEW | `docs/ideation/r2_island1.md` |
+| F1-CSDONOR | Compressed-sensing donor decomposition (joint sparse recovery instead of per-donor matching) | R2 island1 | TESTED (alone negative; stack increment pending) | `docs/ideation/r2_island1.md` |
+| F1-ENDO | Endotype unmixing: one transfer problem per seed sub-module, combined by noisy-OR | R2 island1 | NEW | `docs/ideation/r2_island1.md` |
+| F1-INVERT | Forward-model inversion ("hallucinate the gene that completes the phenotype") | R2 island1 | NEW | `docs/ideation/r2_island1.md` |
+| F1-PATHOGEN | Pathogen proteins as evolved probes of host modules | R2 island1 | NEW | `docs/ideation/r2_island1.md` |
+| F1-ADR | Adverse-event phenocopy: approved drugs as human in-vivo perturbations | R2 island1 | NEW | `docs/ideation/r2_island1.md` |
+| F1-DEVTIME | Developmental window matching (organ x time as the module's address) | R2 island1 | NEW | `docs/ideation/r2_island1.md` |
+| F1-KSEARCH | Program search over the transfer kernel (LLM-guided, fitness on past episodes) | R2 island1 | NEW | `docs/ideation/r2_island1.md` |
+| F2-1 | Vintage ladder: a time-locked generative language model as gene prior, with the leak measured by cut-off year | R2 island2 | NEW | `docs/ideation/r2_island2.md` |
+| F2-2 | Hypothesis programs: per-disease proposer, data-only verifier, seed hold-out as referee | R2 island2 | NEW | `docs/ideation/r2_island2.md` |
+| F2-3 | Evolved transfer kernel: LLM-driven program search over the function that dominates | R2 island2 | IMPLEMENTING | `docs/ideation/r2_island2.md` |
+| F2-4 | Text-to-sequence retrieval: reach proteins nobody has written about | R2 island2 | NEW | `docs/ideation/r2_island2.md` |
+| F2-5 | Seedless anchors: an agent reads the clinic, code maps anchors to genes | R2 island2 | NEW | `docs/ideation/r2_island2.md` |
+| F2-6 | Sequence-model verdicts at sub-threshold loci: which gene, in which tissue | R2 island2 | NEW | `docs/ideation/r2_island2.md` |
+| F2-7 | Literature as a perturbation atlas: an LLM extracts experiment outcomes, disease words removed | R2 island2 | NEW | `docs/ideation/r2_island2.md` |
+| F2-8 | Critic by self-play: a set-level verifier trained on the ranker's confident errors, then search over modules | R2 island2 | NEW | `docs/ideation/r2_island2.md` |

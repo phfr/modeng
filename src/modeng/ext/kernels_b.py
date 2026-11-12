@@ -79,8 +79,28 @@ def _drop_local(a, b, w, dist=1_000_000):
     return a[~local], b[~local], w[~local], int(local.sum())
 
 
-def _paralog_pairs():
-    df = pd.read_csv(KC / "hs_paralogs.tsv", sep="\t", header=None, names=["a", "b", "ida", "idb", "ds"])
+COMPARA = Path("/mnt/msadb/modet/downloads/ensembl103_compara/Compara.103.protein_default.homologies.tsv.gz")
+
+
+def _paralog_wide_tsv(min_id=30.0):
+    """within_species_paralog + other_paralog (older duplications), human-human, mean identity >= min_id."""
+    f = KC / "hs_paralogs_wide.tsv"
+    if not f.exists():
+        rows = []
+        with gzip.open(COMPARA, "rt") as fh:
+            fh.readline()
+            for l in fh:
+                p = l.split("\t")
+                if p[2] == "homo_sapiens" and p[7] == "homo_sapiens" and p[4] in ("within_species_paralog", "other_paralog") \
+                        and (float(p[3]) + float(p[8])) / 2 >= min_id:
+                    rows.append("\t".join((p[0], p[5], p[3], p[8], p[4])))
+        f.write_text("\n".join(rows) + "\n")
+    return f
+
+
+def _paralog_pairs(wide=False):
+    src = _paralog_wide_tsv() if wide else KC / "hs_paralogs.tsv"   # hs_paralogs.tsv = within_species_paralog only (13,319 rows)
+    df = pd.read_csv(src, sep="\t", header=None, names=["a", "b", "ida", "idb", "ds"])
     u = D.universe()
     a, b = u.get_indexer(df.a), u.get_indexer(df.b)
     ok = (a >= 0) & (b >= 0) & (a != b)
@@ -123,8 +143,8 @@ def kernel(name):
         K = kernel(name[5:])
         p = np.random.default_rng(1).permutation(n)
         K = K[p][:, p]
-    elif name in ("paralog", "paralog_all", "afdb"):
-        a, b, w = _afdb_pairs() if name == "afdb" else _paralog_pairs()
+    elif name in ("paralog", "paralog_all", "paralog_wide", "afdb"):
+        a, b, w = _afdb_pairs() if name == "afdb" else _paralog_pairs(wide=(name == "paralog_wide"))
         if name != "paralog_all":
             a, b, w, nl = _drop_local(a, b, w)
             print(f"[kernels_b] {name}: dropped {nl} same-locus pairs", flush=True)
@@ -141,6 +161,7 @@ def lift(B, split_tag, kname):
     T = CH.compute(B, "transfer_jaccard", split_tag)          # exact masked transfer
     K = kernel(kname)
     out = np.asarray((K @ T.T).T, np.float32)                  # out[i, g] = sum_h K[g, h] T[i, h]
+    out = np.round(out, 6)                                     # quantise (leakage rule 1; T itself is already quantised)
     out[:, np.asarray(K.getnnz(1)) == 0] = np.nan
     return out
 
@@ -191,6 +212,7 @@ def coldstart_factors(bench_name, views, rank=128, alpha=10.0, folds=5):
     mc = np.concatenate([t.mask_c for t in Bf.tasks if t.mask_c is not None and len(t.mask_c)])
     M = sp.csr_matrix((np.ones(len(mr), np.float32), (mr, mc)), shape=L.shape); M.data[:] = 1
     Ls = (L - L.multiply(M)).tocsr(); Ls.eliminate_zeros()           # safe context: no task's hidden pair
+    assert np.asarray(Ls[mr, mc]).ravel().max() == 0, "safe context still holds a masked pair"
     print(f"[coldstart] {bench_name}: context nnz {L.nnz}, safe nnz {Ls.nnz}", flush=True)
     svd = TruncatedSVD(rank, random_state=0, algorithm="randomized", n_iter=7).fit(Ls)
     V = svd.components_.T.astype(np.float32)                     # gene factors [n_genes, rank]; Ls ~ (Ls V) V^T
@@ -221,14 +243,15 @@ CHANNELS = {}
 for _v in CH.view_names():
     CHANNELS[f"lift_{_v}"] = (lambda v: lambda B, s: lift(B, s, v))(_v)
     CHANNELS[f"lift_perm_{_v}"] = (lambda v: lambda B, s: lift(B, s, "perm_" + v))(_v)
-for _k in ("paralog", "paralog_all", "afdb"):
+for _k in ("paralog", "paralog_all", "paralog_wide", "afdb"):
     CHANNELS[f"lift_{_k}"] = (lambda v: lambda B, s: lift(B, s, v))(_k)
     CHANNELS[f"lift_perm_{_k}"] = (lambda v: lambda B, s: lift(B, s, "perm_" + v))(_k)
 CHANNELS["coldstart_profile"] = lambda B, s: coldstart(B, s, tuple(CH.view_names()))
 CHANNELS["coldstart_profile_t0"] = lambda B, s: coldstart(B, s, T0_VIEWS)
 
 LIFT_VIEWS = [f"lift_{v}" for v in CH.view_names()]
-LIFT_HOMOLOGY = ["lift_paralog", "lift_afdb"]
+LIFT_HOMOLOGY = ["lift_paralog", "lift_paralog_wide", "lift_afdb"]
+LIFT_T0 = [f"lift_{v}" for v in T0_VIEWS]
 COLDSTART = ["coldstart_profile", "coldstart_profile_t0"]
 ALL = LIFT_VIEWS + LIFT_HOMOLOGY + COLDSTART
-PERM = [f"lift_perm_{v}" for v in CH.view_names()] + ["lift_perm_paralog", "lift_perm_afdb"]
+PERM = [f"lift_perm_{v}" for v in CH.view_names()] + ["lift_perm_paralog", "lift_perm_paralog_wide", "lift_perm_afdb"]
