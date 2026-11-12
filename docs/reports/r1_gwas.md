@@ -12,7 +12,10 @@ On temporal (train on `past`), adding the five GWAS channels to `stackP_bdv` giv
 nuAP +0.022 [0.006, 0.042]; confirm AP +0.008 [-0.004, 0.021], nuAP +0.003 [-0.012, 0.018], AUROC +0.0075 [0.005, 0.011],
 R@100 +0.013 [0.004, 0.024]. On the GWAS-only target stratum the gain is large and replicates: AP 0.019 -> 0.048 (dev),
 0.017 -> 0.044 (confirm); R@100 +0.06 on both. `gwas_catlag` is the top feature by gain in the stacker.
-SEE_FILL
+Under the F2-3 rule (a gain must improve BOTH AP and nuAP): **dev passes clearly (both CIs > 0); confirm is directionally
+positive on both but neither CI excludes 0** (covered confirm tasks: AP +0.016 [-0.004, 0.035], nuAP +0.011 [-0.017, 0.036]).
+The gene-permuted negative control gives -0.003 to -0.005 everywhere (no gain). Status: **promising, keep `gwas_catlag`,
+needs an archived-catalog rerun (leakage route below) and the forward increment**. FWD_FILL
 
 ## What was built
 Trait data (read-only from modet):
@@ -98,7 +101,41 @@ Observations:
   "borrow from correlated traits" premise fails at the gene level with these 108-193 studies.
 
 ## Increment tests
-SEE_INC
+Temporal, `--train past` (`modeng.stack.run_past`, 900 past episodes), reference rerun in the same session
+(`stackP_d_bdv` = `base,donor,view`; reproduces the leaderboard `stackP_bdv` 7555a67 exactly on dev: AP 0.1018, nuAP 0.1237,
+confirm AP 0.0913, nuAP 0.1506 = positive control). `gw` = gwas_own, gwas_sem, gwas_xpow, gwas_seedw, gwas_catlag.
+Paired cluster bootstrap (5,000), `results/gwas_d/compare.tsv`.
+
+| run | split | AP | nuAP | AUROC | R@100 | onnet AP | onnet nuAP |
+|---|---|---|---|---|---|---|---|
+| stackP_d_bdv (ref) | dev | 0.1018 | 0.1237 | 0.8103 | 0.2523 | 0.1210 | 0.1731 |
+| stackP_d_bdv_gw | dev | **0.1189** | **0.1452** | 0.8210 | 0.2747 | 0.1385 | 0.1896 |
+| stackP_d_bdv_perm (neg. control) | dev | 0.0993 | 0.1203 | 0.8082 | 0.2456 | 0.1196 | 0.1697 |
+| stackP_d_bdv (ref) | confirm | 0.0913 | 0.1506 | 0.8252 | 0.2598 | 0.0987 | 0.1712 |
+| stackP_d_bdv_gw | confirm | 0.0995 | 0.1537 | 0.8327 | 0.2727 | 0.1058 | 0.1725 |
+| stackP_d_bdv_perm (neg. control) | confirm | 0.0883 | 0.1462 | 0.8234 | 0.2532 | 0.0977 | 0.1704 |
+
+Deltas gw - ref, [95 % CI]:
+
+| split | subset | n | AP | nuAP | AUROC | R@100 |
+|---|---|---|---|---|---|---|
+| dev | all | 53 | +0.017 [0.005, 0.034] | +0.022 [0.006, 0.042] | +0.011 [0.004, 0.018] | +0.023 [0.000, 0.052] |
+| dev | covered (any GWAS channel) | 26 | +0.034 [0.012, 0.065] | +0.041 [0.014, 0.076] | +0.017 | +0.049 [0.007, 0.103] |
+| dev | uncovered | 27 | +0.000 [-0.007, 0.009] | +0.003 [-0.011, 0.019] | +0.005 | -0.003 |
+| dev | GWAS-only targets | 29 | +0.029 [0.010, 0.057] (0.019 -> 0.048) | | +0.023 | +0.061 [0.018, 0.124] |
+| confirm | all | 138 | +0.008 [-0.004, 0.021] | +0.003 [-0.012, 0.018] | +0.0075 [0.005, 0.011] | +0.013 [0.004, 0.024] |
+| confirm | covered | 71 | +0.016 [-0.004, 0.035] | +0.011 [-0.017, 0.036] | +0.009 [0.003, 0.016] | +0.021 [0.006, 0.039] |
+| confirm | uncovered | 67 | +0.000 | -0.006 [-0.015, 0.005] | +0.006 | +0.004 |
+| confirm | GWAS-only targets | 76 | +0.027 [0.013, 0.044] (0.017 -> 0.044) | | +0.025 [0.011, 0.054] | +0.057 [0.029, 0.090] |
+
+Negative control (`gwas_sem_perm`, `gwas_seedw_perm` added to bdv): all-task deltas AP -0.003 / nuAP -0.003 (dev),
+AP -0.003 / nuAP -0.004 (confirm); GWAS-only AP -0.001 / +0.001: no gain, as required.
+Feature gain in `stackP_d_bdv_gw`: gwas_catlag is #1 (236k, ahead of don_hpo2101 149k and transfer_jaccard 144k),
+r_gwas_catlag #5, gwas_seedw #15 (used, presumably as a negative cue); gwas_own/sem/xpow are not in the top 30.
+Attribution runs (bdv + catlag only, bdv + catlag12, bdv + MAGMA only) were queued but dropped after the coordinator's RAM
+limit (one stacker at a time); alone results and feature gains point to catlag as the source of the gain.
+
+FWD_INC
 
 ## Leakage class
 * `gwas_catlag`: filter on DATE ADDED TO CATALOG <= seed date approximates an archived snapshot. Residual routes: (1) trait
