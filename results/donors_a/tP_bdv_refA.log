@@ -1,0 +1,2 @@
+[past] 50 channels, 1371887 rows, 21887 pos (118s)
+temporal  dev      stackP_bdv_refA        AP 0.1018 nuAP 0.1237 AUROC 0.8103 R@100 0.2523 | onnet AP 0.1210 nuAP 0.1731

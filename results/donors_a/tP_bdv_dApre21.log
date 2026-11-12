@@ -1,0 +1,28 @@
+[past] 53 channels, 1371887 rows, 21887 pos (101s)
+temporal  dev      stackP_bdv_dApre21     AP 0.1099 nuAP 0.1392 AUROC 0.8149 R@100 0.2669 | onnet AP 0.1288 nuAP 0.1840
+temporal  confirm  stackP_bdv_dApre21     AP 0.1012 nuAP 0.1633 AUROC 0.8345 R@100 0.2845 | onnet AP 0.1098 nuAP 0.1853
+transfer_jaccard      238391.751792
+don_hpo2101            85908.236998
+r_degree               76384.736261
+dA_pt                  65293.552444
+r_dA_pt                62868.908228
+r_transfer_jaccard     45983.712409
+r_popularity           42129.269024
+vmax_esmc              36535.479796
+degree                 35063.805008
+vmax_prott5            34910.405625
+r_don_hpo2101          32411.555777
+popularity             21299.042192
+vmax_hpa_sc            20307.536014
+log_nseeds             18307.710814
+vmax_depmap20q4        17871.603693
+transfer_onto          14617.257502
+vmax_go_t0             12769.742300
+vmax_esm2_15b          12378.915191
+r_dA_a_dm_codep        12047.607628
+r_vmax_depmap20q4      10490.580300
+vmean_go_t0            10415.148799
+r_transfer_onto        10036.332041
+vmean_hpa_sc            9394.224211
+r_vmean_prott5          8691.811221
+r_vmean_hpa_sc          8688.658590

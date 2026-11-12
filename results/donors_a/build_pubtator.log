@@ -1,0 +1,5 @@
+gene rows 38586957
+disease rows 72596130 mesh 11140
+a_pt19	9408	300	12603	pre21	PubTator3 gene x MeSH disease co-mention (>=2 PMIDs, top300), PMID <= 30900000
+a_pt21	9687	300	12815	pre21	PubTator3 gene x MeSH disease co-mention (>=2 PMIDs, top300), PMID <= 33750000
+a_pt25	9997	300	13088	pre2509	PubTator3 gene x MeSH disease co-mention (>=2 PMIDs, top300), PMID <= 40850000

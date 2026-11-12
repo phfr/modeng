@@ -1,0 +1,16 @@
+[forward] 6 channels built (8s)
+forward   dev      stack_base_dA_pt       AP 0.0857 nuAP 0.1533 AUROC 0.8290 R@100 0.2306 | onnet AP 0.0905 nuAP 0.1664
+forward   confirm  stack_base_dA_pt       AP 0.0792 nuAP 0.1424 AUROC 0.8190 R@100 0.2156 | onnet AP 0.0837 nuAP 0.1598
+transfer_jaccard      1.204574e+06
+transfer_onto         6.806021e+05
+log_nseeds            5.518073e+05
+r_degree              1.564509e+05
+degree                1.437867e+05
+r_popularity          9.998885e+04
+r_transfer_jaccard    9.079965e+04
+r_transfer_onto       8.238403e+04
+popularity            6.814044e+04
+r_dA_pt               5.050386e+04
+dA_pt                 1.270698e+04
+rwr_string            1.239957e+04
+r_rwr_string          9.559129e+03
