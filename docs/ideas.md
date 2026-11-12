@@ -22,7 +22,7 @@ Status: NEW | SHORTLIST | IMPLEMENTING | TESTED-POSITIVE | TESTED-NEGATIVE | KIL
 | EV-9 | Mechanism-signature matching in "selection space" (meta-learned) | R1 evostruct | NEW | `docs/ideation/r1_evostruct.md` |
 | LT-1 | Masked-context cloze: which disease does this gene's literature sound like | R1 llmtext | NEW | `docs/ideation/r1_llmtext.md` |
 | LT-2 | Semantic transfer over virtual donors (MeSH, HPO, GO terms as donor rows) | R1 llmtext | TESTED-POSITIVE (PubTator MeSH donors dA_pt: confirm AP +0.011, nuAP +0.015) | `docs/ideation/r1_llmtext.md` |
-| LT-3 | Curation debt: predict what the pipeline will attach next | R1 llmtext | NEW | `docs/ideation/r1_llmtext.md` |
+| LT-3 | Curation debt: predict what the pipeline will attach next | R1 llmtext | TESTED-POSITIVE (label process) | `docs/ideation/r1_llmtext.md` |
 | LT-4 | Equal-budget data-to-text dossiers for dark genes | R1 llmtext | NEW | `docs/ideation/r1_llmtext.md` |
 | LT-5 | Anonymised-dossier LLM judge with a measured memorisation gap | R1 llmtext | NEW | `docs/ideation/r1_llmtext.md` |
 | LT-6 | Mechanism cards: the module as a set of text queries | R1 llmtext | NEW | `docs/ideation/r1_llmtext.md` |
@@ -40,11 +40,11 @@ Status: NEW | SHORTLIST | IMPLEMENTING | TESTED-POSITIVE | TESTED-NEGATIVE | KIL
 | ML-9 | Evidence-trajectory hazard model over sub-threshold evidence streams | R1 ml | NEW | `docs/ideation/r1_ml.md` |
 | IR-1 | Exposure-aware relevance: model why a pair is unobserved | R1 recsys | NEW | `docs/ideation/r1_recsys.md` |
 | IR-2 | Locus slates: transfer per locus, click model per gene | R1 recsys | NEW | `docs/ideation/r1_recsys.md` |
-| IR-3 | Identity linking: retrieve T0 evidence filed under another disease id | R1 recsys | NEW | `docs/ideation/r1_recsys.md` |
+| IR-3 | Identity linking: retrieve T0 evidence filed under another disease id | R1 recsys | TESTED-POSITIVE as label forecast (bl_xid) | `docs/ideation/r1_recsys.md` |
 | IR-4 | Impressions without clicks: powered nulls as negatives | R1 recsys | NEW | `docs/ideation/r1_recsys.md` |
 | IR-5 | Study-as-user: item-item similarity from evidence baskets | R1 recsys | NEW | `docs/ideation/r1_recsys.md` |
 | IR-6 | Trending items: time-decayed transfer on the 19.04 -> 21.04 delta | R1 recsys | NEW | `docs/ideation/r1_recsys.md` |
-| IR-7 | Multi-behaviour funnel: weak evidence channels as views, labels as purchases | R1 recsys | NEW | `docs/ideation/r1_recsys.md` |
+| IR-7 | Multi-behaviour funnel: weak evidence channels as views, labels as purchases | R1 recsys | TESTED-POSITIVE (forward nuAP 0.137 -> 0.307; label process) | `docs/ideation/r1_recsys.md` |
 | IR-8 | Cold-start item tower trained with interaction dropout | R1 recsys | NEW | `docs/ideation/r1_recsys.md` |
 | IR-9 | Next-item model over dated discovery sequences | R1 recsys | NEW | `docs/ideation/r1_recsys.md` |
 | IR-10 | Cross-domain users: genes cold for diseases are warm in burden PheWAS | R1 recsys | NEW | `docs/ideation/r1_recsys.md` |
@@ -68,7 +68,7 @@ Status: NEW | SHORTLIST | IMPLEMENTING | TESTED-POSITIVE | TESTED-NEGATIVE | KIL
 | SG-9 | Genetic-correlation donor weights that do not need seeds | R1 statgen | NEW | `docs/ideation/r1_statgen.md` |
 | WC-L2GEMU | Emulate the label generator: locus crossing times host-gene prior | R1 wildcard | NEW | `docs/ideation/r1_wildcard.md` |
 | WC-XPOWER | Crossing forecast for diseases without their own GWAS | R1 wildcard | NEW | `docs/ideation/r1_wildcard.md` |
-| WC-BACKLOG | Forecast the curation backlog in raw source-label space | R1 wildcard | NEW | `docs/ideation/r1_wildcard.md` |
+| WC-BACKLOG | Forecast the curation backlog in raw source-label space | R1 wildcard | TESTED-POSITIVE (label process) | `docs/ideation/r1_wildcard.md` |
 | WC-SELFN | Survey selection function: channel-mixture arrival model | R1 wildcard | NEW | `docs/ideation/r1_wildcard.md` |
 | WC-HAWKES | Self-exciting evidence flux and transfer velocity | R1 wildcard | NEW | `docs/ideation/r1_wildcard.md` |
 | WC-CAPTURE | Capture-recapture completeness and a data-driven explore budget | R1 wildcard | NEW | `docs/ideation/r1_wildcard.md` |
