@@ -30,6 +30,7 @@
 Temporal confirm, 138 diseases (cluster bootstrap): vs raw transfer AP 0.153 vs 0.119 (+0.034 [+0.011, +0.059]), nuAP 0.177 vs 0.104 (+0.073 [+0.053, +0.099]),
 precision@20 +0.050, degree-matched AP +0.061, hub-gene AP -0.006 (n.s.). vs modet headline on its own candidate set: AP +0.063 [+0.049, +0.082],
 nuAP +0.031 [+0.012, +0.054], degree-matched AP +0.082, hub and non-hub AP both better; strict-a: AP +0.023 [+0.006, +0.040], nuAP tie (+0.001).
+Forward replication (25.09 -> 26.09, inputs <= 25.09, 797 confirm diseases, same recipe and power): AP 0.151 vs transfer 0.085, nuAP 0.214 vs 0.083 (dev 0.166 / 0.236).
 Endpoints: `results/review/leader_endpoints_stack_v3ptr_p0.35.tsv`. Command: see `docs/NEXT.md` (channels list) with `--pos-deg-power 0.35`.
 
 ## 2. What was done (process)

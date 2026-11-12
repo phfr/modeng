@@ -1,0 +1,28 @@
+[forward] 65 channels built (184s)
+forward   dev      stack_v1_p0.35         AP 0.1660 nuAP 0.2361 AUROC 0.8946 R@100 0.3632 | onnet AP 0.1756 nuAP 0.2580
+forward   confirm  stack_v1_p0.35         AP 0.1509 nuAP 0.2140 AUROC 0.8884 R@100 0.3506 | onnet AP 0.1595 nuAP 0.2412
+transfer_jaccard    835812.714428
+gwas_catlag         661221.506239
+transfer_onto       435514.706884
+log_nseeds          309644.433807
+hz_gwas             218791.414024
+dc_ridge            189155.110282
+r_gwas_catlag       165290.113240
+r_degree             93143.998404
+cs_donor             88463.259027
+r_pri_l2g_n          79691.226452
+dc_ridge_pos         75546.438457
+pri_l2g_n            48105.518391
+vmax_depmap20q4      37579.806827
+r_don_paralog30      31968.820858
+r_hz_gwas            26374.201069
+degree               24384.473361
+r_transfer_onto      22811.273957
+r_dc_ridge_pos       18322.255191
+r_dA_pt              17259.393923
+dA_pt                15067.501230
+r_pri_l2g_max        14481.689914
+vmean_gtex           13082.251853
+pri_l2g_max          12848.860901
+r_cs_donor           12704.290506
+r_dc_ridge           12259.816983
