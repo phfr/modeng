@@ -1,0 +1,38 @@
+[gate] 65 channels + 9 ctx (10s)
+  fold 0 (36s)
+  fold 1 (65s)
+  fold 2 (74s)
+  fold 3 (88s)
+  fold 4 (94s)
+temporal  dev      stack_gate_ctxperm     AP 0.1752 nuAP 0.1506 AUROC 0.8490 R@100 0.3368 | onnet AP 0.1957 nuAP 0.2154
+temporal  confirm  stack_gate_ctxperm     AP 0.1516 nuAP 0.1745 AUROC 0.8654 R@100 0.3346 | onnet AP 0.1598 nuAP 0.2038
+hz_gwas               11437.269609
+transfer_jaccard      10930.752075
+dc_ridge_pos          10307.587306
+gwas_catlag            9679.392385
+r_transfer_jaccard     8279.526382
+dc_ridge               8135.850230
+r_dA_pt                4351.520560
+r_pri_l2g_n            3833.642061
+r_degree               3795.228413
+r_dc_ridge_pos         3785.250886
+r_pt_ridge             3144.354167
+r_gwas_catlag          2593.368079
+log_nseeds             2571.173274
+pri_l2g_max            2325.227138
+r_pri_l2g_max          2321.656449
+pt_ridge               2258.517654
+r_dc_ridge             2121.808815
+r_popularity           2037.182251
+ctx_seed_logdeg        2014.868521
+degree                 1961.746085
+ctx_mix_gwas           1904.013035
+r_vmax_depmap20q4      1817.500430
+r_vmax_go_t0           1665.142363
+r_hz_gwas              1610.490355
+ctx_cat_n              1577.252339
+r_pt_ridge_pos         1573.052728
+ctx_fam_mend_n         1517.473225
+ctx_fam_gwas_n         1496.245006
+vmax_hpa_sc            1490.947376
+don_hpo2101            1463.988682

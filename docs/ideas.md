@@ -94,8 +94,8 @@ Status: NEW | SHORTLIST | IMPLEMENTING | TESTED-POSITIVE | TESTED-NEGATIVE | KIL
 | C-RIDGE | Disease-disease ridge regression (EASE/SLIM) of the seed vector on masked disease rows | R1 implementer C (from critic eng.) | TESTED-POSITIVE (Pareto, temporal + forward) | docs/reports/r1_disease.md |
 | H-PHENO | HPO phenotype-profile matching of seeds to genes (IDF) + channel priors (L2G-winner, OMIM gene) | R1 biology critic -> implementer H | TESTED-POSITIVE (temporal + forward, Pareto) | docs/reports/r1_priors.md |
 | E-B1 | Query-wise LambdaRank with degree-scaled gains | R2 evolveB | NEW | `docs/ideation/r2_evolveB.md` |
-| E-B2 | Shape-constrained, coverage-aware stacker (monotone + missing-as-NaN + task-context gates) | R2 evolveB | NEW | `docs/ideation/r2_evolveB.md` |
-| E-B3 | Arrival-class heads x disease-type mixing (H's typed strata x the stacker) | R2 evolveB | NEW | `docs/ideation/r2_evolveB.md` |
+| E-B2 | Shape-constrained, coverage-aware stacker (monotone + missing-as-NaN + task-context gates) | R2 evolveB | PARTIAL (r3: ctx features only; confirm AP +0.006, strict-a not moved; `docs/reports/r3_strict_a.md`) | `docs/ideation/r2_evolveB.md` |
+| E-B3 | Arrival-class heads x disease-type mixing (H's typed strata x the stacker) | R2 evolveB | DEV-HEAD NEGATIVE (r3: class-A head on 53 dev tasks too weak; past-episode version untested) | `docs/ideation/r2_evolveB.md` |
 | E-B4 | Two episode families in one model (past arrivals x T0 hide-and-recover episodes, with an episode-type feature) | R2 evolveB | NEW | `docs/ideation/r2_evolveB.md` |
 | E-B5 | Vintage parity: give each training episode features of its own date | R2 evolveB | NEW | `docs/ideation/r2_evolveB.md` |
 | E-B6 | Take degree out of the relevance model, put it back as one dial (repair of the AP-for-nuAP trade) | R2 evolveB | TESTED (power 0.35 chosen on dev: Pareto vs transfer, hub loss gone) | `docs/ideation/r2_evolveB.md` |

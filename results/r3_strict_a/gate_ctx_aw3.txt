@@ -1,0 +1,38 @@
+[gate] 65 channels + 9 ctx (17s)
+  fold 0 (32s)
+  fold 1 (57s)
+  fold 2 (76s)
+  fold 3 (92s)
+  fold 4 (121s)
+temporal  dev      stack_gate_ctx_aw3     AP 0.1725 nuAP 0.1440 AUROC 0.8524 R@100 0.3374 | onnet AP 0.1914 nuAP 0.2042
+temporal  confirm  stack_gate_ctx_aw3     AP 0.1582 nuAP 0.1770 AUROC 0.8692 R@100 0.3389 | onnet AP 0.1642 nuAP 0.2096
+transfer_jaccard      20195.573493
+hz_gwas               17389.272935
+dc_ridge_pos          16197.870757
+gwas_catlag           12715.635184
+dc_ridge               8832.905925
+r_transfer_jaccard     8073.367270
+r_popularity           6513.599992
+r_dA_pt                6209.588441
+r_pri_l2g_n            4663.449947
+ctx_hpo_share          4660.134048
+log_nseeds             3926.313684
+pri_l2g_max            3907.191778
+r_pt_ridge             3904.031281
+r_pri_l2g_max          3821.631100
+ctx_fam_mend_n         3821.130546
+r_degree               3646.463526
+ctx_mix_gwas           3451.699115
+r_gwas_catlag          3378.261650
+r_hz_gwas              3053.968439
+pt_ridge               3042.295398
+r_vmax_depmap20q4      2792.351049
+popularity             2572.322252
+r_dc_ridge             2544.846929
+degree                 2455.770067
+r_pt_ridge_pos         2433.229694
+ctx_fam_gwas_n         2327.947066
+r_vmax_go_t0           2279.266625
+vmax_go_t0             2167.880617
+vmean_hpa_sc           2111.152792
+vmean_depmap20q4       2084.168097

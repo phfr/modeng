@@ -1,0 +1,38 @@
+[gate] 65 channels + 13 ctx (19s)
+  fold 0 (56s)
+  fold 1 (93s)
+  fold 2 (138s)
+  fold 3 (165s)
+  fold 4 (177s)
+temporal  dev      stack_gate_ctxta       AP 0.1786 nuAP 0.1526 AUROC 0.8523 R@100 0.3375 | onnet AP 0.2008 nuAP 0.2185
+temporal  confirm  stack_gate_ctxta       AP 0.1522 nuAP 0.1751 AUROC 0.8690 R@100 0.3345 | onnet AP 0.1582 nuAP 0.2029
+dc_ridge_pos          11210.107861
+r_transfer_jaccard    10611.577173
+transfer_jaccard      10313.751178
+hz_gwas                9585.039474
+gwas_catlag            8117.044153
+r_dA_pt                5488.934916
+dc_ridge               4785.072075
+r_dc_ridge_pos         4684.624068
+r_degree               3899.532387
+ctx_hpo_share          3737.154584
+r_pri_l2g_n            3364.291162
+r_gwas_catlag          3068.991878
+r_pt_ridge             2860.615261
+ctx_fam_mend_n         2732.720389
+pri_l2g_max            2718.255147
+log_nseeds             2190.914862
+r_pri_l2g_max          2158.380530
+r_popularity           2149.260197
+r_dc_ridge             2126.372502
+pt_ridge               1908.843218
+r_vmax_depmap20q4      1820.094612
+pri_l2g_n              1729.940576
+don_hpo2101            1719.313160
+ctx_mix_gwas           1580.676320
+ph_mean                1551.203395
+r_pt_ridge_pos         1544.719233
+vmax_reactome_t0       1496.682425
+degree                 1486.419693
+vmax_depmap20q4        1469.542799
+vmax_hpa_tissue        1447.256542
