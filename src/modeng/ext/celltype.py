@@ -45,7 +45,7 @@ _S = {}
 
 def _read_hpa(fname, col, val):
     with zipfile.ZipFile(HPA / f"{fname}.tsv.zip") as z:
-        df = pd.read_csv(z.open(f"{fname}.tsv"), sep="\t", usecols=["Gene", col, val])
+        df = pd.read_csv(z.open(z.namelist()[0]), sep="\t", usecols=["Gene", col, val])
     return df.pivot_table(index="Gene", columns=col, values=val, aggfunc="mean")
 
 
@@ -82,6 +82,8 @@ def _pops_Z():
     X = np.hstack(blocks)
     const = X.std(1) == 0
     X[const] = np.nan
+    sd = np.nanstd(X, 0)
+    X = X[:, sd > 0]                                   # drop constant columns (6)
     X = (X - np.nanmean(X, 0)) / np.nanstd(X, 0)
     u = D.universe()
     ix = rows.get_indexer(u)
