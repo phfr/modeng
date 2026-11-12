@@ -74,10 +74,11 @@ def view_sim(tasks, X, mask, topk=3):
     return mean, mx
 
 
-def compute(B, name: str, split_tag: str) -> np.ndarray:
+def compute(B, name: str, split_tag: str, cache: bool = True) -> np.ndarray:
+    """cache=False: neither read nor write data/cache/channels (ad-hoc tasks, modeng.predict)."""
     CACHE.mkdir(parents=True, exist_ok=True)
     f = CACHE / f"{B.name}_{split_tag}_{name}.npy"
-    if f.exists():
+    if cache and f.exists():
         return np.load(f)
     tasks = B.tasks
     if name in ("transfer_jaccard", "transfer_onto", "popularity", "degree", "rwr_string"):
@@ -88,8 +89,9 @@ def compute(B, name: str, split_tag: str) -> np.ndarray:
         v = name.split("_", 1)[1]
         X, m = load_view(v)
         mean, mx = view_sim(tasks, X, m)
-        np.save(CACHE / f"{B.name}_{split_tag}_vmean_{v}.npy", mean)
-        np.save(CACHE / f"{B.name}_{split_tag}_vmax_{v}.npy", mx)
+        if cache:
+            np.save(CACHE / f"{B.name}_{split_tag}_vmean_{v}.npy", mean)
+            np.save(CACHE / f"{B.name}_{split_tag}_vmax_{v}.npy", mx)
         S = mean if name.startswith("vmean_") else mx
     else:
         from . import ext
@@ -98,7 +100,8 @@ def compute(B, name: str, split_tag: str) -> np.ndarray:
             raise KeyError(name)
         S = reg[name](B, split_tag)
     S = np.asarray(S, np.float32)
-    np.save(f, S)
+    if cache:
+        np.save(f, S)
     return S
 
 

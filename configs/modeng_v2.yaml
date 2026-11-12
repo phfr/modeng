@@ -1,0 +1,123 @@
+# modeng-v2: the recommended model after the 2026-11-12 sprint = r7 arm D
+# ("W_v1clean without label-process channels", docs/reports/r7_wide_confirm.md, FINAL report section 11).
+# Trained by scripts/train_v2.py; applied by `python -m modeng.predict`. The config hash (sha256 of this file's
+# canonical JSON dump) is stored with the saved model; predict refuses a model whose hash differs from this file.
+name: modeng-v2
+recipe_of: stackW_P4D_v1clean_nolab          # r7 arm D; train_v2.py checks it reproduces the stored r7 scores
+vintage: "2104"                              # seeds / context / side inputs at OT 21.04 (2021-04); model dir suffix
+model_root: /mnt/msadb/modeng/models         # saved to <model_root>/modeng_v2_<vintage>/ (never in git)
+
+leakage_class: temporal-clean                # inputs dated <= 21.04 (vintage caveats below); labels 21.04 -> 25.09
+leakage_notes:
+  - "Training labels: OT 21.04 -> 25.09 arrivals of 712 wide_train diseases (same time window as the temporal benchmarks)."
+  - "Label-process channels removed (gwas_catlag, pri_l2g_n, pri_l2g_max, hz_gwas): they forecast the OT GWAS/L2G pipeline, not biology."
+  - "Annotation-vintage caveats (residual, documented in the FINAL report): PubTator3 gene/MeSH mapping of PMIDs <= 2021-03 is the 2026 mapping; ESM-C / ESM2 / ProtT5 are sequence-only models (label-free) released after T0."
+  - "vintage 2609 (predict --vintage 2609) = production mode: OT 26.09 seeds/context, side inputs still 21.04-vintage; never an evaluation."
+
+training:
+  benchmark: temporal_wide
+  split: wide_train                          # 712 diseases, OT 21.04 seeds -> 25.09 targets
+  guard: true                                # stack.relative_target_guard: drop targets of evaluation diseases that are ontology relatives
+  guard_evals: [temporal/dev, temporal/confirm, temporal_wide/wide_dev, temporal_wide/wide_confirm]   # as in r7 (wide_confirm is spent; used only to drop pairs)
+  pos_deg_power: 0.35                        # positive weight deg^-0.35 (STRING 11.5 T0 degree)
+  rounds: 600
+  negatives_per_task: 1500
+  max_pos_per_task: 60
+  sampling_seed: 0                           # numpy rng for negatives / positive subsampling
+  lightgbm:
+    objective: binary
+    learning_rate: 0.03
+    num_leaves: 31
+    min_data_in_leaf: 50
+    feature_fraction: 0.7
+    bagging_fraction: 0.8
+    bagging_freq: 1
+    lambda_l2: 10.0
+    verbose: -1
+    num_threads: 8
+    seed: 0
+features: "channel values + within-task percentile ranks (r_<channel>) + log1p(n_seeds); 95 features"
+
+calibration:
+  method: isotonic                           # score -> P(gene becomes an OT disease gene by the next ~4 years), fitted on dev only
+  fit_on: [temporal/dev, temporal_wide/wide_dev]   # both out-of-sample for a wide_train model; candidate genes only
+  shrink: 0.8                                # dev-only shrink (FINAL report 4b / 9: dev cross-fit 0.8-0.9, confirm ~0.72)
+  module_tau_default: 0.2
+
+# 47 channels = results/v1clean_channels.txt minus [gwas_catlag, pri_l2g_n, pri_l2g_max, hz_gwas]
+channels:
+  - transfer_jaccard      # OT 21.04 context, top-50 Jaccard donors
+  - transfer_onto         # OT 21.04 context, ontology relatives only
+  - popularity            # OT 21.04 context column sums
+  - degree                # STRING 11.5 physical no-textmining >= 0.4 (T0)
+  - rwr_string            # same network
+  - don_msig_go           # MSigDB 7.4 (2021-03)
+  - don_msig_reactome
+  - don_msig_wiki
+  - don_hpo2101           # HPO 2021-01-15
+  - don_impc13            # IMPC 13.0 (2020-07)
+  - don_complexportal     # Complex Portal 2021-03-10
+  - don_paralog30         # Ensembl Compara 103
+  - don_km_esm2_15b       # k-means modules on sequence embeddings
+  - don_km_prott5
+  - don_km_depmap20q4     # DepMap 20Q4
+  - don_km_phylo_npp      # CladeOScope NPP
+  - vmean_esmc
+  - vmax_esmc
+  - vmean_prott5
+  - vmax_prott5
+  - vmean_esm2_15b
+  - vmax_esm2_15b
+  - vmean_depmap20q4
+  - vmax_depmap20q4
+  - vmean_phylo_npp
+  - vmax_phylo_npp
+  - vmean_go_t0           # GO at T0 (modet go_t0)
+  - vmax_go_t0
+  - vmean_reactome_t0     # Reactome at T0
+  - vmax_reactome_t0
+  - vc_mean_hpa20_sc      # HPA v20.1 (2020-11) single cell
+  - vc_max_hpa20_sc
+  - vc_mean_hpa20_tis     # HPA v20.1 tissue consensus
+  - vc_max_hpa20_tis
+  - vc_mean_gtex8         # GTEx v8 (2017)
+  - vc_max_gtex8
+  - cs_donor              # non-negative lasso over OT 21.04 donor rows
+  - dA_pt                 # PubTator3 gene x MeSH, PMID <= 2021-03 (a_pt21)
+  - dc_ridge              # EASE ridge over OT 21.04 donor rows
+  - dc_ridge_pos
+  - pri_mend_n            # OT 21.04 ClinVar / curated evidence counts, task family excluded
+  - pri_hpo_n             # HPO 2021-01-15 terms per gene
+  - hz_mend
+  - ph_mean               # HPO 2021-01-15 phenotype matching
+  - ph_top3
+  - pt_ridge              # ridge over PubTator3 sets (a_pt21)
+  - pt_ridge_pos
+
+data_vintages:
+  labels_seeds_context: "OT 21.04 genetic sets (modet ot_t0_sets.parquet), sealed modet ids + relatives removed from the context"
+  training_targets: "OT 25.09 additions (modet ot_current_sets.parquet), wide_train only"
+  ontology_masking: "EFO/MONDO descendants, union of OT 21.04 / 25.09 / 26.09 ontologies"
+  network: "STRING 11.5 physical, no text-mining, score >= 0.4 (t0_string115_phys_notm_400)"
+  pubtator: "PubTator3 co-mentions, PMID <= 33750000 (~2021-03); 2026 entity mapping"
+  hpo: "genes_to_phenotype 2021-01-15 (Wayback)"
+  ot_evidence: "OT 21.04 evidence (eva, gene2phenotype, genomics_england, clingen, uniprot_*, orphanet)"
+  msigdb: "7.4 (2021-03)"
+  impc: "13.0 (2020-07)"
+  complexportal: "2021-03-10"
+  depmap: "20Q4"
+  expression: "HPA v20.1 (2020-11), GTEx v8 (2017)"
+  sequence_embeddings: "ESM-C, ESM2-15B (UCE), ProtT5 (label-free; model releases post-date T0)"
+  go_reactome_views: "modet go_t0 / reactome_t0 (T0)"
+
+# Witness groups for explanations (LightGBM pred_contrib, log-odds; a channel and its rank feature r_<channel> share a group)
+witness_groups:
+  disease_transfer: [transfer_jaccard, transfer_onto, cs_donor, dc_ridge, dc_ridge_pos]
+  gene_prior: [popularity, degree, pri_mend_n, pri_hpo_n, hz_mend]
+  network: [rwr_string]
+  pathway_complex: [don_msig_go, don_msig_reactome, don_msig_wiki, don_complexportal, vmean_go_t0, vmax_go_t0, vmean_reactome_t0, vmax_reactome_t0]
+  phenotype: [don_hpo2101, don_impc13, ph_mean, ph_top3]
+  literature: [dA_pt, pt_ridge, pt_ridge_pos]
+  sequence_paralogy: [don_paralog30, don_km_esm2_15b, don_km_prott5, don_km_phylo_npp, vmean_esmc, vmax_esmc, vmean_prott5, vmax_prott5, vmean_esm2_15b, vmax_esm2_15b, vmean_phylo_npp, vmax_phylo_npp]
+  expression_dependency: [don_km_depmap20q4, vmean_depmap20q4, vmax_depmap20q4, vc_mean_hpa20_sc, vc_max_hpa20_sc, vc_mean_hpa20_tis, vc_max_hpa20_tis, vc_mean_gtex8, vc_max_gtex8]
+  seed_count: [log_nseeds]

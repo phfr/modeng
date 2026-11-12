@@ -13,6 +13,8 @@ Read `CLAUDE.md`, then **`docs/reports/FINAL_overnight_2026-11-12.md`** (result,
 
 ## Afternoon 2026-11-12: research cycle + fresh confirmation done (FINAL report section 11). Recommended model: W_v1clean without label-process channels (wide-trained). wide_confirm is SPENT. Next: next OT release as confirmation; consider merging the two dev sets for future selection.
 
+## Evening 2026-11-12: modeng-v2 packaged (= r7 arm D). Config `configs/modeng_v2.yaml`, `scripts/train_v2.py` (model + card on `/mnt/msadb/modeng/models/modeng_v2_2104/`, reproduces arm D exactly), `python -m modeng.predict` (README 'Using modeng-v2'), `tests/test_predict.py`.
+
 ## Morning follow-up done (07:20-08:30): R3 red team, prospective version, forward no-label-process arm, strict-a attack (negative), calibration refit — see FINAL report section 9.
 
 ## Next (in order)
