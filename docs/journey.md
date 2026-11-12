@@ -19,3 +19,4 @@
 - 2026-11-12 15:30 r7 P3: arrival typing (`src/modeng/arrival_types.py`, alt sets newdata / labelproc), Expert-B / Expert-L / logistic gate trained on wide_train. Pre-registered rules: gate does not replace W_v1clean; disagreement list not a product (below pool-random). wide_confirm not scored by this run. Report `docs/reports/r7_experts.md`.
 - 2026-11-12 20:25 User decision: move all data to /mnt/msadb/modeng (as subex); data/<sub> are symlinks; CLAUDE.md rule added.
 - 2026-11-12 21:00 User request: package modeng-v2, write-up (docs/WRITEUP.md), scaffold successor projects ../fwdbench (new data / forward) and ../nebb (new-biology benchmark) using docs/PROCESS_v2.md. modeng-v2 = W_v1clean without label-process channels (the only arm passing the pre-registered fresh-fold rule).
+- 2026-11-12 22:10 Project closed: docs/SUMMARY.md + README; all results, reviews and decisions committed. Successor: nebb.
