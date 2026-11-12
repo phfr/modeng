@@ -495,6 +495,9 @@ def load(bench: str) -> Benchmark:
             pickle.dump(b, fh)
     b.degree = D.degree(b.network)
     add_onnet(b)
+    if bench in ("temporal", "temporal_wide"):       # alt sets newdata / labelproc (arrival typing; additive)
+        from . import arrival_types as AT
+        AT.add_typed_alt(b)
     return b
 
 
