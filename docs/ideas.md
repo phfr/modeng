@@ -2,7 +2,7 @@
 Status: NEW | SHORTLIST | IMPLEMENTING | TESTED-POSITIVE | TESTED-NEGATIVE | KILLED (reason) | PARKED
 | id | idea | origin | status | evidence / link |
 |---|---|---|---|---|
-| CI-01 | Upstream-of-core: knock-downs that move the seed program | R1 causal | NEW | `docs/ideation/r1_causal.md` |
+| CI-01 | Upstream-of-core: knock-downs that move the seed program | R1 causal | TESTED-NEGATIVE (chance for OT labels; biology works) | `docs/ideation/r1_causal.md` |
 | CI-02 | Trans-QTL convergence: where the disease's own variants land | R1 causal | NEW | `docs/ideation/r1_causal.md` |
 | CI-03 | Genome-wide cis-MR + colocalisation as the non-transfer channel | R1 causal | NEW | `docs/ideation/r1_causal.md` |
 | CI-04 | Directed donor graph: genes flow down the causal arrow | R1 causal | TESTED-NEGATIVE (no confirm gain) | `docs/ideation/r1_causal.md` |
@@ -48,7 +48,7 @@ Status: NEW | SHORTLIST | IMPLEMENTING | TESTED-POSITIVE | TESTED-NEGATIVE | KIL
 | IR-8 | Cold-start item tower trained with interaction dropout | R1 recsys | NEW | `docs/ideation/r1_recsys.md` |
 | IR-9 | Next-item model over dated discovery sequences | R1 recsys | NEW | `docs/ideation/r1_recsys.md` |
 | IR-10 | Cross-domain users: genes cold for diseases are warm in burden PheWAS | R1 recsys | NEW | `docs/ideation/r1_recsys.md` |
-| SC-1 | Virtual Perturb-seq screen with the seed module as readout | R1 singlecell | NEW | `docs/ideation/r1_singlecell.md` |
+| SC-1 | Virtual Perturb-seq screen with the seed module as readout | R1 singlecell | TESTED-NEGATIVE | `docs/ideation/r1_singlecell.md` |
 | SC-2 | Experiments as donor "diseases" in the transfer matrix | R1 singlecell | TESTED-NEGATIVE (perturbation/DepMap donor sets ~random) | `docs/ideation/r1_singlecell.md` |
 | SC-3 | Cell-address donor selection for diseases without gene overlap | R1 singlecell | NEW | `docs/ideation/r1_singlecell.md` |
 | SC-4 | Signed regulator-to-program-to-trait model from burden statistics | R1 singlecell | NEW | `docs/ideation/r1_singlecell.md` |
