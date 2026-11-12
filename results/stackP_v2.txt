@@ -1,0 +1,28 @@
+[past] 55 channels, 1371887 rows, 21887 pos (42s)
+temporal  dev      stackP_v2              AP 0.1431 nuAP 0.1681 AUROC 0.8287 R@100 0.3035 | onnet AP 0.1607 nuAP 0.2190
+temporal  confirm  stackP_v2              AP 0.1185 nuAP 0.1815 AUROC 0.8435 R@100 0.3046 | onnet AP 0.1252 nuAP 0.2052
+gwas_catlag          238641.884380
+dc_ridge             157478.472509
+don_hpo2101          108900.931001
+transfer_jaccard     101085.810238
+r_degree              79083.275455
+dA_pt                 70038.237746
+r_gwas_catlag         63951.479288
+r_dA_pt               52647.782137
+r_popularity          35385.437582
+vmax_esmc             29862.855038
+r_don_hpo2101         27121.275155
+vmax_prott5           24261.475302
+degree                19476.542346
+vmax_hpa_sc           16450.530679
+r_cs_donor            16331.810603
+vmax_depmap20q4       15035.441419
+dc_ridge_pos          14585.803099
+log_nseeds            14377.711679
+popularity            13200.948452
+r_don_paralog30       10362.002323
+r_vmax_depmap20q4     10094.571420
+vmax_go_t0             9585.589227
+r_vmean_prott5         9328.165819
+r_transfer_onto        9234.589961
+don_msig_go            9033.373808

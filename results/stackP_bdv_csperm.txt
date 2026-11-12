@@ -1,0 +1,2 @@
+temporal  dev      stackP_bdv_csperm      AP 0.1023 nuAP 0.1247 AUROC 0.8100 R@100 0.2571 | onnet AP 0.1216 nuAP 0.1712
+temporal  confirm  stackP_bdv_csperm      AP 0.0912 nuAP 0.1523 AUROC 0.8249 R@100 0.2580 | onnet AP 0.0983 nuAP 0.1732

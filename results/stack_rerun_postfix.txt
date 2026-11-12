@@ -1,0 +1,6 @@
+temporal  dev      stackP_base            AP 0.0778 nuAP 0.1187 AUROC 0.7785 R@100 0.2229 | onnet AP 0.0961 nuAP 0.1857
+temporal  confirm  stackP_base            AP 0.0810 nuAP 0.1341 AUROC 0.7920 R@100 0.2358 | onnet AP 0.0877 nuAP 0.1610
+temporal  dev      stackP_bdv             AP 0.1018 nuAP 0.1237 AUROC 0.8103 R@100 0.2523 | onnet AP 0.1210 nuAP 0.1731
+temporal  confirm  stackP_bdv             AP 0.0913 nuAP 0.1506 AUROC 0.8252 R@100 0.2598 | onnet AP 0.0987 nuAP 0.1712
+temporal  dev      stack_bdv_w05          AP 0.0940 nuAP 0.1046 AUROC 0.8153 R@100 0.2455 | onnet AP 0.1088 nuAP 0.1558
+temporal  confirm  stack_bdv_w05          AP 0.1075 nuAP 0.1396 AUROC 0.8304 R@100 0.2777 | onnet AP 0.1163 nuAP 0.1724
