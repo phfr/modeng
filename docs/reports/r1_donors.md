@@ -66,6 +66,12 @@ Temporal is trained on `past` episodes (`--train past`); the reference is `stack
 | neg. control stackP_bdv_permA (+ dA_perm_hpo2101, dA_perm_a_impc_orth) | dev | 0.0967 | 0.1202 | 0.810 | 0.253 | 0.165 | -0.0051 [-0.0087, -0.0018] | -0.0035 [-0.0100, +0.0024] |
 | neg. control stackP_bdv_permA | confirm | 0.0899 | 0.1485 | 0.824 | 0.256 | 0.170 | -0.0014 [-0.0066, +0.0024] | -0.0021 [-0.0102, +0.0039] |
 
+| stackP_bdv_dApre21 (+ dA_pt, dA_a_impc_orth, dA_a_dm_codep) | dev | 0.1099 | 0.1392 | 0.815 | 0.267 | 0.184 | +0.0081 [+0.0012, +0.0160] | +0.0155 [+0.0032, +0.0323] |
+| stackP_bdv_dApre21 | confirm | 0.1012 | 0.1633 | 0.835 | 0.285 | 0.185 | +0.0099 [+0.0023, +0.0165] | +0.0126 [+0.0044, +0.0201] |
+
+Against `stackP_bdv_dA_pt`, adding IMPC-orth and DepMap-codep gives dev +0.0023 AP / +0.0072 nuAP but confirm -0.0007 AP /
+-0.0022 nuAP. These two families add nothing beyond dA_pt that holds up on confirm, so they are discarded.
+
 The negative control (two donor channels with gene identities permuted) gives about 0 or slightly negative change (extra noise
 features cost a little AP). So the dA_pt gain is not an artefact of adding two more channels.
 
@@ -74,7 +80,7 @@ Run-to-run noise of the reference: the earlier `stackP_bdv` row (4b8527e) had de
 about 5x that.
 
 Forward: the reference `stack_base` was rerun (dev AP 0.0809 / nuAP 0.1447; confirm 0.0770 / 0.1373). The forward increment run
-`stack_base_dA_pt` is queued last in `scripts/queue_donors_a.sh`. FORWARD_STATUS `stack_bdv_w05` on forward was stopped under the RAM
+`stack_base_dA_pt` started at 05:57 (the last item of `scripts/queue_donors_a.sh`) and had **not finished by the report deadline**. Its row will appear in `results/leaderboard.tsv` / `results/donors_a/fwd_base_dA_pt.log`. Re-run `scripts/summ_donors_a.py` to add it to increments.tsv. Used alone on forward dev, dA_pt is about half as strong as on temporal (0.047 / 0.050 vs transfer_jaccard 0.094 / 0.096), plausibly because OT 25.09 has already ingested most literature up to 2025, so the forward gain is expected to be smaller. `stack_bdv_w05` on forward was stopped under the RAM
 rule; another agent is running `base_donor_view_w05`.
 
 ## Leakage class
