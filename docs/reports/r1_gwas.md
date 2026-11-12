@@ -15,7 +15,11 @@ R@100 +0.013 [0.004, 0.024]. On the GWAS-only target stratum the gain is large a
 Under the F2-3 rule (a gain must improve BOTH AP and nuAP): **dev passes clearly (both CIs > 0); confirm is directionally
 positive on both but neither CI excludes 0** (covered confirm tasks: AP +0.016 [-0.004, 0.035], nuAP +0.011 [-0.017, 0.036]).
 The gene-permuted negative control gives -0.003 to -0.005 everywhere (no gain). Status: **promising, keep `gwas_catlag`,
-needs an archived-catalog rerun (leakage route below) and the forward increment**. FWD_FILL
+needs an archived-catalog rerun (leakage route below) and the forward increment**. **Forward (CV, fair-by-date inputs): very large gain, both AP and nuAP:
+dev AP 0.081 -> 0.132 (+0.051 [0.045, 0.057]), nuAP 0.145 -> 0.213 (+0.068 [0.060, 0.077]); confirm AP 0.077 -> 0.121
+(+0.044 [0.038, 0.050]), nuAP 0.137 -> 0.199 (+0.062 [0.053, 0.071]).** (CIs too narrow: forward tasks are hierarchically
+correlated, bootstrap unit = task.) The forward gain must be read with the catalog-curation caveat below; it says that on
+forward a large share of "new" 26.09 genes is GWAS Catalog content that was public before 25.09.
 
 ## What was built
 Trait data (read-only from modet):
@@ -135,7 +139,30 @@ r_gwas_catlag #5, gwas_seedw #15 (used, presumably as a negative cue); gwas_own/
 Attribution runs (bdv + catlag only, bdv + catlag12, bdv + MAGMA only) were queued but dropped after the coordinator's RAM
 limit (one stacker at a time); alone results and feature gains point to catlag as the source of the gain.
 
-FWD_INC
+Forward, `--train cv` (`modeng.stack.run`, grouped 5-fold OOF on dev, dev-trained model on confirm), base + gw vs the
+leaderboard `stack_base_w05` (same code and settings; another agent's run, deterministic; my own base run was killed to obey
+the one-stacker RAM rule). No forward `bdv` reference exists, so the forward test is over `base`.
+
+| run | split | AP | nuAP | AUROC | R@100 | onnet AP | onnet nuAP |
+|---|---|---|---|---|---|---|---|
+| stack_base_w05 (ref) | dev | 0.0809 | 0.1447 | 0.8231 | 0.2211 | 0.0856 | 0.1602 |
+| stack_d_base_gw | dev | **0.1316** | **0.2131** | 0.8586 | 0.3178 | 0.1422 | 0.2404 |
+| stack_base_w05 (ref) | confirm | 0.0770 | 0.1373 | 0.8117 | 0.2062 | 0.0819 | 0.1578 |
+| stack_d_base_gw | confirm | **0.1209** | **0.1989** | 0.8491 | 0.3028 | 0.1311 | 0.2289 |
+
+| split | subset | n | AP | nuAP | AUROC | R@100 |
+|---|---|---|---|---|---|---|
+| dev | all | 842 | +0.051 [0.045, 0.057] | +0.068 [0.060, 0.077] | +0.036 | +0.097 [0.085, 0.109] |
+| dev | covered (own MAGMA or catlag) | 676 | +0.060 [0.053, 0.067] | +0.083 [0.073, 0.094] | +0.041 | +0.113 |
+| dev | uncovered (only gwas_seedw) | 166 | +0.013 [0.003, 0.023] | +0.007 [-0.005, 0.021] | +0.012 | +0.031 |
+| confirm | all | 797 | +0.044 [0.038, 0.050] | +0.062 [0.053, 0.071] | +0.037 | +0.097 [0.085, 0.109] |
+| confirm | covered | 648 | +0.052 [0.045, 0.060] | +0.075 [0.064, 0.085] | +0.042 | +0.114 |
+| confirm | uncovered | 149 | +0.008 [-0.001, 0.018] | +0.005 [-0.009, 0.022] | +0.019 | +0.021 |
+
+Feature gain (forward confirm model): transfer_jaccard 948k, **gwas_catlag 835k (#2)**, transfer_onto 525k, ..., gwas_seedw
+93k, gwas_xpow 26k, gwas_sem 11k, gwas_own 11k. The forward negative control (perm channels) was not run (RAM rule, time);
+the temporal one is clean.
+
 
 ## Leakage class
 * `gwas_catlag`: filter on DATE ADDED TO CATALOG <= seed date approximates an archived snapshot. Residual routes: (1) trait
