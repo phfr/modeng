@@ -1,0 +1,77 @@
+dev done
+confirm done
+  split           channel       group  gene_cov  nonzero_share  task_nontrivial  per_gene  alone_ap  alone_nuap  alone_auroc
+confirm          cs_donor    cs_donor     1.000          0.014            1.000     False     0.076       0.072        0.612
+confirm             dA_pt       dA_pt     0.666          0.116            1.000     False     0.093       0.094        0.773
+confirm          dc_ridge    dc_ridge     1.000          0.521            1.000     False     0.104       0.114        0.671
+confirm      dc_ridge_pos    dc_ridge     1.000          0.063            1.000     False     0.113       0.106        0.715
+confirm       gwas_catlag gwas_catlag     0.377          0.002            0.377     False     0.047       0.049        0.529
+confirm         pri_l2g_n      priors     1.000          0.406            1.000     False     0.020       0.020        0.656
+confirm       pri_l2g_max      priors     1.000          0.860            1.000     False     0.007       0.008        0.647
+confirm        pri_mend_n      priors     1.000          0.261            1.000     False     0.019       0.009        0.720
+confirm         pri_hpo_n      priors     0.220          0.220            1.000      True     0.015       0.008        0.707
+confirm           hz_gwas      priors     1.000          0.203            0.500     False     0.018       0.017        0.619
+confirm           hz_mend      priors     1.000          0.207            0.942     False     0.015       0.007        0.698
+confirm           ph_mean          ph     0.220          0.217            1.000     False     0.076       0.069        0.723
+confirm           ph_top3          ph     0.220          0.217            1.000     False     0.059       0.059        0.722
+confirm          pt_ridge    pt_ridge     1.000          0.330            1.000     False     0.075       0.068        0.702
+confirm      pt_ridge_pos    pt_ridge     1.000          0.274            1.000     False     0.030       0.018        0.771
+confirm  transfer_jaccard        base     1.000          0.051            1.000     False     0.119       0.104        0.705
+confirm     transfer_onto        base     1.000          0.021            0.949     False     0.058       0.055        0.616
+confirm        popularity        base     1.000          0.521            1.000     False     0.019       0.012        0.787
+confirm            degree        base     1.000          0.662            1.000      True     0.003       0.001        0.611
+confirm        rwr_string        base     1.000          0.662            1.000     False     0.014       0.006        0.653
+confirm       don_msig_go       donor     1.000          0.048            1.000     False     0.024       0.022        0.598
+confirm don_msig_reactome       donor     1.000          0.069            1.000     False     0.021       0.020        0.585
+confirm     don_msig_wiki       donor     1.000          0.085            1.000     False     0.020       0.011        0.597
+confirm       don_hpo2101       donor     1.000          0.046            1.000     False     0.080       0.068        0.647
+confirm        don_impc13       donor     1.000          0.169            1.000     False     0.004       0.004        0.552
+confirm don_complexportal       donor     1.000          0.002            0.949     False     0.007       0.004        0.503
+confirm     don_paralog30       donor     1.000          0.001            0.978     False     0.004       0.004        0.496
+confirm   don_km_esm2_15b       donor     1.000          0.196            1.000     False     0.007       0.007        0.579
+confirm     don_km_prott5       donor     1.000          0.205            1.000     False     0.010       0.008        0.586
+confirm don_km_depmap20q4       donor     1.000          0.220            1.000     False     0.006       0.007        0.555
+confirm     don_km_hpa_sc       donor     1.000          0.232            1.000     False     0.008       0.008        0.580
+confirm       don_km_gtex       donor     1.000          0.214            1.000     False     0.006       0.006        0.556
+confirm    don_km_ps_k562       donor     1.000          0.174            1.000     False     0.003       0.005        0.521
+confirm     don_km_ps_cd4       donor     1.000          0.224            1.000     False     0.004       0.004        0.521
+confirm  don_km_phylo_npp       donor     1.000          0.266            1.000     False     0.007       0.006        0.562
+confirm        vmean_esmc        view     0.994          0.994            1.000     False     0.011       0.012        0.616
+confirm         vmax_esmc        view     0.994          0.994            1.000     False     0.013       0.013        0.629
+confirm      vmean_prott5        view     0.993          0.993            1.000     False     0.011       0.010        0.639
+confirm       vmax_prott5        view     0.993          0.993            1.000     False     0.014       0.010        0.652
+confirm    vmean_esm2_15b        view     0.977          0.977            1.000     False     0.011       0.009        0.617
+confirm     vmax_esm2_15b        view     0.977          0.977            1.000     False     0.012       0.013        0.628
+confirm  vmean_depmap20q4        view     0.910          0.910            1.000     False     0.008       0.011        0.590
+confirm   vmax_depmap20q4        view     0.910          0.910            1.000     False     0.010       0.013        0.605
+confirm      vmean_hpa_sc        view     0.976          0.976            1.000     False     0.009       0.008        0.636
+confirm       vmax_hpa_sc        view     0.976          0.976            1.000     False     0.008       0.006        0.613
+confirm        vmean_gtex        view     0.980          0.980            1.000     False     0.006       0.007        0.610
+confirm         vmax_gtex        view     0.980          0.980            1.000     False     0.009       0.007        0.587
+confirm  vmean_hpa_tissue        view     0.982          0.982            1.000     False     0.010       0.010        0.614
+confirm   vmax_hpa_tissue        view     0.982          0.982            1.000     False     0.010       0.007        0.600
+confirm     vmean_ps_k562        view     0.510          0.510            1.000     False     0.003       0.004        0.543
+confirm      vmax_ps_k562        view     0.510          0.510            1.000     False     0.005       0.006        0.545
+confirm     vmean_ps_rpe1        view     0.105          0.105            0.848     False     0.005       0.004        0.504
+confirm      vmax_ps_rpe1        view     0.105          0.105            0.848     False     0.005       0.004        0.504
+confirm      vmean_ps_cd4        view     0.637          0.637            1.000     False     0.004       0.005        0.543
+confirm       vmax_ps_cd4        view     0.637          0.637            1.000     False     0.004       0.006        0.551
+confirm    vmean_ps_hepg2        view     0.105          0.105            0.848     False     0.004       0.002        0.504
+confirm     vmax_ps_hepg2        view     0.105          0.105            0.848     False     0.004       0.002        0.504
+confirm   vmean_ps_jurkat        view     0.104          0.104            0.841     False     0.003       0.003        0.504
+confirm    vmax_ps_jurkat        view     0.104          0.104            0.841     False     0.003       0.003        0.504
+confirm   vmean_phylo_npp        view     0.945          0.945            1.000     False     0.008       0.007        0.616
+confirm    vmax_phylo_npp        view     0.945          0.945            1.000     False     0.008       0.008        0.609
+confirm       vmean_go_t0        view     0.825          0.825            1.000     False     0.015       0.019        0.626
+confirm        vmax_go_t0        view     0.825          0.825            1.000     False     0.014       0.016        0.629
+confirm vmean_reactome_t0        view     0.553          0.553            1.000     False     0.013       0.014        0.610
+confirm  vmax_reactome_t0        view     0.553          0.553            1.000     False     0.018       0.020        0.611
+12 pri_l2g_n, pri_l2g_max, hz_gwas, popularity
+17 pri_hpo_n, hz_mend
+19 ph_mean, ph_top3
+35 vmean_go_t0, vmax_go_t0
+36 vmean_reactome_t0, vmax_reactome_t0
+37 degree, rwr_string
+50 vmean_ps_jurkat, vmax_ps_jurkat
+51 vmean_ps_rpe1, vmax_ps_rpe1
+52 vmean_ps_hepg2, vmax_ps_hepg2

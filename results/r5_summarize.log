@@ -1,0 +1,165 @@
+dtype    GWAS-dominated  Mendelian-dominated  no genetic seed evidence
+split                                                                 
+confirm              39                   96                         3
+dev                  16                   36                         1 
+ area     cardiovascular  genetic/congenital  nervous system  other
+split                                                             
+confirm               9                  17              29     83
+dev                   5                   6              11     31
+  split                   removed                   ap_seed0                 nuap_seed0            degbin_ap_seed0
+    dev (none: full_seed1 - full) -0.0037 [-0.0098, +0.0020] +0.0005 [-0.0065, +0.0071] -0.0008 [-0.0068, +0.0044]
+    dev (none: full_seed2 - full) -0.0047 [-0.0098, +0.0004] -0.0013 [-0.0079, +0.0046] -0.0040 [-0.0099, +0.0015]
+    dev                      base +0.0008 [-0.0063, +0.0075] -0.0150 [-0.0230, -0.0084] -0.0083 [-0.0159, +0.0002]
+    dev                     donor -0.0023 [-0.0105, +0.0058] +0.0002 [-0.0090, +0.0085] +0.0002 [-0.0083, +0.0080]
+    dev                      view +0.0062 [-0.0010, +0.0139] +0.0107 [+0.0024, +0.0184] +0.0040 [-0.0046, +0.0139]
+    dev                  cs_donor -0.0022 [-0.0092, +0.0040] +0.0017 [-0.0062, +0.0081] +0.0003 [-0.0096, +0.0089]
+    dev                     dA_pt -0.0037 [-0.0087, +0.0014] -0.0001 [-0.0063, +0.0052] -0.0052 [-0.0133, +0.0017]
+    dev                  dc_ridge -0.0076 [-0.0142, -0.0012] -0.0049 [-0.0116, +0.0011] -0.0110 [-0.0188, -0.0039]
+    dev               gwas_catlag -0.0282 [-0.0503, -0.0119] -0.0233 [-0.0458, -0.0070] -0.0262 [-0.0490, -0.0098]
+    dev                    priors -0.0053 [-0.0141, +0.0020] -0.0014 [-0.0109, +0.0079] -0.0065 [-0.0153, +0.0008]
+    dev                        ph -0.0064 [-0.0141, +0.0017] -0.0023 [-0.0101, +0.0050] -0.0049 [-0.0142, +0.0036]
+    dev                  pt_ridge -0.0055 [-0.0103, -0.0006] -0.0018 [-0.0086, +0.0041] -0.0091 [-0.0154, -0.0023]
+    dev                view+donor +0.0112 [-0.0011, +0.0243] +0.0158 [+0.0019, +0.0294] +0.0101 [-0.0019, +0.0227]
+    dev                    modern -0.0002 [-0.0071, +0.0062] +0.0021 [-0.0059, +0.0092] +0.0021 [-0.0060, +0.0091]
+confirm (none: full_seed1 - full) -0.0015 [-0.0060, +0.0031] -0.0019 [-0.0079, +0.0043] +0.0015 [-0.0031, +0.0063]
+confirm (none: full_seed2 - full) -0.0056 [-0.0095, -0.0021] -0.0036 [-0.0100, +0.0015] -0.0033 [-0.0076, +0.0015]
+confirm                      base +0.0029 [-0.0020, +0.0074] -0.0171 [-0.0218, -0.0124] -0.0028 [-0.0092, +0.0035]
+confirm                     donor -0.0033 [-0.0076, +0.0007] -0.0029 [-0.0088, +0.0030] +0.0024 [-0.0027, +0.0077]
+confirm                      view +0.0037 [-0.0049, +0.0117] +0.0071 [-0.0022, +0.0156] +0.0072 [+0.0016, +0.0133]
+confirm                  cs_donor +0.0005 [-0.0046, +0.0045] +0.0009 [-0.0061, +0.0062] +0.0009 [-0.0040, +0.0059]
+confirm                     dA_pt -0.0014 [-0.0054, +0.0029] -0.0006 [-0.0065, +0.0052] -0.0009 [-0.0042, +0.0031]
+confirm                  dc_ridge -0.0062 [-0.0122, -0.0009] -0.0082 [-0.0159, -0.0018] -0.0069 [-0.0115, -0.0019]
+confirm               gwas_catlag -0.0041 [-0.0142, +0.0039] -0.0083 [-0.0199, +0.0007] -0.0093 [-0.0194, -0.0007]
+confirm                    priors -0.0005 [-0.0073, +0.0054] -0.0001 [-0.0072, +0.0064] -0.0027 [-0.0076, +0.0021]
+confirm                        ph -0.0024 [-0.0079, +0.0037] -0.0037 [-0.0106, +0.0034] -0.0024 [-0.0076, +0.0039]
+confirm                  pt_ridge -0.0051 [-0.0081, -0.0024] -0.0048 [-0.0094, -0.0003] -0.0048 [-0.0082, -0.0011]
+confirm                view+donor +0.0032 [-0.0043, +0.0107] +0.0077 [-0.0018, +0.0174] +0.0101 [+0.0031, +0.0172]
+confirm                    modern -0.0015 [-0.0070, +0.0039] -0.0001 [-0.0078, +0.0078] +0.0018 [-0.0030, +0.0067]
+  split     removed                   ap_3seed                 nuap_3seed            degbin_ap_3seed
+    dev        base +0.0056 [-0.0013, +0.0120] -0.0144 [-0.0222, -0.0078] -0.0055 [-0.0109, +0.0004]
+    dev       donor +0.0007 [-0.0040, +0.0056] -0.0005 [-0.0056, +0.0044] +0.0027 [-0.0037, +0.0086]
+    dev        view +0.0080 [+0.0023, +0.0141] +0.0089 [+0.0020, +0.0155] +0.0053 [-0.0025, +0.0140]
+    dev    cs_donor +0.0004 [-0.0065, +0.0064] +0.0008 [-0.0045, +0.0051] +0.0012 [-0.0051, +0.0064]
+    dev       dA_pt -0.0008 [-0.0037, +0.0027] +0.0005 [-0.0026, +0.0036] -0.0029 [-0.0071, +0.0015]
+    dev    dc_ridge -0.0037 [-0.0097, +0.0029] -0.0018 [-0.0071, +0.0039] -0.0064 [-0.0119, -0.0001]
+    dev gwas_catlag -0.0250 [-0.0471, -0.0090] -0.0229 [-0.0451, -0.0073] -0.0244 [-0.0459, -0.0090]
+    dev      priors -0.0014 [-0.0077, +0.0032] -0.0017 [-0.0066, +0.0032] -0.0044 [-0.0105, +0.0010]
+    dev          ph -0.0038 [-0.0084, +0.0010] -0.0032 [-0.0076, +0.0012] -0.0028 [-0.0084, +0.0022]
+    dev    pt_ridge -0.0021 [-0.0053, +0.0014] -0.0006 [-0.0047, +0.0032] -0.0057 [-0.0098, -0.0018]
+    dev  view+donor +0.0137 [+0.0040, +0.0241] +0.0155 [+0.0039, +0.0270] +0.0102 [-0.0006, +0.0219]
+    dev      modern +0.0040 [+0.0003, +0.0076] +0.0023 [-0.0036, +0.0075] +0.0029 [-0.0022, +0.0073]
+confirm        base +0.0020 [-0.0011, +0.0053] -0.0176 [-0.0215, -0.0133] -0.0060 [-0.0119, +0.0003]
+confirm       donor -0.0016 [-0.0054, +0.0015] -0.0026 [-0.0076, +0.0020] +0.0007 [-0.0022, +0.0037]
+confirm        view +0.0062 [+0.0005, +0.0120] +0.0082 [+0.0025, +0.0136] +0.0070 [+0.0035, +0.0107]
+confirm    cs_donor +0.0016 [-0.0023, +0.0049] +0.0013 [-0.0035, +0.0057] -0.0001 [-0.0037, +0.0031]
+confirm       dA_pt +0.0004 [-0.0027, +0.0038] +0.0013 [-0.0026, +0.0053] -0.0007 [-0.0038, +0.0027]
+confirm    dc_ridge -0.0035 [-0.0072, +0.0003] -0.0055 [-0.0109, -0.0008] -0.0069 [-0.0115, -0.0019]
+confirm gwas_catlag -0.0040 [-0.0127, +0.0029] -0.0069 [-0.0158, -0.0002] -0.0074 [-0.0159, -0.0007]
+confirm      priors +0.0016 [-0.0033, +0.0066] -0.0006 [-0.0045, +0.0028] -0.0013 [-0.0065, +0.0037]
+confirm          ph -0.0020 [-0.0056, +0.0017] -0.0041 [-0.0083, +0.0010] -0.0024 [-0.0070, +0.0019]
+confirm    pt_ridge -0.0044 [-0.0073, -0.0022] -0.0042 [-0.0071, -0.0016] -0.0038 [-0.0058, -0.0017]
+confirm  view+donor +0.0052 [-0.0020, +0.0125] +0.0075 [-0.0010, +0.0159] +0.0096 [+0.0046, +0.0143]
+confirm      modern -0.0008 [-0.0041, +0.0028] -0.0004 [-0.0052, +0.0051] +0.0012 [-0.0019, +0.0047]
+metric                  ap                                                   degbin_ap                                                        nuap                                             
+level       GWAS-dominated Mendelian-dominated no genetic seed evidence GWAS-dominated Mendelian-dominated no genetic seed evidence GWAS-dominated Mendelian-dominated no genetic seed evidence
+removed                                                                                                                                                                                        
+base                0.0055              0.0001                   0.0177        -0.0054             -0.0061                  -0.0139        -0.0134             -0.0199                   0.0026
+cs_donor           -0.0012              0.0024                   0.0121         0.0010             -0.0008                   0.0118        -0.0001              0.0010                   0.0260
+dA_pt              -0.0011              0.0007                   0.0093         0.0008             -0.0016                   0.0089         0.0006              0.0011                   0.0163
+dc_ridge            0.0003             -0.0038                  -0.0427        -0.0051             -0.0077                  -0.0018        -0.0011             -0.0074                  -0.0025
+donor              -0.0009             -0.0001                  -0.0550         0.0019              0.0011                  -0.0265        -0.0048             -0.0005                  -0.0400
+gwas_catlag        -0.0063             -0.0030                  -0.0071        -0.0145             -0.0046                  -0.0039        -0.0116             -0.0052                   0.0007
+modern             -0.0001             -0.0006                  -0.0139         0.0007              0.0014                   0.0008         0.0001             -0.0008                   0.0052
+ph                  0.0008             -0.0031                  -0.0037        -0.0006             -0.0036                   0.0120        -0.0012             -0.0057                   0.0112
+priors              0.0022              0.0020                  -0.0193        -0.0006             -0.0012                  -0.0119        -0.0002             -0.0006                  -0.0079
+pt_ridge           -0.0015             -0.0058                   0.0023        -0.0010             -0.0053                   0.0080        -0.0035             -0.0045                  -0.0038
+view                0.0005              0.0095                  -0.0263        -0.0000              0.0088                   0.0409         0.0019              0.0116                  -0.0196
+view+donor         -0.0018              0.0110                  -0.0875         0.0019              0.0123                   0.0252        -0.0009              0.0130                  -0.0577
+dev                               ap    nuap  degbin_ap
+dtype                                              
+GWAS-dominated            0.1463  0.1575     0.1957
+Mendelian-dominated       0.1851  0.1446     0.2784
+no genetic seed evidence  0.3052  0.2344     0.3932
+confirm                               ap    nuap  degbin_ap
+dtype                                              
+GWAS-dominated            0.0923  0.0978     0.1732
+Mendelian-dominated       0.1735  0.2102     0.2796
+no genetic seed evidence  0.2973  0.1465     0.4042
+                                   base  cs_donor  dA_pt  dc_ridge  donor  gwas_catlag  log_nseeds     ph  priors  pt_ridge   view
+split   dtype                                                                                                                     
+confirm GWAS-dominated            0.224     0.038  0.131     0.484  0.089        0.180       0.006  0.071   0.817     0.184  0.187
+        Mendelian-dominated       0.319     0.092  0.298     0.795  0.259        0.096       0.015  0.277   0.321     0.444  0.247
+        no genetic seed evidence  0.213    -0.022  0.324     0.767  0.612        0.013      -0.009  0.418   0.192     0.518  0.430
+dev     GWAS-dominated            0.338     0.036  0.130     0.480  0.285        0.577       0.056  0.064   1.114     0.195  0.814
+        Mendelian-dominated       0.429     0.112  0.339     0.835  0.480        0.093       0.043  0.328   0.402     0.520  0.915
+        no genetic seed evidence  0.269     0.005  0.143     0.284  0.234        2.389       0.052  0.100   0.610     0.229  0.728
+confirm cardiovascular            0.243     0.029  0.225     0.582  0.168        0.044       0.009  0.118   0.796     0.329  0.203
+        genetic/congenital        0.293     0.121  0.349     0.822  0.351        0.261       0.007  0.331   0.222     0.543  0.371
+        nervous system            0.362     0.086  0.249     0.798  0.269        0.094       0.010  0.292   0.383     0.375  0.244
+        other                     0.269     0.065  0.235     0.664  0.180        0.106       0.014  0.187   0.497     0.340  0.206
+dev     cardiovascular            0.356     0.029  0.178     0.484  0.342        0.665       0.070  0.121   0.808     0.290  0.957
+        genetic/congenital        0.366     0.173  0.356     0.873  0.534        0.063       0.021  0.326   0.390     0.540  0.987
+        nervous system            0.494     0.135  0.300     0.877  0.512        0.103       0.067  0.383   0.476     0.452  0.932
+        other                     0.378     0.063  0.262     0.668  0.371        0.327       0.041  0.199   0.687     0.400  0.830
+                a                b   rho       ga       gb
+        pri_l2g_n          hz_gwas 1.000   priors   priors
+        pri_hpo_n          hz_mend 1.000   priors   priors
+           degree       rwr_string 0.934     base     base
+          ph_mean          ph_top3 0.916       ph       ph
+   vmean_ps_hepg2    vmax_ps_hepg2 0.885     view     view
+  vmean_ps_jurkat   vmax_ps_jurkat 0.885     view     view
+    vmean_ps_rpe1     vmax_ps_rpe1 0.883     view     view
+        pri_l2g_n      pri_l2g_max 0.852   priors   priors
+      pri_l2g_max          hz_gwas 0.851   priors   priors
+       pri_mend_n          hz_mend 0.811   priors   priors
+      vmean_go_t0       vmax_go_t0 0.795     view     view
+        pri_l2g_n       popularity 0.749   priors     base
+vmean_reactome_t0 vmax_reactome_t0 0.731     view     view
+          hz_gwas       popularity 0.730   priors     base
+            dA_pt     pt_ridge_pos 0.678    dA_pt pt_ridge
+   vmean_esm2_15b    vmax_esm2_15b 0.654     view     view
+     vmean_prott5      vmax_prott5 0.652     view     view
+      pri_l2g_max       popularity 0.651   priors     base
+    vmean_ps_k562     vmax_ps_k562 0.644     view     view
+       vmean_esmc        vmax_esmc 0.639     view     view
+     dc_ridge_pos transfer_jaccard 0.617 dc_ridge     base
+       pri_mend_n       popularity 0.605   priors     base
+  vmean_phylo_npp   vmax_phylo_npp 0.599     view     view
+     vmean_ps_cd4      vmax_ps_cd4 0.599     view     view
+          hz_mend          ph_mean 0.569   priors       ph
+        pri_hpo_n          ph_mean 0.567   priors       ph
+ vmean_depmap20q4  vmax_depmap20q4 0.564     view     view
+     vmean_hpa_sc      vmax_hpa_sc 0.544     view     view
+ vmean_hpa_tissue  vmax_hpa_tissue 0.543     view     view
+          hz_mend       popularity 0.536   priors     base
+       vmean_gtex        vmax_gtex 0.528     view     view
+       vmean_gtex vmean_hpa_tissue 0.519     view     view
+        vmax_esmc      vmax_prott5 0.512     view     view
+      vmax_prott5    vmax_esm2_15b 0.501     view     view
+          ph_mean      don_hpo2101 0.494       ph    donor
+          hz_mend     pt_ridge_pos 0.467   priors pt_ridge
+        pri_hpo_n          ph_top3 0.442   priors       ph
+        vmax_esmc    vmax_esm2_15b 0.442     view     view
+          hz_mend          ph_top3 0.441   priors       ph
+        vmax_gtex  vmax_hpa_tissue 0.439     view     view
+rho>=0.5 cluster: vmean_depmap20q4, vmax_depmap20q4
+rho>=0.5 cluster: vmean_hpa_sc, vmax_hpa_sc
+rho>=0.5 cluster: vmean_hpa_tissue, vmax_hpa_tissue
+rho>=0.5 cluster: vmean_gtex, vmax_gtex
+rho>=0.5 cluster: pri_l2g_n, pri_l2g_max, hz_gwas, popularity
+rho>=0.5 cluster: dc_ridge_pos, transfer_jaccard
+rho>=0.5 cluster: pri_mend_n, pri_hpo_n, hz_mend
+rho>=0.5 cluster: ph_mean, ph_top3
+rho>=0.5 cluster: dA_pt, pt_ridge_pos
+rho>=0.5 cluster: vmean_esm2_15b, vmax_esm2_15b
+rho>=0.5 cluster: vmean_prott5, vmax_prott5
+rho>=0.5 cluster: vmean_esmc, vmax_esmc
+rho>=0.5 cluster: vmean_phylo_npp, vmax_phylo_npp
+rho>=0.5 cluster: vmean_go_t0, vmax_go_t0
+rho>=0.5 cluster: vmean_reactome_t0, vmax_reactome_t0
+rho>=0.5 cluster: degree, rwr_string
+rho>=0.5 cluster: vmean_ps_cd4, vmax_ps_cd4
+rho>=0.5 cluster: vmean_ps_k562, vmax_ps_k562
+rho>=0.5 cluster: vmean_ps_jurkat, vmax_ps_jurkat
+rho>=0.5 cluster: vmean_ps_rpe1, vmax_ps_rpe1
+rho>=0.5 cluster: vmean_ps_hepg2, vmax_ps_hepg2

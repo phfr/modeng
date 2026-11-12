@@ -1,0 +1,9 @@
+features loaded 6s, 65 channels
+no_view+donor    dev      AP 0.1868 nuAP 0.1660 degbinAP 0.2657 (30s)
+no_view+donor    confirm  AP 0.1564 nuAP 0.1848 degbinAP 0.2624 (31s)
+no_modern        dev      AP 0.1754 nuAP 0.1522 degbinAP 0.2577 (64s)
+no_modern        confirm  AP 0.1517 nuAP 0.1769 degbinAP 0.2540 (64s)
+full_seed1       dev      AP 0.1720 nuAP 0.1507 degbinAP 0.2548 (104s)
+full_seed1       confirm  AP 0.1517 nuAP 0.1751 degbinAP 0.2537 (105s)
+full_seed2       dev      AP 0.1709 nuAP 0.1489 degbinAP 0.2516 (154s)
+full_seed2       confirm  AP 0.1476 nuAP 0.1734 degbinAP 0.2489 (155s)

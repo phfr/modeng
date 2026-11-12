@@ -1,0 +1,53 @@
+  split      ref        metric  leader  ref_v   delta      lo      hi   n
+    dev transfer            ap  0.1578 0.1223  0.0354  0.0164  0.0559  53
+    dev transfer          nuap  0.1639 0.0956  0.0683  0.0420  0.0988  53
+    dev transfer    recall@100  0.3262 0.2567  0.0695  0.0390  0.1008  53
+    dev transfer          p@20  0.2198 0.1991  0.0208 -0.0089  0.0500  53
+    dev transfer      onnet_ap  0.1825 0.1340  0.0485  0.0249  0.0749  53
+    dev transfer    onnet_nuap  0.2228 0.1325  0.0903  0.0494  0.1362  53
+    dev transfer   sa_onnet_ap  0.0653 0.0339  0.0314  0.0092  0.0599  28
+    dev transfer sa_onnet_nuap  0.1016 0.0432  0.0584  0.0255  0.1063  28
+    dev transfer         sa_ap  0.0483 0.0307  0.0176 -0.0005  0.0404  28
+    dev transfer       sa_nuap  0.0793 0.0402  0.0391  0.0089  0.0796  28
+    dev transfer     degbin_ap  0.2488 0.1883  0.0605  0.0428  0.0817  53
+    dev transfer        hub_ap  0.1140 0.1212 -0.0072 -0.0268  0.0096  53
+    dev transfer     nonhub_ap  0.1343 0.0854  0.0489  0.0142  0.0848  53
+    dev headline            ap  0.1578 0.1067  0.0511  0.0303  0.0762  53
+    dev headline          nuap  0.1639 0.0819  0.0820  0.0458  0.1258  53
+    dev headline    recall@100  0.3262 0.2298  0.0964  0.0644  0.1291  53
+    dev headline          p@20  0.2198 0.1849  0.0349  0.0100  0.0648  53
+    dev headline      onnet_ap  0.1825 0.1271  0.0554  0.0328  0.0804  53
+    dev headline    onnet_nuap  0.2228 0.1901  0.0327 -0.0005  0.0693  53
+    dev headline   sa_onnet_ap  0.0653 0.0373  0.0279  0.0041  0.0597  28
+    dev headline sa_onnet_nuap  0.1016 0.0760  0.0256 -0.0110  0.0682  28
+    dev headline         sa_ap  0.0483 0.0373  0.0110 -0.0085  0.0355  28
+    dev headline       sa_nuap  0.0793 0.0760  0.0033 -0.0313  0.0430  28
+    dev headline     degbin_ap  0.2488 0.1928  0.0560  0.0339  0.0832  53
+    dev headline        hub_ap  0.1140 0.0782  0.0358  0.0105  0.0605  53
+    dev headline     nonhub_ap  0.1343 0.1259  0.0084 -0.0170  0.0347  53
+confirm transfer            ap  0.1375 0.1189  0.0186 -0.0053  0.0426 138
+confirm transfer          nuap  0.1863 0.1042  0.0821  0.0571  0.1100 138
+confirm transfer    recall@100  0.3305 0.2826  0.0479  0.0176  0.0764 138
+confirm transfer          p@20  0.1946 0.1681  0.0264 -0.0070  0.0626 138
+confirm transfer      onnet_ap  0.1419 0.1278  0.0142 -0.0105  0.0398 138
+confirm transfer    onnet_nuap  0.2051 0.1277  0.0774  0.0439  0.1134 138
+confirm transfer   sa_onnet_ap  0.0713 0.0620  0.0093 -0.0136  0.0314  71
+confirm transfer sa_onnet_nuap  0.1088 0.0565  0.0523  0.0251  0.0826  71
+confirm transfer         sa_ap  0.0562 0.0579 -0.0017 -0.0219  0.0191  71
+confirm transfer       sa_nuap  0.0845 0.0523  0.0322  0.0068  0.0590  71
+confirm transfer     degbin_ap  0.2477 0.1914  0.0563  0.0282  0.0848 138
+confirm transfer        hub_ap  0.0717 0.1024 -0.0307 -0.0523 -0.0063 138
+confirm transfer     nonhub_ap  0.1164 0.0923  0.0242  0.0001  0.0501 138
+confirm headline            ap  0.1375 0.0812  0.0563  0.0408  0.0748 138
+confirm headline          nuap  0.1863 0.0797  0.1066  0.0787  0.1402 138
+confirm headline    recall@100  0.3305 0.2256  0.1048  0.0836  0.1248 138
+confirm headline          p@20  0.1946 0.1344  0.0601  0.0431  0.0802 138
+confirm headline      onnet_ap  0.1419 0.0964  0.0455  0.0293  0.0660 138
+confirm headline    onnet_nuap  0.2051 0.1727  0.0324  0.0037  0.0665 138
+confirm headline   sa_onnet_ap  0.0713 0.0580  0.0133  0.0019  0.0242  71
+confirm headline sa_onnet_nuap  0.1088 0.1091 -0.0002 -0.0307  0.0307  71
+confirm headline         sa_ap  0.0562 0.0580 -0.0018 -0.0116  0.0083  71
+confirm headline       sa_nuap  0.0845 0.1091 -0.0246 -0.0549  0.0052  71
+confirm headline     degbin_ap  0.2477 0.1704  0.0773  0.0599  0.0969 138
+confirm headline        hub_ap  0.0717 0.0449  0.0268  0.0135  0.0406 138
+confirm headline     nonhub_ap  0.1164 0.1075  0.0089 -0.0133  0.0338 138

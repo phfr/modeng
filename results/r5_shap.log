@@ -1,0 +1,25 @@
+dev (28386, 131)
+confirm (73438, 131)
+  split       group  mean_abs_shap  mean_abs_shap_pos  mean_shap_pos_minus_neg
+    dev        base         0.2333             0.5166                   0.3773
+    dev    cs_donor         0.0188             0.0895                   0.0784
+    dev       dA_pt         0.0963             0.2335                   0.2104
+    dev    dc_ridge         0.1591             0.6649                   0.6448
+    dev       donor         0.1663             0.3719                   0.3596
+    dev gwas_catlag         0.1163             0.5231                   0.4901
+    dev  log_nseeds         0.1599             0.2463                   0.1754
+    dev          ph         0.0501             0.1833                   0.1696
+    dev      priors         0.4228             0.9188                   0.8714
+    dev    pt_ridge         0.1377             0.3442                   0.3192
+    dev        view         0.4117             0.9151                   0.8999
+confirm        base         0.2238             0.4277                   0.2544
+confirm    cs_donor         0.0178             0.0770                   0.0585
+confirm       dA_pt         0.0927             0.2267                   0.1873
+confirm    dc_ridge         0.1542             0.6239                   0.5765
+confirm       donor         0.1585             0.2330                   0.1591
+confirm gwas_catlag         0.0931             0.2272                   0.1583
+confirm  log_nseeds         0.1881             0.2269                   0.0634
+confirm          ph         0.0486             0.1687                   0.1463
+confirm      priors         0.4293             0.7871                   0.6664
+confirm    pt_ridge         0.1328             0.3244                   0.2742
+confirm        view         0.3796             0.4022                   0.2325
