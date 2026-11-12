@@ -11,8 +11,8 @@ Status: NEW | SHORTLIST | IMPLEMENTING | TESTED-POSITIVE | TESTED-NEGATIVE | KIL
 | CI-07 | Invariant predictors across discovery eras and channels | R1 causal | NEW | `docs/ideation/r1_causal.md` |
 | CI-08 | Genetic-correlation-borrowed gene z (multi-trait posterior) | R1 causal | NEW | `docs/ideation/r1_causal.md` |
 | CI-09 | Allelic-series concordance: direction as evidence | R1 causal | NEW | `docs/ideation/r1_causal.md` |
-| EV-1 | Phenolog donors: model-organism phenotypes as transfer rows | R1 evostruct | NEW | `docs/ideation/r1_evostruct.md` |
-| EV-2 | Homology-lifted transfer through paralogs and shared folds | R1 evostruct | NEW | `docs/ideation/r1_evostruct.md` |
+| EV-1 | Phenolog donors: model-organism phenotypes as transfer rows | R1 evostruct | TESTED-NEGATIVE (IMPC donors no increment) | `docs/ideation/r1_evostruct.md` |
+| EV-2 | Homology-lifted transfer through paralogs and shared folds | R1 evostruct | TESTED-NEGATIVE (homology lifts ~chance) | `docs/ideation/r1_evostruct.md` |
 | EV-3 | Co-evolution kernel: a study-bias-free interactome | R1 evostruct | NEW | `docs/ideation/r1_evostruct.md` |
 | EV-4 | Selection-aware discovery hazard for GWAS-only arrivals | R1 evostruct | NEW | `docs/ideation/r1_evostruct.md` |
 | EV-5 | Livestock and dog trait loci as orthologous power donors | R1 evostruct | NEW | `docs/ideation/r1_evostruct.md` |
@@ -21,7 +21,7 @@ Status: NEW | SHORTLIST | IMPLEMENTING | TESTED-POSITIVE | TESTED-NEGATIVE | KIL
 | EV-8 | Homologous-site transfer: donors at domain and residue level | R1 evostruct | NEW | `docs/ideation/r1_evostruct.md` |
 | EV-9 | Mechanism-signature matching in "selection space" (meta-learned) | R1 evostruct | NEW | `docs/ideation/r1_evostruct.md` |
 | LT-1 | Masked-context cloze: which disease does this gene's literature sound like | R1 llmtext | NEW | `docs/ideation/r1_llmtext.md` |
-| LT-2 | Semantic transfer over virtual donors (MeSH, HPO, GO terms as donor rows) | R1 llmtext | NEW | `docs/ideation/r1_llmtext.md` |
+| LT-2 | Semantic transfer over virtual donors (MeSH, HPO, GO terms as donor rows) | R1 llmtext | TESTED-POSITIVE (PubTator MeSH donors dA_pt: confirm AP +0.011, nuAP +0.015) | `docs/ideation/r1_llmtext.md` |
 | LT-3 | Curation debt: predict what the pipeline will attach next | R1 llmtext | NEW | `docs/ideation/r1_llmtext.md` |
 | LT-4 | Equal-budget data-to-text dossiers for dark genes | R1 llmtext | NEW | `docs/ideation/r1_llmtext.md` |
 | LT-5 | Anonymised-dossier LLM judge with a measured memorisation gap | R1 llmtext | NEW | `docs/ideation/r1_llmtext.md` |
@@ -29,7 +29,7 @@ Status: NEW | SHORTLIST | IMPLEMENTING | TESTED-POSITIVE | TESTED-NEGATIVE | KIL
 | LT-7 | Arrival-hazard learner trained on the previous transition, with literature momentum | R1 llmtext | NEW | `docs/ideation/r1_llmtext.md` |
 | LT-8 | Time-locked two-tower text retrieval (the obvious baseline that must exist) | R1 llmtext | NEW | `docs/ideation/r1_llmtext.md` |
 | LT-9 | Language-selected proxy traits for sub-threshold GWAS | R1 llmtext | NEW | `docs/ideation/r1_llmtext.md` |
-| ML-1 | Cold-start donor imputation: content-predicted association profiles | R1 ml | NEW | `docs/ideation/r1_ml.md` |
+| ML-1 | Cold-start donor imputation: content-predicted association profiles | R1 ml | TESTED-NEGATIVE (AUROC only) | `docs/ideation/r1_ml.md` |
 | ML-2 | Ascertainment-simulator prior-fitted network | R1 ml | NEW | `docs/ideation/r1_ml.md` |
 | ML-3 | Gene-set language model on dated supplement-table gene sets | R1 ml | NEW | `docs/ideation/r1_ml.md` |
 | ML-4 | Biobank release-pair power extrapolator for GWAS arrivals | R1 ml | NEW | `docs/ideation/r1_ml.md` |
@@ -49,7 +49,7 @@ Status: NEW | SHORTLIST | IMPLEMENTING | TESTED-POSITIVE | TESTED-NEGATIVE | KIL
 | IR-9 | Next-item model over dated discovery sequences | R1 recsys | NEW | `docs/ideation/r1_recsys.md` |
 | IR-10 | Cross-domain users: genes cold for diseases are warm in burden PheWAS | R1 recsys | NEW | `docs/ideation/r1_recsys.md` |
 | SC-1 | Virtual Perturb-seq screen with the seed module as readout | R1 singlecell | NEW | `docs/ideation/r1_singlecell.md` |
-| SC-2 | Experiments as donor "diseases" in the transfer matrix | R1 singlecell | NEW | `docs/ideation/r1_singlecell.md` |
+| SC-2 | Experiments as donor "diseases" in the transfer matrix | R1 singlecell | TESTED-NEGATIVE (perturbation/DepMap donor sets ~random) | `docs/ideation/r1_singlecell.md` |
 | SC-3 | Cell-address donor selection for diseases without gene overlap | R1 singlecell | NEW | `docs/ideation/r1_singlecell.md` |
 | SC-4 | Signed regulator-to-program-to-trait model from burden statistics | R1 singlecell | NEW | `docs/ideation/r1_singlecell.md` |
 | SC-5 | Trans-QTLs as an in-vivo, genome-wide perturbation atlas | R1 singlecell | NEW | `docs/ideation/r1_singlecell.md` |

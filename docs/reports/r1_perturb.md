@@ -86,11 +86,18 @@ Positive control: G_bdv reproduces stackP_bdv exactly (dev AP 0.1018 / nuAP 0.12
 | G_bdv_pg (all 10) | dev | 0.0961 | 0.1143 | 0.8082 | 0.2472 | 0.1168 | -0.0057 [-0.0100, -0.0018] | -0.0094 [-0.0180, -0.0020] |
 | G_bdv (ref) | confirm | 0.0913 | 0.1506 | 0.8252 | 0.2598 | 0.0987 | | |
 | G_bdv_pg (all 10) | confirm | 0.0920 | 0.1466 | 0.8248 | 0.2607 | 0.1018 | +0.0007 [-0.0037, +0.0046] | -0.0040 [-0.0116, +0.0017] |
-PGRS_ROWS
+| G_bdv_pgrs (co-response only) | dev | 0.0988 | 0.1213 | 0.8085 | 0.2480 | 0.1153 | -0.0030 [-0.0087, +0.0025] | -0.0023 [-0.0103, +0.0050] |
+| G_bdv_pgrs (co-response only) | confirm | 0.0901 | 0.1474 | 0.8229 | 0.2558 | 0.0983 | -0.0011 [-0.0049, +0.0026] | -0.0032 [-0.0102, +0.0026] |
+PGNEG_ROWS
 
 Zero-transfer-support stratum (G_bdv_pg vs G_bdv): dev R@100 0.0259 vs 0.0242 (+0.0017 [-0.0036, +0.0069]), AP 0.0121 vs 0.0146
 (-0.0025 [-0.0081, +0.0013]); confirm R@100 0.0280 vs 0.0295 (-0.0015 [-0.0046, +0.0019]), AP 0.0111 vs 0.0121 (-0.0010 [-0.0024, -0.0000]).
-PGRS_STRATUM
+Zero-support stratum (G_bdv_pgrs vs G_bdv): dev R@100 0.0276 vs 0.0242 (+0.0035 [-0.0010, +0.0075]), AP -0.0005 [-0.0024, +0.0008];
+confirm R@100 0.0288 vs 0.0295 (-0.0008 [-0.0039, +0.0021]), AP -0.0012 [-0.0033, +0.0002]. No stratum gain.
+
+Under the F2-3 rule (a gain needs both AP and nuAP up) neither set is a gain on either split: the full set is significantly worse on
+dev and neutral on confirm; the co-response-only set is neutral-to-slightly-negative everywhere. The co-response signal that exists alone
+(AUROC 0.58) is already carried by bdv (expression views hpa_sc / gtex and the row-wise ps_* perturbation views).
 
 The largest perturbation feature by gain in G_bdv_pg was `pg_coh` (a task-level constant, the seed-program coherence), i.e. the
 stacker used the routing/coherence statistic as a task descriptor, not the gene scores; that is the likely source of the dev loss
