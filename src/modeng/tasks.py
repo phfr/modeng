@@ -87,7 +87,14 @@ class Benchmark:
         return self.context.shape[1]
 
     def split(self, which: str) -> "Benchmark":
-        tasks = self.tasks if which == "all" else [t for t in self.tasks if t.split == which]
+        import os
+        if which in WIDE_PROTECTED and os.environ.get(WIDE_CONFIRM_FLAG) != "1":
+            raise PermissionError(f"split {which!r} is frozen (docs/preregistration_wide.md); set {WIDE_CONFIRM_FLAG}=1 "
+                                  "only for the pre-registered scoring")
+        if which == "all" and os.environ.get(WIDE_CONFIRM_FLAG) != "1":
+            tasks = [t for t in self.tasks if t.split not in WIDE_PROTECTED]
+        else:
+            tasks = self.tasks if which == "all" else [t for t in self.tasks if t.split == which]
         return Benchmark(self.name, tasks, self.context, self.context_ids, self.network, self.union_network,
                          self.leakage_class, self.degree)
 
@@ -299,7 +306,179 @@ def build_past(min_seeds=3, max_seeds=1000, min_new=3) -> Benchmark:
     return Benchmark("past", tasks, L0, ids0, NETWORK["temporal"], UNION["temporal"], "training only (<= T0)")
 
 
-BUILDERS = {"past": build_past, "temporal": build_temporal, "forward": build_forward, "holdout": build_holdout}
+# ---------------------------------------------------------------------------------------------------- temporal_wide
+WIDE_BAD_TA = {"EFO_0001444", "EFO_0000651", "GO_0008150", "OTAR_0000009", "EFO_0002571", "EFO_0005932"}  # modet panel.BAD_TA
+WIDE_MAX_COMPONENT = 10        # hub peeling: largest ontology component (wide + temporal tasks) allowed before splitting
+WIDE_SPLIT = ((60, "wide_train"), (80, "wide_dev"), (100, "wide_confirm"))   # sha1(component key) % 100 thresholds
+WIDE_PROTECTED = ("wide_confirm",)                                          # split() refuses these without the env flag
+WIDE_CONFIRM_FLAG = "MODENG_SCORE_WIDE_CONFIRM"
+
+
+def wide_candidates(min_seeds=5, max_seeds=1000, min_new=3) -> pd.DataFrame:
+    """temporal_wide task rows from modet's `ot_temporal.parquet` (modet_data.groundtruth.build: 25.09 ontology, genetic
+    evidence, strong = GWAS/ClinVar score >= 0.5 or any curated score; t0 = 21.04 strong evidence propagated over the 25.09
+    descendants, new = t1 - t0 - weak_t0, unknown = weak 21.04/25.09 evidence + direct strong 25.09 genes of ancestors +
+    new genes with weak t0 evidence + t0 genes lost in t1; only diseases with >= 10 T1 genes are in the file).
+    Filters: modet panel rule 1 (disease branch: a therapeutic area outside WIDE_BAD_TA, no HP/GO/OBA ids), min_seeds <=
+    seeds <= max_seeds and >= min_new targets on the gene universe, not a `temporal` task, not in D.excluded_task_ids()."""
+    ot = pd.read_parquet(D.GT / "ot_temporal.parquet")
+    excl = D.excluded_task_ids()
+    panel = pd.read_parquet(D.GT / "panel_allgene_t0_string115_phys_notm_400.parquet")
+    temporal_ids = set(panel.disease_id) - excl
+    rows = []
+    for r in ot.itertuples():
+        d = r.disease_id
+        tas = set(r.therapeutic_areas) if r.therapeutic_areas is not None else set()
+        if d in excl or d in temporal_ids or d.split("_")[0] in ("HP", "GO", "OBA") or not (tas - WIDE_BAD_TA):
+            continue
+        seeds = D.gene_idx(r.t0_genes)
+        targets = np.setdiff1d(D.gene_idx(r.new_genes), seeds)
+        if not (min_seeds <= len(seeds) <= max_seeds and len(targets) >= min_new):
+            continue
+        exclude = np.setdiff1d(np.union1d(seeds, D.gene_idx(r.unknown_genes)), targets)
+        rows.append(dict(disease_id=d, name=r.name, seeds=seeds, targets=targets, exclude=exclude,
+                         t1=np.union1d(D.gene_idx(r.t1_genes), targets)))
+    return pd.DataFrame(rows)
+
+
+def wide_split(cands: pd.DataFrame, max_component: int = WIDE_MAX_COMPONENT) -> pd.DataFrame:
+    """Ontology-unrelated split of the wide candidates (uses only disease ids, the ontology and 25.09 set overlaps;
+    no model output). Graph nodes = wide candidates + the 191 temporal tasks (anchors); edges = ontology relatives
+    (ancestor / descendant in any of 21.04 / 25.09 / 26.09) or near-duplicate 25.09 sets (Jaccard >= 0.5, modet's family
+    rule). Hub peeling: while the largest component has > max_component nodes, its wide member with most live neighbours
+    (ties: larger id) is removed and assigned to wide_train (reason 'hub'). Then components containing a temporal task
+    -> wide_train ('touches_temporal'); wide candidates that are other modet fold diseases (devall of other networks)
+    -> wide_train ('modet_fold'); every other component -> sha1(smallest id in the component) % 100: < 60 wide_train,
+    < 80 wide_dev, else wide_confirm ('hash')."""
+    panel = pd.read_parquet(D.GT / "panel_allgene_t0_string115_phys_notm_400.parquet")
+    excl = D.excluded_task_ids()
+    panel = panel[~panel.disease_id.isin(excl)]
+    anchors = list(panel.disease_id)
+    W = list(cands.disease_id)
+    nodes = W + [a for a in anchors if a not in set(W)]
+    S = set(nodes)
+    adj = {x: set(D.relatives(x)) & S for x in nodes}
+    sets = list(cands.t1) + [np.union1d(D.gene_idx(r.seeds), D.gene_idx(r.test)) for r in panel.itertuples()]
+    X = _indicator(sets, len(D.universe()))
+    inter = (X @ X.T).toarray()
+    sz = np.asarray(X.sum(1)).ravel()
+    jac = inter / np.maximum(sz[:, None] + sz[None, :] - inter, 1)
+    np.fill_diagonal(jac, 0)
+    for i, j in zip(*np.nonzero(jac >= NEARDUP_JACCARD)):
+        adj[nodes[i]].add(nodes[j]); adj[nodes[j]].add(nodes[i])
+    Wset = set(W)
+
+    def components(alive):
+        par = {x: x for x in alive}
+
+        def fd(x):
+            while par[x] != x:
+                par[x] = par[par[x]]
+                x = par[x]
+            return x
+        for x in sorted(alive):
+            for y in adj[x]:
+                if y in par:
+                    a, b = fd(x), fd(y)
+                    if a != b:
+                        par[max(a, b)] = min(a, b)
+        return {x: fd(x) for x in alive}
+
+    alive, reason = set(nodes), {}
+    while True:
+        comp = components(alive)
+        size = pd.Series(comp).value_counts()
+        if size.iloc[0] <= max_component:
+            break
+        big = size.index[0]
+        mem = [x for x in alive if comp[x] == big and x in Wset]
+        if not mem:
+            break
+        h = max(mem, key=lambda x: (len(adj[x] & alive), x))
+        alive.discard(h)
+        reason[h] = "hub"
+    comp = components(alive)
+    members: dict[str, list] = {}
+    for x, c in comp.items():
+        members.setdefault(c, []).append(x)
+    touch = {comp[a] for a in anchors if a in comp}
+    folds = set(D.modet_folds().index)
+    out = []
+    for d in W:
+        if d in reason:
+            out.append((d, f"hub:{d}", "wide_train", "hub")); continue
+        c = comp[d]
+        key = min(members[c])
+        if c in touch:
+            out.append((d, f"comp:{key}", "wide_train", "touches_temporal")); continue
+        if d in folds:
+            out.append((d, f"comp:{key}", "wide_train", "modet_fold")); continue
+        h = int(hashlib.sha1(key.encode()).hexdigest(), 16) % 100
+        sp_ = next(s for thr, s in WIDE_SPLIT if h < thr)
+        out.append((d, f"comp:{key}", sp_, "hash"))
+    df = pd.DataFrame(out, columns=["disease_id", "cluster", "split", "reason"])
+    # a hashed component must not mix splits (all members share the key) -- and modet_fold members only move to train
+    return df
+
+
+def wide_arrival(cands: pd.DataFrame) -> pd.DataFrame:
+    """modet's arrival classes (modet_data.arrival.build_arrival, read-only import) for every (wide disease, target):
+    first year of the primary source group from the OT 26.09 cumulative timeseries, persistence in 26.09. Cached."""
+    f = D._cache("arrival_wide.parquet")
+    if f.exists():
+        return pd.read_parquet(f)
+    import sys
+    if str(D.MODET / "src") not in sys.path:
+        sys.path.append(str(D.MODET / "src"))
+    from modet_data import arrival as A
+    U = D.universe()
+    dmap = A.disease_map()
+    ok, unmapped = [], []
+    for d in cands.disease_id:
+        try:
+            m = dmap.to26(d)
+        except ValueError:          # obsolete id mapping to several 26.09 ids: not datable here
+            continue
+        ok.append(d)
+        if m is None:
+            unmapped.append(d)
+    c = cands[cands.disease_id.isin(ok)]
+    panel = pd.DataFrame(dict(disease_id=c.disease_id.values, name=c.name.values, split="wide",
+                              test=[list(U[t]) for t in c.targets]))
+    arr = A.build_arrival(panel, allow_non_dev=True, allow_unmapped=tuple(unmapped), dmap=dmap)
+    arr.to_parquet(f, index=False)
+    return arr
+
+
+def build_temporal_wide() -> Benchmark:
+    """temporal_wide [temporal-clean]: OT 21.04 -> 25.09 for diseases that are neither `temporal` tasks nor sealed-related
+    (see wide_candidates / wide_split). Seeds, targets, exclude as the temporal panel; context = 21.04 matrix without the
+    sealed ids (identical to `temporal`); masking 'self+desc'. Splits wide_train / wide_dev / wide_confirm (the last is
+    frozen: docs/preregistration_wide.md, data/wide_confirm_ids.txt; `split('wide_confirm')` needs the env flag
+    MODENG_SCORE_WIDE_CONFIRM=1). Alt target set `sa` = strict-a (arrival A & (persistent | margin_ok), >= 5 kept)."""
+    cands = wide_candidates()
+    sp_ = wide_split(cands).set_index("disease_id")
+    L, ids = D.label_matrix("2104")
+    excl = D.excluded_task_ids()
+    keep = ~ids.isin(excl)
+    L, ids = L[np.flatnonzero(keep)].tocsr(), ids[keep]
+    arr = wide_arrival(cands)
+    sa = arr[(arr["arrival"] == "A") & (arr["persistent"].astype(bool) | arr["margin_ok"].astype(bool))]
+    sa_keep = sa.groupby("disease_id")["gene"].apply(set).to_dict()
+    tasks = []
+    for r in cands.itertuples():
+        s = sp_.loc[r.disease_id]
+        t = Task(r.disease_id, str(r.name), s["split"], r.seeds, r.targets, r.exclude, cluster=s["cluster"])
+        kept = np.intersect1d(D.gene_idx(sa_keep.get(r.disease_id, set())), r.targets)
+        if len(kept) >= 5:
+            t.alt["sa"] = (kept, np.union1d(r.exclude, np.setdiff1d(r.targets, kept)))
+        tasks.append(t)
+    attach_families(tasks, L, ids, "self+desc")
+    return Benchmark("temporal_wide", tasks, L, ids, NETWORK["temporal"], UNION["temporal"], LEAKAGE_CLASS["temporal"])
+
+
+BUILDERS = {"past": build_past, "temporal": build_temporal, "forward": build_forward, "holdout": build_holdout,
+            "temporal_wide": build_temporal_wide}
 
 
 @lru_cache(None)

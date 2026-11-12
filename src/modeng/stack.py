@@ -43,16 +43,23 @@ def task_X(i, genes, mats, ranks, ns):
 POS_DEG_POWER = 0.5   # positives weighted deg^-POWER (nuAP-aligned, as modet's bcv); 0 = unweighted
 
 
-def training_rows(B, idx, mats, ranks, ns, neg=3000, seed=0, max_pos=None):
+def training_rows(B, idx, mats, ranks, ns, neg=3000, seed=0, max_pos=None, drop=None):
+    """drop (optional): task index -> genes removed from that task's training rows (neither positive nor negative)."""
     rng = np.random.default_rng(seed)
     Xs, ys, ws = [], [], []
     deg = np.asarray(B.degree, np.float32)
     for i in idx:
         t = B.tasks[i]
         excl = np.zeros(B.n_genes, bool); excl[t.exclude] = True; excl[t.targets] = True
+        dg = drop.get(i) if drop else None
+        if dg is not None and len(dg):
+            excl[dg] = True
         cand = np.flatnonzero(~excl)
         negs = rng.choice(cand, min(neg, len(cand)), replace=False)
-        tg = t.targets if (max_pos is None or len(t.targets) <= max_pos) else rng.choice(t.targets, max_pos, replace=False)
+        tgt = t.targets if dg is None or not len(dg) else np.setdiff1d(t.targets, dg)
+        if len(tgt) == 0:
+            continue
+        tg = tgt if (max_pos is None or len(tgt) <= max_pos) else rng.choice(tgt, max_pos, replace=False)
         g = np.concatenate([tg, negs])
         Xs.append(task_X(i, g, mats, ranks, ns)); ys.append(np.r_[np.ones(len(tg)), np.zeros(len(negs))])
         wp = 1.0 / np.maximum(deg[tg], 1.0) ** POS_DEG_POWER
@@ -130,6 +137,59 @@ def run_past(bench, channels, tag, rounds=600, neg=1500, max_pos=60, n_train=900
     return res, imp
 
 
+def relative_target_guard(Wt, evals):
+    """For each wide_train task: the targets of every evaluation task (list of Benchmarks) whose disease is the train
+    disease's ontology relative (ancestor / descendant, any release) or the same id. Training on an ancestor's 25.09
+    labels would otherwise teach gene identity (via gene-level features such as popularity / degree) of the evaluation
+    targets in the same time window. Returns ({train index: genes}, n_positive_pairs_dropped)."""
+    from . import data as D
+    by_id = {}
+    for E in evals:
+        for t in E.tasks:
+            by_id.setdefault(t.disease_id, []).append(t.targets)
+    drop, n = {}, 0
+    for i, t in enumerate(Wt.tasks):
+        rel = (set(D.relatives(t.disease_id)) | {t.disease_id}) & by_id.keys()
+        if rel:
+            g = np.unique(np.concatenate([x for d in rel for x in by_id[d]]))
+            drop[i] = g
+            n += len(np.intersect1d(g, t.targets))
+    return drop, n
+
+
+def run_wide(channels, tag, rounds=600, neg=1500, max_pos=60, score_confirm=False, guard=True, write=True):
+    """Train on temporal_wide `wide_train` (same window 21.04 -> 25.09), evaluate on temporal dev / confirm and wide_dev
+    (wide_confirm only with score_confirm=True AND MODENG_SCORE_WIDE_CONFIRM=1: the frozen fold, pre-registered use only).
+    guard: drop, per train task, the targets of evaluation tasks that are its ontology relatives (relative_target_guard)."""
+    import os
+    t0 = time.time()
+    names = CH.all_channel_names(tuple(channels.split(",")))
+    method = f"stackW_{tag}"
+    W = T.load("temporal_wide")
+    Wt = W.split("wide_train")
+    Tm = T.load("temporal")
+    evals = [("temporal", Tm.split("dev")), ("temporal", Tm.split("confirm")), ("temporal_wide", W.split("wide_dev"))]
+    if score_confirm:
+        if os.environ.get(T.WIDE_CONFIRM_FLAG) != "1":
+            raise PermissionError(f"--score-confirm needs {T.WIDE_CONFIRM_FLAG}=1 (pre-registered scoring only)")
+        evals.append(("temporal_wide", W.split("wide_confirm")))
+    drop, ndrop = relative_target_guard(Wt, [E for _, E in evals]) if guard else ({}, 0)
+    mw, rw, nw = build_feats(Wt, "wide_train", names)
+    X, y, w = training_rows(Wt, np.arange(len(Wt.tasks)), mw, rw, nw, neg, max_pos=max_pos, drop=drop)
+    print(f"[wide_train] {len(Wt.tasks)} tasks, {len(names)} channels, {len(y)} rows, {int(y.sum())} pos; guard dropped "
+          f"{ndrop} positive pairs in {len(drop)} tasks ({time.time()-t0:.0f}s)", flush=True)
+    m = fit(X, y, w, rounds)
+    res = {}
+    for bench, Bs in evals:
+        split = Bs.tasks[0].split
+        ms, rs, ns_ = build_feats(Bs, split, names)
+        S = np.zeros((len(Bs.tasks), Bs.n_genes), np.float32)
+        predict_all(m, Bs, np.arange(len(Bs.tasks)), ms, rs, ns_, S)
+        res[(bench, split)] = _record(S, Bs, bench, split, method, t0, write)
+    imp = pd.Series(m.feature_importance("gain"), index=names + ["r_" + n for n in names] + ["log_nseeds"]).sort_values(ascending=False)
+    return res, imp
+
+
 def _record(S, B, bench, split, method, t0, write):
     import os
     if os.environ.get("MODENG_SAVE_SCORES"):
@@ -157,11 +217,17 @@ if __name__ == "__main__":
     ap.add_argument("--bench", default="temporal"); ap.add_argument("--channels", default="base")
     ap.add_argument("--tag", default=None); ap.add_argument("--rounds", type=int, default=400)
     ap.add_argument("--pos-deg-power", type=float, default=0.5)
-    ap.add_argument("--train", default="cv", help="cv (grouped CV on dev) | past (train on 19.04->21.04 episodes; temporal only)")
+    ap.add_argument("--train", default="cv", help="cv (grouped CV on dev) | past (train on 19.04->21.04 episodes; temporal only) "
+                    "| wide (train on temporal_wide wide_train; evaluate temporal dev/confirm + wide_dev)")
+    ap.add_argument("--score-confirm", action="store_true", help="--train wide: also score the FROZEN wide_confirm fold "
+                    "(needs MODENG_SCORE_WIDE_CONFIRM=1; pre-registered use only)")
+    ap.add_argument("--no-guard", action="store_true", help="--train wide: keep relatives' evaluation targets in training")
     a = ap.parse_args()
     POS_DEG_POWER = a.pos_deg_power
     tag = a.tag or a.channels.replace(",", "_")
-    if a.train == "past":
+    if a.train == "wide":
+        res, imp = run_wide(a.channels, tag, score_confirm=a.score_confirm, guard=not a.no_guard)
+    elif a.train == "past":
         res, imp = run_past(a.bench, a.channels, tag)
     else:
         res, imp = run(a.bench, a.channels, tag, a.rounds)
