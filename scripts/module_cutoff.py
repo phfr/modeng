@@ -46,3 +46,14 @@ df.to_csv(out, sep="\t", index=False)
 q = pd.qcut(pc[pc > 0.01], 8, duplicates="drop")
 cal = pd.DataFrame({"pred": pc[pc > 0.01], "y": yc[pc > 0.01], "bin": q}).groupby("bin", observed=True).agg(pred=("pred", "mean"), real=("y", "mean"), n=("y", "size"))
 print(cal.round(3).to_string())
+
+# dev-only shrink estimate (no confirm information): cross-fit the isotonic map over 5 groups of dev diseases (by cluster)
+_, _, xd2, yd2, td2 = pairs("dev")
+cl = np.array([t.cluster for t in Bd.tasks]); uc = np.unique(cl); rng = np.random.default_rng(0); rng.shuffle(uc)
+fold = {c: k % 5 for k, c in enumerate(uc)}; fd = np.array([fold[cl[i]] for i in td2])
+pp = np.zeros_like(xd2)
+for k in range(5):
+    m = IsotonicRegression(out_of_bounds="clip", y_min=0, y_max=1).fit(xd2[fd != k], yd2[fd != k]); pp[fd == k] = m.predict(xd2[fd == k])
+for tau in (0.3, 0.2, 0.1):
+    sel = pp >= tau
+    print(f"[dev cross-fit] tau {tau}: predicted {pp[sel].mean():.3f} realised {yd2[sel].mean():.3f} -> shrink {yd2[sel].mean()/pp[sel].mean():.2f}")
