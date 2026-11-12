@@ -125,18 +125,26 @@ Paired bootstrap (task = cluster on forward):
 - The clean comparison (same thread count, same number of added columns) is **h_base_all vs h_base_neg**: nuAP dev +0.0178
   [+0.0127, +0.0230], confirm +0.0111 [+0.0068, +0.0158]; AP dev +0.0125 [+0.0089, +0.0161], confirm +0.0088 [+0.0061, +0.0117].
   Both AP and nuAP improve on both splits (lead rule F2-3 satisfied).
-- Not run on forward (RAM at 83-85/90 GB, lead: one stacker at a time, >= 15 GB free): per-family ablations, bdv + mine.
-  The alone results suggest the forward gain comes mostly from the GWAS channel (tr_gwas, pri_l2g_n), unlike temporal.
+- Forward ablations (3 threads, vs h_base_neg; run one at a time after the RAM warning):
+  | config | dev nuAP | conf nuAP | dev AP | conf AP | d nuAP dev / conf vs neg | d AP dev / conf vs neg |
+  |---|---|---|---|---|---|---|
+  | h_base_ph | 0.1528 | 0.1395 | 0.0864 | 0.0789 | +0.0026 [-0.0016,+0.0071] / -0.0007 | +0.0021 / +0.0004 |
+  | h_base_pri | 0.1620 | 0.1495 | 0.0922 | 0.0849 | **+0.0118** [+0.0073,+0.0167] / **+0.0094** [+0.0057,+0.0133] | +0.0078 [+0.0049,+0.0109] / +0.0064 [+0.0039,+0.0089] |
+  | h_base_tr | 0.1471 | 0.1370 | 0.0844 | 0.0789 | -0.0031 / -0.0032 | +0.0000 / +0.0004 |
+  On forward the gain comes from the channel priors (GWAS-winner counts / gwas_credible_sets popularity), not from HPO matching;
+  on temporal it is the reverse (HPO matching carries it, priors fail the AP-and-nuAP rule). Typed transfer adds nothing on either.
+- Not run: bdv + mine on forward.
 
 ## 4. Verdict
-**Keep** (`ph_mean`, `ph_top3`, `pri_*`/`hz_*`/`pop_*`, `tr_*` as one family; phenotype matching is the core).
+**Keep** `ph_*` (temporal, Mendelian channel) and `pri_*`/`hz_*`/`pop_*` (forward, GWAS channel); **discard** `tr_*` (no increment anywhere). The two benchmarks reward different channels, so keep both families and let the stacker weight them.
 - Temporal (temporal-clean): base + mine improves nuAP AND AP on dev (+0.020 / +0.024) and confirm (+0.020 / +0.022, CIs exclude 0 on confirm);
   over base,donor,view +0.006 / +0.008 dev, +0.012 / +0.008 confirm (confirm CIs exclude 0). Negative control ~0 (dev +0.002, confirm -0.004).
   h_base_all confirm nuAP 0.153 / AP 0.114 vs stackP_bdv 0.151 / 0.091 (different training protocol).
 - Ablation (temporal): the gain is HPO phenotype matching (h_base_ph: confirm +0.020 nuAP / +0.017 AP, Mendelian stratum +0.027);
   channel priors improve AUROC (+0.03) and the GWAS stratum (+0.009 confirm) but cost nuAP on the Mendelian stratum, so they fail the
   AP-and-nuAP rule alone; typed transfer adds nothing on top of transfer_jaccard (although alone it ranks each stratum better than full transfer).
-- Forward (temporal-clean): +0.018 / +0.011 nuAP and +0.013 / +0.009 AP over the matched noise control (dev / confirm); the
+- Forward (temporal-clean): +0.018 / +0.011 nuAP and +0.013 / +0.009 AP over the matched noise control (dev / confirm), carried by the
+  priors family (h_base_pri +0.012 / +0.009 nuAP, +0.008 / +0.006 AP); the
   forward negative control itself is +0.003-0.005 over h_base (thread-count / extra-column noise floor; must be checked by the lead
   before any claim < 0.01).
 - Caveats: dev = 53 tasks on temporal (dev CIs touch 0 for nuAP); temporal channels are NaN on `past`, so no `--train past` result yet.
