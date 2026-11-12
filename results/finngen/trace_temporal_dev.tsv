@@ -1,0 +1,29 @@
+disease_id	name	n_sa	n_tgt	cov_gwas_catlag	sa_tr_gwas_catlag	tg_tr_gwas_catlag	cov_fg_hit	sa_tr_fg_hit	tg_tr_fg_hit	cov_fg_hit_cs2g	sa_tr_fg_hit_cs2g	tg_tr_fg_hit_cs2g	sa_tr_fg	sa_tr_any	sa_tr_fg_only	fg_only_genes
+EFO_0004799	cholelithiasis	16	54	False	0	0	True	0	1	True	0	1	0	0	0	
+EFO_0004616	osteoarthritis, knee	60	116	True	2	5	True	0	2	True	0	2	0	2	0	
+EFO_0000731	uterine fibroid	26	64	False	0	0	True	1	4	True	2	3	2	2	2	932;14891
+MONDO_0021661	coronary atherosclerosis	53	83	True	37	51	True	1	1	True	0	2	1	38	1	410
+EFO_1001176	sensorineural hearing loss	17	68	False	0	0	True	1	2	True	1	3	1	1	1	16220
+MONDO_0004235	diverticulitis	7	16	True	0	0	True	2	2	True	2	2	2	2	2	7167;8333
+EFO_0001422	cirrhosis of liver	5	22	True	0	0	True	0	0	True	0	0	0	0	0	
+MONDO_0005301	multiple sclerosis	10	43	True	4	23	False	0	0	False	0	0	0	4	0	
+MONDO_0004979	asthma	38	106	True	9	40	True	1	1	True	2	2	2	10	1	16996
+MONDO_0005277	migraine disorder	12	45	True	1	5	True	1	2	True	1	3	1	2	1	12346
+EFO_0000274	atopic eczema	22	61	True	4	17	True	1	4	True	1	5	1	5	1	11144
+MONDO_0004634	vein disorder	36	91	True	0	0	True	6	10	True	5	9	6	6	6	818;882;1970;2408;3646;12815
+MONDO_0005180	Parkinson disease	11	48	True	3	7	True	0	0	True	0	0	0	3	0	
+EFO_0009554	malabsorption syndrome	5	23	False	0	0	True	0	0	True	0	0	0	0	0	
+MONDO_0018751	hereditary otorhinolaryngologic disease	10	30	True	0	0	True	0	0	True	0	0	0	0	0	
+EFO_0006788	anxiety disorder	11	71	False	0	0	True	0	0	True	0	0	0	0	0	
+Orphanet_140162	Inherited cancer-predisposing syndrome	5	17	False	0	0	False	0	0	False	0	0	0	0	0	
+MONDO_0002279	iron metabolism disease	5	17	True	0	0	True	0	0	True	0	0	0	0	0	
+EFO_0000625	nevus	6	13	True	0	0	True	0	0	True	0	0	0	0	0	
+Orphanet_399980	Rare genetic male infertility	6	19	False	0	0	False	0	0	False	0	0	0	0	0	
+MONDO_0008903	lung cancer	8	22	True	1	3	True	1	1	True	1	1	1	2	1	2441
+EFO_0009601	testicular disease	6	13	False	0	0	True	0	0	True	0	0	0	0	0	
+MONDO_0100062	developmental and epileptic encephalopathy	6	50	False	0	0	False	0	0	False	0	0	0	0	0	
+MONDO_0015962	inherited renal tubular disease	5	28	False	0	0	False	0	0	False	0	0	0	0	0	
+EFO_0003824	eye neoplasm	16	29	True	0	0	True	0	0	True	0	0	0	0	0	
+MONDO_0019046	leukodystrophy	6	56	False	0	0	False	0	0	False	0	0	0	0	0	
+MONDO_0100329	primary viral infectious disease	70	172	True	1	14	True	1	1	True	1	1	1	2	1	6516
+MONDO_0000761	syndrome caused by partial chromosomal deletion	7	26	False	0	0	False	0	0	False	0	0	0	0	0	
