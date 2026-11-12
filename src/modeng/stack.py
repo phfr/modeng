@@ -131,6 +131,11 @@ def run_past(bench, channels, tag, rounds=600, neg=1500, max_pos=60, n_train=900
 
 
 def _record(S, B, bench, split, method, t0, write):
+    import os
+    if os.environ.get("MODENG_SAVE_SCORES"):
+        out = BM.RESULTS / bench / split / f"{method}.scores.npy"
+        out.parent.mkdir(parents=True, exist_ok=True)
+        np.save(out, S.astype(np.float16))
     df = BM.evaluate(S, B, jobs=8)
     if write:
         out = BM.RESULTS / bench / split / f"{method}.parquet"
