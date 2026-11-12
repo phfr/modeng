@@ -90,3 +90,15 @@ past-cluster CV leak (Louvain leak folds); evaluation-universe artefact that mad
 ## 8. Next
 Fresh confirmation on untouched diseases (e.g. sealed-like new fold or the next OT release), archived PubTator/GWAS-Catalog vintages,
 module output (calibrated cutoff + subex `leiden_anno` decomposition), round-2 evolution ideas (`docs/ideation/r2_evolve*.md`).
+
+## 9. Morning follow-up (07:20-08:30)
+- **R3 red team of modeng-v1** (`docs/reviews/R3_fable_redteam_v1.md`): holds with caveats; no leak, no memorisation; out of window the gain is carried by
+  label-process channels; removing confirm targets with pre-existing 21.04 family evidence keeps the AP gain over transfer (+0.025) but makes the nuAP gain
+  over modet's headline a tie.
+- **Prospective version** (trained on 19.04->21.04 only, `docs/reports/r3_prospective.md`): vs transfer nuAP +0.082 [+0.057, +0.110], AP +0.018 (n.s.);
+  vs modet headline onnet AP +0.046, nuAP +0.032 (CIs > 0); strict-a tie. Half of the AP margin of v1 comes from same-window training.
+- **Forward without label-process channels** (in-window): AP 0.103 vs 0.085 (+0.018), nuAP 0.156 vs 0.083.
+- **Strict-a attack** (gating, class-A head; `docs/reports/r3_strict_a.md`): no strict-a gain; context features +0.006 AP overall.
+- **Module calibration refit** for modeng-v1; dev-only shrink 0.8-0.9 (confirm ~0.72).
+- **Sealed-fold recommendation: not now.** The robust claim (nuAP and onnet AP over transfer and over modet's headline, also prospectively) is on all
+  arrivals; modet's sealed-fold primary is strict-a, where every variant ties. Use the next OT release as the fresh fold; make the no-label-process arm co-primary.

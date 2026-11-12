@@ -11,6 +11,8 @@ Read `CLAUDE.md`, then **`docs/reports/FINAL_overnight_2026-11-12.md`** (result,
 - Module calls: `scripts/module_cutoff.py` (isotonic, dev-fitted; shrink predictions by 0.7).
 - Running at 06:30: E-A4 catalog backlog transfer for strict-a (`docs/reports/r2_ea4.md` when done).
 
+## Morning follow-up done (07:20-08:30): R3 red team, prospective version, forward no-label-process arm, strict-a attack (negative), calibration refit — see FINAL report section 9.
+
 ## Next (in order)
 1. Fresh confirmation: everything was viewed on temporal confirm; build an untouched fold (e.g. next OT release, or diseases outside the panel)
    and pre-register the leader recipe + power before looking.
