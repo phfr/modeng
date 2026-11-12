@@ -101,10 +101,10 @@ Status: NEW | SHORTLIST | IMPLEMENTING | TESTED-POSITIVE | TESTED-NEGATIVE | KIL
 | E-B6 | Take degree out of the relevance model, put it back as one dial (repair of the AP-for-nuAP trade) | R2 evolveB | NEW | `docs/ideation/r2_evolveB.md` |
 | E-B7 | Seed self-audit meta-features: each disease tells the stacker which channels work for it | R2 evolveB | NEW | `docs/ideation/r2_evolveB.md` |
 | E-B8 | Label-free shift correction of the training episodes (density-ratio weights from T0 features) | R2 evolveB | NEW | `docs/ideation/r2_evolveB.md` |
-| E-B9 | Two-layer module by conformal risk control over diseases (core = precision-controlled, shell = recall-controll | R2 evolveB | NEW | `docs/ideation/r2_evolveB.md` |
+| E-B9 | Two-layer module by conformal risk control over diseases (core = precision-controlled, shell = recall-controll | R2 evolveB | TESTED (isotonic module cutoff, 0.7x shrink) | `docs/ideation/r2_evolveB.md` |
 | E-A1 | cs_donor with seed leave-out: per-task alpha and a reliability feature | R2 evolveA | NEW | `docs/ideation/r2_evolveA.md` |
 | E-A2 | dA_pt by disease identity instead of seed overlap (own-MeSH NPMI row) | R2 evolveA | NEW | `docs/ideation/r2_evolveA.md` |
-| E-A3 | Joint ridge over literature rows (dc_ridge solver x dA_pt matrix) | R2 evolveA | NEW | `docs/ideation/r2_evolveA.md` |
+| E-A3 | Joint ridge over literature rows (dc_ridge solver x dA_pt matrix) | R2 evolveA | TESTED-POSITIVE (confirm Pareto, dev n.s.) | `docs/ideation/r2_evolveA.md` |
 | E-A4 | Backlog transfer: donor weights applied to the relatives' catalog lag (dc_ridge / cs_donor weights x gwas_catl | R2 evolveA | NEW | `docs/ideation/r2_evolveA.md` |
 | E-A5 | Repair settx_auxonly: residual (offset) training and release-matched twins | R2 evolveA | NEW | `docs/ideation/r2_evolveA.md` |
 | E-A6 | Repair gwas_catlag confirm: locus window with a host-gene prior instead of MAPPED_GENE | R2 evolveA | NEW | `docs/ideation/r2_evolveA.md` |
