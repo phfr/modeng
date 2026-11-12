@@ -28,7 +28,7 @@ from .. import data as D
 from ..methods.baselines import _indicator
 
 K = 50
-PREV = {"temporal": "1904", "forward": "2104"}
+PREV = {"temporal": "1904", "forward": "2104", "temporal_wide": "1904"}   # temporal_wide = same 21.04 seed release
 ONTO = ("2104",)
 
 

@@ -35,7 +35,8 @@ from .. import channels as CH
 
 DON = CH.DON
 PARAMS = dict(K=50, ALPHA=0.5, IDF=True, KMIN=1)   # set from scripts/tune_donors_a.py (temporal dev only)
-PT_BY_BENCH = {"past": "a_pt19", "temporal": "a_pt21", "forward": "a_pt25"}
+PT_BY_BENCH = {"past": "a_pt19", "temporal": "a_pt21", "forward": "a_pt25",
+               "temporal_wide": "a_pt21"}   # temporal_wide = same 21.04 seed release as temporal
 
 
 def families_a():

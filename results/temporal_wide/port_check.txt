@@ -1,0 +1,44 @@
+channel              set           temporal==temporal_wide  unmapped_differs  frac_nonnan
+cs_donor             temporal dev  True                    False             1.000
+cs_donor             wide_dev      True                    False             1.000
+dA_pt                temporal dev  True                    True              0.666
+dA_pt                wide_dev      True                    True              0.666
+dc_ridge             temporal dev  True                    False             1.000
+dc_ridge             wide_dev      True                    False             1.000
+dc_ridge_pos         temporal dev  True                    False             1.000
+dc_ridge_pos         wide_dev      True                    False             1.000
+gwas_catlag          temporal dev  True                    True              0.333
+gwas_catlag          wide_dev      True                    True              0.667
+pri_l2g_n            temporal dev  True                    raises KeyError   1.000
+pri_l2g_n            wide_dev      True                    raises KeyError   1.000
+pri_l2g_max          temporal dev  True                    raises KeyError   1.000
+pri_l2g_max          wide_dev      True                    raises KeyError   1.000
+pri_mend_n           temporal dev  True                    raises KeyError   1.000
+pri_mend_n           wide_dev      True                    raises KeyError   1.000
+pri_hpo_n            temporal dev  True                    raises KeyError   0.220
+pri_hpo_n            wide_dev      True                    raises KeyError   0.220
+hz_gwas              temporal dev  True                    raises KeyError   1.000
+hz_gwas              wide_dev      True                    raises KeyError   1.000
+hz_mend              temporal dev  True                    raises KeyError   1.000
+hz_mend              wide_dev      True                    raises KeyError   1.000
+ph_mean              temporal dev  True                    raises KeyError   0.220
+ph_mean              wide_dev      True                    raises KeyError   0.220
+ph_top3              temporal dev  True                    raises KeyError   0.220
+ph_top3              wide_dev      True                    raises KeyError   0.220
+pt_ridge             temporal dev  True                    True              1.000
+pt_ridge             wide_dev      True                    True              1.000
+pt_ridge_pos         temporal dev  True                    True              1.000
+pt_ridge_pos         wide_dev      True                    True              1.000
+vc_mean_hpa20_sc     temporal dev  True                    False             0.990
+vc_mean_hpa20_sc     wide_dev      True                    False             0.990
+vc_max_hpa20_sc      temporal dev  True                    False             0.990
+vc_max_hpa20_sc      wide_dev      True                    False             0.990
+vc_mean_hpa20_tis    temporal dev  True                    False             0.880
+vc_mean_hpa20_tis    wide_dev      True                    False             0.880
+vc_max_hpa20_tis     temporal dev  True                    False             0.880
+vc_max_hpa20_tis     wide_dev      True                    False             0.880
+vc_mean_gtex8        temporal dev  True                    False             0.992
+vc_mean_gtex8        wide_dev      True                    False             0.992
+vc_max_gtex8         temporal dev  True                    False             0.992
+vc_max_gtex8         wide_dev      True                    False             0.992
+ALL EQUAL

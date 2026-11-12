@@ -1,0 +1,1 @@
+transfer_jaccard,transfer_onto,popularity,degree,rwr_string,don_msig_go,don_msig_reactome,don_msig_wiki,don_hpo2101,don_impc13,don_complexportal,don_paralog30,don_km_esm2_15b,don_km_prott5,don_km_depmap20q4,don_km_phylo_npp,dc_ridge,dc_ridge_pos,gwas_catlag,ph_mean,ph_top3,pt_ridge,pt_ridge_pos

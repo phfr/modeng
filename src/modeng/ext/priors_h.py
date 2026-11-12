@@ -49,6 +49,7 @@ HPO = {"temporal": Path("/mnt/msadb/modet/downloads/hpo_annotations_2021-01_wayb
        "forward": ROOT / "data/raw/hpo_2025-09-01/genes_to_phenotype.txt",
        "holdout": Path.home() / "biotools/data/evidence/raw/hpo/genes_to_phenotype.txt"}
 REL = {"temporal": "2104", "forward": "2509", "holdout": "2509"}   # never 26.09 evidence as an input
+HPO["temporal_wide"], REL["temporal_wide"] = HPO["temporal"], REL["temporal"]   # temporal_wide = same 21.04 seed release
 GWAS_SRC = {"2104": "ot_genetics_portal", "2509": "gwas_credible_sets"}
 MEND_SRC = ("eva", "gene2phenotype", "genomics_england", "clingen", "uniprot_literature", "uniprot_variants", "orphanet")
 POP_SRC = {"2104": ("europepmc", "phenodigm", "chembl", "expression_atlas", "eva", "ot_genetics_portal"),
@@ -118,7 +119,7 @@ def _hpo(bench):
     if key in _MEMO:
         return _MEMO[key]
     f = HPO[bench]
-    if bench == "temporal":
+    if bench in ("temporal", "temporal_wide"):
         h = pd.read_csv(f, sep="\t", comment="#", header=None, usecols=[0, 3], names=["entrez", "term"])
     else:
         h = pd.read_csv(f, sep="\t", usecols=["ncbi_gene_id", "hpo_id"]).rename(columns={"ncbi_gene_id": "entrez", "hpo_id": "term"})

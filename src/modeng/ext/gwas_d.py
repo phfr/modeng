@@ -48,7 +48,8 @@ from .. import data as D
 
 MOD = Path("/home/ph/code/modet/data/processed")
 CAT = Path("/home/ph/code/modet/data/raw/gwas_catalog")
-CUTOFF = {"past": "2019-04-30", "temporal": "2021-04-30", "forward": "2025-09-30", "holdout": "9999-12-31"}
+CUTOFF = {"past": "2019-04-30", "temporal": "2021-04-30", "forward": "2025-09-30", "holdout": "9999-12-31",
+          "temporal_wide": "2021-04-30"}   # temporal_wide = same 21.04 seed release as temporal
 ANC_W, ANC_MAXDESC = 0.7, 100
 SEM_MIN, SEM_TOP = 0.55, 5
 Z_THR = norm.isf(2.5e-6)          # MAGMA gene-level genome-wide threshold
