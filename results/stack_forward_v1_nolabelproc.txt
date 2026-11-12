@@ -1,0 +1,28 @@
+[forward] 61 channels built (61s)
+forward   dev      stack_v1_nolabelproc   AP 0.1156 nuAP 0.1721 AUROC 0.8608 R@100 0.2623 | onnet AP 0.1218 nuAP 0.1837
+forward   confirm  stack_v1_nolabelproc   AP 0.1031 nuAP 0.1563 AUROC 0.8523 R@100 0.2483 | onnet AP 0.1093 nuAP 0.1751
+transfer_jaccard      573481.507495
+transfer_onto         552359.902710
+dc_ridge              420923.457940
+log_nseeds            382275.314942
+cs_donor              242285.090431
+dc_ridge_pos          200311.707421
+r_degree               97497.202084
+hz_mend                89180.089424
+r_popularity           76432.408465
+r_transfer_jaccard     69226.434069
+popularity             57009.954545
+r_transfer_onto        48287.847024
+degree                 45940.675340
+vmax_depmap20q4        43367.925819
+r_dc_ridge_pos         27684.765324
+r_dA_pt                26847.881061
+vmax_prott5            20900.454489
+vmean_gtex             19580.273356
+vmax_esmc              16063.089546
+don_km_depmap20q4      14549.641106
+dA_pt                  12396.441240
+vmean_hpa_tissue       11735.233242
+r_vmean_hpa_tissue     11286.885480
+r_dc_ridge             10555.360605
+r_pri_hpo_n            10145.285192
