@@ -1,0 +1,6 @@
+method	tau	decomposed	median_k	submodules	seedfree_submodules	added_in_seedfree	hits_in_seedfree	prec_seedfree	added_in_seeded	hits_in_seeded	prec_seeded	prec_sf0	added_sf0	prec_sf(0,0.5]	added_sf(0,0.5]	prec_sf(0.5,0.8]	added_sf(0.5,0.8]	prec_sf(0.8,1)	added_sf(0.8,1)	topseed_sub_share_added	topseed_sub_share_hits	n_diseases_with_hits
+headline	0.2000	138	2.0000	364	1	17	1	0.0588	1225	220	0.1796	0.0588	17	0.1347	386	0.1943	597	0.2149	242	0.4564	0.4810	84
+headline	0.3000	26	2.0000	76	0	0	0	0.0000	106	32	0.3019		0	0.3889	36	0.2400	25	0.2667	45	0.3882	0.4385	12
+modeng	0.2000	138	2.0000	357	2	34	2	0.0588	940	283	0.3011	0.0588	34	0.2562	242	0.2902	441	0.3619	257	0.5340	0.5814	99
+modeng	0.3000	138	2.0000	344	0	0	0	0.0000	600	197	0.3283		0	0.2628	156	0.3361	238	0.3689	206	0.5132	0.5772	80
+transfer	0.2000	138	2.0000	359	2	24	1	0.0417	1041	224	0.2152	0.0417	24	0.2006	339	0.2288	459	0.2099	243	0.5006	0.5214	75

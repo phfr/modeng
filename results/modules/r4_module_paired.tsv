@@ -1,0 +1,5 @@
+tau	ref	n	hits_modeng	hits_ref	delta_hits	ci_lo	ci_hi	wins	losses
+0.2	transfer	138	359	259	100	57.0	155.0	68	22
+0.2	headline	138	359	221	138	87.0	200.0	76	14
+0.3	transfer	138	255	194	61	25.0	105.0	52	20
+0.3	headline	138	255	162	93	50.0	147.0	55	14

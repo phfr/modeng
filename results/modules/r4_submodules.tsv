@@ -1,0 +1,1501 @@
+method	tau	disease_id	k	submodule	name	size	n_seeds	n_added	hits	seed_frac
+modeng	0.200	EFO_1000391	1	0	positive regulation of interleukin-13 production	14	11	3	0	0.786
+modeng	0.200	EFO_1001494	3	0	unannotated	24	5	19	2	0.208
+modeng	0.200	EFO_1001494	3	1	regulation of immune effector process	21	8	13	2	0.381
+modeng	0.200	EFO_1001494	3	2	lymphocyte activation	17	0	17	2	0.000
+modeng	0.200	Orphanet_145	2	0	DNA recombination	18	15	3	0	0.833
+modeng	0.200	Orphanet_145	2	1	Recruitment and ATM-mediated phosphorylation of repair and signaling proteins at DNA double strand breaks	11	10	1	0	0.909
+modeng	0.200	Orphanet_777	2	0	unannotated	19	16	3	3	0.842
+modeng	0.200	Orphanet_777	2	1	Neuronal System	16	12	4	4	0.750
+modeng	0.200	EFO_0003758	2	0	vocalization behavior	28	26	2	0	0.929
+modeng	0.200	EFO_0003758	2	1	Chromatin organization	27	26	1	0	0.963
+modeng	0.200	EFO_1001055	3	0	unannotated	29	26	3	1	0.897
+modeng	0.200	EFO_1001055	3	1	regulation of leukocyte differentiation	25	20	5	1	0.800
+modeng	0.200	EFO_1001055	3	2	gland development	13	10	3	0	0.769
+modeng	0.200	EFO_0009959	1	0	Elastic fibre formation	29	20	9	2	0.690
+modeng	0.200	EFO_0000195	3	0	Plasma lipoprotein assembly, remodeling, and clearance	22	8	14	11	0.364
+modeng	0.200	EFO_0000195	3	1	regulation of insulin secretion	21	7	14	12	0.333
+modeng	0.200	EFO_0000195	3	2	unannotated	11	3	8	7	0.273
+modeng	0.200	EFO_0004143	1	0	Extracellular matrix organization	11	10	1	1	0.909
+modeng	0.200	Orphanet_1872	2	0	ciliary basal body	33	22	11	3	0.667
+modeng	0.200	Orphanet_1872	2	1	detection of light stimulus	25	22	3	1	0.880
+modeng	0.200	EFO_0003898	5	0	cytokine receptor activity	23	22	1	0	0.957
+modeng	0.200	EFO_0003898	5	1	regulation of interleukin-1 production	25	25	0	0	1.000
+modeng	0.200	EFO_0003898	5	2	TNFs bind their physiological receptors	18	18	0	0	1.000
+modeng	0.200	EFO_0003898	5	3	DNA-binding transcription repressor activity, RNA polymerase II-specific	16	16	0	0	1.000
+modeng	0.200	EFO_0003898	5	4	T cell differentiation	12	12	0	0	1.000
+modeng	0.200	EFO_0001063	3	0	sensory perception of sound	28	25	3	2	0.893
+modeng	0.200	EFO_0001063	3	1	MET activates PTPN11	24	20	4	0	0.833
+modeng	0.200	EFO_0001063	3	2	actin binding	17	15	2	0	0.882
+modeng	0.200	EFO_0004698	2	0	unannotated	15	10	5	2	0.667
+modeng	0.200	EFO_0004698	2	1	unannotated	12	10	2	0	0.833
+modeng	0.200	EFO_0004274	2	0	unannotated	11	6	5	4	0.545
+modeng	0.200	EFO_0004274	2	1	brush border membrane	9	8	1	1	0.889
+modeng	0.200	EFO_0009571	1	0	Inactivation of CDC42 and RAC1	12	12	0	0	1.000
+modeng	0.200	EFO_0000401	2	0	unannotated	9	9	0	0	1.000
+modeng	0.200	EFO_0000401	2	1	Metabolism of Angiotensinogen to Angiotensins	7	4	3	0	0.571
+modeng	0.200	EFO_0003948	2	0	unannotated	15	10	5	1	0.667
+modeng	0.200	EFO_0003948	2	1	unannotated	8	7	1	0	0.875
+modeng	0.200	EFO_0004214	2	0	unannotated	7	7	0	0	1.000
+modeng	0.200	EFO_0004214	2	1	unannotated	4	4	0	0	1.000
+modeng	0.200	EFO_0003888	2	0	unannotated	22	20	2	2	0.909
+modeng	0.200	EFO_0003888	2	1	cell morphogenesis involved in differentiation	15	14	1	1	0.933
+modeng	0.200	EFO_0000095	2	0	BH3-only proteins associate with and inactivate anti-apoptotic BCL-2 members	19	19	0	0	1.000
+modeng	0.200	EFO_0000095	2	1	lymphocyte activation	12	11	1	0	0.917
+modeng	0.200	EFO_0004253	1	0	modified amino acid transport	17	13	4	3	0.765
+modeng	0.200	MONDO_0005090	7	0	regulation of plasma membrane bounded cell projection organization	37	37	0	0	1.000
+modeng	0.200	MONDO_0005090	7	1	positive regulation of bone mineralization	33	30	3	1	0.909
+modeng	0.200	MONDO_0005090	7	2	intrinsic apoptotic signaling pathway	36	35	1	1	0.972
+modeng	0.200	MONDO_0005090	7	3	positive regulation of regulatory T cell differentiation	28	27	1	1	0.964
+modeng	0.200	MONDO_0005090	7	4	ion channel complex	29	28	1	1	0.966
+modeng	0.200	MONDO_0005090	7	5	methylation	22	18	4	2	0.818
+modeng	0.200	MONDO_0005090	7	6	glycoprotein metabolic process	9	8	1	1	0.889
+modeng	0.200	MONDO_0018097	2	0	telencephalon development	22	17	5	1	0.773
+modeng	0.200	MONDO_0018097	2	1	transmembrane transporter complex	20	10	10	1	0.500
+modeng	0.200	MONDO_0019625	2	0	transforming growth factor beta receptor binding	13	13	0	0	1.000
+modeng	0.200	MONDO_0019625	2	1	extracellular matrix structural constituent	10	7	3	3	0.700
+modeng	0.200	MONDO_0016660	2	0	centrosome duplication	20	20	0	0	1.000
+modeng	0.200	MONDO_0016660	2	1	mitotic nuclear division	15	15	0	0	1.000
+modeng	0.200	MONDO_0009723	5	0	mitochondrial cytochrome c oxidase assembly	27	26	1	0	0.963
+modeng	0.200	MONDO_0009723	5	1	NADH dehydrogenase complex	24	24	0	0	1.000
+modeng	0.200	MONDO_0009723	5	2	Pyruvate metabolism and Citric Acid (TCA) cycle	18	15	3	1	0.833
+modeng	0.200	MONDO_0009723	5	3	cytochrome complex	13	13	0	0	1.000
+modeng	0.200	MONDO_0009723	5	4	Translation	11	11	0	0	1.000
+modeng	0.200	MONDO_0019006	2	0	renal filtration cell differentiation	14	14	0	0	1.000
+modeng	0.200	MONDO_0019006	2	1	nuclear pore organization	11	10	1	1	0.909
+modeng	0.200	MONDO_0023113	2	0	Resolution of D-loop Structures through Synthesis-Dependent Strand Annealing (SDSA)	23	18	5	1	0.783
+modeng	0.200	MONDO_0023113	2	1	mismatch repair complex	10	10	0	0	1.000
+modeng	0.200	EFO_0001065	1	0	regulation of male gonad development	26	16	10	1	0.615
+modeng	0.200	EFO_0004273	16	0	transmembrane receptor protein tyrosine kinase signaling pathway	36	36	0	0	1.000
+modeng	0.200	EFO_0004273	16	1	positive regulation of cytosolic calcium ion concentration	31	31	0	0	1.000
+modeng	0.200	EFO_0004273	16	2	muscle structure development	28	28	0	0	1.000
+modeng	0.200	EFO_0004273	16	3	cell morphogenesis involved in neuron differentiation	24	24	0	0	1.000
+modeng	0.200	EFO_0004273	16	4	peptidyl-serine modification	26	26	0	0	1.000
+modeng	0.200	EFO_0004273	16	5	Transmission across Chemical Synapses	21	21	0	0	1.000
+modeng	0.200	EFO_0004273	16	6	Extracellular matrix organization	17	17	0	0	1.000
+modeng	0.200	EFO_0004273	16	7	RNA polymerase II-specific DNA-binding transcription factor binding	17	17	0	0	1.000
+modeng	0.200	EFO_0004273	16	8	GTPase activator activity	16	16	0	0	1.000
+modeng	0.200	EFO_0004273	16	9	platelet alpha granule	18	18	0	0	1.000
+modeng	0.200	EFO_0004273	16	10	glycerophospholipid metabolic process	15	15	0	0	1.000
+modeng	0.200	EFO_0004273	16	11	catalytic activity, acting on a tRNA	12	12	0	0	1.000
+modeng	0.200	EFO_0004273	16	12	unannotated	10	10	0	0	1.000
+modeng	0.200	EFO_0004273	16	13	G protein-coupled peptide receptor activity	12	12	0	0	1.000
+modeng	0.200	EFO_0004273	16	14	catenin complex	10	10	0	0	1.000
+modeng	0.200	EFO_0004273	16	15	regulation of RNA splicing	10	10	0	0	1.000
+modeng	0.200	EFO_0003882	1	0	skeletal system development	23	20	3	2	0.870
+modeng	0.200	MONDO_0000414	2	0	inorganic ion transmembrane transport	13	5	8	5	0.385
+modeng	0.200	MONDO_0000414	2	1	unannotated	10	5	5	2	0.500
+modeng	0.200	Orphanet_79191	2	0	Peptide chain elongation	24	24	0	0	1.000
+modeng	0.200	Orphanet_79191	2	1	purine ribonucleoside metabolic process	18	15	3	2	0.833
+modeng	0.200	EFO_0000612	2	0	apolipoprotein binding	19	16	3	2	0.842
+modeng	0.200	EFO_0000612	2	1	unannotated	16	16	0	0	1.000
+modeng	0.200	EFO_0000275	7	0	transcription, DNA-templated	30	30	0	0	1.000
+modeng	0.200	EFO_0000275	7	1	regulation of cell communication by electrical coupling	27	21	6	0	0.778
+modeng	0.200	EFO_0000275	7	2	regulation of cell-substrate junction assembly	21	20	1	1	0.952
+modeng	0.200	EFO_0000275	7	3	cardiocyte differentiation	21	19	2	2	0.905
+modeng	0.200	EFO_0000275	7	4	regulation of atrial cardiac muscle cell membrane depolarization	15	11	4	0	0.733
+modeng	0.200	EFO_0000275	7	5	membrane repolarization during action potential	15	11	4	0	0.733
+modeng	0.200	EFO_0000275	7	6	DNA-binding transcription repressor activity, RNA polymerase II-specific	8	7	1	1	0.875
+modeng	0.200	MONDO_0044996	2	0	astrocyte activation	11	8	3	0	0.727
+modeng	0.200	MONDO_0044996	2	1	DNA replication	8	5	3	0	0.625
+modeng	0.200	MONDO_0043839	2	0	Nucleotide-binding domain, leucine rich repeat containing receptor (NLR) signaling pathways	16	10	6	1	0.625
+modeng	0.200	MONDO_0043839	2	1	Interleukin-12 signaling	13	11	2	0	0.846
+modeng	0.200	EFO_0000389	2	0	unannotated	14	14	0	0	1.000
+modeng	0.200	EFO_0000389	2	1	negative regulation of telomere maintenance	13	10	3	1	0.769
+modeng	0.200	MONDO_0024352	1	0	unannotated	16	13	3	1	0.812
+modeng	0.200	EFO_0009448	2	0	unannotated	9	7	2	1	0.778
+modeng	0.200	EFO_0009448	2	1	unannotated	6	5	1	0	0.833
+modeng	0.200	MONDO_0037748	2	0	Plasma lipoprotein remodeling	8	6	2	1	0.750
+modeng	0.200	MONDO_0037748	2	1	intestinal cholesterol absorption	7	7	0	0	1.000
+modeng	0.200	EFO_0000384	7	0	response to extracellular stimulus	30	30	0	0	1.000
+modeng	0.200	EFO_0000384	7	1	regulation of lymphocyte activation	28	27	1	0	0.964
+modeng	0.200	EFO_0000384	7	2	cytoplasmic pattern recognition receptor signaling pathway	25	25	0	0	1.000
+modeng	0.200	EFO_0000384	7	3	negative regulation of protein kinase activity	24	24	0	0	1.000
+modeng	0.200	EFO_0000384	7	4	DNA-binding transcription repressor activity, RNA polymerase II-specific	21	21	0	0	1.000
+modeng	0.200	EFO_0000384	7	5	Neutrophil degranulation	15	15	0	0	1.000
+modeng	0.200	EFO_0000384	7	6	cytokine receptor activity	13	12	1	1	0.923
+modeng	0.200	EFO_0003890	1	0	ethanol oxidation	28	28	0	0	1.000
+modeng	0.200	EFO_0003875	1	0	positive regulation of epithelial to mesenchymal transition	25	24	1	1	0.960
+modeng	0.200	EFO_1001512	2	0	mismatch repair complex	10	6	4	2	0.600
+modeng	0.200	EFO_1001512	2	1	tube development	6	6	0	0	1.000
+modeng	0.200	EFO_0004128	2	0	Anchoring fibril formation	11	11	0	0	1.000
+modeng	0.200	EFO_0004128	2	1	Regulation of Complement cascade	9	6	3	3	0.667
+modeng	0.200	EFO_0004251	6	0	hemopoiesis	29	5	24	1	0.172
+modeng	0.200	EFO_0004251	6	1	GTPase regulator activity	19	6	13	0	0.316
+modeng	0.200	EFO_0004251	6	2	cell morphogenesis involved in differentiation	17	0	17	0	0.000
+modeng	0.200	EFO_0004251	6	3	positive regulation of cell junction assembly	15	1	14	0	0.067
+modeng	0.200	EFO_0004251	6	4	blood coagulation	17	6	11	0	0.353
+modeng	0.200	EFO_0004251	6	5	transcription coregulator activity	12	2	10	0	0.167
+modeng	0.200	EFO_0005708	2	0	unannotated	8	8	0	0	1.000
+modeng	0.200	EFO_0005708	2	1	Regulation of beta-cell development	4	3	1	0	0.750
+modeng	0.200	EFO_0001365	3	0	reverse cholesterol transport	39	35	4	2	0.897
+modeng	0.200	EFO_0001365	3	1	Regulation of Complement cascade	10	10	0	0	1.000
+modeng	0.200	EFO_0001365	3	2	collagen-containing extracellular matrix	10	8	2	0	0.800
+modeng	0.200	EFO_0001663	5	0	unannotated	25	25	0	0	1.000
+modeng	0.200	EFO_0001663	5	1	cellular response to steroid hormone stimulus	19	19	0	0	1.000
+modeng	0.200	EFO_0001663	5	2	blood vessel morphogenesis	17	17	0	0	1.000
+modeng	0.200	EFO_0001663	5	3	regulation of cell cycle phase transition	19	19	0	0	1.000
+modeng	0.200	EFO_0001663	5	4	positive regulation of cell migration	11	11	0	0	1.000
+modeng	0.200	MONDO_0013099	1	0	unannotated	17	16	1	1	0.941
+modeng	0.200	EFO_0001356	2	0	axon	19	15	4	3	0.789
+modeng	0.200	EFO_0001356	2	1	polyubiquitin modification-dependent protein binding	17	11	6	4	0.647
+modeng	0.200	MONDO_0002185	1	0	positive regulation of bone resorption	20	14	6	0	0.700
+modeng	0.200	EFO_0005804	1	0	Erythropoietin activates STAT5	14	12	2	0	0.857
+modeng	0.200	MONDO_0018612	2	0	Thyroxine biosynthesis	14	10	4	2	0.714
+modeng	0.200	MONDO_0018612	2	1	thyroid gland development	13	9	4	1	0.692
+modeng	0.200	EFO_0000536	1	0	cell fate commitment	13	10	3	1	0.769
+modeng	0.200	MONDO_0000358	2	0	collagen trimer	19	16	3	1	0.842
+modeng	0.200	MONDO_0000358	2	1	nuclear-transcribed mRNA catabolic process, nonsense-mediated decay	13	12	1	0	0.923
+modeng	0.200	MONDO_0016575	2	0	motile cilium assembly	18	18	0	0	1.000
+modeng	0.200	MONDO_0016575	2	1	axoneme	14	14	0	0	1.000
+modeng	0.200	MONDO_0043878	2	0	visual perception	18	16	2	1	0.889
+modeng	0.200	MONDO_0043878	2	1	oxidative phosphorylation	16	16	0	0	1.000
+modeng	0.200	MONDO_0100137	3	0	Signaling by Interleukins	32	25	7	1	0.781
+modeng	0.200	MONDO_0100137	3	1	Extension of Telomeres	16	10	6	2	0.625
+modeng	0.200	MONDO_0100137	3	2	scaffold protein binding	9	5	4	0	0.556
+modeng	0.200	MONDO_0002462	2	0	Regulation of Complement cascade	15	13	2	1	0.867
+modeng	0.200	MONDO_0002462	2	1	unannotated	12	8	4	0	0.667
+modeng	0.200	MONDO_0019200	6	0	cilium organization	40	33	7	1	0.825
+modeng	0.200	MONDO_0019200	6	1	sensory perception of light stimulus	27	22	5	0	0.815
+modeng	0.200	MONDO_0019200	6	2	retina morphogenesis in camera-type eye	21	18	3	0	0.857
+modeng	0.200	MONDO_0019200	6	3	phototransduction	19	15	4	0	0.789
+modeng	0.200	MONDO_0019200	6	4	alcohol metabolic process	18	18	0	0	1.000
+modeng	0.200	MONDO_0019200	6	5	U4/U6 x U5 tri-snRNP complex	12	12	0	0	1.000
+modeng	0.200	EFO_0700118	2	0	metanephric collecting duct development	18	11	7	1	0.611
+modeng	0.200	EFO_0700118	2	1	eye development	12	8	4	0	0.667
+modeng	0.200	MONDO_0019313	2	0	Spry regulation of FGF signaling	20	20	0	0	1.000
+modeng	0.200	MONDO_0019313	2	1	RAF activation	13	13	0	0	1.000
+modeng	0.200	MONDO_0003406	1	0	unannotated	14	12	2	0	0.857
+modeng	0.200	EFO_0008615	1	0	epithelial tube morphogenesis	20	17	3	2	0.850
+modeng	0.200	EFO_1001511	2	0	Regulation of gene expression in beta cells	25	24	1	1	0.960
+modeng	0.200	EFO_1001511	2	1	oxidative phosphorylation	15	15	0	0	1.000
+modeng	0.200	MONDO_0015185	2	0	regulation of pathway-restricted SMAD protein phosphorylation	8	8	0	0	1.000
+modeng	0.200	MONDO_0015185	2	1	base-excision repair	7	5	2	2	0.714
+modeng	0.200	MONDO_0042973	2	0	unannotated	8	4	4	3	0.500
+modeng	0.200	MONDO_0042973	2	1	unannotated	7	6	1	1	0.857
+modeng	0.200	MONDO_0001926	2	0	metanephros development	9	8	1	1	0.889
+modeng	0.200	MONDO_0001926	2	1	unannotated	2	2	0	0	1.000
+modeng	0.200	EFO_0001075	2	0	unannotated	20	19	1	0	0.950
+modeng	0.200	EFO_0001075	2	1	Resolution of D-loop Structures through Holliday Junction Intermediates	11	8	3	1	0.727
+modeng	0.200	Orphanet_183628	2	0	diencephalon development	23	15	8	2	0.652
+modeng	0.200	Orphanet_183628	2	1	regulation of interferon-beta production	14	14	0	0	1.000
+modeng	0.200	MONDO_0016624	3	0	unannotated	20	20	0	0	1.000
+modeng	0.200	MONDO_0016624	3	1	Metal ion SLC transporters	16	15	1	0	0.938
+modeng	0.200	MONDO_0016624	3	2	Cobalamin (Cbl, vitamin B12) transport and metabolism	15	9	6	4	0.600
+modeng	0.200	MONDO_0020248	2	0	extracellular matrix structural constituent conferring tensile strength	10	9	1	1	0.900
+modeng	0.200	MONDO_0020248	2	1	camera-type eye development	10	6	4	2	0.600
+modeng	0.200	MONDO_0015929	4	0	transmission of nerve impulse	33	32	1	0	0.970
+modeng	0.200	MONDO_0015929	4	1	ciliary tip	19	17	2	1	0.895
+modeng	0.200	MONDO_0015929	4	2	embryonic organ development	11	10	1	0	0.909
+modeng	0.200	MONDO_0015929	4	3	ciliary membrane	10	8	2	1	0.800
+modeng	0.200	MONDO_0002311	2	0	unannotated	8	8	0	0	1.000
+modeng	0.200	MONDO_0002311	2	1	Regulation of gene expression by Hypoxia-inducible Factor	4	4	0	0	1.000
+modeng	0.200	EFO_0009455	2	0	regulation of immune effector process	9	7	2	0	0.778
+modeng	0.200	EFO_0009455	2	1	C-palmitoyltransferase activity	6	6	0	0	1.000
+modeng	0.200	MONDO_0002108	2	0	negative regulation of cyclin-dependent protein serine/threonine kinase activity	10	9	1	1	0.900
+modeng	0.200	MONDO_0002108	2	1	Signaling by NTRK3 (TRKC)	7	6	1	0	0.857
+modeng	0.200	MONDO_0020249	2	0	mitochondrial protein processing	21	17	4	1	0.810
+modeng	0.200	MONDO_0020249	2	1	oxidative phosphorylation	17	11	6	0	0.647
+modeng	0.200	MONDO_0002078	2	0	retina development in camera-type eye	13	13	0	0	1.000
+modeng	0.200	MONDO_0002078	2	1	heart morphogenesis	12	11	1	0	0.917
+modeng	0.200	MONDO_0001475	2	0	granulocyte differentiation	18	15	3	1	0.833
+modeng	0.200	MONDO_0001475	2	1	cytokine binding	10	10	0	0	1.000
+modeng	0.200	MONDO_0015168	2	0	neuromuscular junction	19	16	3	2	0.842
+modeng	0.200	MONDO_0015168	2	1	muscle contraction	14	13	1	1	0.929
+modeng	0.200	MONDO_0003832	2	0	Complement cascade	22	18	4	4	0.818
+modeng	0.200	MONDO_0003832	2	1	complement activation, alternative pathway	7	5	2	0	0.714
+modeng	0.200	MONDO_0017688	2	0	pyruvate metabolic process	21	13	8	3	0.619
+modeng	0.200	MONDO_0017688	2	1	Regulation of beta-cell development	15	9	6	2	0.600
+modeng	0.200	MONDO_0000577	3	0	DNA repair	31	27	4	0	0.871
+modeng	0.200	MONDO_0000577	3	1	cytosolic ribosome	20	5	15	0	0.250
+modeng	0.200	MONDO_0000577	3	2	unannotated	10	9	1	0	0.900
+modeng	0.200	Orphanet_207015	3	0	oxidative phosphorylation	25	20	5	0	0.800
+modeng	0.200	Orphanet_207015	3	1	peroxisome organization	22	21	1	0	0.955
+modeng	0.200	Orphanet_207015	3	2	unannotated	15	14	1	0	0.933
+modeng	0.200	Orphanet_108987	2	0	eye development	10	8	2	0	0.800
+modeng	0.200	Orphanet_108987	2	1	unannotated	8	8	0	0	1.000
+modeng	0.200	MONDO_0015905	2	0	cholesterol homeostasis	21	13	8	4	0.619
+modeng	0.200	MONDO_0015905	2	1	GPI anchor biosynthetic process	15	10	5	1	0.667
+modeng	0.200	MONDO_0019587	2	0	actin-dependent ATPase activity	29	29	0	0	1.000
+modeng	0.200	MONDO_0019587	2	1	sensory perception of sound	12	12	0	0	1.000
+modeng	0.200	MONDO_0001056	1	0	unannotated	12	11	1	0	0.917
+modeng	0.200	EFO_1001990	2	0	mitochondrial DNA replication	15	14	1	0	0.933
+modeng	0.200	EFO_1001990	2	1	mitochondrial inner membrane	8	6	2	2	0.750
+modeng	0.200	MONDO_0018838	2	0	Serine biosynthesis	16	11	5	1	0.688
+modeng	0.200	MONDO_0018838	2	1	Recruitment of NuMA to mitotic centrosomes	14	12	2	1	0.857
+modeng	0.200	EFO_0005569	2	0	eye development	23	20	3	1	0.870
+modeng	0.200	EFO_0005569	2	1	Dual incision in TC-NER	10	8	2	0	0.800
+modeng	0.200	MONDO_0020073	2	0	ion channel activity	23	15	8	4	0.652
+modeng	0.200	MONDO_0020073	2	1	GATOR1 complex	16	14	2	1	0.875
+modeng	0.200	MONDO_0005129	3	0	unannotated	35	34	1	0	0.971
+modeng	0.200	MONDO_0005129	3	1	lens development in camera-type eye	22	22	0	0	1.000
+modeng	0.200	MONDO_0005129	3	2	cell-cell junction	10	10	0	0	1.000
+modeng	0.200	Orphanet_269564	3	0	unannotated	22	21	1	0	0.955
+modeng	0.200	Orphanet_269564	3	1	Activation of the pre-replicative complex	17	17	0	0	1.000
+modeng	0.200	Orphanet_269564	3	2	Cilium Assembly	15	10	5	2	0.667
+modeng	0.200	MONDO_0003689	2	0	spectrin-associated cytoskeleton	19	16	3	2	0.842
+modeng	0.200	MONDO_0003689	2	1	nucleoside diphosphate phosphorylation	15	12	3	2	0.800
+modeng	0.200	MONDO_0020242	2	0	visual perception	24	13	11	6	0.542
+modeng	0.200	MONDO_0020242	2	1	Visual phototransduction	7	3	4	2	0.429
+modeng	0.200	MONDO_0100241	2	0	Platelet Aggregation (Plug Formation)	19	9	10	5	0.474
+modeng	0.200	MONDO_0100241	2	1	actin cytoskeleton organization	13	6	7	4	0.462
+modeng	0.200	EFO_0009551	2	0	circulatory system development	11	9	2	1	0.818
+modeng	0.200	EFO_0009551	2	1	unannotated	11	11	0	0	1.000
+modeng	0.200	MONDO_0021002	2	0	Hedgehog 'on' state	8	8	0	0	1.000
+modeng	0.200	MONDO_0021002	2	1	unannotated	4	4	0	0	1.000
+modeng	0.200	MONDO_0019852	1	0	gonad development	19	16	3	3	0.842
+modeng	0.200	MONDO_0020592	2	0	unannotated	9	5	4	0	0.556
+modeng	0.200	MONDO_0020592	2	1	unannotated	9	5	4	0	0.556
+modeng	0.200	EFO_0009682	2	0	unannotated	11	9	2	2	0.818
+modeng	0.200	EFO_0009682	2	1	regulation of hormone secretion	8	5	3	0	0.625
+modeng	0.200	Orphanet_98560	2	0	cell junction organization	29	29	0	0	1.000
+modeng	0.200	Orphanet_98560	2	1	chemical synaptic transmission	13	13	0	0	1.000
+modeng	0.200	MONDO_0017754	2	0	Synthesis of bile acids and bile salts via 27-hydroxycholesterol	12	7	5	2	0.583
+modeng	0.200	MONDO_0017754	2	1	Heme biosynthesis	7	6	1	1	0.857
+modeng	0.200	EFO_0008525	2	0	response to unfolded protein	29	23	6	2	0.793
+modeng	0.200	EFO_0008525	2	1	ncRNA metabolic process	14	14	0	0	1.000
+modeng	0.200	MONDO_0000732	2	0	Mitochondrial translation	26	20	6	2	0.769
+modeng	0.200	MONDO_0000732	2	1	tRNA metabolic process	15	9	6	3	0.600
+modeng	0.200	EFO_0005754	1	0	Vitamin D (calciferol) metabolism	20	12	8	1	0.600
+modeng	0.200	Orphanet_79161	2	0	Regulation of gene expression in beta cells	18	11	7	2	0.611
+modeng	0.200	Orphanet_79161	2	1	carbohydrate metabolic process	12	9	3	1	0.750
+modeng	0.200	EFO_0008499	3	0	DNA repair	41	33	8	1	0.805
+modeng	0.200	EFO_0008499	3	1	cytosolic small ribosomal subunit	15	10	5	0	0.667
+modeng	0.200	EFO_0008499	3	2	response to UV	13	12	1	0	0.923
+modeng	0.200	MONDO_0019713	2	0	limb development	8	6	2	0	0.750
+modeng	0.200	MONDO_0019713	2	1	unannotated	8	6	2	1	0.750
+modeng	0.200	EFO_1001951	2	0	DNA repair	19	16	3	1	0.842
+modeng	0.200	EFO_1001951	2	1	regulation of epithelial to mesenchymal transition	19	17	2	1	0.895
+modeng	0.200	MONDO_0056803	2	0	Metabolism of water-soluble vitamins and cofactors	25	15	10	3	0.600
+modeng	0.200	MONDO_0056803	2	1	Glyoxylate metabolism and glycine degradation	16	11	5	4	0.688
+modeng	0.200	MONDO_0021003	4	0	limb development	32	28	4	0	0.875
+modeng	0.200	MONDO_0021003	4	1	ciliary transition zone	17	10	7	3	0.588
+modeng	0.200	MONDO_0021003	4	2	BBSome-mediated cargo-targeting to cilium	16	16	0	0	1.000
+modeng	0.200	MONDO_0021003	4	3	Signaling by Insulin receptor	12	10	2	1	0.833
+modeng	0.200	MONDO_0021205	1	0	unannotated	27	12	15	3	0.444
+modeng	0.200	EFO_0004288	2	0	mismatch repair complex	20	14	6	1	0.700
+modeng	0.200	EFO_0004288	2	1	Regulation of TP53 Activity through Methylation	14	10	4	3	0.714
+modeng	0.200	MONDO_0024635	3	0	regulation of leukocyte activation	23	19	4	1	0.826
+modeng	0.200	MONDO_0024635	3	1	activation of cysteine-type endopeptidase activity involved in apoptotic process	18	17	1	1	0.944
+modeng	0.200	MONDO_0024635	3	2	respiratory chain complex II	14	14	0	0	1.000
+modeng	0.200	Orphanet_79200	7	0	nucleoid	24	22	2	0	0.917
+modeng	0.200	Orphanet_79200	7	1	mitochondrial cytochrome c oxidase assembly	22	17	5	0	0.773
+modeng	0.200	Orphanet_79200	7	2	mitochondrial electron transport, NADH to ubiquinone	20	8	12	0	0.400
+modeng	0.200	Orphanet_79200	7	3	tRNA metabolic process	20	18	2	0	0.900
+modeng	0.200	Orphanet_79200	7	4	cytochrome complex	20	18	2	0	0.900
+modeng	0.200	Orphanet_79200	7	5	cristae formation	13	12	1	0	0.923
+modeng	0.200	Orphanet_79200	7	6	iron-sulfur cluster assembly	12	10	2	0	0.833
+modeng	0.200	EFO_1001216	3	0	odontogenesis of dentin-containing tooth	28	25	3	1	0.893
+modeng	0.200	EFO_1001216	3	1	positive regulation of cell migration	25	25	0	0	1.000
+modeng	0.200	EFO_1001216	3	2	unannotated	13	13	0	0	1.000
+modeng	0.200	MONDO_0002691	2	0	unannotated	9	9	0	0	1.000
+modeng	0.200	MONDO_0002691	2	1	unannotated	5	5	0	0	1.000
+modeng	0.200	EFO_0000222	13	0	cell morphogenesis involved in neuron differentiation	30	30	0	0	1.000
+modeng	0.200	EFO_0000222	13	1	DNA-binding transcription repressor activity, RNA polymerase II-specific	29	29	0	0	1.000
+modeng	0.200	EFO_0000222	13	2	DNA recombination	31	31	0	0	1.000
+modeng	0.200	EFO_0000222	13	3	metal ion transmembrane transporter activity	24	24	0	0	1.000
+modeng	0.200	EFO_0000222	13	4	synaptic membrane	22	22	0	0	1.000
+modeng	0.200	EFO_0000222	13	5	regulation of endopeptidase activity	21	21	0	0	1.000
+modeng	0.200	EFO_0000222	13	6	Fanconi anaemia nuclear complex	20	20	0	0	1.000
+modeng	0.200	EFO_0000222	13	7	Golgi membrane	20	20	0	0	1.000
+modeng	0.200	EFO_0000222	13	8	response to bacterium	20	20	0	0	1.000
+modeng	0.200	EFO_0000222	13	9	unannotated	19	19	0	0	1.000
+modeng	0.200	EFO_0000222	13	10	Signaling by Receptor Tyrosine Kinases	18	18	0	0	1.000
+modeng	0.200	EFO_0000222	13	11	regulation of intracellular transport	16	16	0	0	1.000
+modeng	0.200	EFO_0000222	13	12	mRNA binding	8	8	0	0	1.000
+modeng	0.200	MONDO_0017757	4	0	cellular transition metal ion homeostasis	24	24	0	0	1.000
+modeng	0.200	MONDO_0017757	4	1	Metabolism of water-soluble vitamins and cofactors	21	12	9	5	0.571
+modeng	0.200	MONDO_0017757	4	2	unannotated	18	18	0	0	1.000
+modeng	0.200	MONDO_0017757	4	3	mitochondrion organization	12	12	0	0	1.000
+modeng	0.200	EFO_1001456	2	0	Urea cycle	8	4	4	0	0.500
+modeng	0.200	EFO_1001456	2	1	SUMOylation of RNA binding proteins	6	6	0	0	1.000
+modeng	0.200	MONDO_0002887	6	0	interferon-gamma-mediated signaling pathway	26	22	4	0	0.846
+modeng	0.200	MONDO_0002887	6	1	monocarboxylic acid transport	24	23	1	0	0.958
+modeng	0.200	MONDO_0002887	6	2	cellular response to tumor necrosis factor	23	22	1	0	0.957
+modeng	0.200	MONDO_0002887	6	3	regulation of lymphocyte activation	19	17	2	0	0.895
+modeng	0.200	MONDO_0002887	6	4	cytokine receptor activity	14	9	5	0	0.643
+modeng	0.200	MONDO_0002887	6	5	TRAF6 mediated induction of NFkB and MAP kinases upon TLR7/8 or 9 activation	13	11	2	1	0.846
+modeng	0.200	MONDO_0000652	2	0	fibroblast growth factor-activated receptor activity	9	6	3	2	0.667
+modeng	0.200	MONDO_0000652	2	1	Signaling by FGFR3	7	6	1	0	0.857
+modeng	0.200	MONDO_0015160	4	0	sensory organ morphogenesis	29	20	9	0	0.690
+modeng	0.200	MONDO_0015160	4	1	MAPK family signaling cascades	25	24	1	0	0.960
+modeng	0.200	MONDO_0015160	4	2	regulation of animal organ morphogenesis	19	18	1	0	0.947
+modeng	0.200	MONDO_0015160	4	3	histone modification	13	9	4	0	0.692
+modeng	0.200	Orphanet_404571	2	0	limb development	31	29	2	1	0.935
+modeng	0.200	Orphanet_404571	2	1	cilium assembly	11	9	2	1	0.818
+modeng	0.200	Orphanet_98056	6	0	renal system development	45	43	2	1	0.956
+modeng	0.200	Orphanet_98056	6	1	haptoglobin binding	21	20	1	0	0.952
+modeng	0.200	Orphanet_98056	6	2	peroxisomal membrane transport	17	17	0	0	1.000
+modeng	0.200	Orphanet_98056	6	3	hydrolase activity, hydrolyzing O-glycosyl compounds	16	16	0	0	1.000
+modeng	0.200	Orphanet_98056	6	4	sodium ion transmembrane transport	12	12	0	0	1.000
+modeng	0.200	Orphanet_98056	6	5	organic cyclic compound catabolic process	8	8	0	0	1.000
+modeng	0.200	EFO_1000774	2	0	unannotated	29	29	0	0	1.000
+modeng	0.200	EFO_1000774	2	1	Type I hemidesmosome assembly	21	21	0	0	1.000
+modeng	0.200	EFO_1001901	2	0	regulation of transcription from RNA polymerase II promoter in response to stress	14	14	0	0	1.000
+modeng	0.200	EFO_1001901	2	1	tricarboxylic acid cycle	9	8	1	1	0.889
+modeng	0.200	MONDO_0016139	4	0	myofibril	25	14	11	3	0.560
+modeng	0.200	MONDO_0016139	4	1	dystrophin-associated glycoprotein complex	19	14	5	1	0.737
+modeng	0.200	MONDO_0016139	4	2	inorganic cation transmembrane transport	17	11	6	0	0.647
+modeng	0.200	MONDO_0016139	4	3	Synthesis of substrates in N-glycan biosythesis	14	6	8	2	0.429
+modeng	0.200	MONDO_0000314	1	0	pattern recognition receptor signaling pathway	23	21	2	0	0.913
+modeng	0.200	MONDO_0015286	3	0	glycoprotein biosynthetic process	45	40	5	3	0.889
+modeng	0.200	MONDO_0015286	3	1	GPI anchor biosynthetic process	24	20	4	3	0.833
+modeng	0.200	MONDO_0015286	3	2	Golgi transport complex	10	9	1	0	0.900
+modeng	0.200	Orphanet_183500	5	0	axo-dendritic transport	24	21	3	0	0.875
+modeng	0.200	Orphanet_183500	5	1	protein targeting	23	21	2	0	0.913
+modeng	0.200	Orphanet_183500	5	2	DNA repair	23	20	3	0	0.870
+modeng	0.200	Orphanet_183500	5	3	lysosomal lumen acidification	22	21	1	0	0.955
+modeng	0.200	Orphanet_183500	5	4	nucleoside phosphate metabolic process	15	14	1	0	0.933
+modeng	0.200	MONDO_0019287	4	0	cell-cell junction organization	25	25	0	0	1.000
+modeng	0.200	MONDO_0019287	4	1	Extension of Telomeres	21	21	0	0	1.000
+modeng	0.200	MONDO_0019287	4	2	RAF activation	20	20	0	0	1.000
+modeng	0.200	MONDO_0019287	4	3	intraciliary transport particle A	18	17	1	1	0.944
+modeng	0.200	MONDO_0020119	4	0	Neuronal System	23	19	4	1	0.826
+modeng	0.200	MONDO_0020119	4	1	histone modification	23	21	2	0	0.913
+modeng	0.200	MONDO_0020119	4	2	unannotated	22	21	1	0	0.955
+modeng	0.200	MONDO_0020119	4	3	RNA splicing, via transesterification reactions with bulged adenosine as nucleophile	21	19	2	1	0.905
+modeng	0.200	MONDO_0020049	2	0	cell fate commitment	22	20	2	2	0.909
+modeng	0.200	MONDO_0020049	2	1	protein-lysine N-methyltransferase activity	9	9	0	0	1.000
+modeng	0.300	EFO_1000391	1	0	positive regulation of interleukin-13 production	13	11	2	0	0.846
+modeng	0.300	EFO_1001494	3	0	unannotated	20	5	15	2	0.250
+modeng	0.300	EFO_1001494	3	1	regulation of immune effector process	18	7	11	2	0.389
+modeng	0.300	EFO_1001494	3	2	lymphocyte activation	14	1	13	1	0.071
+modeng	0.300	Orphanet_145	2	0	DNA recombination	17	15	2	0	0.882
+modeng	0.300	Orphanet_145	2	1	Recruitment and ATM-mediated phosphorylation of repair and signaling proteins at DNA double strand breaks	10	10	0	0	1.000
+modeng	0.300	Orphanet_777	2	0	unannotated	19	16	3	3	0.842
+modeng	0.300	Orphanet_777	2	1	Neuronal System	14	12	2	2	0.857
+modeng	0.300	EFO_0003758	2	0	vocalization behavior	28	26	2	0	0.929
+modeng	0.300	EFO_0003758	2	1	Chromatin organization	26	26	0	0	1.000
+modeng	0.300	EFO_1001055	2	0	unannotated	39	36	3	1	0.923
+modeng	0.300	EFO_1001055	2	1	regulation of cell activation	22	20	2	0	0.909
+modeng	0.300	EFO_0009959	1	0	Elastic fibre formation	23	20	3	1	0.870
+modeng	0.300	EFO_0000195	2	0	Plasma lipoprotein assembly, remodeling, and clearance	24	11	13	12	0.458
+modeng	0.300	EFO_0000195	2	1	unannotated	21	7	14	12	0.333
+modeng	0.300	EFO_0004143	1	0	Extracellular matrix organization	11	10	1	1	0.909
+modeng	0.300	Orphanet_1872	2	0	ciliary basal body	32	22	10	3	0.688
+modeng	0.300	Orphanet_1872	2	1	detection of light stimulus	25	22	3	1	0.880
+modeng	0.300	EFO_0003898	5	0	cytokine receptor activity	23	22	1	0	0.957
+modeng	0.300	EFO_0003898	5	1	regulation of interleukin-1 production	25	25	0	0	1.000
+modeng	0.300	EFO_0003898	5	2	TNFs bind their physiological receptors	18	18	0	0	1.000
+modeng	0.300	EFO_0003898	5	3	DNA-binding transcription repressor activity, RNA polymerase II-specific	16	16	0	0	1.000
+modeng	0.300	EFO_0003898	5	4	T cell differentiation	12	12	0	0	1.000
+modeng	0.300	EFO_0001063	2	0	sensory perception of sound	34	31	3	2	0.912
+modeng	0.300	EFO_0001063	2	1	actin binding	32	29	3	0	0.906
+modeng	0.300	EFO_0004698	2	0	unannotated	15	13	2	0	0.867
+modeng	0.300	EFO_0004698	2	1	unannotated	9	7	2	1	0.778
+modeng	0.300	EFO_0004274	2	0	unannotated	10	8	2	2	0.800
+modeng	0.300	EFO_0004274	2	1	brush border membrane	6	6	0	0	1.000
+modeng	0.300	EFO_0009571	1	0	Inactivation of CDC42 and RAC1	12	12	0	0	1.000
+modeng	0.300	EFO_0000401	1	0	unannotated	14	13	1	0	0.929
+modeng	0.300	EFO_0003948	1	0	unannotated	20	17	3	1	0.850
+modeng	0.300	EFO_0004214	2	0	unannotated	7	7	0	0	1.000
+modeng	0.300	EFO_0004214	2	1	unannotated	4	4	0	0	1.000
+modeng	0.300	EFO_0003888	2	0	unannotated	22	20	2	2	0.909
+modeng	0.300	EFO_0003888	2	1	cell morphogenesis involved in differentiation	15	14	1	1	0.933
+modeng	0.300	EFO_0000095	2	0	BH3-only proteins associate with and inactivate anti-apoptotic BCL-2 members	19	19	0	0	1.000
+modeng	0.300	EFO_0000095	2	1	unannotated	11	11	0	0	1.000
+modeng	0.300	EFO_0004253	1	0	unannotated	16	13	3	3	0.812
+modeng	0.300	MONDO_0005090	9	0	intrinsic apoptotic signaling pathway	33	31	2	1	0.939
+modeng	0.300	MONDO_0005090	9	1	cellular component morphogenesis	32	32	0	0	1.000
+modeng	0.300	MONDO_0005090	9	2	regulation of cyclase activity	25	24	1	1	0.960
+modeng	0.300	MONDO_0005090	9	3	methylation	20	19	1	1	0.950
+modeng	0.300	MONDO_0005090	9	4	gated channel activity	17	17	0	0	1.000
+modeng	0.300	MONDO_0005090	9	5	unannotated	15	15	0	0	1.000
+modeng	0.300	MONDO_0005090	9	6	regulation of lymphocyte activation	16	16	0	0	1.000
+modeng	0.300	MONDO_0005090	9	7	unannotated	15	15	0	0	1.000
+modeng	0.300	MONDO_0005090	9	8	unannotated	14	14	0	0	1.000
+modeng	0.300	MONDO_0018097	2	0	Wnt signaling pathway	19	16	3	1	0.842
+modeng	0.300	MONDO_0018097	2	1	cation channel complex	16	11	5	0	0.688
+modeng	0.300	MONDO_0019625	2	0	transforming growth factor beta receptor binding	13	13	0	0	1.000
+modeng	0.300	MONDO_0019625	2	1	extracellular matrix structural constituent	10	7	3	3	0.700
+modeng	0.300	MONDO_0016660	2	0	centrosome duplication	20	20	0	0	1.000
+modeng	0.300	MONDO_0016660	2	1	mitotic nuclear division	15	15	0	0	1.000
+modeng	0.300	MONDO_0009723	4	0	cytochrome complex	27	27	0	0	1.000
+modeng	0.300	MONDO_0009723	4	1	mitochondrial cytochrome c oxidase assembly	26	26	0	0	1.000
+modeng	0.300	MONDO_0009723	4	2	NADH dehydrogenase complex	24	24	0	0	1.000
+modeng	0.300	MONDO_0009723	4	3	peptide metabolic process	12	12	0	0	1.000
+modeng	0.300	MONDO_0019006	2	0	renal filtration cell differentiation	14	14	0	0	1.000
+modeng	0.300	MONDO_0019006	2	1	nuclear pore organization	11	10	1	1	0.909
+modeng	0.300	MONDO_0023113	2	0	negative regulation of cell growth	17	16	1	1	0.941
+modeng	0.300	MONDO_0023113	2	1	mismatch repair complex	13	12	1	0	0.923
+modeng	0.300	EFO_0001065	2	0	unannotated	14	12	2	0	0.857
+modeng	0.300	EFO_0001065	2	1	regulation of male gonad development	8	4	4	1	0.500
+modeng	0.300	EFO_0004273	16	0	transmembrane receptor protein tyrosine kinase signaling pathway	36	36	0	0	1.000
+modeng	0.300	EFO_0004273	16	1	positive regulation of cytosolic calcium ion concentration	31	31	0	0	1.000
+modeng	0.300	EFO_0004273	16	2	muscle structure development	28	28	0	0	1.000
+modeng	0.300	EFO_0004273	16	3	cell morphogenesis involved in neuron differentiation	24	24	0	0	1.000
+modeng	0.300	EFO_0004273	16	4	peptidyl-serine modification	26	26	0	0	1.000
+modeng	0.300	EFO_0004273	16	5	Transmission across Chemical Synapses	21	21	0	0	1.000
+modeng	0.300	EFO_0004273	16	6	Extracellular matrix organization	17	17	0	0	1.000
+modeng	0.300	EFO_0004273	16	7	RNA polymerase II-specific DNA-binding transcription factor binding	17	17	0	0	1.000
+modeng	0.300	EFO_0004273	16	8	GTPase activator activity	16	16	0	0	1.000
+modeng	0.300	EFO_0004273	16	9	platelet alpha granule	18	18	0	0	1.000
+modeng	0.300	EFO_0004273	16	10	glycerophospholipid metabolic process	15	15	0	0	1.000
+modeng	0.300	EFO_0004273	16	11	catalytic activity, acting on a tRNA	12	12	0	0	1.000
+modeng	0.300	EFO_0004273	16	12	unannotated	10	10	0	0	1.000
+modeng	0.300	EFO_0004273	16	13	G protein-coupled peptide receptor activity	12	12	0	0	1.000
+modeng	0.300	EFO_0004273	16	14	catenin complex	10	10	0	0	1.000
+modeng	0.300	EFO_0004273	16	15	regulation of RNA splicing	10	10	0	0	1.000
+modeng	0.300	EFO_0003882	2	0	unannotated	11	11	0	0	1.000
+modeng	0.300	EFO_0003882	2	1	skeletal system development	9	9	0	0	1.000
+modeng	0.300	MONDO_0000414	2	0	inorganic ion transmembrane transport	11	5	6	3	0.455
+modeng	0.300	MONDO_0000414	2	1	unannotated	6	5	1	1	0.833
+modeng	0.300	Orphanet_79191	2	0	Peptide chain elongation	24	24	0	0	1.000
+modeng	0.300	Orphanet_79191	2	1	purine ribonucleoside metabolic process	15	15	0	0	1.000
+modeng	0.300	EFO_0000612	2	0	apolipoprotein binding	21	19	2	2	0.905
+modeng	0.300	EFO_0000612	2	1	Platelet homeostasis	13	13	0	0	1.000
+modeng	0.300	EFO_0000275	8	0	transcription, DNA-templated	26	26	0	0	1.000
+modeng	0.300	EFO_0000275	8	1	DNA-binding transcription factor binding	19	17	2	2	0.895
+modeng	0.300	EFO_0000275	8	2	regulation of cell-substrate junction assembly	19	18	1	1	0.947
+modeng	0.300	EFO_0000275	8	3	neutral lipid metabolic process	17	17	0	0	1.000
+modeng	0.300	EFO_0000275	8	4	regulation of membrane depolarization	15	11	4	0	0.733
+modeng	0.300	EFO_0000275	8	5	cardiac muscle cell membrane repolarization	13	11	2	0	0.846
+modeng	0.300	EFO_0000275	8	6	actin cytoskeleton	12	12	0	0	1.000
+modeng	0.300	EFO_0000275	8	7	regulation of cell communication by electrical coupling	11	7	4	0	0.636
+modeng	0.300	MONDO_0044996	2	0	astrocyte activation	9	7	2	0	0.778
+modeng	0.300	MONDO_0044996	2	1	DNA replication	9	6	3	0	0.667
+modeng	0.300	MONDO_0043839	2	0	Interleukin-12 signaling	13	12	1	0	0.923
+modeng	0.300	MONDO_0043839	2	1	Nucleotide-binding domain, leucine rich repeat containing receptor (NLR) signaling pathways	13	9	4	0	0.692
+modeng	0.300	EFO_0000389	2	0	RUNX3 regulates p14-ARF	14	13	1	1	0.929
+modeng	0.300	EFO_0000389	2	1	Telomere C-strand synthesis initiation	12	11	1	0	0.917
+modeng	0.300	MONDO_0024352	1	0	unannotated	13	13	0	0	1.000
+modeng	0.300	EFO_0009448	2	0	unannotated	9	7	2	1	0.778
+modeng	0.300	EFO_0009448	2	1	unannotated	6	5	1	0	0.833
+modeng	0.300	MONDO_0037748	2	0	Plasma lipoprotein remodeling	8	6	2	1	0.750
+modeng	0.300	MONDO_0037748	2	1	intestinal cholesterol absorption	7	7	0	0	1.000
+modeng	0.300	EFO_0000384	7	0	FOXO-mediated transcription of cell cycle genes	36	36	0	0	1.000
+modeng	0.300	EFO_0000384	7	1	cytokine binding	26	25	1	0	0.962
+modeng	0.300	EFO_0000384	7	2	negative regulation of protein kinase activity	22	22	0	0	1.000
+modeng	0.300	EFO_0000384	7	3	DNA-binding transcription repressor activity, RNA polymerase II-specific	21	21	0	0	1.000
+modeng	0.300	EFO_0000384	7	4	positive regulation of cell-cell adhesion	19	19	0	0	1.000
+modeng	0.300	EFO_0000384	7	5	cytoplasmic pattern recognition receptor signaling pathway	19	19	0	0	1.000
+modeng	0.300	EFO_0000384	7	6	Neutrophil degranulation	12	12	0	0	1.000
+modeng	0.300	EFO_0003890	1	0	ethanol oxidation	28	28	0	0	1.000
+modeng	0.300	EFO_0003875	1	0	positive regulation of epithelial to mesenchymal transition	24	24	0	0	1.000
+modeng	0.300	EFO_1001512	2	0	mismatch repair complex	9	6	3	2	0.667
+modeng	0.300	EFO_1001512	2	1	tube development	6	6	0	0	1.000
+modeng	0.300	EFO_0004128	2	0	Anchoring fibril formation	11	11	0	0	1.000
+modeng	0.300	EFO_0004128	2	1	Regulation of Complement cascade	9	6	3	3	0.667
+modeng	0.300	EFO_0004251	2	0	Downstream signal transduction	35	10	25	0	0.286
+modeng	0.300	EFO_0004251	2	1	hemopoiesis	27	10	17	1	0.370
+modeng	0.300	EFO_0005708	2	0	unannotated	8	8	0	0	1.000
+modeng	0.300	EFO_0005708	2	1	Regulation of beta-cell development	4	3	1	0	0.750
+modeng	0.300	EFO_0001365	2	0	external encapsulating structure	46	43	3	0	0.935
+modeng	0.300	EFO_0001365	2	1	Regulation of Complement cascade	10	10	0	0	1.000
+modeng	0.300	EFO_0001663	5	0	unannotated	25	25	0	0	1.000
+modeng	0.300	EFO_0001663	5	1	cellular response to steroid hormone stimulus	19	19	0	0	1.000
+modeng	0.300	EFO_0001663	5	2	blood vessel morphogenesis	17	17	0	0	1.000
+modeng	0.300	EFO_0001663	5	3	regulation of cell cycle phase transition	19	19	0	0	1.000
+modeng	0.300	EFO_0001663	5	4	positive regulation of cell migration	11	11	0	0	1.000
+modeng	0.300	MONDO_0013099	1	0	unannotated	17	16	1	1	0.941
+modeng	0.300	EFO_0001356	2	0	axon	18	15	3	2	0.833
+modeng	0.300	EFO_0001356	2	1	polyubiquitin modification-dependent protein binding	15	11	4	4	0.733
+modeng	0.300	MONDO_0002185	1	0	ossification	17	14	3	0	0.824
+modeng	0.300	EFO_0005804	2	0	cellular response to hypoxia	7	6	1	0	0.857
+modeng	0.300	EFO_0005804	2	1	oxygen transport	6	6	0	0	1.000
+modeng	0.300	MONDO_0018612	2	0	Thyroxine biosynthesis	10	10	0	0	1.000
+modeng	0.300	MONDO_0018612	2	1	thyroid gland development	10	9	1	1	0.900
+modeng	0.300	EFO_0000536	1	0	cell fate commitment	11	10	1	0	0.909
+modeng	0.300	MONDO_0000358	2	0	collagen trimer	20	18	2	1	0.900
+modeng	0.300	MONDO_0000358	2	1	biological process involved in symbiotic interaction	11	10	1	0	0.909
+modeng	0.300	MONDO_0016575	2	0	motile cilium assembly	18	18	0	0	1.000
+modeng	0.300	MONDO_0016575	2	1	axoneme	14	14	0	0	1.000
+modeng	0.300	MONDO_0043878	2	0	mitochondrial protein processing	19	19	0	0	1.000
+modeng	0.300	MONDO_0043878	2	1	oxidative phosphorylation	13	13	0	0	1.000
+modeng	0.300	MONDO_0100137	2	0	Interleukin-35 Signalling	36	28	8	1	0.778
+modeng	0.300	MONDO_0100137	2	1	Extension of Telomeres	16	12	4	0	0.750
+modeng	0.300	MONDO_0002462	2	0	Regulation of Complement cascade	14	13	1	0	0.929
+modeng	0.300	MONDO_0002462	2	1	unannotated	8	8	0	0	1.000
+modeng	0.300	MONDO_0019200	7	0	intraciliary transport	26	22	4	1	0.846
+modeng	0.300	MONDO_0019200	7	1	detection of light stimulus	22	21	1	0	0.955
+modeng	0.300	MONDO_0019200	7	2	alcohol metabolic process	21	20	1	0	0.952
+modeng	0.300	MONDO_0019200	7	3	BBSome-mediated cargo-targeting to cilium	18	15	3	0	0.833
+modeng	0.300	MONDO_0019200	7	4	eye photoreceptor cell differentiation	16	14	2	0	0.875
+modeng	0.300	MONDO_0019200	7	5	retina homeostasis	16	14	2	0	0.875
+modeng	0.300	MONDO_0019200	7	6	U4/U6 x U5 tri-snRNP complex	12	12	0	0	1.000
+modeng	0.300	EFO_0700118	2	0	eye development	16	9	7	1	0.562
+modeng	0.300	EFO_0700118	2	1	Rab regulation of trafficking	11	10	1	0	0.909
+modeng	0.300	MONDO_0019313	2	0	Spry regulation of FGF signaling	20	20	0	0	1.000
+modeng	0.300	MONDO_0019313	2	1	RAF activation	13	13	0	0	1.000
+modeng	0.300	MONDO_0003406	1	0	unannotated	13	12	1	0	0.923
+modeng	0.300	EFO_0008615	1	0	epithelial tube morphogenesis	20	17	3	2	0.850
+modeng	0.300	EFO_1001511	2	0	Regulation of gene expression in beta cells	25	24	1	1	0.960
+modeng	0.300	EFO_1001511	2	1	oxidative phosphorylation	15	15	0	0	1.000
+modeng	0.300	MONDO_0015185	2	0	regulation of pathway-restricted SMAD protein phosphorylation	8	8	0	0	1.000
+modeng	0.300	MONDO_0015185	2	1	base-excision repair	7	5	2	2	0.714
+modeng	0.300	MONDO_0042973	2	0	unannotated	10	7	3	3	0.700
+modeng	0.300	MONDO_0042973	2	1	unannotated	3	3	0	0	1.000
+modeng	0.300	MONDO_0001926	2	0	metanephros development	8	8	0	0	1.000
+modeng	0.300	MONDO_0001926	2	1	unannotated	2	2	0	0	1.000
+modeng	0.300	EFO_0001075	2	0	unannotated	16	16	0	0	1.000
+modeng	0.300	EFO_0001075	2	1	Resolution of D-loop Structures through Synthesis-Dependent Strand Annealing (SDSA)	12	11	1	0	0.917
+modeng	0.300	Orphanet_183628	2	0	unannotated	17	16	1	1	0.941
+modeng	0.300	Orphanet_183628	2	1	diencephalon development	14	13	1	0	0.929
+modeng	0.300	MONDO_0016624	2	0	unannotated	34	34	0	0	1.000
+modeng	0.300	MONDO_0016624	2	1	Cobalamin (Cbl, vitamin B12) transport and metabolism	16	10	6	4	0.625
+modeng	0.300	MONDO_0020248	2	0	extracellular matrix structural constituent conferring tensile strength	10	9	1	1	0.900
+modeng	0.300	MONDO_0020248	2	1	camera-type eye development	9	6	3	2	0.667
+modeng	0.300	MONDO_0015929	3	0	transmission of nerve impulse	33	32	1	0	0.970
+modeng	0.300	MONDO_0015929	3	1	cilium assembly	26	25	1	1	0.962
+modeng	0.300	MONDO_0015929	3	2	embryonic organ development	11	10	1	0	0.909
+modeng	0.300	MONDO_0002311	2	0	unannotated	8	8	0	0	1.000
+modeng	0.300	MONDO_0002311	2	1	Regulation of gene expression by Hypoxia-inducible Factor	4	4	0	0	1.000
+modeng	0.300	EFO_0009455	2	0	C-palmitoyltransferase activity	7	7	0	0	1.000
+modeng	0.300	EFO_0009455	2	1	unannotated	6	6	0	0	1.000
+modeng	0.300	MONDO_0002108	2	0	negative regulation of cyclin-dependent protein serine/threonine kinase activity	9	9	0	0	1.000
+modeng	0.300	MONDO_0002108	2	1	Signalling to RAS	6	6	0	0	1.000
+modeng	0.300	MONDO_0020249	2	0	mitochondrial protein processing	20	17	3	1	0.850
+modeng	0.300	MONDO_0020249	2	1	oxidative phosphorylation	16	11	5	0	0.688
+modeng	0.300	MONDO_0002078	2	0	retina development in camera-type eye	13	13	0	0	1.000
+modeng	0.300	MONDO_0002078	2	1	heart morphogenesis	11	11	0	0	1.000
+modeng	0.300	MONDO_0001475	2	0	granulocyte differentiation	19	18	1	1	0.947
+modeng	0.300	MONDO_0001475	2	1	cytokine binding	7	7	0	0	1.000
+modeng	0.300	MONDO_0015168	2	0	neuromuscular junction	17	15	2	1	0.882
+modeng	0.300	MONDO_0015168	2	1	muscle contraction	15	14	1	1	0.933
+modeng	0.300	MONDO_0003832	1	0	Complement cascade	26	23	3	2	0.885
+modeng	0.300	MONDO_0017688	2	0	pyruvate metabolic process	19	13	6	3	0.684
+modeng	0.300	MONDO_0017688	2	1	Regulation of beta-cell development	12	9	3	2	0.750
+modeng	0.300	MONDO_0000577	2	0	DNA repair	41	36	5	0	0.878
+modeng	0.300	MONDO_0000577	2	1	cytosolic ribosome	14	5	9	0	0.357
+modeng	0.300	Orphanet_207015	3	0	peroxisomal membrane transport	25	24	1	0	0.960
+modeng	0.300	Orphanet_207015	3	1	Ubiquinol biosynthesis	17	15	2	0	0.882
+modeng	0.300	Orphanet_207015	3	2	oxidative phosphorylation	17	16	1	0	0.941
+modeng	0.300	Orphanet_108987	2	0	eye development	9	8	1	0	0.889
+modeng	0.300	Orphanet_108987	2	1	unannotated	8	8	0	0	1.000
+modeng	0.300	MONDO_0015905	2	0	cholesterol homeostasis	18	13	5	3	0.722
+modeng	0.300	MONDO_0015905	2	1	GPI anchor biosynthetic process	14	10	4	1	0.714
+modeng	0.300	MONDO_0019587	2	0	actin-dependent ATPase activity	29	29	0	0	1.000
+modeng	0.300	MONDO_0019587	2	1	sensory perception of sound	12	12	0	0	1.000
+modeng	0.300	MONDO_0001056	1	0	unannotated	11	11	0	0	1.000
+modeng	0.300	EFO_1001990	2	0	mitochondrial DNA replication	14	14	0	0	1.000
+modeng	0.300	EFO_1001990	2	1	mitochondrial inner membrane	8	6	2	2	0.750
+modeng	0.300	MONDO_0018838	2	0	Serine biosynthesis	15	11	4	0	0.733
+modeng	0.300	MONDO_0018838	2	1	Recruitment of NuMA to mitotic centrosomes	12	12	0	0	1.000
+modeng	0.300	EFO_0005569	2	0	eye development	22	20	2	1	0.909
+modeng	0.300	EFO_0005569	2	1	Dual incision in TC-NER	10	8	2	0	0.800
+modeng	0.300	MONDO_0020073	2	0	regulation of membrane potential	19	15	4	2	0.789
+modeng	0.300	MONDO_0020073	2	1	GATOR1 complex	14	14	0	0	1.000
+modeng	0.300	MONDO_0005129	3	0	unannotated	35	34	1	0	0.971
+modeng	0.300	MONDO_0005129	3	1	lens development in camera-type eye	22	22	0	0	1.000
+modeng	0.300	MONDO_0005129	3	2	cell-cell junction	10	10	0	0	1.000
+modeng	0.300	Orphanet_269564	3	0	unannotated	24	23	1	0	0.958
+modeng	0.300	Orphanet_269564	3	1	Activation of the pre-replicative complex	15	15	0	0	1.000
+modeng	0.300	Orphanet_269564	3	2	cilium assembly	13	10	3	1	0.769
+modeng	0.300	MONDO_0003689	2	0	spectrin-associated cytoskeleton	19	17	2	1	0.895
+modeng	0.300	MONDO_0003689	2	1	nucleoside diphosphate phosphorylation	13	11	2	2	0.846
+modeng	0.300	MONDO_0020242	2	0	camera-type eye photoreceptor cell differentiation	18	10	8	3	0.556
+modeng	0.300	MONDO_0020242	2	1	Visual phototransduction	12	6	6	4	0.500
+modeng	0.300	MONDO_0100241	2	0	platelet morphogenesis	14	10	4	2	0.714
+modeng	0.300	MONDO_0100241	2	1	Platelet Aggregation (Plug Formation)	13	5	8	3	0.385
+modeng	0.300	EFO_0009551	2	0	circulatory system development	12	12	0	0	1.000
+modeng	0.300	EFO_0009551	2	1	unannotated	8	8	0	0	1.000
+modeng	0.300	MONDO_0021002	2	0	Hedgehog 'on' state	8	8	0	0	1.000
+modeng	0.300	MONDO_0021002	2	1	unannotated	4	4	0	0	1.000
+modeng	0.300	MONDO_0019852	1	0	gonad development	17	16	1	1	0.941
+modeng	0.300	MONDO_0020592	2	0	cellular response to biotic stimulus	14	8	6	0	0.571
+modeng	0.300	MONDO_0020592	2	1	unannotated	2	2	0	0	1.000
+modeng	0.300	EFO_0009682	2	0	unannotated	11	9	2	2	0.818
+modeng	0.300	EFO_0009682	2	1	regulation of hormone secretion	8	5	3	0	0.625
+modeng	0.300	Orphanet_98560	2	0	cell junction organization	29	29	0	0	1.000
+modeng	0.300	Orphanet_98560	2	1	chemical synaptic transmission	13	13	0	0	1.000
+modeng	0.300	MONDO_0017754	2	0	bile acid and bile salt transport	9	7	2	1	0.778
+modeng	0.300	MONDO_0017754	2	1	Metabolism of porphyrins	7	6	1	1	0.857
+modeng	0.300	EFO_0008525	2	0	response to unfolded protein	26	24	2	1	0.923
+modeng	0.300	EFO_0008525	2	1	ncRNA metabolic process	14	13	1	0	0.929
+modeng	0.300	MONDO_0000732	2	0	Mitochondrial translation	23	19	4	2	0.826
+modeng	0.300	MONDO_0000732	2	1	tRNA metabolic process	15	10	5	3	0.667
+modeng	0.300	EFO_0005754	2	0	negative regulation of cell population proliferation	9	7	2	1	0.778
+modeng	0.300	EFO_0005754	2	1	unannotated	7	5	2	0	0.714
+modeng	0.300	Orphanet_79161	2	0	Regulation of gene expression in beta cells	18	11	7	2	0.611
+modeng	0.300	Orphanet_79161	2	1	carbohydrate biosynthetic process	11	9	2	0	0.818
+modeng	0.300	EFO_0008499	2	0	DNA Repair	56	51	5	1	0.911
+modeng	0.300	EFO_0008499	2	1	ribosomal subunit	7	4	3	0	0.571
+modeng	0.300	MONDO_0019713	2	0	appendage morphogenesis	8	8	0	0	1.000
+modeng	0.300	MONDO_0019713	2	1	unannotated	6	4	2	1	0.667
+modeng	0.300	EFO_1001951	2	0	regulation of epithelial to mesenchymal transition	19	18	1	1	0.947
+modeng	0.300	EFO_1001951	2	1	DNA repair	17	15	2	1	0.882
+modeng	0.300	MONDO_0056803	2	0	Metabolism of water-soluble vitamins and cofactors	27	18	9	3	0.667
+modeng	0.300	MONDO_0056803	2	1	metallo-sulfur cluster assembly	11	8	3	3	0.727
+modeng	0.300	MONDO_0021003	4	0	Hedgehog 'on' state	22	20	2	0	0.909
+modeng	0.300	MONDO_0021003	4	1	Signaling by Insulin receptor	21	19	2	1	0.905
+modeng	0.300	MONDO_0021003	4	2	BBSome-mediated cargo-targeting to cilium	15	15	0	0	1.000
+modeng	0.300	MONDO_0021003	4	3	ciliary transition zone	14	10	4	1	0.714
+modeng	0.300	MONDO_0021205	2	0	unannotated	12	5	7	0	0.417
+modeng	0.300	MONDO_0021205	2	1	unannotated	10	7	3	3	0.700
+modeng	0.300	EFO_0004288	1	0	DNA repair	32	24	8	2	0.750
+modeng	0.300	MONDO_0024635	2	0	succinate dehydrogenase complex (ubiquinone)	29	29	0	0	1.000
+modeng	0.300	MONDO_0024635	2	1	regulation of leukocyte activation	25	21	4	1	0.840
+modeng	0.300	Orphanet_79200	6	0	mitochondrial cytochrome c oxidase assembly	33	30	3	0	0.909
+modeng	0.300	Orphanet_79200	6	1	tRNA metabolic process	20	19	1	0	0.950
+modeng	0.300	Orphanet_79200	6	2	mitochondrial DNA replication	19	17	2	0	0.895
+modeng	0.300	Orphanet_79200	6	3	cytochrome complex	17	16	1	0	0.941
+modeng	0.300	Orphanet_79200	6	4	inner mitochondrial membrane organization	16	15	1	0	0.938
+modeng	0.300	Orphanet_79200	6	5	mitochondrial electron transport, NADH to ubiquinone	16	8	8	0	0.500
+modeng	0.300	EFO_1001216	2	0	positive regulation of cell migration	34	34	0	0	1.000
+modeng	0.300	EFO_1001216	2	1	odontogenesis of dentin-containing tooth	31	29	2	1	0.935
+modeng	0.300	MONDO_0002691	2	0	unannotated	9	9	0	0	1.000
+modeng	0.300	MONDO_0002691	2	1	unannotated	5	5	0	0	1.000
+modeng	0.300	EFO_0000222	13	0	cell morphogenesis involved in neuron differentiation	30	30	0	0	1.000
+modeng	0.300	EFO_0000222	13	1	DNA-binding transcription repressor activity, RNA polymerase II-specific	29	29	0	0	1.000
+modeng	0.300	EFO_0000222	13	2	DNA recombination	31	31	0	0	1.000
+modeng	0.300	EFO_0000222	13	3	metal ion transmembrane transporter activity	24	24	0	0	1.000
+modeng	0.300	EFO_0000222	13	4	synaptic membrane	22	22	0	0	1.000
+modeng	0.300	EFO_0000222	13	5	regulation of endopeptidase activity	21	21	0	0	1.000
+modeng	0.300	EFO_0000222	13	6	Fanconi anaemia nuclear complex	20	20	0	0	1.000
+modeng	0.300	EFO_0000222	13	7	Golgi membrane	20	20	0	0	1.000
+modeng	0.300	EFO_0000222	13	8	response to bacterium	20	20	0	0	1.000
+modeng	0.300	EFO_0000222	13	9	unannotated	19	19	0	0	1.000
+modeng	0.300	EFO_0000222	13	10	Signaling by Receptor Tyrosine Kinases	18	18	0	0	1.000
+modeng	0.300	EFO_0000222	13	11	regulation of intracellular transport	16	16	0	0	1.000
+modeng	0.300	EFO_0000222	13	12	mRNA binding	8	8	0	0	1.000
+modeng	0.300	MONDO_0017757	4	0	cellular transition metal ion homeostasis	26	26	0	0	1.000
+modeng	0.300	MONDO_0017757	4	1	mitochondrion organization	21	21	0	0	1.000
+modeng	0.300	MONDO_0017757	4	2	water-soluble vitamin metabolic process	19	12	7	5	0.632
+modeng	0.300	MONDO_0017757	4	3	unannotated	7	7	0	0	1.000
+modeng	0.300	EFO_1001456	2	0	Urea cycle	7	4	3	0	0.571
+modeng	0.300	EFO_1001456	2	1	SUMOylation of RNA binding proteins	6	6	0	0	1.000
+modeng	0.300	MONDO_0002887	6	0	cellular response to tumor necrosis factor	23	22	1	0	0.957
+modeng	0.300	MONDO_0002887	6	1	monocarboxylic acid transport	23	22	1	0	0.957
+modeng	0.300	MONDO_0002887	6	2	negative regulation of cell population proliferation	19	19	0	0	1.000
+modeng	0.300	MONDO_0002887	6	3	DNA-binding transcription repressor activity, RNA polymerase II-specific	18	17	1	0	0.944
+modeng	0.300	MONDO_0002887	6	4	TRAF6 mediated induction of NFkB and MAP kinases upon TLR7/8 or 9 activation	15	13	2	1	0.867
+modeng	0.300	MONDO_0002887	6	5	cytokine receptor activity	15	11	4	0	0.733
+modeng	0.300	MONDO_0000652	2	0	Signaling by FGFR	8	7	1	0	0.875
+modeng	0.300	MONDO_0000652	2	1	unannotated	6	5	1	1	0.833
+modeng	0.300	MONDO_0015160	4	0	MAPK family signaling cascades	30	28	2	0	0.933
+modeng	0.300	MONDO_0015160	4	1	sensory organ morphogenesis	20	16	4	0	0.800
+modeng	0.300	MONDO_0015160	4	2	regulation of animal organ morphogenesis	20	19	1	0	0.950
+modeng	0.300	MONDO_0015160	4	3	histone modification	11	8	3	0	0.727
+modeng	0.300	Orphanet_404571	2	0	limb development	31	29	2	1	0.935
+modeng	0.300	Orphanet_404571	2	1	cilium assembly	9	9	0	0	1.000
+modeng	0.300	Orphanet_98056	6	0	renal system development	43	43	0	0	1.000
+modeng	0.300	Orphanet_98056	6	1	peroxisomal membrane transport	17	17	0	0	1.000
+modeng	0.300	Orphanet_98056	6	2	sodium ion transmembrane transport	16	16	0	0	1.000
+modeng	0.300	Orphanet_98056	6	3	haptoglobin binding	16	16	0	0	1.000
+modeng	0.300	Orphanet_98056	6	4	hydrolase activity, hydrolyzing O-glycosyl compounds	16	16	0	0	1.000
+modeng	0.300	Orphanet_98056	6	5	organic cyclic compound catabolic process	8	8	0	0	1.000
+modeng	0.300	EFO_1000774	2	0	unannotated	29	29	0	0	1.000
+modeng	0.300	EFO_1000774	2	1	Type I hemidesmosome assembly	21	21	0	0	1.000
+modeng	0.300	EFO_1001901	2	0	regulation of transcription from RNA polymerase II promoter in response to stress	14	14	0	0	1.000
+modeng	0.300	EFO_1001901	2	1	tricarboxylic acid cycle	9	8	1	1	0.889
+modeng	0.300	MONDO_0016139	3	0	inorganic cation transmembrane transport	27	17	10	0	0.630
+modeng	0.300	MONDO_0016139	3	1	myofibril	23	18	5	1	0.783
+modeng	0.300	MONDO_0016139	3	2	dystroglycan complex	16	10	6	2	0.625
+modeng	0.300	MONDO_0000314	2	0	pattern recognition receptor signaling pathway	15	15	0	0	1.000
+modeng	0.300	MONDO_0000314	2	1	unannotated	6	6	0	0	1.000
+modeng	0.300	MONDO_0015286	3	0	glycoprotein biosynthetic process	44	40	4	3	0.909
+modeng	0.300	MONDO_0015286	3	1	GPI anchor metabolic process	23	20	3	2	0.870
+modeng	0.300	MONDO_0015286	3	2	Golgi transport complex	9	9	0	0	1.000
+modeng	0.300	Orphanet_183500	4	0	axon development	28	27	1	0	0.964
+modeng	0.300	Orphanet_183500	4	1	AP-4 adaptor complex	26	26	0	0	1.000
+modeng	0.300	Orphanet_183500	4	2	DNA repair	25	23	2	0	0.920
+modeng	0.300	Orphanet_183500	4	3	lysosomal lumen acidification	22	21	1	0	0.955
+modeng	0.300	MONDO_0019287	4	0	Extension of Telomeres	26	26	0	0	1.000
+modeng	0.300	MONDO_0019287	4	1	RAF activation	27	27	0	0	1.000
+modeng	0.300	MONDO_0019287	4	2	cell-cell junction organization	19	19	0	0	1.000
+modeng	0.300	MONDO_0019287	4	3	intraciliary transport particle A	11	11	0	0	1.000
+modeng	0.300	MONDO_0020119	4	0	Neuronal System	28	25	3	0	0.893
+modeng	0.300	MONDO_0020119	4	1	unannotated	22	22	0	0	1.000
+modeng	0.300	MONDO_0020119	4	2	histone modification	21	20	1	0	0.952
+modeng	0.300	MONDO_0020119	4	3	RNA splicing, via transesterification reactions with bulged adenosine as nucleophile	13	13	0	0	1.000
+modeng	0.300	MONDO_0020049	2	0	cell fate commitment	22	21	1	1	0.955
+modeng	0.300	MONDO_0020049	2	1	protein-lysine N-methyltransferase activity	8	8	0	0	1.000
+transfer	0.200	EFO_1000391	2	0	mononuclear cell differentiation	11	5	6	1	0.455
+transfer	0.200	EFO_1000391	2	1	Signaling by Interleukins	6	6	0	0	1.000
+transfer	0.200	EFO_1001494	2	0	regulation of cell activation	39	9	30	2	0.231
+transfer	0.200	EFO_1001494	2	1	response to peptide	25	4	21	1	0.160
+transfer	0.200	Orphanet_145	2	0	DNA recombination	16	14	2	0	0.875
+transfer	0.200	Orphanet_145	2	1	negative regulation of cell cycle phase transition	13	11	2	0	0.846
+transfer	0.200	Orphanet_777	2	0	Neuronal System	21	16	5	3	0.762
+transfer	0.200	Orphanet_777	2	1	unannotated	15	12	3	2	0.800
+transfer	0.200	EFO_0003758	3	0	vocalization behavior	21	20	1	0	0.952
+transfer	0.200	EFO_0003758	3	1	Chromatin organization	21	19	2	0	0.905
+transfer	0.200	EFO_0003758	3	2	isoprenoid biosynthetic process	14	13	1	0	0.929
+transfer	0.200	EFO_1001055	2	0	unannotated	39	35	4	0	0.897
+transfer	0.200	EFO_1001055	2	1	regulation of cell activation	28	21	7	1	0.750
+transfer	0.200	EFO_0009959	1	0	eye development	28	20	8	0	0.714
+transfer	0.200	EFO_0000195	3	0	regulation of insulin secretion	22	4	18	6	0.182
+transfer	0.200	EFO_0000195	3	1	Plasma lipoprotein assembly, remodeling, and clearance	22	9	13	7	0.409
+transfer	0.200	EFO_0000195	3	2	unannotated	13	5	8	3	0.385
+transfer	0.200	EFO_0004143	1	0	Extracellular matrix organization	12	10	2	0	0.833
+transfer	0.200	Orphanet_1872	3	0	detection of light stimulus	24	20	4	0	0.833
+transfer	0.200	Orphanet_1872	3	1	sensory organ development	22	12	10	2	0.545
+transfer	0.200	Orphanet_1872	3	2	Cilium Assembly	18	12	6	2	0.667
+transfer	0.200	EFO_0003898	5	0	activation of protein kinase activity	23	23	0	0	1.000
+transfer	0.200	EFO_0003898	5	1	positive regulation of blood vessel endothelial cell migration	21	21	0	0	1.000
+transfer	0.200	EFO_0003898	5	2	regulation of lymphocyte activation	19	19	0	0	1.000
+transfer	0.200	EFO_0003898	5	3	cytokine receptor activity	18	18	0	0	1.000
+transfer	0.200	EFO_0003898	5	4	DNA-binding transcription repressor activity, RNA polymerase II-specific	12	12	0	0	1.000
+transfer	0.200	EFO_0001063	3	0	sensory perception of sound	29	28	1	1	0.966
+transfer	0.200	EFO_0001063	3	1	MET activates PTPN11	25	18	7	1	0.720
+transfer	0.200	EFO_0001063	3	2	actin binding	15	14	1	0	0.933
+transfer	0.200	EFO_0004698	1	0	unannotated	31	20	11	2	0.645
+transfer	0.200	EFO_0004274	2	0	brush border membrane	17	10	7	5	0.588
+transfer	0.200	EFO_0004274	2	1	alcohol dehydrogenase activity, zinc-dependent	7	4	3	2	0.571
+transfer	0.200	EFO_0009571	1	0	Inactivation of CDC42 and RAC1	13	12	1	0	0.923
+transfer	0.200	EFO_0000401	2	0	Binding and Uptake of Ligands by Scavenger Receptors	10	7	3	0	0.700
+transfer	0.200	EFO_0000401	2	1	regulation of gap junction assembly	8	6	2	1	0.750
+transfer	0.200	EFO_0003948	1	0	unannotated	24	17	7	1	0.708
+transfer	0.200	EFO_0004214	2	0	unannotated	7	7	0	0	1.000
+transfer	0.200	EFO_0004214	2	1	unannotated	4	4	0	0	1.000
+transfer	0.200	EFO_0003888	2	0	unannotated	24	20	4	1	0.833
+transfer	0.200	EFO_0003888	2	1	cell morphogenesis involved in differentiation	15	14	1	0	0.933
+transfer	0.200	EFO_0000095	2	0	BH3-only proteins associate with and inactivate anti-apoptotic BCL-2 members	19	19	0	0	1.000
+transfer	0.200	EFO_0000095	2	1	leukocyte differentiation	12	11	1	0	0.917
+transfer	0.200	EFO_0004253	2	0	unannotated	13	10	3	2	0.769
+transfer	0.200	EFO_0004253	2	1	organic anion transmembrane transporter activity	4	3	1	0	0.750
+transfer	0.200	MONDO_0005090	10	0	cellular component morphogenesis	31	29	2	0	0.935
+transfer	0.200	MONDO_0005090	10	1	regulation of osteoblast differentiation	26	23	3	1	0.885
+transfer	0.200	MONDO_0005090	10	2	regulation of mitochondrial membrane permeability	27	26	1	0	0.963
+transfer	0.200	MONDO_0005090	10	3	gated channel activity	22	20	2	0	0.909
+transfer	0.200	MONDO_0005090	10	4	regulation of T cell activation	21	20	1	0	0.952
+transfer	0.200	MONDO_0005090	10	5	methylation	19	17	2	1	0.895
+transfer	0.200	MONDO_0005090	10	6	regulation of cyclase activity	17	17	0	0	1.000
+transfer	0.200	MONDO_0005090	10	7	FAD binding	14	14	0	0	1.000
+transfer	0.200	MONDO_0005090	10	8	brain development	10	10	0	0	1.000
+transfer	0.200	MONDO_0005090	10	9	GTPase regulator activity	7	7	0	0	1.000
+transfer	0.200	MONDO_0018097	2	0	unannotated	27	19	8	1	0.704
+transfer	0.200	MONDO_0018097	2	1	transmembrane transporter complex	16	8	8	1	0.500
+transfer	0.200	MONDO_0019625	2	0	transforming growth factor beta receptor binding	13	13	0	0	1.000
+transfer	0.200	MONDO_0019625	2	1	extracellular matrix structural constituent	10	7	3	3	0.700
+transfer	0.200	MONDO_0016660	2	0	centrosome duplication	20	20	0	0	1.000
+transfer	0.200	MONDO_0016660	2	1	mitotic nuclear division	15	15	0	0	1.000
+transfer	0.200	MONDO_0009723	5	0	mitochondrial cytochrome c oxidase assembly	27	26	1	0	0.963
+transfer	0.200	MONDO_0009723	5	1	NADH dehydrogenase complex	24	24	0	0	1.000
+transfer	0.200	MONDO_0009723	5	2	nucleotide metabolic process	16	14	2	1	0.875
+transfer	0.200	MONDO_0009723	5	3	cytochrome complex	14	14	0	0	1.000
+transfer	0.200	MONDO_0009723	5	4	Translation	11	11	0	0	1.000
+transfer	0.200	MONDO_0019006	2	0	glomerular visceral epithelial cell differentiation	16	15	1	0	0.938
+transfer	0.200	MONDO_0019006	2	1	nuclear pore complex assembly	9	9	0	0	1.000
+transfer	0.200	MONDO_0023113	2	0	DNA damage checkpoint	20	16	4	1	0.800
+transfer	0.200	MONDO_0023113	2	1	mismatch repair complex	13	12	1	1	0.923
+transfer	0.200	EFO_0001065	2	0	unannotated	17	11	6	0	0.647
+transfer	0.200	EFO_0001065	2	1	unannotated	10	5	5	0	0.500
+transfer	0.200	EFO_0004273	16	0	transmembrane receptor protein tyrosine kinase signaling pathway	36	36	0	0	1.000
+transfer	0.200	EFO_0004273	16	1	positive regulation of cytosolic calcium ion concentration	31	31	0	0	1.000
+transfer	0.200	EFO_0004273	16	2	muscle structure development	28	28	0	0	1.000
+transfer	0.200	EFO_0004273	16	3	cell morphogenesis involved in neuron differentiation	24	24	0	0	1.000
+transfer	0.200	EFO_0004273	16	4	peptidyl-serine modification	26	26	0	0	1.000
+transfer	0.200	EFO_0004273	16	5	Transmission across Chemical Synapses	21	21	0	0	1.000
+transfer	0.200	EFO_0004273	16	6	Extracellular matrix organization	17	17	0	0	1.000
+transfer	0.200	EFO_0004273	16	7	RNA polymerase II-specific DNA-binding transcription factor binding	17	17	0	0	1.000
+transfer	0.200	EFO_0004273	16	8	GTPase activator activity	16	16	0	0	1.000
+transfer	0.200	EFO_0004273	16	9	platelet alpha granule	18	18	0	0	1.000
+transfer	0.200	EFO_0004273	16	10	glycerophospholipid metabolic process	15	15	0	0	1.000
+transfer	0.200	EFO_0004273	16	11	catalytic activity, acting on a tRNA	12	12	0	0	1.000
+transfer	0.200	EFO_0004273	16	12	unannotated	10	10	0	0	1.000
+transfer	0.200	EFO_0004273	16	13	G protein-coupled peptide receptor activity	12	12	0	0	1.000
+transfer	0.200	EFO_0004273	16	14	catenin complex	10	10	0	0	1.000
+transfer	0.200	EFO_0004273	16	15	regulation of RNA splicing	10	10	0	0	1.000
+transfer	0.200	EFO_0003882	2	0	unannotated	12	11	1	1	0.917
+transfer	0.200	EFO_0003882	2	1	skeletal system development	12	9	3	0	0.750
+transfer	0.200	MONDO_0000414	2	0	unannotated	13	5	8	7	0.385
+transfer	0.200	MONDO_0000414	2	1	regulation of membrane potential	10	5	5	4	0.500
+transfer	0.200	Orphanet_79191	2	0	Peptide chain elongation	24	24	0	0	1.000
+transfer	0.200	Orphanet_79191	2	1	purine-containing compound biosynthetic process	19	15	4	0	0.789
+transfer	0.200	EFO_0000612	2	0	apolipoprotein binding	19	16	3	3	0.842
+transfer	0.200	EFO_0000612	2	1	unannotated	16	16	0	0	1.000
+transfer	0.200	EFO_0000275	6	0	axon development	28	27	1	0	0.964
+transfer	0.200	EFO_0000275	6	1	cardiac muscle cell action potential	27	23	4	1	0.852
+transfer	0.200	EFO_0000275	6	2	outflow tract morphogenesis	24	19	5	3	0.792
+transfer	0.200	EFO_0000275	6	3	transcription, DNA-templated	26	25	1	0	0.962
+transfer	0.200	EFO_0000275	6	4	regulation of cell communication by electrical coupling	21	16	5	0	0.762
+transfer	0.200	EFO_0000275	6	5	actin cytoskeleton	10	9	1	0	0.900
+transfer	0.200	MONDO_0044996	2	0	astrocyte activation	15	10	5	0	0.667
+transfer	0.200	MONDO_0044996	2	1	unannotated	3	3	0	0	1.000
+transfer	0.200	MONDO_0043839	2	0	response to bacterium	15	12	3	0	0.800
+transfer	0.200	MONDO_0043839	2	1	immune receptor activity	14	9	5	0	0.643
+transfer	0.200	EFO_0000389	2	0	unannotated	15	13	2	1	0.867
+transfer	0.200	EFO_0000389	2	1	Cellular Senescence	13	11	2	0	0.846
+transfer	0.200	MONDO_0024352	1	0	unannotated	16	13	3	0	0.812
+transfer	0.200	EFO_0009448	2	0	unannotated	13	9	4	0	0.692
+transfer	0.200	EFO_0009448	2	1	lamellar body	4	3	1	0	0.750
+transfer	0.200	MONDO_0037748	2	0	Plasma lipoprotein remodeling	8	6	2	1	0.750
+transfer	0.200	MONDO_0037748	2	1	intestinal cholesterol absorption	7	7	0	0	1.000
+transfer	0.200	EFO_0000384	9	0	Regulation of IFNG signaling	26	25	1	1	0.962
+transfer	0.200	EFO_0000384	9	1	regulation of leukocyte activation	26	26	0	0	1.000
+transfer	0.200	EFO_0000384	9	2	negative regulation of protein phosphorylation	21	21	0	0	1.000
+transfer	0.200	EFO_0000384	9	3	unannotated	20	19	1	0	0.950
+transfer	0.200	EFO_0000384	9	4	TRAF6 mediated induction of NFkB and MAP kinases upon TLR7/8 or 9 activation	19	19	0	0	1.000
+transfer	0.200	EFO_0000384	9	5	Neutrophil degranulation	15	14	1	0	0.933
+transfer	0.200	EFO_0000384	9	6	cytokine receptor activity	13	13	0	0	1.000
+transfer	0.200	EFO_0000384	9	7	blood vessel development	11	11	0	0	1.000
+transfer	0.200	EFO_0000384	9	8	unannotated	6	6	0	0	1.000
+transfer	0.200	EFO_0003890	1	0	ethanol oxidation	28	28	0	0	1.000
+transfer	0.200	EFO_0003875	1	0	positive regulation of epithelial to mesenchymal transition	25	24	1	0	0.960
+transfer	0.200	EFO_1001512	2	0	mismatch repair complex	12	6	6	3	0.500
+transfer	0.200	EFO_1001512	2	1	tube development	8	6	2	1	0.750
+transfer	0.200	EFO_0004128	2	0	Anchoring fibril formation	12	11	1	0	0.917
+transfer	0.200	EFO_0004128	2	1	Regulation of Complement cascade	9	6	3	3	0.667
+transfer	0.200	EFO_0004251	5	0	MAPK1/MAPK3 signaling	43	11	32	1	0.256
+transfer	0.200	EFO_0004251	5	1	vasculature development	33	5	28	1	0.152
+transfer	0.200	EFO_0004251	5	2	telomerase RNA binding	23	3	20	0	0.130
+transfer	0.200	EFO_0004251	5	3	Intrinsic Pathway for Apoptosis	17	1	16	1	0.059
+transfer	0.200	EFO_0004251	5	4	Citric acid cycle (TCA cycle)	15	0	15	1	0.000
+transfer	0.200	EFO_0005708	2	0	cellular response to hypoxia	9	8	1	1	0.889
+transfer	0.200	EFO_0005708	2	1	Regulation of beta-cell development	3	3	0	0	1.000
+transfer	0.200	EFO_0001365	2	0	reverse cholesterol transport	48	43	5	1	0.896
+transfer	0.200	EFO_0001365	2	1	Regulation of Complement cascade	10	10	0	0	1.000
+transfer	0.200	EFO_0001663	5	0	unannotated	25	25	0	0	1.000
+transfer	0.200	EFO_0001663	5	1	cellular response to steroid hormone stimulus	19	19	0	0	1.000
+transfer	0.200	EFO_0001663	5	2	blood vessel morphogenesis	17	17	0	0	1.000
+transfer	0.200	EFO_0001663	5	3	regulation of cell cycle phase transition	19	19	0	0	1.000
+transfer	0.200	EFO_0001663	5	4	positive regulation of cell migration	11	11	0	0	1.000
+transfer	0.200	MONDO_0013099	1	0	unannotated	17	16	1	1	0.941
+transfer	0.200	EFO_0001356	2	0	nucleus organization	19	14	5	3	0.737
+transfer	0.200	EFO_0001356	2	1	unannotated	15	12	3	0	0.800
+transfer	0.200	MONDO_0002185	1	0	positive regulation of bone resorption	23	14	9	0	0.609
+transfer	0.200	EFO_0005804	2	0	Erythropoietin activates STAT5	9	9	0	0	1.000
+transfer	0.200	EFO_0005804	2	1	oxygen transport	4	3	1	0	0.750
+transfer	0.200	MONDO_0018612	1	0	thyroid gland development	25	19	6	0	0.760
+transfer	0.200	EFO_0000536	2	0	unannotated	7	5	2	0	0.714
+transfer	0.200	EFO_0000536	2	1	tube development	6	5	1	0	0.833
+transfer	0.200	MONDO_0000358	2	0	collagen trimer	17	13	4	4	0.765
+transfer	0.200	MONDO_0000358	2	1	biological process involved in symbiotic interaction	15	15	0	0	1.000
+transfer	0.200	MONDO_0016575	2	0	motile cilium assembly	18	18	0	0	1.000
+transfer	0.200	MONDO_0016575	2	1	axoneme	14	14	0	0	1.000
+transfer	0.200	MONDO_0043878	2	0	mitochondrial protein processing	20	19	1	0	0.950
+transfer	0.200	MONDO_0043878	2	1	oxidative phosphorylation	14	13	1	0	0.929
+transfer	0.200	MONDO_0100137	3	0	telomere maintenance	25	19	6	0	0.760
+transfer	0.200	MONDO_0100137	3	1	Signaling by Interleukins	15	12	3	0	0.800
+transfer	0.200	MONDO_0100137	3	2	immune response-activating cell surface receptor signaling pathway	14	9	5	1	0.643
+transfer	0.200	MONDO_0002462	2	0	Regulation of Complement cascade	15	14	1	0	0.933
+transfer	0.200	MONDO_0002462	2	1	unannotated	12	7	5	0	0.583
+transfer	0.200	MONDO_0019200	6	0	cilium organization	38	28	10	1	0.737
+transfer	0.200	MONDO_0019200	6	1	photoreceptor cell differentiation	29	27	2	0	0.931
+transfer	0.200	MONDO_0019200	6	2	detection of light stimulus	22	21	1	0	0.955
+transfer	0.200	MONDO_0019200	6	3	generation of precursor metabolites and energy	22	18	4	0	0.818
+transfer	0.200	MONDO_0019200	6	4	unannotated	15	13	2	0	0.867
+transfer	0.200	MONDO_0019200	6	5	U4/U6 x U5 tri-snRNP complex	11	11	0	0	1.000
+transfer	0.200	EFO_0700118	2	0	eye development	17	12	5	1	0.706
+transfer	0.200	EFO_0700118	2	1	Dual incision in TC-NER	14	7	7	0	0.500
+transfer	0.200	MONDO_0019313	2	0	Spry regulation of FGF signaling	20	20	0	0	1.000
+transfer	0.200	MONDO_0019313	2	1	RAF activation	13	13	0	0	1.000
+transfer	0.200	MONDO_0003406	1	0	unannotated	13	12	1	0	0.923
+transfer	0.200	EFO_0008615	2	0	epithelial tube morphogenesis	12	9	3	0	0.750
+transfer	0.200	EFO_0008615	2	1	unannotated	8	8	0	0	1.000
+transfer	0.200	EFO_1001511	2	0	Regulation of gene expression in beta cells	24	24	0	0	1.000
+transfer	0.200	EFO_1001511	2	1	oxidative phosphorylation	16	15	1	0	0.938
+transfer	0.200	MONDO_0015185	2	0	regulation of pathway-restricted SMAD protein phosphorylation	8	8	0	0	1.000
+transfer	0.200	MONDO_0015185	2	1	base-excision repair	7	5	2	2	0.714
+transfer	0.200	MONDO_0042973	2	0	unannotated	9	8	1	1	0.889
+transfer	0.200	MONDO_0042973	2	1	unannotated	6	2	4	4	0.333
+transfer	0.200	MONDO_0001926	2	0	metanephros development	9	8	1	0	0.889
+transfer	0.200	MONDO_0001926	2	1	unannotated	2	2	0	0	1.000
+transfer	0.200	EFO_0001075	2	0	unannotated	17	15	2	0	0.882
+transfer	0.200	EFO_0001075	2	1	Resolution of D-loop Structures through Synthesis-Dependent Strand Annealing (SDSA)	14	12	2	1	0.857
+transfer	0.200	Orphanet_183628	2	0	diencephalon development	32	24	8	0	0.750
+transfer	0.200	Orphanet_183628	2	1	DNA-dependent DNA replication	8	5	3	0	0.625
+transfer	0.200	MONDO_0016624	2	0	Metabolism of water-soluble vitamins and cofactors	27	20	7	3	0.741
+transfer	0.200	MONDO_0016624	2	1	unannotated	25	24	1	0	0.960
+transfer	0.200	MONDO_0020248	2	0	extracellular matrix structural constituent conferring tensile strength	10	9	1	1	0.900
+transfer	0.200	MONDO_0020248	2	1	vasculature development	9	6	3	2	0.667
+transfer	0.200	MONDO_0015929	4	0	ciliary tip	24	22	2	1	0.917
+transfer	0.200	MONDO_0015929	4	1	regulation of membrane potential	19	19	0	0	1.000
+transfer	0.200	MONDO_0015929	4	2	embryonic organ development	17	15	2	0	0.882
+transfer	0.200	MONDO_0015929	4	3	ciliary membrane	14	11	3	1	0.786
+transfer	0.200	MONDO_0002311	2	0	unannotated	8	8	0	0	1.000
+transfer	0.200	MONDO_0002311	2	1	Regulation of gene expression by Hypoxia-inducible Factor	4	4	0	0	1.000
+transfer	0.200	EFO_0009455	2	0	interleukin-35-mediated signaling pathway	8	7	1	0	0.875
+transfer	0.200	EFO_0009455	2	1	Interferon Signaling	7	6	1	0	0.857
+transfer	0.200	MONDO_0002108	2	0	negative regulation of cyclin-dependent protein serine/threonine kinase activity	12	11	1	0	0.917
+transfer	0.200	MONDO_0002108	2	1	Signalling to ERKs	5	4	1	0	0.800
+transfer	0.200	MONDO_0020249	2	0	mitochondrial protein processing	27	17	10	2	0.630
+transfer	0.200	MONDO_0020249	2	1	mitochondrial ATP synthesis coupled electron transport	12	11	1	0	0.917
+transfer	0.200	MONDO_0002078	2	0	retina development in camera-type eye	14	13	1	1	0.929
+transfer	0.200	MONDO_0002078	2	1	heart morphogenesis	12	11	1	0	0.917
+transfer	0.200	MONDO_0001475	2	0	granulocyte differentiation	24	24	0	0	1.000
+transfer	0.200	MONDO_0001475	2	1	oxidative phosphorylation	5	1	4	0	0.200
+transfer	0.200	MONDO_0015168	2	0	unannotated	19	16	3	1	0.842
+transfer	0.200	MONDO_0015168	2	1	regulation of membrane potential	14	13	1	0	0.929
+transfer	0.200	MONDO_0003832	2	0	Complement cascade	22	18	4	4	0.818
+transfer	0.200	MONDO_0003832	2	1	complement activation, alternative pathway	7	5	2	0	0.714
+transfer	0.200	MONDO_0017688	2	0	pyruvate metabolic process	19	13	6	2	0.684
+transfer	0.200	MONDO_0017688	2	1	Regulation of beta-cell development	16	9	7	1	0.562
+transfer	0.200	MONDO_0000577	2	0	DNA repair	49	36	13	0	0.735
+transfer	0.200	MONDO_0000577	2	1	ribosomal subunit	12	5	7	0	0.417
+transfer	0.200	Orphanet_207015	3	0	oxidative phosphorylation	26	20	6	0	0.769
+transfer	0.200	Orphanet_207015	3	1	peroxisomal membrane transport	23	22	1	0	0.957
+transfer	0.200	Orphanet_207015	3	2	unannotated	13	13	0	0	1.000
+transfer	0.200	Orphanet_108987	2	0	unannotated	12	10	2	0	0.833
+transfer	0.200	Orphanet_108987	2	1	unannotated	7	6	1	1	0.857
+transfer	0.200	MONDO_0015905	2	0	cholesterol homeostasis	21	13	8	3	0.619
+transfer	0.200	MONDO_0015905	2	1	GPI anchor metabolic process	13	10	3	1	0.769
+transfer	0.200	MONDO_0019587	2	0	actin-dependent ATPase activity	30	29	1	0	0.967
+transfer	0.200	MONDO_0019587	2	1	sensory perception of sound	14	12	2	1	0.857
+transfer	0.200	MONDO_0001056	1	0	unannotated	13	11	2	2	0.846
+transfer	0.200	EFO_1001990	2	0	mitochondrial DNA replication	14	14	0	0	1.000
+transfer	0.200	EFO_1001990	2	1	oxidative phosphorylation	12	6	6	6	0.500
+transfer	0.200	MONDO_0018838	2	0	Serine biosynthesis	21	12	9	0	0.571
+transfer	0.200	MONDO_0018838	2	1	Recruitment of NuMA to mitotic centrosomes	13	11	2	0	0.846
+transfer	0.200	EFO_0005569	2	0	eye development	22	19	3	2	0.864
+transfer	0.200	EFO_0005569	2	1	Dual incision in TC-NER	11	9	2	0	0.818
+transfer	0.200	MONDO_0020073	2	0	GATOR1 complex	22	16	6	5	0.727
+transfer	0.200	MONDO_0020073	2	1	ion channel activity	18	13	5	3	0.722
+transfer	0.200	MONDO_0005129	3	0	gap junction-mediated intercellular transport	30	30	0	0	1.000
+transfer	0.200	MONDO_0005129	3	1	lens development in camera-type eye	21	21	0	0	1.000
+transfer	0.200	MONDO_0005129	3	2	alcohol biosynthetic process	15	15	0	0	1.000
+transfer	0.200	Orphanet_269564	3	0	unannotated	25	23	2	0	0.920
+transfer	0.200	Orphanet_269564	3	1	Activation of the pre-replicative complex	16	15	1	0	0.938
+transfer	0.200	Orphanet_269564	3	2	cilium assembly	14	10	4	1	0.714
+transfer	0.200	MONDO_0003689	2	0	spectrin-associated cytoskeleton	21	17	4	0	0.810
+transfer	0.200	MONDO_0003689	2	1	nucleoside diphosphate phosphorylation	13	11	2	2	0.846
+transfer	0.200	MONDO_0020242	2	0	photoreceptor cell cilium	22	10	12	7	0.455
+transfer	0.200	MONDO_0020242	2	1	embryonic organ morphogenesis	10	6	4	1	0.600
+transfer	0.200	MONDO_0100241	2	0	hemopoiesis	21	10	11	7	0.476
+transfer	0.200	MONDO_0100241	2	1	Platelet Aggregation (Plug Formation)	11	5	6	3	0.455
+transfer	0.200	EFO_0009551	2	0	heart development	14	12	2	0	0.857
+transfer	0.200	EFO_0009551	2	1	unannotated	8	8	0	0	1.000
+transfer	0.200	MONDO_0021002	2	0	Hedgehog 'on' state	8	8	0	0	1.000
+transfer	0.200	MONDO_0021002	2	1	unannotated	4	4	0	0	1.000
+transfer	0.200	MONDO_0019852	1	0	gonad development	20	16	4	3	0.800
+transfer	0.200	MONDO_0020592	2	0	unannotated	17	9	8	0	0.529
+transfer	0.200	MONDO_0020592	2	1	succinate dehydrogenase complex (ubiquinone)	3	1	2	0	0.333
+transfer	0.200	EFO_0009682	2	0	regulation of hormone secretion	12	9	3	0	0.750
+transfer	0.200	EFO_0009682	2	1	MKS complex	8	5	3	0	0.625
+transfer	0.200	Orphanet_98560	2	0	cell junction organization	30	29	1	0	0.967
+transfer	0.200	Orphanet_98560	2	1	chemical synaptic transmission	13	13	0	0	1.000
+transfer	0.200	MONDO_0017754	2	0	bile acid and bile salt transport	10	6	4	2	0.600
+transfer	0.200	MONDO_0017754	2	1	Metabolism of porphyrins	9	7	2	1	0.778
+transfer	0.200	EFO_0008525	2	0	response to unfolded protein	28	23	5	1	0.821
+transfer	0.200	EFO_0008525	2	1	ncRNA metabolic process	15	14	1	0	0.933
+transfer	0.200	MONDO_0000732	2	0	mitochondrial gene expression	28	23	5	2	0.821
+transfer	0.200	MONDO_0000732	2	1	inner mitochondrial membrane protein complex	13	6	7	1	0.462
+transfer	0.200	EFO_0005754	2	0	unannotated	13	12	1	0	0.923
+transfer	0.200	EFO_0005754	2	1	mitochondrial inner membrane	9	0	9	0	0.000
+transfer	0.200	Orphanet_79161	2	0	regulation of peptide hormone secretion	20	11	9	2	0.550
+transfer	0.200	Orphanet_79161	2	1	carbohydrate metabolic process	10	9	1	0	0.900
+transfer	0.200	EFO_0008499	3	0	double-strand break repair	49	40	9	1	0.816
+transfer	0.200	EFO_0008499	3	1	Fanconi anaemia nuclear complex	11	11	0	0	1.000
+transfer	0.200	EFO_0008499	3	2	ribosomal subunit	10	4	6	0	0.400
+transfer	0.200	MONDO_0019713	1	0	limb morphogenesis	17	12	5	3	0.706
+transfer	0.200	EFO_1001951	2	0	regulation of epithelial to mesenchymal transition	21	18	3	1	0.857
+transfer	0.200	EFO_1001951	2	1	DNA repair	18	15	3	1	0.833
+transfer	0.200	MONDO_0056803	2	0	Metabolism of water-soluble vitamins and cofactors	23	15	8	2	0.652
+transfer	0.200	MONDO_0056803	2	1	mitochondrial matrix	18	11	7	3	0.611
+transfer	0.200	MONDO_0021003	3	0	appendage development	43	39	4	2	0.907
+transfer	0.200	MONDO_0021003	3	1	Cargo trafficking to the periciliary membrane	18	16	2	0	0.889
+transfer	0.200	MONDO_0021003	3	2	MKS complex	17	9	8	2	0.529
+transfer	0.200	MONDO_0021205	2	0	mechanoreceptor differentiation	26	9	17	2	0.346
+transfer	0.200	MONDO_0021205	2	1	unannotated	6	3	3	0	0.500
+transfer	0.200	EFO_0004288	2	0	negative regulation of cell cycle phase transition	19	10	9	3	0.526
+transfer	0.200	EFO_0004288	2	1	mismatch repair complex	16	14	2	0	0.875
+transfer	0.200	MONDO_0024635	3	0	succinate dehydrogenase complex (ubiquinone)	20	18	2	0	0.900
+transfer	0.200	MONDO_0024635	3	1	regulation of lymphocyte activation	18	18	0	0	1.000
+transfer	0.200	MONDO_0024635	3	2	inflammatory response	18	14	4	0	0.778
+transfer	0.200	Orphanet_79200	7	0	mitochondrial cytochrome c oxidase assembly	24	20	4	0	0.833
+transfer	0.200	Orphanet_79200	7	1	mitochondrial DNA replication	23	22	1	0	0.957
+transfer	0.200	Orphanet_79200	7	2	Translation	21	18	3	0	0.857
+transfer	0.200	Orphanet_79200	7	3	cytochrome complex	17	15	2	0	0.882
+transfer	0.200	Orphanet_79200	7	4	mitochondrial electron transport, NADH to ubiquinone	17	8	9	0	0.471
+transfer	0.200	Orphanet_79200	7	5	inner mitochondrial membrane organization	16	13	3	0	0.812
+transfer	0.200	Orphanet_79200	7	6	metallo-sulfur cluster assembly	12	9	3	0	0.750
+transfer	0.200	EFO_1001216	3	0	odontogenesis of dentin-containing tooth	22	21	1	0	0.955
+transfer	0.200	EFO_1001216	3	1	positive regulation of cell migration	24	24	0	0	1.000
+transfer	0.200	EFO_1001216	3	2	unannotated	18	18	0	0	1.000
+transfer	0.200	MONDO_0002691	2	0	unannotated	9	9	0	0	1.000
+transfer	0.200	MONDO_0002691	2	1	unannotated	5	5	0	0	1.000
+transfer	0.200	EFO_0000222	13	0	cell morphogenesis involved in neuron differentiation	30	30	0	0	1.000
+transfer	0.200	EFO_0000222	13	1	DNA-binding transcription repressor activity, RNA polymerase II-specific	29	29	0	0	1.000
+transfer	0.200	EFO_0000222	13	2	DNA recombination	31	31	0	0	1.000
+transfer	0.200	EFO_0000222	13	3	metal ion transmembrane transporter activity	24	24	0	0	1.000
+transfer	0.200	EFO_0000222	13	4	synaptic membrane	22	22	0	0	1.000
+transfer	0.200	EFO_0000222	13	5	regulation of endopeptidase activity	21	21	0	0	1.000
+transfer	0.200	EFO_0000222	13	6	Fanconi anaemia nuclear complex	20	20	0	0	1.000
+transfer	0.200	EFO_0000222	13	7	Golgi membrane	20	20	0	0	1.000
+transfer	0.200	EFO_0000222	13	8	response to bacterium	20	20	0	0	1.000
+transfer	0.200	EFO_0000222	13	9	unannotated	19	19	0	0	1.000
+transfer	0.200	EFO_0000222	13	10	Signaling by Receptor Tyrosine Kinases	18	18	0	0	1.000
+transfer	0.200	EFO_0000222	13	11	regulation of intracellular transport	16	16	0	0	1.000
+transfer	0.200	EFO_0000222	13	12	mRNA binding	8	8	0	0	1.000
+transfer	0.200	MONDO_0017757	4	0	mitochondrial fusion	21	21	0	0	1.000
+transfer	0.200	MONDO_0017757	4	1	water-soluble vitamin metabolic process	21	14	7	3	0.667
+transfer	0.200	MONDO_0017757	4	2	unannotated	20	17	3	1	0.850
+transfer	0.200	MONDO_0017757	4	3	cellular transition metal ion homeostasis	15	14	1	0	0.933
+transfer	0.200	EFO_1001456	2	0	SUMOylation of RNA binding proteins	8	8	0	0	1.000
+transfer	0.200	EFO_1001456	2	1	unannotated	6	2	4	0	0.333
+transfer	0.200	MONDO_0002887	5	0	regulation of cell activation	29	23	6	0	0.793
+transfer	0.200	MONDO_0002887	5	1	activation of protein kinase activity	27	25	2	0	0.926
+transfer	0.200	MONDO_0002887	5	2	positive regulation of blood vessel endothelial cell migration	28	25	3	0	0.893
+transfer	0.200	MONDO_0002887	5	3	metalloaminopeptidase activity	22	18	4	0	0.818
+transfer	0.200	MONDO_0002887	5	4	DNA-binding transcription repressor activity, RNA polymerase II-specific	14	13	1	0	0.929
+transfer	0.200	MONDO_0000652	2	0	Signaling by FGFR3	12	8	4	0	0.667
+transfer	0.200	MONDO_0000652	2	1	unannotated	4	4	0	0	1.000
+transfer	0.200	MONDO_0015160	4	0	embryonic morphogenesis	36	32	4	0	0.889
+transfer	0.200	MONDO_0015160	4	1	MAPK family signaling cascades	26	26	0	0	1.000
+transfer	0.200	MONDO_0015160	4	2	cilium assembly	15	5	10	0	0.333
+transfer	0.200	MONDO_0015160	4	3	transcription coregulator activity	9	8	1	0	0.889
+transfer	0.200	Orphanet_404571	2	0	appendage development	31	29	2	0	0.935
+transfer	0.200	Orphanet_404571	2	1	cilium assembly	11	9	2	0	0.818
+transfer	0.200	Orphanet_98056	4	0	renal system development	48	47	1	0	0.979
+transfer	0.200	Orphanet_98056	4	1	haptoglobin binding	41	40	1	0	0.976
+transfer	0.200	Orphanet_98056	4	2	peroxisomal membrane transport	17	17	0	0	1.000
+transfer	0.200	Orphanet_98056	4	3	sodium ion transmembrane transport	12	12	0	0	1.000
+transfer	0.200	EFO_1000774	2	0	unannotated	29	29	0	0	1.000
+transfer	0.200	EFO_1000774	2	1	Type I hemidesmosome assembly	21	21	0	0	1.000
+transfer	0.200	EFO_1001901	2	0	negative regulation of cyclin-dependent protein serine/threonine kinase activity	15	14	1	0	0.933
+transfer	0.200	EFO_1001901	2	1	tricarboxylic acid cycle	8	8	0	0	1.000
+transfer	0.200	MONDO_0016139	4	0	myofibril	23	13	10	4	0.565
+transfer	0.200	MONDO_0016139	4	1	xylosyltransferase activity	20	11	9	3	0.550
+transfer	0.200	MONDO_0016139	4	2	dystrophin-associated glycoprotein complex	18	14	4	0	0.778
+transfer	0.200	MONDO_0016139	4	3	oxidative phosphorylation	12	7	5	0	0.583
+transfer	0.200	MONDO_0000314	2	0	cytokine receptor activity	13	11	2	1	0.846
+transfer	0.200	MONDO_0000314	2	1	unannotated	10	10	0	0	1.000
+transfer	0.200	MONDO_0015286	4	0	glycoprotein biosynthetic process	29	25	4	3	0.862
+transfer	0.200	MONDO_0015286	4	1	GPI anchor biosynthetic process	23	20	3	3	0.870
+transfer	0.200	MONDO_0015286	4	2	vacuolar membrane	15	14	1	0	0.933
+transfer	0.200	MONDO_0015286	4	3	Golgi transport complex	12	10	2	0	0.833
+transfer	0.200	Orphanet_183500	4	0	axo-dendritic transport	41	39	2	0	0.951
+transfer	0.200	Orphanet_183500	4	1	unannotated	26	24	2	0	0.923
+transfer	0.200	Orphanet_183500	4	2	DNA repair	21	20	1	0	0.952
+transfer	0.200	Orphanet_183500	4	3	protein targeting	20	14	6	0	0.700
+transfer	0.200	MONDO_0019287	5	0	cell-cell junction organization	23	23	0	0	1.000
+transfer	0.200	MONDO_0019287	5	1	Extension of Telomeres	21	21	0	0	1.000
+transfer	0.200	MONDO_0019287	5	2	RAF activation	20	18	2	0	0.900
+transfer	0.200	MONDO_0019287	5	3	intraciliary transport particle A	11	11	0	0	1.000
+transfer	0.200	MONDO_0019287	5	4	TNFs bind their physiological receptors	10	10	0	0	1.000
+transfer	0.200	MONDO_0020119	3	0	RNA splicing, via transesterification reactions with bulged adenosine as nucleophile	41	40	1	0	0.976
+transfer	0.200	MONDO_0020119	3	1	Neuronal System	28	27	1	1	0.964
+transfer	0.200	MONDO_0020119	3	2	oxidative phosphorylation	21	13	8	0	0.619
+transfer	0.200	MONDO_0020049	2	0	cell fate commitment	22	20	2	0	0.909
+transfer	0.200	MONDO_0020049	2	1	protein-lysine N-methyltransferase activity	9	9	0	0	1.000
+headline	0.200	EFO_1000391	2	0	unannotated	11	6	5	0	0.545
+headline	0.200	EFO_1000391	2	1	Signaling by Interleukins	7	5	2	2	0.714
+headline	0.200	EFO_1001494	3	0	regulation of type I interferon production	31	7	24	1	0.226
+headline	0.200	EFO_1001494	3	1	TNFs bind their physiological receptors	29	2	27	1	0.069
+headline	0.200	EFO_1001494	3	2	regulation of adaptive immune response	16	4	12	1	0.250
+headline	0.200	Orphanet_145	2	0	four-way junction DNA binding	17	15	2	0	0.882
+headline	0.200	Orphanet_145	2	1	Recruitment and ATM-mediated phosphorylation of repair and signaling proteins at DNA double strand breaks	13	10	3	1	0.769
+headline	0.200	Orphanet_777	2	0	unannotated	21	18	3	0	0.857
+headline	0.200	Orphanet_777	2	1	synapse organization	15	10	5	0	0.667
+headline	0.200	EFO_0003758	2	0	vocalization behavior	28	26	2	0	0.929
+headline	0.200	EFO_0003758	2	1	Chromatin organization	28	26	2	0	0.929
+headline	0.200	EFO_1001055	3	0	unannotated	30	25	5	1	0.833
+headline	0.200	EFO_1001055	3	1	regulation of leukocyte differentiation	28	21	7	0	0.750
+headline	0.200	EFO_1001055	3	2	unannotated	10	10	0	0	1.000
+headline	0.200	EFO_0009959	2	0	Elastic fibre formation	24	14	10	1	0.583
+headline	0.200	EFO_0009959	2	1	phasic smooth muscle contraction	8	6	2	0	0.750
+headline	0.200	EFO_0000195	3	0	negative regulation of lipid localization	22	5	17	6	0.227
+headline	0.200	EFO_0000195	3	1	Plasma lipoprotein remodeling	22	10	12	6	0.455
+headline	0.200	EFO_0000195	3	2	unannotated	20	3	17	5	0.150
+headline	0.200	EFO_0004143	1	0	extracellular matrix structural constituent	13	10	3	0	0.769
+headline	0.200	Orphanet_1872	3	0	photoreceptor cell maintenance	29	15	14	2	0.517
+headline	0.200	Orphanet_1872	3	1	detection of light stimulus	25	18	7	1	0.720
+headline	0.200	Orphanet_1872	3	2	cilium assembly	14	11	3	1	0.786
+headline	0.200	EFO_0003898	5	0	positive regulation of cell migration	24	24	0	0	1.000
+headline	0.200	EFO_0003898	5	1	positive regulation of interferon-gamma production	22	21	1	0	0.955
+headline	0.200	EFO_0003898	5	2	activation of protein kinase activity	24	24	0	0	1.000
+headline	0.200	EFO_0003898	5	3	DNA-binding transcription repressor activity, RNA polymerase II-specific	13	13	0	0	1.000
+headline	0.200	EFO_0003898	5	4	negative regulation of lymphocyte activation	11	11	0	0	1.000
+headline	0.200	EFO_0001063	4	0	actin binding	26	23	3	0	0.885
+headline	0.200	EFO_0001063	4	1	stereocilium bundle	26	22	4	2	0.846
+headline	0.200	EFO_0001063	4	2	sensory perception	14	11	3	1	0.786
+headline	0.200	EFO_0001063	4	3	passive transmembrane transporter activity	5	4	1	1	0.800
+headline	0.200	EFO_0004698	2	0	unannotated	19	13	6	2	0.684
+headline	0.200	EFO_0004698	2	1	unannotated	13	7	6	4	0.538
+headline	0.200	EFO_0004274	2	0	unannotated	17	8	9	6	0.471
+headline	0.200	EFO_0004274	2	1	brush border membrane	10	6	4	2	0.600
+headline	0.200	EFO_0009571	2	0	unannotated	7	6	1	0	0.857
+headline	0.200	EFO_0009571	2	1	Inactivation of CDC42 and RAC1	6	6	0	0	1.000
+headline	0.200	EFO_0000401	2	0	unannotated	11	8	3	0	0.727
+headline	0.200	EFO_0000401	2	1	unannotated	9	5	4	0	0.556
+headline	0.200	EFO_0003948	1	0	unannotated	26	17	9	2	0.654
+headline	0.200	EFO_0004214	2	0	unannotated	7	7	0	0	1.000
+headline	0.200	EFO_0004214	2	1	unannotated	4	4	0	0	1.000
+headline	0.200	EFO_0003888	2	0	cell morphogenesis involved in differentiation	19	14	5	3	0.737
+headline	0.200	EFO_0003888	2	1	unannotated	20	20	0	0	1.000
+headline	0.200	EFO_0000095	2	0	BH3-only proteins associate with and inactivate anti-apoptotic BCL-2 members	19	19	0	0	1.000
+headline	0.200	EFO_0000095	2	1	unannotated	12	11	1	0	0.917
+headline	0.200	EFO_0004253	2	0	unannotated	12	9	3	1	0.750
+headline	0.200	EFO_0004253	2	1	glyoxylate metabolic process	6	4	2	0	0.667
+headline	0.200	MONDO_0005090	6	0	cell morphogenesis	43	38	5	1	0.884
+headline	0.200	MONDO_0005090	6	1	cell fate commitment	41	38	3	1	0.927
+headline	0.200	MONDO_0005090	6	2	regulation of mitochondrial membrane permeability	44	41	3	1	0.932
+headline	0.200	MONDO_0005090	6	3	ion channel complex	31	30	1	0	0.968
+headline	0.200	MONDO_0005090	6	4	regulation of T cell activation	18	17	1	0	0.944
+headline	0.200	MONDO_0005090	6	5	methylation	20	19	1	0	0.950
+headline	0.200	MONDO_0018097	2	0	unannotated	29	18	11	1	0.621
+headline	0.200	MONDO_0018097	2	1	metal ion transmembrane transporter activity	16	9	7	1	0.562
+headline	0.200	MONDO_0019625	2	0	transforming growth factor beta receptor binding	13	13	0	0	1.000
+headline	0.200	MONDO_0019625	2	1	extracellular matrix structural constituent	10	7	3	2	0.700
+headline	0.200	MONDO_0016660	2	0	centrosome duplication	20	20	0	0	1.000
+headline	0.200	MONDO_0016660	2	1	mitotic nuclear division	15	15	0	0	1.000
+headline	0.200	MONDO_0009723	5	0	mitochondrial cytochrome c oxidase assembly	25	25	0	0	1.000
+headline	0.200	MONDO_0009723	5	1	NADH dehydrogenase complex	23	23	0	0	1.000
+headline	0.200	MONDO_0009723	5	2	pyruvate dehydrogenase activity	22	17	5	1	0.773
+headline	0.200	MONDO_0009723	5	3	cytochrome complex	13	13	0	0	1.000
+headline	0.200	MONDO_0009723	5	4	Translation	11	11	0	0	1.000
+headline	0.200	MONDO_0019006	2	0	renal filtration cell differentiation	14	14	0	0	1.000
+headline	0.200	MONDO_0019006	2	1	nuclear pore organization	11	10	1	1	0.909
+headline	0.200	MONDO_0023113	2	0	DNA repair	19	15	4	1	0.789
+headline	0.200	MONDO_0023113	2	1	negative regulation of cell growth	14	13	1	0	0.929
+headline	0.200	EFO_0001065	1	0	regulation of male gonad development	30	16	14	1	0.533
+headline	0.200	EFO_0004273	16	0	transmembrane receptor protein tyrosine kinase signaling pathway	36	36	0	0	1.000
+headline	0.200	EFO_0004273	16	1	positive regulation of cytosolic calcium ion concentration	31	31	0	0	1.000
+headline	0.200	EFO_0004273	16	2	muscle structure development	28	28	0	0	1.000
+headline	0.200	EFO_0004273	16	3	cell morphogenesis involved in neuron differentiation	24	24	0	0	1.000
+headline	0.200	EFO_0004273	16	4	peptidyl-serine modification	26	26	0	0	1.000
+headline	0.200	EFO_0004273	16	5	Transmission across Chemical Synapses	21	21	0	0	1.000
+headline	0.200	EFO_0004273	16	6	Extracellular matrix organization	17	17	0	0	1.000
+headline	0.200	EFO_0004273	16	7	RNA polymerase II-specific DNA-binding transcription factor binding	17	17	0	0	1.000
+headline	0.200	EFO_0004273	16	8	GTPase activator activity	16	16	0	0	1.000
+headline	0.200	EFO_0004273	16	9	platelet alpha granule	18	18	0	0	1.000
+headline	0.200	EFO_0004273	16	10	glycerophospholipid metabolic process	15	15	0	0	1.000
+headline	0.200	EFO_0004273	16	11	catalytic activity, acting on a tRNA	12	12	0	0	1.000
+headline	0.200	EFO_0004273	16	12	unannotated	10	10	0	0	1.000
+headline	0.200	EFO_0004273	16	13	G protein-coupled peptide receptor activity	12	12	0	0	1.000
+headline	0.200	EFO_0004273	16	14	catenin complex	10	10	0	0	1.000
+headline	0.200	EFO_0004273	16	15	regulation of RNA splicing	10	10	0	0	1.000
+headline	0.200	EFO_0003882	2	0	Regulation of FZD by ubiquitination	14	11	3	1	0.786
+headline	0.200	EFO_0003882	2	1	skeletal system development	11	9	2	0	0.818
+headline	0.200	MONDO_0000414	2	0	regulation of membrane potential	12	5	7	3	0.417
+headline	0.200	MONDO_0000414	2	1	unannotated	12	5	7	3	0.417
+headline	0.200	Orphanet_79191	2	0	Peptide chain elongation	26	26	0	0	1.000
+headline	0.200	Orphanet_79191	2	1	interstrand cross-link repair	17	13	4	0	0.765
+headline	0.200	EFO_0000612	2	0	apolipoprotein binding	19	17	2	2	0.895
+headline	0.200	EFO_0000612	2	1	unannotated	16	15	1	1	0.938
+headline	0.200	EFO_0000275	6	0	transcription, DNA-templated	36	32	4	1	0.889
+headline	0.200	EFO_0000275	6	1	cardiac muscle cell action potential	25	22	3	1	0.880
+headline	0.200	EFO_0000275	6	2	regulation of cell communication by electrical coupling	23	19	4	1	0.826
+headline	0.200	EFO_0000275	6	3	regulation of focal adhesion assembly	21	20	1	1	0.952
+headline	0.200	EFO_0000275	6	4	cardiac septum development	18	15	3	0	0.833
+headline	0.200	EFO_0000275	6	5	actin cytoskeleton	15	11	4	0	0.733
+headline	0.200	MONDO_0044996	2	0	unannotated	14	9	5	0	0.643
+headline	0.200	MONDO_0044996	2	1	unannotated	5	4	1	0	0.800
+headline	0.200	MONDO_0043839	1	0	positive regulation of cytokine production	29	21	8	0	0.724
+headline	0.200	EFO_0000389	3	0	unannotated	11	10	1	1	0.909
+headline	0.200	EFO_0000389	3	1	negative regulation of telomere maintenance	9	7	2	0	0.778
+headline	0.200	EFO_0000389	3	2	negative regulation of DNA-binding transcription factor activity	8	7	1	1	0.875
+headline	0.200	MONDO_0024352	1	0	unannotated	19	13	6	0	0.684
+headline	0.200	EFO_0009448	2	0	unannotated	12	7	5	0	0.583
+headline	0.200	EFO_0009448	2	1	unannotated	5	5	0	0	1.000
+headline	0.200	MONDO_0037748	2	0	Plasma lipoprotein remodeling	8	6	2	1	0.750
+headline	0.200	MONDO_0037748	2	1	intestinal cholesterol absorption	7	7	0	0	1.000
+headline	0.200	EFO_0000384	6	0	regulation of lymphocyte activation	44	41	3	0	0.932
+headline	0.200	EFO_0000384	6	1	DNA-binding transcription repressor activity, RNA polymerase II-specific	32	32	0	0	1.000
+headline	0.200	EFO_0000384	6	2	unannotated	22	22	0	0	1.000
+headline	0.200	EFO_0000384	6	3	cytoplasmic pattern recognition receptor signaling pathway	21	21	0	0	1.000
+headline	0.200	EFO_0000384	6	4	negative regulation of protein phosphorylation	20	20	0	0	1.000
+headline	0.200	EFO_0000384	6	5	unannotated	18	18	0	0	1.000
+headline	0.200	EFO_0003890	1	0	ethanol oxidation	28	28	0	0	1.000
+headline	0.200	EFO_0003875	1	0	positive regulation of epithelial to mesenchymal transition	25	24	1	0	0.960
+headline	0.200	EFO_1001512	2	0	tube development	9	7	2	0	0.778
+headline	0.200	EFO_1001512	2	1	unannotated	11	5	6	0	0.455
+headline	0.200	EFO_0004128	2	0	Anchoring fibril formation	11	11	0	0	1.000
+headline	0.200	EFO_0004128	2	1	Regulation of Complement cascade	10	6	4	2	0.600
+headline	0.200	EFO_0004251	6	0	MAPK1/MAPK3 signaling	31	9	22	1	0.290
+headline	0.200	EFO_0004251	6	1	regulation of endothelial cell migration	27	2	25	0	0.074
+headline	0.200	EFO_0004251	6	2	DNA-binding transcription activator activity, RNA polymerase II-specific	28	5	23	1	0.179
+headline	0.200	EFO_0004251	6	3	R-HSA-194840	24	2	22	0	0.083
+headline	0.200	EFO_0004251	6	4	unannotated	17	0	17	1	0.000
+headline	0.200	EFO_0004251	6	5	positive regulation of apoptotic signaling pathway	17	2	15	1	0.118
+headline	0.200	EFO_0005708	2	0	unannotated	9	8	1	0	0.889
+headline	0.200	EFO_0005708	2	1	Regulation of beta-cell development	3	3	0	0	1.000
+headline	0.200	EFO_0001365	4	0	unannotated	21	19	2	0	0.905
+headline	0.200	EFO_0001365	4	1	Transport of small molecules	14	13	1	0	0.929
+headline	0.200	EFO_0001365	4	2	extracellular matrix organization	13	11	2	0	0.846
+headline	0.200	EFO_0001365	4	3	Regulation of Complement cascade	13	10	3	2	0.769
+headline	0.200	EFO_0001663	5	0	unannotated	25	25	0	0	1.000
+headline	0.200	EFO_0001663	5	1	cellular response to steroid hormone stimulus	19	19	0	0	1.000
+headline	0.200	EFO_0001663	5	2	blood vessel morphogenesis	17	17	0	0	1.000
+headline	0.200	EFO_0001663	5	3	regulation of cell cycle phase transition	19	19	0	0	1.000
+headline	0.200	EFO_0001663	5	4	positive regulation of cell migration	11	11	0	0	1.000
+headline	0.200	MONDO_0013099	1	0	unannotated	17	16	1	1	0.941
+headline	0.200	EFO_0001356	2	0	axon	20	12	8	2	0.600
+headline	0.200	EFO_0001356	2	1	polyubiquitin modification-dependent protein binding	16	14	2	0	0.875
+headline	0.200	MONDO_0002185	1	0	positive regulation of bone resorption	24	14	10	0	0.583
+headline	0.200	EFO_0005804	2	0	Erythropoietin activates STAT5	9	8	1	0	0.889
+headline	0.200	EFO_0005804	2	1	haptoglobin binding	5	4	1	0	0.800
+headline	0.200	MONDO_0018612	2	0	thyroid gland development	18	13	5	0	0.722
+headline	0.200	MONDO_0018612	2	1	Thyroxine biosynthesis	9	6	3	1	0.667
+headline	0.200	EFO_0000536	2	0	unannotated	7	5	2	0	0.714
+headline	0.200	EFO_0000536	2	1	tube development	6	5	1	0	0.833
+headline	0.200	MONDO_0000358	2	0	collagen trimer	24	20	4	1	0.833
+headline	0.200	MONDO_0000358	2	1	Regulation of expression of SLITs and ROBOs	10	8	2	0	0.800
+headline	0.200	MONDO_0016575	2	0	motile cilium assembly	18	18	0	0	1.000
+headline	0.200	MONDO_0016575	2	1	axoneme	14	14	0	0	1.000
+headline	0.200	MONDO_0043878	2	0	mitochondrial protein processing	20	19	1	0	0.950
+headline	0.200	MONDO_0043878	2	1	oxidative phosphorylation	14	13	1	0	0.929
+headline	0.200	MONDO_0100137	3	0	Synthesis of bile acids and bile salts via 27-hydroxycholesterol	22	11	11	0	0.500
+headline	0.200	MONDO_0100137	3	1	Signaling by Interleukins	19	17	2	0	0.895
+headline	0.200	MONDO_0100137	3	2	telomere maintenance	16	12	4	0	0.750
+headline	0.200	MONDO_0002462	2	0	regulation of cell activation	14	11	3	0	0.786
+headline	0.200	MONDO_0002462	2	1	Complement cascade	14	10	4	0	0.714
+headline	0.200	MONDO_0019200	7	0	cilium organization	31	23	8	3	0.742
+headline	0.200	MONDO_0019200	7	1	eye development	25	20	5	0	0.800
+headline	0.200	MONDO_0019200	7	2	detection of light stimulus	23	22	1	0	0.957
+headline	0.200	MONDO_0019200	7	3	isoprenoid metabolic process	20	18	2	0	0.900
+headline	0.200	MONDO_0019200	7	4	BBSome-mediated cargo-targeting to cilium	15	12	3	0	0.800
+headline	0.200	MONDO_0019200	7	5	retina homeostasis	15	11	4	1	0.733
+headline	0.200	MONDO_0019200	7	6	U4/U6 x U5 tri-snRNP complex	12	12	0	0	1.000
+headline	0.200	EFO_0700118	2	0	regulation of endoplasmic reticulum tubular network organization	20	14	6	0	0.700
+headline	0.200	EFO_0700118	2	1	renal system development	13	5	8	1	0.385
+headline	0.200	MONDO_0019313	2	0	Spry regulation of FGF signaling	20	20	0	0	1.000
+headline	0.200	MONDO_0019313	2	1	RAF activation	13	13	0	0	1.000
+headline	0.200	MONDO_0003406	1	0	unannotated	14	12	2	0	0.857
+headline	0.200	EFO_0008615	1	0	epithelial tube morphogenesis	20	17	3	0	0.850
+headline	0.200	EFO_1001511	2	0	Regulation of gene expression in beta cells	25	24	1	0	0.960
+headline	0.200	EFO_1001511	2	1	oxidative phosphorylation	15	15	0	0	1.000
+headline	0.200	MONDO_0015185	2	0	regulation of pathway-restricted SMAD protein phosphorylation	9	8	1	0	0.889
+headline	0.200	MONDO_0015185	2	1	base-excision repair	6	5	1	1	0.833
+headline	0.200	MONDO_0042973	1	0	positive regulation of bone resorption	17	10	7	2	0.588
+headline	0.200	MONDO_0001926	1	0	metanephros development	11	10	1	0	0.909
+headline	0.200	EFO_0001075	1	0	cellular response to indole-3-methanol	31	27	4	0	0.871
+headline	0.200	Orphanet_183628	2	0	diencephalon development	25	21	4	1	0.840
+headline	0.200	Orphanet_183628	2	1	Class A/1 (Rhodopsin-like receptors)	17	8	9	0	0.471
+headline	0.200	MONDO_0016624	2	0	cellular iron ion homeostasis	31	29	2	0	0.935
+headline	0.200	MONDO_0016624	2	1	water-soluble vitamin metabolic process	22	15	7	4	0.682
+headline	0.200	MONDO_0020248	2	0	extracellular matrix structural constituent	12	9	3	1	0.750
+headline	0.200	MONDO_0020248	2	1	eye development	9	6	3	0	0.667
+headline	0.200	MONDO_0015929	4	0	intraciliary transport	22	21	1	1	0.955
+headline	0.200	MONDO_0015929	4	1	unannotated	19	16	3	0	0.842
+headline	0.200	MONDO_0015929	4	2	regulation of membrane potential	17	17	0	0	1.000
+headline	0.200	MONDO_0015929	4	3	embryonic morphogenesis	16	13	3	0	0.812
+headline	0.200	MONDO_0002311	2	0	unannotated	8	8	0	0	1.000
+headline	0.200	MONDO_0002311	2	1	negative regulation of endothelial cell differentiation	5	4	1	0	0.800
+headline	0.200	EFO_0009455	2	0	C-palmitoyltransferase activity	9	8	1	0	0.889
+headline	0.200	EFO_0009455	2	1	interleukin-35-mediated signaling pathway	6	5	1	0	0.833
+headline	0.200	MONDO_0002108	2	0	Signalling to RAS	9	6	3	0	0.667
+headline	0.200	MONDO_0002108	2	1	negative regulation of cyclin-dependent protein serine/threonine kinase activity	9	9	0	0	1.000
+headline	0.200	MONDO_0020249	2	0	mitochondrial protein processing	25	16	9	1	0.640
+headline	0.200	MONDO_0020249	2	1	cellular respiration	15	12	3	0	0.800
+headline	0.200	MONDO_0002078	2	0	retina development in camera-type eye	14	13	1	1	0.929
+headline	0.200	MONDO_0002078	2	1	heart morphogenesis	12	11	1	0	0.917
+headline	0.200	MONDO_0001475	2	0	granulocyte differentiation	18	15	3	0	0.833
+headline	0.200	MONDO_0001475	2	1	cytokine binding	11	10	1	0	0.909
+headline	0.200	MONDO_0015168	2	0	unannotated	19	16	3	1	0.842
+headline	0.200	MONDO_0015168	2	1	regulation of membrane potential	14	13	1	0	0.929
+headline	0.200	MONDO_0003832	2	0	Complement cascade	19	17	2	1	0.895
+headline	0.200	MONDO_0003832	2	1	unannotated	10	6	4	0	0.600
+headline	0.200	MONDO_0017688	2	0	pyruvate metabolic process	22	14	8	2	0.636
+headline	0.200	MONDO_0017688	2	1	Regulation of gene expression in beta cells	14	8	6	2	0.571
+headline	0.200	MONDO_0000577	3	0	haptoglobin binding	30	17	13	0	0.567
+headline	0.200	MONDO_0000577	3	1	Homology Directed Repair	17	11	6	0	0.647
+headline	0.200	MONDO_0000577	3	2	Fanconi Anemia Pathway	15	13	2	1	0.867
+headline	0.200	Orphanet_207015	3	0	oxidative phosphorylation	24	20	4	0	0.833
+headline	0.200	Orphanet_207015	3	1	peroxisome organization	23	21	2	0	0.913
+headline	0.200	Orphanet_207015	3	2	unannotated	15	14	1	0	0.933
+headline	0.200	Orphanet_108987	2	0	camera-type eye development	10	8	2	1	0.800
+headline	0.200	Orphanet_108987	2	1	unannotated	9	8	1	0	0.889
+headline	0.200	MONDO_0015905	2	0	glycolipid metabolic process	20	11	9	1	0.550
+headline	0.200	MONDO_0015905	2	1	cholesterol homeostasis	16	12	4	1	0.750
+headline	0.200	MONDO_0019587	1	0	sensory perception of sound	45	41	4	2	0.911
+headline	0.200	MONDO_0001056	2	0	Displacement of DNA glycosylase by APEX1	6	4	2	0	0.667
+headline	0.200	MONDO_0001056	2	1	unannotated	7	7	0	0	1.000
+headline	0.200	EFO_1001990	2	0	mitochondrial DNA replication	15	14	1	1	0.933
+headline	0.200	EFO_1001990	2	1	oxidative phosphorylation	11	6	5	5	0.545
+headline	0.200	MONDO_0018838	2	0	Recruitment of NuMA to mitotic centrosomes	18	11	7	4	0.611
+headline	0.200	MONDO_0018838	2	1	Serine biosynthesis	18	12	6	1	0.667
+headline	0.200	EFO_0005569	2	0	metanephric collecting duct development	22	21	1	0	0.955
+headline	0.200	EFO_0005569	2	1	eye development	11	7	4	0	0.636
+headline	0.200	MONDO_0020073	2	0	GATOR1 complex	21	15	6	3	0.714
+headline	0.200	MONDO_0020073	2	1	ion channel complex	20	14	6	4	0.700
+headline	0.200	MONDO_0005129	3	0	unannotated	35	34	1	0	0.971
+headline	0.200	MONDO_0005129	3	1	lens development in camera-type eye	22	22	0	0	1.000
+headline	0.200	MONDO_0005129	3	2	cell-cell junction	10	10	0	0	1.000
+headline	0.200	Orphanet_269564	3	0	unannotated	22	22	0	0	1.000
+headline	0.200	Orphanet_269564	3	1	cilium assembly	19	10	9	1	0.526
+headline	0.200	Orphanet_269564	3	2	Activation of the pre-replicative complex	16	16	0	0	1.000
+headline	0.200	MONDO_0003689	2	0	spectrin-associated cytoskeleton	24	18	6	0	0.750
+headline	0.200	MONDO_0003689	2	1	nucleoside diphosphate phosphorylation	12	10	2	2	0.833
+headline	0.200	MONDO_0020242	2	0	eye morphogenesis	24	10	14	2	0.417
+headline	0.200	MONDO_0020242	2	1	Visual phototransduction	13	6	7	4	0.462
+headline	0.200	MONDO_0100241	2	0	integrin-mediated signaling pathway	21	12	9	4	0.571
+headline	0.200	MONDO_0100241	2	1	Formation of Fibrin Clot (Clotting Cascade)	12	3	9	3	0.250
+headline	0.200	EFO_0009551	1	0	heart morphogenesis	22	20	2	0	0.909
+headline	0.200	MONDO_0021002	2	0	Hedgehog 'on' state	8	8	0	0	1.000
+headline	0.200	MONDO_0021002	2	1	unannotated	4	4	0	0	1.000
+headline	0.200	MONDO_0019852	2	0	unannotated	11	10	1	0	0.909
+headline	0.200	MONDO_0019852	2	1	gonad development	9	6	3	2	0.667
+headline	0.200	MONDO_0020592	2	0	negative regulation of cell-cell adhesion	14	7	7	0	0.500
+headline	0.200	MONDO_0020592	2	1	zinc ion binding	7	3	4	1	0.429
+headline	0.200	EFO_0009682	2	0	unannotated	12	9	3	1	0.750
+headline	0.200	EFO_0009682	2	1	MKS complex	8	5	3	0	0.625
+headline	0.200	Orphanet_98560	2	0	cell junction organization	30	29	1	0	0.967
+headline	0.200	Orphanet_98560	2	1	chemical synaptic transmission	13	13	0	0	1.000
+headline	0.200	MONDO_0017754	2	0	bile acid and bile salt transport	13	7	6	2	0.538
+headline	0.200	MONDO_0017754	2	1	Heme biosynthesis	7	6	1	1	0.857
+headline	0.200	EFO_0008525	2	0	response to unfolded protein	28	23	5	2	0.821
+headline	0.200	EFO_0008525	2	1	ncRNA metabolic process	15	14	1	0	0.933
+headline	0.200	MONDO_0000732	2	0	Mitochondrial translation	27	20	7	1	0.741
+headline	0.200	MONDO_0000732	2	1	tRNA metabolic process	16	9	7	3	0.562
+headline	0.200	EFO_0005754	2	0	metal ion transport	14	6	8	0	0.429
+headline	0.200	EFO_0005754	2	1	negative regulation of cell population proliferation	9	6	3	0	0.667
+headline	0.200	Orphanet_79161	2	0	carbohydrate metabolic process	16	10	6	0	0.625
+headline	0.200	Orphanet_79161	2	1	regulation of insulin secretion	15	10	5	2	0.667
+headline	0.200	EFO_0008499	3	0	interstrand cross-link repair	27	25	2	1	0.926
+headline	0.200	EFO_0008499	3	1	DNA repair complex	24	19	5	0	0.792
+headline	0.200	EFO_0008499	3	2	haptoglobin binding	19	11	8	0	0.579
+headline	0.200	MONDO_0019713	2	0	unannotated	10	7	3	3	0.700
+headline	0.200	MONDO_0019713	2	1	limb development	9	5	4	0	0.556
+headline	0.200	EFO_1001951	2	0	regulation of epithelial to mesenchymal transition	22	17	5	0	0.773
+headline	0.200	EFO_1001951	2	1	DNA repair	17	16	1	0	0.941
+headline	0.200	MONDO_0056803	2	0	alpha-amino acid metabolic process	31	21	10	4	0.677
+headline	0.200	MONDO_0056803	2	1	Metabolism of water-soluble vitamins and cofactors	14	5	9	1	0.357
+headline	0.200	MONDO_0021003	5	0	limb development	30	24	6	0	0.800
+headline	0.200	MONDO_0021003	5	1	BBSome-mediated cargo-targeting to cilium	17	16	1	0	0.941
+headline	0.200	MONDO_0021003	5	2	ciliary transition zone	17	9	8	2	0.529
+headline	0.200	MONDO_0021003	5	3	Signaling by Insulin receptor	13	11	2	0	0.846
+headline	0.200	MONDO_0021003	5	4	unannotated	6	4	2	1	0.667
+headline	0.200	MONDO_0021205	2	0	stereocilium bundle	21	7	14	1	0.333
+headline	0.200	MONDO_0021205	2	1	unannotated	15	5	10	0	0.333
+headline	0.200	EFO_0004288	2	0	DNA repair	20	15	5	0	0.750
+headline	0.200	EFO_0004288	2	1	RNA polymerase II transcription factor binding	16	9	7	1	0.562
+headline	0.200	MONDO_0024635	3	0	regulation of leukocyte activation	21	18	3	1	0.857
+headline	0.200	MONDO_0024635	3	1	activation of cysteine-type endopeptidase activity involved in apoptotic process	19	18	1	0	0.947
+headline	0.200	MONDO_0024635	3	2	respiratory chain complex II	16	14	2	0	0.875
+headline	0.200	Orphanet_79200	7	0	mitochondrial DNA replication	23	23	0	0	1.000
+headline	0.200	Orphanet_79200	7	1	mitochondrial cytochrome c oxidase assembly	22	17	5	0	0.773
+headline	0.200	Orphanet_79200	7	2	tRNA metabolic process	21	18	3	0	0.857
+headline	0.200	Orphanet_79200	7	3	cytochrome complex	20	18	2	0	0.900
+headline	0.200	Orphanet_79200	7	4	mitochondrial electron transport, NADH to ubiquinone	17	8	9	0	0.471
+headline	0.200	Orphanet_79200	7	5	inner mitochondrial membrane organization	16	12	4	1	0.750
+headline	0.200	Orphanet_79200	7	6	Ubiquinol biosynthesis	15	9	6	0	0.600
+headline	0.200	EFO_1001216	3	0	axis elongation	31	30	1	0	0.968
+headline	0.200	EFO_1001216	3	1	extracellular matrix organization	19	17	2	1	0.895
+headline	0.200	EFO_1001216	3	2	unannotated	16	16	0	0	1.000
+headline	0.200	MONDO_0002691	2	0	unannotated	9	9	0	0	1.000
+headline	0.200	MONDO_0002691	2	1	unannotated	5	5	0	0	1.000
+headline	0.200	EFO_0000222	13	0	cell morphogenesis involved in neuron differentiation	30	30	0	0	1.000
+headline	0.200	EFO_0000222	13	1	DNA-binding transcription repressor activity, RNA polymerase II-specific	29	29	0	0	1.000
+headline	0.200	EFO_0000222	13	2	DNA recombination	31	31	0	0	1.000
+headline	0.200	EFO_0000222	13	3	metal ion transmembrane transporter activity	24	24	0	0	1.000
+headline	0.200	EFO_0000222	13	4	synaptic membrane	22	22	0	0	1.000
+headline	0.200	EFO_0000222	13	5	regulation of endopeptidase activity	21	21	0	0	1.000
+headline	0.200	EFO_0000222	13	6	Fanconi anaemia nuclear complex	20	20	0	0	1.000
+headline	0.200	EFO_0000222	13	7	Golgi membrane	20	20	0	0	1.000
+headline	0.200	EFO_0000222	13	8	response to bacterium	20	20	0	0	1.000
+headline	0.200	EFO_0000222	13	9	unannotated	19	19	0	0	1.000
+headline	0.200	EFO_0000222	13	10	Signaling by Receptor Tyrosine Kinases	18	18	0	0	1.000
+headline	0.200	EFO_0000222	13	11	regulation of intracellular transport	16	16	0	0	1.000
+headline	0.200	EFO_0000222	13	12	mRNA binding	8	8	0	0	1.000
+headline	0.200	MONDO_0017757	4	0	mitochondrion organization	25	24	1	1	0.960
+headline	0.200	MONDO_0017757	4	1	water-soluble vitamin metabolic process	23	14	9	5	0.609
+headline	0.200	MONDO_0017757	4	2	cellular transition metal ion homeostasis	19	17	2	0	0.895
+headline	0.200	MONDO_0017757	4	3	unannotated	13	11	2	0	0.846
+headline	0.200	EFO_1001456	2	0	Urea cycle	9	6	3	0	0.667
+headline	0.200	EFO_1001456	2	1	SUMOylation of RNA binding proteins	5	4	1	0	0.800
+headline	0.200	MONDO_0002887	6	0	positive regulation of blood vessel endothelial cell migration	33	28	5	0	0.848
+headline	0.200	MONDO_0002887	6	1	immune receptor activity	23	16	7	0	0.696
+headline	0.200	MONDO_0002887	6	2	activation of protein kinase activity	18	14	4	1	0.778
+headline	0.200	MONDO_0002887	6	3	negative regulation of cell activation	17	15	2	0	0.882
+headline	0.200	MONDO_0002887	6	4	DNA-binding transcription repressor activity, RNA polymerase II-specific	17	17	0	0	1.000
+headline	0.200	MONDO_0002887	6	5	bile acid and bile salt transport	15	14	1	0	0.933
+headline	0.200	MONDO_0000652	2	0	Signaling by FGFR	9	8	1	0	0.889
+headline	0.200	MONDO_0000652	2	1	unannotated	7	4	3	0	0.571
+headline	0.200	MONDO_0015160	4	0	skeletal system development	36	34	2	0	0.944
+headline	0.200	MONDO_0015160	4	1	MAPK family signaling cascades	28	27	1	1	0.964
+headline	0.200	MONDO_0015160	4	2	BBSome-mediated cargo-targeting to cilium	15	2	13	0	0.133
+headline	0.200	MONDO_0015160	4	3	Chromatin modifying enzymes	9	8	1	0	0.889
+headline	0.200	Orphanet_404571	2	0	appendage development	32	29	3	1	0.906
+headline	0.200	Orphanet_404571	2	1	cilium assembly	11	9	2	1	0.818
+headline	0.200	Orphanet_98056	5	0	renal system development	45	43	2	1	0.956
+headline	0.200	Orphanet_98056	5	1	haptoglobin binding	36	36	0	0	1.000
+headline	0.200	Orphanet_98056	5	2	microbody membrane	20	17	3	0	0.850
+headline	0.200	Orphanet_98056	5	3	sodium ion transmembrane transport	12	12	0	0	1.000
+headline	0.200	Orphanet_98056	5	4	organic cyclic compound catabolic process	8	8	0	0	1.000
+headline	0.200	EFO_1000774	2	0	unannotated	29	29	0	0	1.000
+headline	0.200	EFO_1000774	2	1	Type I hemidesmosome assembly	21	21	0	0	1.000
+headline	0.200	EFO_1001901	2	0	regulation of transcription from RNA polymerase II promoter in response to stress	14	13	1	0	0.929
+headline	0.200	EFO_1001901	2	1	tricarboxylic acid cycle	9	9	0	0	1.000
+headline	0.200	MONDO_0016139	4	0	muscle structure development	33	19	14	1	0.576
+headline	0.200	MONDO_0016139	4	1	oxidative phosphorylation	24	16	8	2	0.667
+headline	0.200	MONDO_0016139	4	2	alpha-actinin binding	14	5	9	4	0.357
+headline	0.200	MONDO_0016139	4	3	ECM proteoglycans	9	5	4	1	0.556
+headline	0.200	MONDO_0000314	1	0	pattern recognition receptor signaling pathway	23	21	2	0	0.913
+headline	0.200	MONDO_0015286	4	0	glycoprotein biosynthetic process	31	25	6	3	0.806
+headline	0.200	MONDO_0015286	4	1	GPI anchor biosynthetic process	24	20	4	3	0.833
+headline	0.200	MONDO_0015286	4	2	vacuolar membrane	15	14	1	0	0.933
+headline	0.200	MONDO_0015286	4	3	Golgi transport complex	13	10	3	1	0.769
+headline	0.200	Orphanet_183500	6	0	DNA repair	22	20	2	0	0.909
+headline	0.200	Orphanet_183500	6	1	axo-dendritic transport	22	20	2	0	0.909
+headline	0.200	Orphanet_183500	6	2	protein targeting	19	15	4	1	0.789
+headline	0.200	Orphanet_183500	6	3	ubiquitin-dependent protein catabolic process	19	18	1	0	0.947
+headline	0.200	Orphanet_183500	6	4	nucleoside phosphate metabolic process	18	16	2	0	0.889
+headline	0.200	Orphanet_183500	6	5	metal ion transport	9	8	1	0	0.889
+headline	0.200	MONDO_0019287	4	0	RAF activation	28	26	2	2	0.929
+headline	0.200	MONDO_0019287	4	1	cell-cell junction organization	25	25	0	0	1.000
+headline	0.200	MONDO_0019287	4	2	Extension of Telomeres	21	21	0	0	1.000
+headline	0.200	MONDO_0019287	4	3	intraciliary transport particle A	11	11	0	0	1.000
+headline	0.200	MONDO_0020119	4	0	histone modification	25	22	3	0	0.880
+headline	0.200	MONDO_0020119	4	1	unannotated	25	22	3	0	0.880
+headline	0.200	MONDO_0020119	4	2	Neuronal System	26	22	4	1	0.846
+headline	0.200	MONDO_0020119	4	3	RNA splicing, via transesterification reactions with bulged adenosine as nucleophile	14	14	0	0	1.000
+headline	0.200	MONDO_0020049	2	0	cell fate commitment	22	20	2	2	0.909
+headline	0.200	MONDO_0020049	2	1	protein-lysine N-methyltransferase activity	9	9	0	0	1.000
+headline	0.300	EFO_0003758	3	0	vocalization behavior	23	23	0	0	1.000
+headline	0.300	EFO_0003758	3	1	Chromatin modifying enzymes	20	19	1	0	0.950
+headline	0.300	EFO_0003758	3	2	isoprenoid biosynthetic process	11	10	1	0	0.909
+headline	0.300	EFO_0000195	3	0	vitamin transport	19	5	14	4	0.263
+headline	0.300	EFO_0000195	3	1	Plasma lipoprotein assembly, remodeling, and clearance	19	8	11	6	0.421
+headline	0.300	EFO_0000195	3	2	unannotated	16	5	11	4	0.312
+headline	0.300	EFO_0004143	2	0	extracellular matrix structural constituent	6	5	1	0	0.833
+headline	0.300	EFO_0004143	2	1	unannotated	5	5	0	0	1.000
+headline	0.300	EFO_0003898	5	0	positive regulation of cell migration	24	24	0	0	1.000
+headline	0.300	EFO_0003898	5	1	positive regulation of interferon-gamma production	22	21	1	0	0.955
+headline	0.300	EFO_0003898	5	2	activation of protein kinase activity	24	24	0	0	1.000
+headline	0.300	EFO_0003898	5	3	DNA-binding transcription repressor activity, RNA polymerase II-specific	13	13	0	0	1.000
+headline	0.300	EFO_0003898	5	4	negative regulation of lymphocyte activation	11	11	0	0	1.000
+headline	0.300	EFO_0001063	3	0	actin binding	33	31	2	0	0.939
+headline	0.300	EFO_0001063	3	1	sensory perception of sound	29	24	5	2	0.828
+headline	0.300	EFO_0001063	3	2	gap junction channel activity	6	5	1	1	0.833
+headline	0.300	EFO_0000401	2	0	unannotated	9	8	1	0	0.889
+headline	0.300	EFO_0000401	2	1	unannotated	8	5	3	0	0.625
+headline	0.300	EFO_0003948	2	0	unannotated	15	11	4	1	0.733
+headline	0.300	EFO_0003948	2	1	response to bacterium	7	6	1	0	0.857
+headline	0.300	EFO_0004214	2	0	unannotated	7	7	0	0	1.000
+headline	0.300	EFO_0004214	2	1	unannotated	4	4	0	0	1.000
+headline	0.300	EFO_0003888	2	0	unannotated	20	20	0	0	1.000
+headline	0.300	EFO_0003888	2	1	cell morphogenesis involved in differentiation	17	14	3	1	0.824
+headline	0.300	EFO_0000095	2	0	BH3-only proteins associate with and inactivate anti-apoptotic BCL-2 members	19	19	0	0	1.000
+headline	0.300	EFO_0000095	2	1	unannotated	11	11	0	0	1.000
+headline	0.300	EFO_0004253	2	0	unannotated	11	8	3	1	0.727
+headline	0.300	EFO_0004253	2	1	glyoxylate metabolic process	6	5	1	0	0.833
+headline	0.300	EFO_0001065	2	0	unannotated	12	9	3	0	0.750
+headline	0.300	EFO_0001065	2	1	regulation of male gonad development	11	7	4	1	0.636
+headline	0.300	EFO_0003882	1	0	skeletal system development	21	20	1	0	0.952
+headline	0.300	EFO_0000612	1	0	apolipoprotein binding	34	32	2	2	0.941
+headline	0.300	EFO_0000275	5	0	heart morphogenesis	30	26	4	1	0.867
+headline	0.300	EFO_0000275	5	1	cardiac muscle cell action potential	30	26	4	0	0.867
+headline	0.300	EFO_0000275	5	2	regulation of cell-substrate junction assembly	29	28	1	1	0.966
+headline	0.300	EFO_0000275	5	3	transcription, DNA-templated	28	25	3	0	0.893
+headline	0.300	EFO_0000275	5	4	acylglycerol metabolic process	15	14	1	1	0.933
+headline	0.300	EFO_0000389	2	0	unannotated	14	13	1	1	0.929
+headline	0.300	EFO_0000389	2	1	Cellular Senescence	13	11	2	1	0.846
+headline	0.300	EFO_0000384	7	0	Regulation of IFNG signaling	32	32	0	0	1.000
+headline	0.300	EFO_0000384	7	1	regulation of leukocyte activation	30	29	1	0	0.967
+headline	0.300	EFO_0000384	7	2	negative regulation of phosphate metabolic process	26	26	0	0	1.000
+headline	0.300	EFO_0000384	7	3	cytokine receptor activity	19	19	0	0	1.000
+headline	0.300	EFO_0000384	7	4	cytoplasmic pattern recognition receptor signaling pathway	20	20	0	0	1.000
+headline	0.300	EFO_0000384	7	5	unannotated	17	17	0	0	1.000
+headline	0.300	EFO_0000384	7	6	Neutrophil degranulation	11	11	0	0	1.000
+headline	0.300	EFO_0003890	1	0	ethanol oxidation	28	28	0	0	1.000
+headline	0.300	EFO_0003875	1	0	positive regulation of epithelial to mesenchymal transition	24	24	0	0	1.000
+headline	0.300	EFO_0004128	2	0	Anchoring fibril formation	11	11	0	0	1.000
+headline	0.300	EFO_0004128	2	1	Regulation of Complement cascade	9	6	3	1	0.667
+headline	0.300	EFO_0001365	3	0	reverse cholesterol transport	34	34	0	0	1.000
+headline	0.300	EFO_0001365	3	1	Regulation of Complement cascade	13	11	2	1	0.846
+headline	0.300	EFO_0001365	3	2	extracellular matrix organization	9	8	1	0	0.889
+headline	0.300	EFO_0001663	5	0	unannotated	25	25	0	0	1.000
+headline	0.300	EFO_0001663	5	1	cellular response to steroid hormone stimulus	19	19	0	0	1.000
+headline	0.300	EFO_0001663	5	2	blood vessel morphogenesis	17	17	0	0	1.000
+headline	0.300	EFO_0001663	5	3	regulation of cell cycle phase transition	19	19	0	0	1.000
+headline	0.300	EFO_0001663	5	4	positive regulation of cell migration	11	11	0	0	1.000
+headline	0.300	EFO_0001356	2	0	axon	21	16	5	2	0.762
+headline	0.300	EFO_0001356	2	1	polyubiquitin modification-dependent protein binding	12	10	2	0	0.833
+headline	0.300	EFO_0000536	1	0	unannotated	11	10	1	0	0.909
+headline	0.300	EFO_0001075	2	0	Resolution of D-loop Structures through Synthesis-Dependent Strand Annealing (SDSA)	14	14	0	0	1.000
+headline	0.300	EFO_0001075	2	1	unannotated	14	13	1	0	0.929
+headline	0.300	EFO_0000222	13	0	cell morphogenesis involved in neuron differentiation	30	30	0	0	1.000
+headline	0.300	EFO_0000222	13	1	DNA-binding transcription repressor activity, RNA polymerase II-specific	29	29	0	0	1.000
+headline	0.300	EFO_0000222	13	2	DNA recombination	31	31	0	0	1.000
+headline	0.300	EFO_0000222	13	3	metal ion transmembrane transporter activity	24	24	0	0	1.000
+headline	0.300	EFO_0000222	13	4	synaptic membrane	22	22	0	0	1.000
+headline	0.300	EFO_0000222	13	5	regulation of endopeptidase activity	21	21	0	0	1.000
+headline	0.300	EFO_0000222	13	6	Fanconi anaemia nuclear complex	20	20	0	0	1.000
+headline	0.300	EFO_0000222	13	7	Golgi membrane	20	20	0	0	1.000
+headline	0.300	EFO_0000222	13	8	response to bacterium	20	20	0	0	1.000
+headline	0.300	EFO_0000222	13	9	unannotated	19	19	0	0	1.000
+headline	0.300	EFO_0000222	13	10	Signaling by Receptor Tyrosine Kinases	18	18	0	0	1.000
+headline	0.300	EFO_0000222	13	11	regulation of intracellular transport	16	16	0	0	1.000
+headline	0.300	EFO_0000222	13	12	mRNA binding	8	8	0	0	1.000
