@@ -1,0 +1,57 @@
+bench	split	channel	scorer	n_cov	n	ap	nuap	auroc	recall@100	onnet_ap	onnet_nuap	go_n	go_ap	go_auroc	go_r100
+temporal	dev	gwas_own	gwas_own	16	53	0.0211	0.0244	0.5894	0.0581	0.0217	0.0248	16.0	0.0177	0.5849	0.0713
+temporal	dev	gwas_own	transfer_jaccard	16	53	0.0779	0.068	0.6471	0.1742	0.0883	0.1003	16.0	0.0591	0.5897	0.1383
+temporal	dev	gwas_sem	gwas_sem	17	53	0.019	0.023	0.5777	0.05	0.0191	0.0193	17.0	0.0151	0.5784	0.061
+temporal	dev	gwas_sem	transfer_jaccard	17	53	0.0756	0.0659	0.6465	0.175	0.088	0.1009	17.0	0.0589	0.5949	0.1462
+temporal	dev	gwas_xpow	gwas_xpow	17	53	0.0205	0.0234	0.5935	0.0564	0.0213	0.0242	17.0	0.0174	0.5871	0.0606
+temporal	dev	gwas_xpow	transfer_jaccard	17	53	0.0756	0.0659	0.6465	0.175	0.088	0.1009	17.0	0.0589	0.5949	0.1462
+temporal	dev	gwas_seedw	gwas_seedw	53	53	0.002	0.0021	0.48	0.0002	0.0025	0.0027	29.0	0.0017	0.4753	0.0004
+temporal	dev	gwas_seedw	transfer_jaccard	53	53	0.1229	0.0961	0.6821	0.2567	0.1343	0.1328	29.0	0.0462	0.5837	0.118
+temporal	dev	gwas_catlag	gwas_catlag	24	53	0.0663	0.066	0.5499	0.1251	0.0753	0.0963	20.0	0.0847	0.5657	0.1731
+temporal	dev	gwas_catlag	transfer_jaccard	24	53	0.0711	0.0618	0.6484	0.1703	0.0818	0.084	20.0	0.0598	0.6048	0.1498
+temporal	dev	gwas_sem_perm	gwas_sem_perm	17	53	0.003	0.0033	0.496	0.0046	0.0038	0.005	17.0	0.002	0.4751	0.004
+temporal	dev	gwas_sem_perm	transfer_jaccard	17	53	0.0756	0.0659	0.6465	0.175	0.088	0.1009	17.0	0.0589	0.5949	0.1462
+temporal	dev	gwas_seedw_perm	gwas_seedw_perm	53	53	0.0029	0.0031	0.5026	0.0133	0.004	0.0051	29.0	0.0024	0.4928	0.011
+temporal	dev	gwas_seedw_perm	transfer_jaccard	53	53	0.1229	0.0961	0.6821	0.2567	0.1343	0.1328	29.0	0.0462	0.5837	0.118
+temporal	confirm	gwas_own	gwas_own	46	138	0.0253	0.0245	0.5984	0.0513	0.0262	0.0255	40.0	0.0266	0.6323	0.0669
+temporal	confirm	gwas_own	transfer_jaccard	46	138	0.1011	0.0822	0.6746	0.2317	0.1084	0.089	40.0	0.0347	0.6537	0.121
+temporal	confirm	gwas_sem	gwas_sem	53	138	0.0262	0.0242	0.5913	0.0516	0.0276	0.0249	44.0	0.0329	0.6225	0.0739
+temporal	confirm	gwas_sem	transfer_jaccard	53	138	0.0963	0.0766	0.6794	0.2352	0.1034	0.0827	44.0	0.0332	0.6575	0.1492
+temporal	confirm	gwas_xpow	gwas_xpow	53	138	0.0286	0.0253	0.5895	0.0577	0.03	0.0247	44.0	0.0367	0.621	0.0847
+temporal	confirm	gwas_xpow	transfer_jaccard	53	138	0.0963	0.0766	0.6794	0.2352	0.1034	0.0827	44.0	0.0332	0.6575	0.1492
+temporal	confirm	gwas_seedw	gwas_seedw	137	138	0.0018	0.002	0.4959	0.0	0.0023	0.0027	76.0	0.0015	0.4876	0.0
+temporal	confirm	gwas_seedw	transfer_jaccard	137	138	0.1168	0.1043	0.7027	0.2791	0.1252	0.1279	76.0	0.0354	0.6448	0.1469
+temporal	confirm	gwas_catlag	gwas_catlag	52	138	0.0471	0.0491	0.5293	0.0694	0.0508	0.0565	42.0	0.0833	0.5782	0.1503
+temporal	confirm	gwas_catlag	transfer_jaccard	52	138	0.1098	0.0841	0.6747	0.2438	0.1163	0.0934	42.0	0.0271	0.6382	0.1062
+temporal	confirm	gwas_sem_perm	gwas_sem_perm	53	138	0.0026	0.0032	0.502	0.0054	0.0036	0.0053	44.0	0.0022	0.5162	0.0101
+temporal	confirm	gwas_sem_perm	transfer_jaccard	53	138	0.0963	0.0766	0.6794	0.2352	0.1034	0.0827	44.0	0.0332	0.6575	0.1492
+temporal	confirm	gwas_seedw_perm	gwas_seedw_perm	138	138	0.0022	0.0026	0.4929	0.0079	0.0029	0.0037	76.0	0.0021	0.5217	0.0083
+temporal	confirm	gwas_seedw_perm	transfer_jaccard	138	138	0.1189	0.1042	0.7045	0.2826	0.1277	0.1276	76.0	0.0354	0.6448	0.1469
+forward	dev	gwas_own	gwas_own	148	842	0.0206	0.0255	0.6155	0.0764	0.0227	0.0311				
+forward	dev	gwas_own	transfer_jaccard	148	842	0.0733	0.0783	0.752	0.2037	0.076	0.08				
+forward	dev	gwas_sem	gwas_sem	169	842	0.0186	0.0223	0.6061	0.0619	0.0201	0.026				
+forward	dev	gwas_sem	transfer_jaccard	169	842	0.075	0.0767	0.7443	0.2082	0.0784	0.0803				
+forward	dev	gwas_xpow	gwas_xpow	169	842	0.0189	0.0234	0.6117	0.0732	0.021	0.0284				
+forward	dev	gwas_xpow	transfer_jaccard	169	842	0.075	0.0767	0.7443	0.2082	0.0784	0.0803				
+forward	dev	gwas_seedw	gwas_seedw	840	842	0.0039	0.0044	0.5383	0.003	0.0045	0.005				
+forward	dev	gwas_seedw	transfer_jaccard	840	842	0.0916	0.0944	0.7316	0.2448	0.0955	0.1033				
+forward	dev	gwas_catlag	gwas_catlag	671	842	0.0818	0.0874	0.6715	0.2328	0.0909	0.1057				
+forward	dev	gwas_catlag	transfer_jaccard	671	842	0.086	0.0862	0.7241	0.22	0.0903	0.0972				
+forward	dev	gwas_sem_perm	gwas_sem_perm	169	842	0.003	0.0034	0.4975	0.003	0.0033	0.0043				
+forward	dev	gwas_sem_perm	transfer_jaccard	169	842	0.075	0.0767	0.7443	0.2082	0.0784	0.0803				
+forward	dev	gwas_seedw_perm	gwas_seedw_perm	842	842	0.0039	0.0042	0.5037	0.0048	0.0044	0.0048				
+forward	dev	gwas_seedw_perm	transfer_jaccard	842	842	0.0936	0.0964	0.7323	0.2466	0.0974	0.1052				
+forward	confirm	gwas_own	gwas_own	123	797	0.0184	0.0234	0.5954	0.0624	0.02	0.0293				
+forward	confirm	gwas_own	transfer_jaccard	123	797	0.0731	0.0652	0.7208	0.2023	0.0776	0.0801				
+forward	confirm	gwas_sem	gwas_sem	143	797	0.018	0.023	0.5901	0.0546	0.0198	0.0304				
+forward	confirm	gwas_sem	transfer_jaccard	143	797	0.073	0.0662	0.7191	0.2025	0.0778	0.0778				
+forward	confirm	gwas_xpow	gwas_xpow	143	797	0.0181	0.0236	0.5857	0.0551	0.0196	0.0287				
+forward	confirm	gwas_xpow	transfer_jaccard	143	797	0.073	0.0662	0.7191	0.2025	0.0778	0.0778				
+forward	confirm	gwas_seedw	gwas_seedw	791	797	0.0041	0.0043	0.5445	0.0036	0.0046	0.0047				
+forward	confirm	gwas_seedw	transfer_jaccard	791	797	0.0849	0.0832	0.7245	0.2323	0.0909	0.0984				
+forward	confirm	gwas_catlag	gwas_catlag	636	797	0.0782	0.0886	0.6653	0.2188	0.0825	0.0988				
+forward	confirm	gwas_catlag	transfer_jaccard	636	797	0.0823	0.0807	0.7174	0.2099	0.088	0.0947				
+forward	confirm	gwas_sem_perm	gwas_sem_perm	143	797	0.003	0.0035	0.4903	0.0051	0.0033	0.0039				
+forward	confirm	gwas_sem_perm	transfer_jaccard	143	797	0.073	0.0662	0.7191	0.2025	0.0778	0.0778				
+forward	confirm	gwas_seedw_perm	gwas_seedw_perm	797	797	0.0039	0.0043	0.5043	0.0069	0.0044	0.0049				
+forward	confirm	gwas_seedw_perm	transfer_jaccard	797	797	0.0849	0.0831	0.7257	0.2342	0.0908	0.0984				
