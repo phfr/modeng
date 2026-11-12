@@ -16,6 +16,16 @@
    pre-T0 resources whose annotation vintage is post-T0 (PubTator 2026 mapping of old PMIDs; GWAS-Catalog 2026 trait mapping; modern
    expression/perturbation views = transductive), and a Fable red-team review (`docs/reviews/R1_fable_redteam.md`) decides what may be claimed.
 
+## 1b. What may be claimed (after the Fable red-team review `docs/reviews/R1_fable_redteam.md` and its endpoints on the leader)
+- Claimable: on the temporal benchmark (138 confirm diseases), the stacker ranks future Open Targets disease genes better than modet's headline
+  on its own candidate set for **all arrivals**: AP +0.050 [+0.037, +0.067], nuAP +0.039 [+0.023, +0.060], degree-matched AP +0.077 [+0.061, +0.094],
+  precision@20 +0.067; better for hub and non-hub genes alike. No leakage, masking or selection artefact was found by the red team.
+- **Not claimable: a gain on modet's primary endpoint (strict-a: genetic discoveries first seen 2022+): tie** (nuAP 0.108 vs 0.109, AP +0.010 n.s.).
+  The new channels mostly help with arrivals that already have older evidence somewhere (literature, phenotypes, ClinVar-type knowledge).
+- vs raw transfer: better on degree-matched AP (+0.056) and precision@20 (+0.033) but worse on hub genes (hub AP -0.026): the deg^-0.5 training
+  weight trades hubs for non-hubs; power 0.25 was better on both AP and nuAP in the red team's run but was chosen after seeing confirm (needs fresh data).
+- About 20 stacker variants were viewed on temporal confirm overnight; dev and confirm increments agree, but a fresh fold is the real test.
+
 ## 2. What was done (process)
 - Ideation process researched first (`docs/research/00_ideation_process.md`): independent generation, diversity prompting, novelty check,
   critic panel, closed loop with a frozen evaluator; LLM judges/tournaments treated as weak (not used for selection).

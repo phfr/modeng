@@ -1,0 +1,14 @@
+tasks [4, 19, 31, 62, 68, 71, 101, 115, 128, 129] masked pairs [ 0  0 56  1 13 42  0 57 86  3]
+transfer_jaccard   max|diff| per task [5.e-06 5.e-06 5.e-06 5.e-06 5.e-06 5.e-06 5.e-06 5.e-06 5.e-06 5.e-06]  min corr 1.000000
+cs_donor           max|diff| per task [0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]  min corr 1.000000
+dA_pt(a_pt21)      max|diff| per task [0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]  min corr 1.000000
+dA_pt(a_pt25)?     max|diff| per task [ 51.729294  12.60357   24.226973  49.37578  115.26832   64.91145
+  30.38684   11.93336   51.64585   53.57769 ]  min corr 0.867152
+don_hpo2101        max|diff| per task [0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]  min corr 1.000000
+vmax_esmc          max|diff| per task [0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]  min corr 1.000000
+past dA_pt(a_pt19) max|diff| per task [0. 0. 0. 0.]  min corr 1.000000
+past dA_pt(a_pt21)? max|diff| per task [12.13362  34.233288 48.0528   17.81098 ]  min corr 0.885827
+past cs_donor      max|diff| per task [0. 0. 0. 0.]  min corr 1.000000
+targets 6324; in own 21.04 row 287; with >=1 masked pair 326; of those still in another (unmasked) context row 326; targets in a near-duplicate row (J>=0.5 with seeds) 307; targets in any context row 5492
+sealed/excluded ids among temporal tasks: 0 ; in context rows: 0 ; among past tasks: 0 ; past context rows: 0
+past training tasks that are temporal eval diseases: 58 of 900
