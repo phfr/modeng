@@ -2,3 +2,23 @@
 temporal  dev      stackP_base            AP 0.0783 nuAP 0.1196 AUROC 0.7786 R@100 0.2223 | onnet AP 0.0985 nuAP 0.1886
 temporal  confirm  stackP_base            AP 0.0821 nuAP 0.1339 AUROC 0.7922 R@100 0.2353 | onnet AP 0.0906 nuAP 0.1625
 transfer_jaccard      298312.086517
+[past] 50 channels, 1371887 rows, 21887 pos (106s)
+temporal  dev      stackP_bdv             AP 0.1028 nuAP 0.1269 AUROC 0.8093 R@100 0.2497 | onnet AP 0.1197 nuAP 0.1745
+temporal  confirm  stackP_bdv             AP 0.0909 nuAP 0.1506 AUROC 0.8235 R@100 0.2536 | onnet AP 0.0977 nuAP 0.1694
+transfer_jaccard      219923.347287
+don_hpo2101           145458.996100
+r_degree               71800.965291
+r_transfer_jaccard     48653.958839
+r_popularity           48427.973769
+vmax_prott5            39434.446696
+vmax_esmc              36852.036918
+r_don_hpo2101          33172.624255
+degree                 30761.189113
+popularity             27344.011895
+transfer_onto          23320.523129
+vmax_hpa_sc            19246.282884
+vmax_depmap20q4        16825.687799
+vmax_go_t0             15687.080951
+vmax_esm2_15b          13409.793045
+don_msig_go            13292.541944
+log_nseeds             12094.596981
