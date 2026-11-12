@@ -109,3 +109,11 @@ module output (calibrated cutoff + subex `leiden_anno` decomposition), round-2 e
   additions are off STRING-T0 and fall in no submodule.
 - **Strict-a programme closed for now:** GWAS power forecasting (ML-4) and sub-threshold loci -> gene both add nothing on confirm; together with gating, class-A
   head and catalog transfer, strict-a is limited by T0 GWAS coverage of the target diseases (34/71 confirm strict-a diseases have their own T0 study).
+
+## 11. Research-and-review cycle and fresh confirmation (12:05-16:20)
+- Witness audit (r5), three sweeps (03-05), killed: cached KG embeddings, cell-type witness, FinnGen R4 (kill rule), gnomAD constraint; clean arm v1clean equivalent to v1.
+- Two Fable strategy reviews (R4 A/B, synthesis): stacker near its ceiling (46 % of targets have any pre-seed trace; strict-a needs data that did not exist at T0); scale and a fresh fold are the levers.
+- `temporal_wide` (792 untouched diseases; train 712 / dev 45 / confirm 35, frozen + tagged). Training at scale: dev nuAP +0.028 (AP n.s.).
+- **Pre-registered fresh confirmation on 35 untouched diseases (`docs/reports/r7_wide_confirm.md`): the wide-trained clean model without label-process channels beats raw transfer on both AP (+0.027 [+0.004, +0.049]) and nuAP (+0.042 [+0.006, +0.086])**; the only arm passing the rule, narrowly (not under Bonferroni over 4 arms); arms indistinguishable at n = 35; modet headline not available for these diseases.
+- Two-arm experts / disagreement list: not adopted (no gain; list = popularity-matched random).
+- **Current recommended model: W_v1clean without label-process channels** (wide-trained, clean inputs). Next confirmation: the next Open Targets release (larger n); modet's sealed fold still not recommended (strict-a primary).

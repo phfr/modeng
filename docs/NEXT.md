@@ -11,6 +11,8 @@ Read `CLAUDE.md`, then **`docs/reports/FINAL_overnight_2026-11-12.md`** (result,
 - Module calls: `scripts/module_cutoff.py stack_v3ptr_p0.35` (dev-fitted isotonic; shrink ~0.8).
 - Sealed fold: NOT recommended now (its primary is strict-a); use the next OT release, no-label-process arm co-primary.
 
+## Afternoon 2026-11-12: research cycle + fresh confirmation done (FINAL report section 11). Recommended model: W_v1clean without label-process channels (wide-trained). wide_confirm is SPENT. Next: next OT release as confirmation; consider merging the two dev sets for future selection.
+
 ## Morning follow-up done (07:20-08:30): R3 red team, prospective version, forward no-label-process arm, strict-a attack (negative), calibration refit — see FINAL report section 9.
 
 ## Next (in order)
