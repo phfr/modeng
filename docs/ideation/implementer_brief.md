@@ -2,6 +2,8 @@
 
 **Restart note:** wave 1 was stopped mid-work at 02:50. Check for partial files of your cluster (src/modeng/ext/*.py, data/donors, data/raw, docs/reports) and continue from them; verify them first (they are untested). Machine is now mostly idle: up to 6 threads per agent. Temporal references (post-fix, train on `past`): `stackP_base`, `stackP_bdv` (pre-fix values: confirm nuAP 0.134 / 0.151; transfer_jaccard 0.104). For temporal, prefer `--train past` (1,786 episodes) over CV on 53 dev tasks; your channel must then work on B.name=='past' (seed release 19.04) or return NaN. Forward/holdout: `--train cv` (default).
 
+**Leakage rules learned so far:** (1) any "subtract the masked pairs" correction must quantise scores (np.round(x,5)) — float residue broke ties for hidden targets (holdout transfer_onto 0.117 -> 0.036); (2) never use rank-average fusion for increment tests (collapses transfer); use modeng.stack; (3) gene order is sorted ENSG (`modeng.data.universe()`).
+
 Read: `/home/ph/code/modeng/CLAUDE.md`, `docs/ideation/brief.md`, your assigned ideas in `docs/ideation/r1_*.md`, the critiques
 `docs/ideation/r1_critic_*.md` (if present) and novelty `docs/ideation/r1_novelty.md`, `docs/reports/baselines.md`, `docs/insights.md`.
 
