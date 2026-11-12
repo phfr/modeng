@@ -76,7 +76,7 @@ Status: NEW | SHORTLIST | IMPLEMENTING | TESTED-POSITIVE | TESTED-NEGATIVE | KIL
 | WC-UPPERLIM | Upper limits: measured nulls as negative evidence | R1 wildcard | NEW | `docs/ideation/r1_wildcard.md` |
 | WC-MARKET | Revealed preferences of funders and filers as leading indicators | R1 wildcard | NEW | `docs/ideation/r1_wildcard.md` |
 | F1-FLUX | Flux phenocopy in a genome-scale metabolic model | R2 island1 | NEW | `docs/ideation/r2_island1.md` |
-| F1-CSDONOR | Compressed-sensing donor decomposition (joint sparse recovery instead of per-donor matching) | R2 island1 | TESTED (alone negative; stack increment pending) | `docs/ideation/r2_island1.md` |
+| F1-CSDONOR | Compressed-sensing donor decomposition (joint sparse recovery instead of per-donor matching) | R2 island1 | TESTED-POSITIVE (stack increment, both AP and nuAP; confirm borderline) | `docs/ideation/r2_island1.md` |
 | F1-ENDO | Endotype unmixing: one transfer problem per seed sub-module, combined by noisy-OR | R2 island1 | NEW | `docs/ideation/r2_island1.md` |
 | F1-INVERT | Forward-model inversion ("hallucinate the gene that completes the phenotype") | R2 island1 | NEW | `docs/ideation/r2_island1.md` |
 | F1-PATHOGEN | Pathogen proteins as evolved probes of host modules | R2 island1 | NEW | `docs/ideation/r2_island1.md` |

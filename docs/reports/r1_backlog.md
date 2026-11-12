@@ -97,7 +97,8 @@ not transfer much (in cv on temporal it is trained on 21.04 evidence of all sour
 ## 4. Controls
 - Positive control: stack_E_base reproduces the references (temporal dev nuAP 0.1026, confirm 0.1331 for `--train cv`).
 - Negative control (bl_any with permuted gene identities): temporal cv stack_E_base_blperm vs stack_E_base: dev nuAP +0.003 [-0.006, +0.012],
-  confirm -0.004 [-0.009, +0.002]; AP dev +0.003, confirm -0.002 (all CIs include 0). Forward: FWDPERM
+  confirm -0.004 [-0.009, +0.002]; AP dev +0.003, confirm -0.002 (all CIs include 0). Forward: the stacked perm arm was
+  cancelled (lead's RAM limit: one stacker at a time); alone, bl_any_perm gives forward dev AP 0.004 / nuAP 0.004 / AUROC 0.497.
 
 ## 5. Verdict against the R1 statistician's kill rules (#1 backlog exact-match)
 - Rule "< 5 % of class-B dev arrivals in the top 100 by the match score alone": bl_xid 6.8 % on dev (passes narrowly), 3.4 % on
