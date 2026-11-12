@@ -1,0 +1,46 @@
+=== wide v1clean 0 14:41:07 free: 76 GB
+[wide_train] 712 tasks, 51 channels, 839966 rows, 8966 pos; guard dropped 12202 positive pairs in 506 tasks (360s)
+temporal  dev      stackW_W_v1clean       AP 0.1910 nuAP 0.1796 AUROC 0.8678 R@100 0.3462 | onnet AP 0.2094 nuAP 0.2289
+temporal  confirm  stackW_W_v1clean       AP 0.1720 nuAP 0.2039 AUROC 0.8758 R@100 0.3578 | onnet AP 0.1787 nuAP 0.2253
+temporal_wide wide_dev stackW_W_v1clean       AP 0.1240 nuAP 0.1828 AUROC 0.8870 R@100 0.3739 | onnet AP 0.1350 nuAP 0.2111
+TIME 420.32 s MAXRSS 8617000 KB
+=== wide v2 0 14:48:07 free: 76 GB
+[wide_train] 712 tasks, 23 channels, 839966 rows, 8966 pos; guard dropped 12202 positive pairs in 506 tasks (17s)
+temporal  dev      stackW_W_v2            AP 0.1812 nuAP 0.1755 AUROC 0.8479 R@100 0.3370 | onnet AP 0.1998 nuAP 0.2330
+temporal  confirm  stackW_W_v2            AP 0.1648 nuAP 0.1967 AUROC 0.8582 R@100 0.3495 | onnet AP 0.1696 nuAP 0.2106
+temporal_wide wide_dev stackW_W_v2            AP 0.1241 nuAP 0.1779 AUROC 0.8691 R@100 0.3750 | onnet AP 0.1385 nuAP 0.2200
+TIME 46.52 s MAXRSS 3956584 KB
+=== wide v1clean 1 14:48:54 free: 63 GB
+[wide_train] 712 tasks, 51 channels, 839966 rows, 8966 pos; guard dropped 12202 positive pairs in 506 tasks (45s)
+temporal  dev      stackW_W_v1clean_s1    AP 0.1876 nuAP 0.1806 AUROC 0.8669 R@100 0.3502 | onnet AP 0.2069 nuAP 0.2360
+temporal  confirm  stackW_W_v1clean_s1    AP 0.1719 nuAP 0.2060 AUROC 0.8770 R@100 0.3612 | onnet AP 0.1770 nuAP 0.2248
+temporal_wide wide_dev stackW_W_v1clean_s1    AP 0.1322 nuAP 0.1841 AUROC 0.8860 R@100 0.3811 | onnet AP 0.1397 nuAP 0.2051
+TIME 101.25 s MAXRSS 8010272 KB
+=== wide v2 1 14:50:35 free: 66 GB
+[wide_train] 712 tasks, 23 channels, 839966 rows, 8966 pos; guard dropped 12202 positive pairs in 506 tasks (13s)
+temporal  dev      stackW_W_v2_s1         AP 0.1845 nuAP 0.1796 AUROC 0.8487 R@100 0.3364 | onnet AP 0.2033 nuAP 0.2378
+temporal  confirm  stackW_W_v2_s1         AP 0.1648 nuAP 0.1962 AUROC 0.8588 R@100 0.3472 | onnet AP 0.1688 nuAP 0.2110
+temporal_wide wide_dev stackW_W_v2_s1         AP 0.1263 nuAP 0.1850 AUROC 0.8679 R@100 0.3692 | onnet AP 0.1406 nuAP 0.2241
+TIME 45.09 s MAXRSS 3953372 KB
+=== wide v1perm 0 14:51:20 free: 65 GB
+[wide_train] 712 tasks, 51 channels, 839966 rows, 8966 pos; guard dropped 12202 positive pairs in 506 tasks (48s)
+temporal  dev      stackW_W_v1perm        AP 0.1848 nuAP 0.1777 AUROC 0.8448 R@100 0.3378 | onnet AP 0.2033 nuAP 0.2346
+temporal  confirm  stackW_W_v1perm        AP 0.1624 nuAP 0.1932 AUROC 0.8557 R@100 0.3445 | onnet AP 0.1688 nuAP 0.2110
+temporal_wide wide_dev stackW_W_v1perm        AP 0.1123 nuAP 0.1716 AUROC 0.8619 R@100 0.3627 | onnet AP 0.1237 nuAP 0.2047
+TIME 115.91 s MAXRSS 7993828 KB
+=== cv2wide v1clean 14:53:16 free: 64 GB
+temporal_wide wide_dev stack_v1clean          AP 0.1236 nuAP 0.1568 AUROC 0.8729 R@100 0.3577 | onnet AP 0.1453 nuAP 0.1999
+TIME 14.72 s MAXRSS 1129064 KB
+=== past v1clean 14:53:31 free: 76 GB
+[past] 51 channels, 1371887 rows, 21887 pos (37s)
+temporal  dev      stackP_v1clean         AP 0.1528 nuAP 0.1580 AUROC 0.8447 R@100 0.3210 | onnet AP 0.1702 nuAP 0.2044
+temporal  confirm  stackP_v1clean         AP 0.1315 nuAP 0.1736 AUROC 0.8539 R@100 0.3245 | onnet AP 0.1390 nuAP 0.1960
+temporal_wide wide_dev stackP_v1clean         AP 0.1290 nuAP 0.1750 AUROC 0.8614 R@100 0.3831 | onnet AP 0.1424 nuAP 0.2053
+TIME 161.79 s MAXRSS 9340172 KB
+=== past v2 14:56:12 free: 72 GB
+[past] 23 channels, 1371887 rows, 21887 pos (22s)
+temporal  dev      stackP_v2              AP 0.1583 nuAP 0.1622 AUROC 0.8365 R@100 0.3193 | onnet AP 0.1829 nuAP 0.2252
+temporal  confirm  stackP_v2              AP 0.1361 nuAP 0.1795 AUROC 0.8483 R@100 0.3179 | onnet AP 0.1417 nuAP 0.1986
+temporal_wide wide_dev stackP_v2              AP 0.1276 nuAP 0.1768 AUROC 0.8536 R@100 0.3647 | onnet AP 0.1377 nuAP 0.2031
+TIME 85.95 s MAXRSS 4425460 KB
+DONE

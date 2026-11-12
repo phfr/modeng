@@ -62,6 +62,12 @@ def past(arm):
     ST._record(S, Bs, "temporal_wide", "wide_dev", f"stackP_{arm}", t0, True)
 
 
+def cvscores(arm):
+    """Re-run the cv recipe on temporal (write=False: parquet / leaderboard untouched) only to save its scores for the
+    degree-matched endpoint; prints AP to check it reproduces the leaderboard row."""
+    ST.run("temporal", ARMS[arm], arm, write=False)
+
+
 if __name__ == "__main__":
     mode = sys.argv[1]
-    {"wide": wide, "cv2wide": cv2wide, "past": past}[mode](*sys.argv[2:])
+    {"wide": wide, "cv2wide": cv2wide, "past": past, "cvscores": cvscores}[mode](*sys.argv[2:])
