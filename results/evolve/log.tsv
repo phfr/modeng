@@ -39,3 +39,5 @@ cand	parent	mode	n	nuap	ap	auroc	r100	seconds	lint	status	desc	timestamp
 37	32	fit600	600	0.07022	0.02644	0.76250	0.10943	2.90000	ok	ok	cand_37 (<- 32): cosine^2 k=200 transfer + 0.05 tail, x deg^-0.7.	2026-11-12 04:33:18
 38	32	fit600	600	0.06831	0.02595	0.76435	0.10953	4.50000	ok	ok	cand_38 (<- 32): cosine^1.5 k=200 transfer + 0.05 tail, x deg^-0.6.	2026-11-12 04:33:39
 39	32	fit600	600	0.06805	0.02683	0.76577	0.11732	5.60000	ok	ok	cand_39 (<- 32): neighbour rows weighted cos^2 x (fraction of the row outside the seeds)^0.5 (rows that add new genes	2026-11-12 04:33:55
+0		complement	1186	0.04795	0.05297	0.69128	0.18236	5.10000	ok	ok	cand_0: transfer_jaccard baseline (top-50 Jaccard-similar context diseases, sum of sim x label row).	2026-11-12 04:34:24
+17		complement	1186	0.07705	0.03516	0.77713	0.13157	7.20000	ok	ok	cand_17 (<- 12 x 14): cosine^2, k=200, x (degree+1)^-0.6, plus 1e-3 all-row tail.	2026-11-12 04:34:50
