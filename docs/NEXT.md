@@ -1,3 +1,4 @@
+# modeng: CLOSED 2026-11-12 (packaged as modeng-v2, write-up docs/WRITEUP.md). Successor project: /home/ph/code/nebb (fwdbench parked).
 # modeng: RESUME HERE (updated 2026-11-12 ~06:30)
 Read `CLAUDE.md`, then **`docs/reports/FINAL_overnight_2026-11-12.md`** (result, claimable sentences), `docs/insights.md`, `docs/invalidations.md`,
 `docs/ideas.md` (~110 ideas with status), `docs/reviews/R1_fable_redteam.md`.
