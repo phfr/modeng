@@ -50,3 +50,48 @@ peeled hubs (wide_train); hashed components never mix splits.
 - Wide tasks are smaller and more often rare-disease / Orphanet groupers than the panel; results are reported by target-count stratum.
 - Training on wide_train is same-window (21.04 -> 25.09 labels) and wide_train contains ancestors of evaluation diseases: `--train wide`
   drops, per training task, the targets of evaluation tasks that are its ontology relatives (`stack.relative_target_guard`).
+
+## Amendment 1 — confirmatory scoring plan (P4), written before wide_confirm is scored
+Written 2026-11-12, committed before `MODENG_SCORE_WIDE_CONFIRM=1` is set for any command. The user approved spending the fold.
+Pre-check: `sha256sum -c docs/preregistration_wide.sha256` passed for `data/wide_confirm_ids.txt` (and the other four frozen files)
+before this amendment was appended; from now on `docs/preregistration_wide.md` is verified against tag `wide-confirm-frozen` (its
+.sha256 line refers to the frozen original). No model, baseline or feature has been computed on wide_confirm so far (no channel cache
+`temporal_wide_wide_confirm_*` exists). Driver code committed with this amendment: `scripts/p4_score.py` (arms A, B,
+transfer_jaccard), `scripts/p4_analyze.py` (endpoints and bootstraps); both were dry-run on wide_dev only (no writes; `results/p4/dryrun_wide_dev.log`: A and B reproduce their temporal-confirm rows exactly, 0.1532 / 0.1497; B on wide_dev 0.1236 = r6's dev-trained v1clean). Python env `~/biotools/venvs/bio-net/bin/python`.
+Working-tree note: an uncommitted, concurrent edit to `src/modeng/tasks.py` (another agent's P3 work) makes `tasks.load` add alt target sets `newdata` / `labelproc` (`src/modeng/arrival_types.py`); it is additive (targets / exclude / sa / onnet unchanged; wide_dev transfer_jaccard reproduces its leaderboard row 0.0996 / 0.1294) and is not part of this amendment; any newdata / labelproc metric on wide_confirm is exploratory.
+
+**Arms** (one run each, LightGBM seed 0, no re-tuning, nothing changed after looking; positives weighted deg^-0.35 in every arm):
+- **(A) modeng-v1**: the frozen recipe of `docs/preregistration_modeng_v1.md` (= `stack_v3ptr_p0.35`): channels
+  `base,donor,view,cs_donor,dA_pt,dc_ridge,dc_ridge_pos,gwas_catlag,pri_l2g_n,pri_l2g_max,pri_mend_n,pri_hpo_n,hz_gwas,hz_mend,ph_mean,ph_top3,pt_ridge,pt_ridge_pos`,
+  400 rounds, 3000 negatives per task, trained on all 53 temporal dev diseases (the model `stack.run` uses for temporal confirm), applied
+  once to wide_confirm (`scripts/p4_score.py`). Check (not a gate): the same model reproduces the recipe's temporal-confirm row (AP 0.1532).
+- **(B) v1clean**: same, channel list `results/v1clean_channels.txt` (51 channels; amendment 1 of the v1 pre-registration). Check: confirm AP 0.1497.
+- **(C) W_v1clean**: v1clean channels trained on wide_train (`python -m modeng.stack --train wide --score-confirm --pos-deg-power 0.35`,
+  `run_wide` defaults: 600 rounds, 1500 negatives, <= 60 positives, relative-target guard ON — the guard now also covers wide_confirm targets),
+  seed 0, tag `P4C_v1clean`.
+- **(D) W_v1clean without label-process channels**: (C) minus `gwas_catlag, pri_l2g_n, pri_l2g_max, hz_gwas` (47 channels), tag `P4D_v1clean_nolab`.
+- **Comparators:** `transfer_jaccard` (primary comparator); `modet_headline`: **unavailable** — it exists only for the 191 temporal panel
+  diseases and 0 / 35 wide_confirm ids are in modet's headline run (checked on ids only), so no modet comparison is made.
+
+**Primary endpoint** (per arm, vs transfer_jaccard, all-gene evaluation): paired per-task difference in AP **and** in nuAP; cluster bootstrap
+10,000 resamples (seed 0) over diseases with clusters = the ontology components of the split rule (task `cluster` field, 28 components;
+`modeng.compare.paired_bootstrap`). An arm is **confirmed better than transfer_jaccard on wide_confirm only if both 95 % CIs lie above 0.**
+Four arms are tested; no multiplicity correction is applied, and this is stated with every claim (arms are highly correlated; a claim
+needing a correction would be one whose CI excludes 0 only barely, which is flagged).
+
+**Secondary** (descriptive, same bootstrap, no claims): degree-matched AP (within degree-decile bins, `scripts/review_analyze.py`), P@20,
+onnet AP / nuAP, and strict-a AP / nuAP only on tasks with >= 5 `sa` targets (4 tasks expected: means only, no CI). Results also by
+target-count stratum (3-5, 6-10, > 10 targets).
+
+**Between-arm comparisons** (C vs B, B vs A, D vs C, C vs A): descriptive only. From wide_dev's bootstrap spread scaled to 28 clusters,
+the minimum detectable effect (80 % power, two-sided 5 %, MDE = 2.8 SE) is ~0.03-0.06 AP and ~0.04-0.08 nuAP for between-arm
+differences, and ~0.04 AP / ~0.045-0.05 nuAP for arm vs transfer_jaccard; observed between-arm differences on temporal / wide_dev were
+<= 0.02 AP, so wide_confirm cannot separate the arms and no between-arm sentence will be claimed.
+
+**Failures:** any crash or anomaly is reported as is; no arm is re-run with changes. A re-run is allowed only for a crash unrelated to the
+model (e.g. out of memory), with identical code and settings, and is reported.
+
+**Allowed outcome sentences:** per arm X with both CIs > 0: "X ranks newly arriving disease genes better than transfer_jaccard on 35 fresh,
+pre-registered off-panel diseases (wide_confirm; temporal-clean, OT 21.04 -> 25.09): AP +a [lo, hi], nuAP +b [lo, hi]." Otherwise: "X is not
+confirmed better than transfer_jaccard on wide_confirm (AP ..., nuAP ...)." If C passes but D does not: the confirmation depends on
+label-process channels and is stated as such.

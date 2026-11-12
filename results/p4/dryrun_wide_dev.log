@@ -1,0 +1,10 @@
+wide_dev: 45 tasks, 446 targets
+temporal_wide wide_dev transfer_jaccard       AP 0.0996 nuAP 0.1294 AUROC 0.6537 R@100 0.2470 | onnet AP 0.1101 nuAP 0.1547
+[v1] 65 channels, 160886 rows, 1886 pos (3s)
+temporal  confirm  stack_v1               AP 0.1532 nuAP 0.1770 AUROC 0.8644 R@100 0.3238 | onnet AP 0.1599 nuAP 0.2034
+[v1] temporal confirm AP 0.1532 (recipe row 0.1532; reproduced: True)
+temporal_wide wide_dev stack_v1               AP 0.1173 nuAP 0.1593 AUROC 0.8739 R@100 0.3480 | onnet AP 0.1308 nuAP 0.1925
+[v1clean] 51 channels, 160886 rows, 1886 pos (3s)
+temporal  confirm  stack_v1clean          AP 0.1497 nuAP 0.1732 AUROC 0.8650 R@100 0.3301 | onnet AP 0.1595 nuAP 0.2049
+[v1clean] temporal confirm AP 0.1497 (recipe row 0.1497; reproduced: True)
+temporal_wide wide_dev stack_v1clean          AP 0.1236 nuAP 0.1568 AUROC 0.8729 R@100 0.3577 | onnet AP 0.1453 nuAP 0.1999
