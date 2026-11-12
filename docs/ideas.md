@@ -85,7 +85,7 @@ Status: NEW | SHORTLIST | IMPLEMENTING | TESTED-POSITIVE | TESTED-NEGATIVE | KIL
 | F1-KSEARCH | Program search over the transfer kernel (LLM-guided, fitness on past episodes) | R2 island1 | NEW | `docs/ideation/r2_island1.md` |
 | F2-1 | Vintage ladder: a time-locked generative language model as gene prior, with the leak measured by cut-off year | R2 island2 | NEW | `docs/ideation/r2_island2.md` |
 | F2-2 | Hypothesis programs: per-disease proposer, data-only verifier, seed hold-out as referee | R2 island2 | NEW | `docs/ideation/r2_island2.md` |
-| F2-3 | Evolved transfer kernel: LLM-driven program search over the function that dominates | R2 island2 | IMPLEMENTING | `docs/ideation/r2_island2.md` |
+| F2-3 | Evolved transfer kernel: LLM-driven program search over the function that dominates | R2 island2 | TESTED-NEGATIVE as stacker channel (alone +0.035 nuAP but AP halves; degree effect) | `docs/ideation/r2_island2.md` |
 | F2-4 | Text-to-sequence retrieval: reach proteins nobody has written about | R2 island2 | NEW | `docs/ideation/r2_island2.md` |
 | F2-5 | Seedless anchors: an agent reads the clinic, code maps anchors to genes | R2 island2 | NEW | `docs/ideation/r2_island2.md` |
 | F2-6 | Sequence-model verdicts at sub-threshold loci: which gene, in which tissue | R2 island2 | NEW | `docs/ideation/r2_island2.md` |
