@@ -32,7 +32,7 @@ Status: NEW | SHORTLIST | IMPLEMENTING | TESTED-POSITIVE | TESTED-NEGATIVE | KIL
 | ML-1 | Cold-start donor imputation: content-predicted association profiles | R1 ml | TESTED-NEGATIVE (AUROC only) | `docs/ideation/r1_ml.md` |
 | ML-2 | Ascertainment-simulator prior-fitted network | R1 ml | NEW | `docs/ideation/r1_ml.md` |
 | ML-3 | Gene-set language model on dated supplement-table gene sets | R1 ml | NEW | `docs/ideation/r1_ml.md` |
-| ML-4 | Biobank release-pair power extrapolator for GWAS arrivals | R1 ml | NEW | `docs/ideation/r1_ml.md` |
+| ML-4 | Biobank release-pair power extrapolator for GWAS arrivals | R1 ml | TESTED-NEGATIVE (dev gain did not replicate on confirm) | `docs/ideation/r1_ml.md` |
 | ML-5 | Identity-blind episodic set-completion transformer, many set families | R1 ml | TESTED-NEGATIVE (arrival-trained memorises; aux-only twin = transfer-level, no stacker gain) | `docs/ideation/r1_ml.md` |
 | ML-6 | Tabular in-context learner with neighbour-disease arrivals as context | R1 ml | NEW | `docs/ideation/r1_ml.md` |
 | ML-7 | Masked discrete diffusion over gene sets: the module as a sample | R1 ml | NEW | `docs/ideation/r1_ml.md` |
