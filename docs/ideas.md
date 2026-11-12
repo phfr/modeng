@@ -7,7 +7,7 @@ Status: NEW | SHORTLIST | IMPLEMENTING | TESTED-POSITIVE | TESTED-NEGATIVE | KIL
 | CI-03 | Genome-wide cis-MR + colocalisation as the non-transfer channel | R1 causal | NEW | `docs/ideation/r1_causal.md` |
 | CI-04 | Directed donor graph: genes flow down the causal arrow | R1 causal | TESTED-NEGATIVE (no confirm gain) | `docs/ideation/r1_causal.md` |
 | CI-05 | Power-jump hazard: per-disease gating between genetics and transfer | R1 causal | NEW | `docs/ideation/r1_causal.md` |
-| CI-06 | Discovery-channel physics: detectability as a second factor | R1 causal | NEW | `docs/ideation/r1_causal.md` |
+| CI-06 | Discovery-channel physics: detectability as a second factor | R1 causal | TESTED-POSITIVE (channel priors, forward) | `docs/ideation/r1_causal.md` |
 | CI-07 | Invariant predictors across discovery eras and channels | R1 causal | NEW | `docs/ideation/r1_causal.md` |
 | CI-08 | Genetic-correlation-borrowed gene z (multi-trait posterior) | R1 causal | TESTED-NEGATIVE | `docs/ideation/r1_causal.md` |
 | CI-09 | Allelic-series concordance: direction as evidence | R1 causal | NEW | `docs/ideation/r1_causal.md` |
@@ -92,3 +92,4 @@ Status: NEW | SHORTLIST | IMPLEMENTING | TESTED-POSITIVE | TESTED-NEGATIVE | KIL
 | F2-7 | Literature as a perturbation atlas: an LLM extracts experiment outcomes, disease words removed | R2 island2 | NEW | `docs/ideation/r2_island2.md` |
 | F2-8 | Critic by self-play: a set-level verifier trained on the ranker's confident errors, then search over modules | R2 island2 | NEW | `docs/ideation/r2_island2.md` |
 | C-RIDGE | Disease-disease ridge regression (EASE/SLIM) of the seed vector on masked disease rows | R1 implementer C (from critic eng.) | TESTED-POSITIVE (Pareto, temporal + forward) | docs/reports/r1_disease.md |
+| H-PHENO | HPO phenotype-profile matching of seeds to genes (IDF) + channel priors (L2G-winner, OMIM gene) | R1 biology critic -> implementer H | TESTED-POSITIVE (temporal + forward, Pareto) | docs/reports/r1_priors.md |
