@@ -1,19 +1,21 @@
-# modeng: RESUME HERE (written 2026-11-12 ~02:50 when the usage limit stopped the overnight sprint)
-Read `CLAUDE.md`, then `docs/journey.md`, `docs/insights.md`, `docs/invalidations.md`, `docs/ideas.md` (73 R1 ideas).
+# modeng: RESUME HERE (updated 2026-11-12 ~06:30)
+Read `CLAUDE.md`, then **`docs/reports/FINAL_overnight_2026-11-12.md`** (result, claimable sentences), `docs/insights.md`, `docs/invalidations.md`,
+`docs/ideas.md` (~110 ideas with status), `docs/reviews/R1_fable_redteam.md`.
 
-## Done
-- Ideation process researched (`docs/research/00_ideation_process.md`), SOTA + local resources (`01_`, `02_`).
-- Round 1: 8 independent Fable ideators (`docs/ideation/r1_*.md`), 3 critics (stats, bio, eng) + novelty check.
-- Harness `src/modeng` (temporal / forward / holdout + `past` training episodes 19.04->21.04), parity with modet's headline verified.
-- 15 gene views (`data/views`), 15 virtual-donor families (`data/donors`), channels + LightGBM stacker (`channels.py`, `stack.py`, ext plugin hook `src/modeng/ext/`).
-- Best so far (temporal confirm, all-gene): `stack_bdv_w05` nuAP 0.138 vs transfer_jaccard 0.104 (computed BEFORE the tie-leak fix: rerun).
-- Leak fixed: float residue in the transfer masking correction (holdout transfer_onto 0.117 -> 0.036).
+## State
+- Leader: `stack_v3cv_ptr` = LightGBM stacker (`src/modeng/stack.py`, cv on 53 temporal dev diseases, positives deg^-0.5) over channels
+  base, donor, view, cs_donor, dA_pt, dc_ridge(_pos), gwas_catlag, pri_*/hz_* priors, ph_* HPO phenotype matching, pt_ridge(_pos).
+  Command: `PYTHONPATH=src python -m modeng.stack --bench temporal --channels <list> --tag <tag>` (`MODENG_SAVE_SCORES=1` saves score matrices).
+- Beats modet's headline on all arrivals (onnet AP +0.050, nuAP +0.039, degree-matched AP +0.077); TIES on strict-a (modet's primary endpoint).
+- Loses hub-gene AP vs raw transfer (deg^-0.5 weighting); power sweep (0.25 / 0.35) running at 06:30 -> `results/stack_v3ptr_p*.txt` (choose on DEV only).
+- Module calls: `scripts/module_cutoff.py` (isotonic, dev-fitted; shrink predictions by 0.7).
+- Running at 06:30: E-A4 catalog backlog transfer for strict-a (`docs/reports/r2_ea4.md` when done).
 
-## Interrupted (usage limit) — check what each left on disk before restarting
-- Wave-1 implementers A-H were STOPPED mid-work (brief: `docs/ideation/implementer_brief.md`; clusters in `docs/journey.md`). Look for partial files in `src/modeng/ext/`, `src/modeng/settx/`, `docs/reports/r1_*.md`, `data/donors`, `data/raw`; uncommitted ones are untested.
-- A background `stackP` run (train on past) may have written `results/stackP_log.txt`.
-
-## Next
-1. Rerun stack_base / stack_bdv (cv and --train past) after the leak fix; record in insights.
-2. Restart implementers (priority by critics: backlog exact-match, channel-typed priors + HPO phenotype matching, GWAS z on forward, kernels/cold-start, set transformer).
-3. Round 2 (mutate/crossover/repair from measured results + 2 fresh islands), Fable review of the leading model, one confirm run.
+## Next (in order)
+1. Fresh confirmation: everything was viewed on temporal confirm; build an untouched fold (e.g. next OT release, or diseases outside the panel)
+   and pre-register the leader recipe + power before looking.
+2. Strict-a: genetic arrivals remain the hard stratum (E-A4, ML-4 power extrapolation, archived GWAS-catalog vintages).
+3. Vintage parity for past training (E-B5: HPO 2021-01 contains 19.04->21.04 arrivals), archived PubTator / GWAS-Catalog mappings.
+4. Module structure: decompose called modules with subex `leiden_anno`; Perturb-seq co-response for interpretation.
+5. Rules learned: quantise any masked-pair subtraction; same-width permuted controls; claims need AP AND nuAP (and degree-matched AP);
+   never background `cd x && cmd`; one stacker per agent when RAM < 20 GB.
