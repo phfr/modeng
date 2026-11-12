@@ -1,0 +1,631 @@
+split	channel	disease	n_hit	n_tgt	tgt_hit	n_sa	sa_hit
+dev	subthr_near	cholelithiasis	62	54	0	16	0
+dev	subthr_near	coronary atherosclerosis	232	83	16	53	12
+dev	subthr_near	diverticulitis	160	16	1	7	1
+dev	subthr_near	cirrhosis of liver	60	22	0	5	0
+dev	subthr_near	multiple sclerosis	80	43	3	10	0
+dev	subthr_near	asthma	203	106	21	38	5
+dev	subthr_near	migraine disorder	63	45	2	12	0
+dev	subthr_near	refractive error	45	48	1	0	0
+dev	subthr_near	Parkinson disease	59	48	2	11	1
+dev	subthr_near	iron metabolism disease	38	17	1	5	1
+dev	subthr_near	nevus	52	13	0	6	0
+dev	subthr_near	lung cancer	30	22	0	8	0
+dev	subthr_near	congenital heart malformation	55	23	0	0	0
+dev	subthr_near	urogenital neoplasm	253	30	0	0	0
+dev	subthr_near	eye neoplasm	47	29	1	16	0
+dev	subthr_near	primary viral infectious disease	37	172	2	70	0
+dev	subthr_near	Soft Tissue Neoplasm	73	13	1	0	0
+dev	subthr_cs2g	cholelithiasis	9	54	0	16	0
+dev	subthr_cs2g	coronary atherosclerosis	78	83	11	53	9
+dev	subthr_cs2g	diverticulitis	61	16	0	7	0
+dev	subthr_cs2g	cirrhosis of liver	15	22	0	5	0
+dev	subthr_cs2g	multiple sclerosis	50	43	3	10	0
+dev	subthr_cs2g	asthma	112	106	10	38	1
+dev	subthr_cs2g	migraine disorder	6	45	1	12	0
+dev	subthr_cs2g	refractive error	3	48	1	0	0
+dev	subthr_cs2g	Parkinson disease	20	48	0	11	0
+dev	subthr_cs2g	iron metabolism disease	5	17	0	5	0
+dev	subthr_cs2g	nevus	8	13	0	6	0
+dev	subthr_cs2g	lung cancer	14	22	0	8	0
+dev	subthr_cs2g	congenital heart malformation	4	23	0	0	0
+dev	subthr_cs2g	urogenital neoplasm	54	30	0	0	0
+dev	subthr_cs2g	eye neoplasm	2	29	0	16	0
+dev	subthr_cs2g	primary viral infectious disease	14	172	0	70	0
+dev	subthr_cs2g	Soft Tissue Neoplasm	13	13	0	0	0
+dev	subthr_win	cholelithiasis	523	54	1	16	0
+dev	subthr_win	coronary atherosclerosis	1855	83	28	53	19
+dev	subthr_win	diverticulitis	1379	16	2	7	1
+dev	subthr_win	cirrhosis of liver	507	22	0	5	0
+dev	subthr_win	multiple sclerosis	809	43	6	10	1
+dev	subthr_win	asthma	2121	106	32	38	9
+dev	subthr_win	migraine disorder	369	45	3	12	0
+dev	subthr_win	refractive error	384	48	2	0	0
+dev	subthr_win	Parkinson disease	617	48	3	11	1
+dev	subthr_win	iron metabolism disease	295	17	1	5	1
+dev	subthr_win	nevus	448	13	1	6	0
+dev	subthr_win	lung cancer	361	22	0	8	0
+dev	subthr_win	congenital heart malformation	417	23	0	0	0
+dev	subthr_win	urogenital neoplasm	1784	30	1	0	0
+dev	subthr_win	eye neoplasm	252	29	3	16	1
+dev	subthr_win	primary viral infectious disease	496	172	11	70	4
+dev	subthr_win	Soft Tissue Neoplasm	633	13	1	0	0
+dev	subthr_near_perm	cholelithiasis	62	54	0	16	0
+dev	subthr_near_perm	coronary atherosclerosis	235	83	0	53	0
+dev	subthr_near_perm	diverticulitis	160	16	0	7	0
+dev	subthr_near_perm	cirrhosis of liver	60	22	0	5	0
+dev	subthr_near_perm	multiple sclerosis	84	43	0	10	0
+dev	subthr_near_perm	asthma	215	106	1	38	0
+dev	subthr_near_perm	migraine disorder	64	45	0	12	0
+dev	subthr_near_perm	refractive error	45	48	0	0	0
+dev	subthr_near_perm	Parkinson disease	64	48	0	11	0
+dev	subthr_near_perm	iron metabolism disease	38	17	0	5	0
+dev	subthr_near_perm	nevus	52	13	0	6	0
+dev	subthr_near_perm	lung cancer	31	22	0	8	0
+dev	subthr_near_perm	congenital heart malformation	55	23	0	0	0
+dev	subthr_near_perm	urogenital neoplasm	255	30	0	0	0
+dev	subthr_near_perm	eye neoplasm	47	29	0	16	0
+dev	subthr_near_perm	primary viral infectious disease	39	172	0	70	0
+dev	subthr_near_perm	Soft Tissue Neoplasm	73	13	0	0	0
+dev	subthr_cs2g_perm	cholelithiasis	9	54	0	16	0
+dev	subthr_cs2g_perm	coronary atherosclerosis	79	83	0	53	0
+dev	subthr_cs2g_perm	diverticulitis	61	16	0	7	0
+dev	subthr_cs2g_perm	cirrhosis of liver	15	22	0	5	0
+dev	subthr_cs2g_perm	multiple sclerosis	51	43	0	10	0
+dev	subthr_cs2g_perm	asthma	121	106	0	38	0
+dev	subthr_cs2g_perm	migraine disorder	7	45	0	12	0
+dev	subthr_cs2g_perm	refractive error	3	48	0	0	0
+dev	subthr_cs2g_perm	Parkinson disease	21	48	0	11	0
+dev	subthr_cs2g_perm	iron metabolism disease	5	17	0	5	0
+dev	subthr_cs2g_perm	nevus	8	13	0	6	0
+dev	subthr_cs2g_perm	lung cancer	14	22	0	8	0
+dev	subthr_cs2g_perm	congenital heart malformation	4	23	0	0	0
+dev	subthr_cs2g_perm	urogenital neoplasm	54	30	0	0	0
+dev	subthr_cs2g_perm	eye neoplasm	2	29	0	16	0
+dev	subthr_cs2g_perm	primary viral infectious disease	15	172	0	70	0
+dev	subthr_cs2g_perm	Soft Tissue Neoplasm	13	13	0	0	0
+dev	subthr_win_perm	cholelithiasis	523	54	0	16	0
+dev	subthr_win_perm	coronary atherosclerosis	1860	83	3	53	2
+dev	subthr_win_perm	diverticulitis	1378	16	2	7	0
+dev	subthr_win_perm	cirrhosis of liver	506	22	0	5	0
+dev	subthr_win_perm	multiple sclerosis	814	43	1	10	0
+dev	subthr_win_perm	asthma	2135	106	14	38	4
+dev	subthr_win_perm	migraine disorder	370	45	2	12	1
+dev	subthr_win_perm	refractive error	384	48	0	0	0
+dev	subthr_win_perm	Parkinson disease	628	48	1	11	0
+dev	subthr_win_perm	iron metabolism disease	295	17	0	5	0
+dev	subthr_win_perm	nevus	448	13	0	6	0
+dev	subthr_win_perm	lung cancer	362	22	1	8	1
+dev	subthr_win_perm	congenital heart malformation	414	23	1	0	0
+dev	subthr_win_perm	urogenital neoplasm	1783	30	3	0	0
+dev	subthr_win_perm	eye neoplasm	253	29	1	16	0
+dev	subthr_win_perm	primary viral infectious disease	499	172	8	70	3
+dev	subthr_win_perm	Soft Tissue Neoplasm	632	13	1	0	0
+dev	subthr_gws_near	cholelithiasis	3	54	0	16	0
+dev	subthr_gws_near	coronary atherosclerosis	26	83	1	53	0
+dev	subthr_gws_near	diverticulitis	16	16	0	7	0
+dev	subthr_gws_near	cirrhosis of liver	20	22	0	5	0
+dev	subthr_gws_near	multiple sclerosis	18	43	0	10	0
+dev	subthr_gws_near	asthma	55	106	4	38	1
+dev	subthr_gws_near	migraine disorder	1	45	0	12	0
+dev	subthr_gws_near	refractive error	0	48	0	0	0
+dev	subthr_gws_near	Parkinson disease	18	48	3	11	0
+dev	subthr_gws_near	iron metabolism disease	3	17	0	5	0
+dev	subthr_gws_near	nevus	0	13	0	6	0
+dev	subthr_gws_near	lung cancer	3	22	0	8	0
+dev	subthr_gws_near	congenital heart malformation	3	23	0	0	0
+dev	subthr_gws_near	urogenital neoplasm	4	30	0	0	0
+dev	subthr_gws_near	eye neoplasm	1	29	0	16	0
+dev	subthr_gws_near	primary viral infectious disease	7	172	4	70	0
+dev	subthr_gws_near	Soft Tissue Neoplasm	1	13	0	0	0
+dev	subthr_gws_cs2g	cholelithiasis	2	54	0	16	0
+dev	subthr_gws_cs2g	coronary atherosclerosis	28	83	0	53	0
+dev	subthr_gws_cs2g	diverticulitis	14	16	0	7	0
+dev	subthr_gws_cs2g	cirrhosis of liver	18	22	0	5	0
+dev	subthr_gws_cs2g	multiple sclerosis	15	43	0	10	0
+dev	subthr_gws_cs2g	asthma	53	106	3	38	2
+dev	subthr_gws_cs2g	migraine disorder	0	45	0	12	0
+dev	subthr_gws_cs2g	refractive error	0	48	0	0	0
+dev	subthr_gws_cs2g	Parkinson disease	17	48	2	11	0
+dev	subthr_gws_cs2g	iron metabolism disease	0	17	0	5	0
+dev	subthr_gws_cs2g	nevus	0	13	0	6	0
+dev	subthr_gws_cs2g	lung cancer	2	22	0	8	0
+dev	subthr_gws_cs2g	congenital heart malformation	2	23	0	0	0
+dev	subthr_gws_cs2g	urogenital neoplasm	1	30	0	0	0
+dev	subthr_gws_cs2g	eye neoplasm	0	29	0	16	0
+dev	subthr_gws_cs2g	primary viral infectious disease	3	172	3	70	0
+dev	subthr_gws_cs2g	Soft Tissue Neoplasm	1	13	0	0	0
+dev	gwas_catlag	cholelithiasis	0	54	0	16	0
+dev	gwas_catlag	coronary atherosclerosis	497	83	57	53	41
+dev	gwas_catlag	diverticulitis	5	16	0	7	0
+dev	gwas_catlag	cirrhosis of liver	12	22	0	5	0
+dev	gwas_catlag	multiple sclerosis	285	43	23	10	4
+dev	gwas_catlag	asthma	455	106	40	38	9
+dev	gwas_catlag	migraine disorder	81	45	5	12	1
+dev	gwas_catlag	refractive error	263	48	37	0	0
+dev	gwas_catlag	Parkinson disease	155	48	7	11	3
+dev	gwas_catlag	iron metabolism disease	0	17	0	5	0
+dev	gwas_catlag	nevus	3	13	0	6	0
+dev	gwas_catlag	lung cancer	198	22	3	8	1
+dev	gwas_catlag	congenital heart malformation	9	23	0	0	0
+dev	gwas_catlag	urogenital neoplasm	63	30	1	0	0
+dev	gwas_catlag	eye neoplasm	3	29	0	16	0
+dev	gwas_catlag	primary viral infectious disease	119	172	14	70	1
+dev	gwas_catlag	Soft Tissue Neoplasm	0	13	0	0	0
+confirm	subthr_near	psoriasis vulgaris	57	17	1	11	1
+confirm	subthr_near	Hereditary breast and ovarian cancer syndrome	129	13	1	0	0
+confirm	subthr_near	diverticular disease	157	62	14	40	8
+confirm	subthr_near	metabolic syndrome	69	109	3	50	1
+confirm	subthr_near	insomnia	9	138	0	72	0
+confirm	subthr_near	urinary tract obstruction	48	21	0	0	0
+confirm	subthr_near	gastroesophageal reflux disease	106	37	1	15	0
+confirm	subthr_near	Abdominal Aortic Aneurysm	36	42	0	24	0
+confirm	subthr_near	nephrolithiasis	54	41	3	24	3
+confirm	subthr_near	schizophrenia	53	91	0	28	0
+confirm	subthr_near	familial colorectal cancer	65	12	0	0	0
+confirm	subthr_near	endometriosis	32	34	1	15	1
+confirm	subthr_near	Disorder of purine metabolism	38	17	0	0	0
+confirm	subthr_near	ulcer disease	58	80	0	26	0
+confirm	subthr_near	pulmonary fibrosis	60	18	1	0	0
+confirm	subthr_near	hyperlipoproteinemia	43	41	0	19	0
+confirm	subthr_near	drug dependence	55	18	0	9	0
+confirm	subthr_near	endometrial carcinoma	34	18	0	9	0
+confirm	subthr_near	hereditary nephritis	60	15	0	6	0
+confirm	subthr_near	myeloproliferative disorder	65	21	1	6	1
+confirm	subthr_near	age-related macular degeneration	58	30	1	13	0
+confirm	subthr_near	combined pituitary hormone deficiencies, genetic form	55	10	0	0	0
+confirm	subthr_near	familial amyotrophic lateral sclerosis	45	11	0	0	0
+confirm	subthr_near	hereditary optic atrophy	39	11	0	0	0
+confirm	subthr_near	telomere syndrome	60	22	0	0	0
+confirm	subthr_near	glomerulonephritis	60	82	0	21	0
+confirm	subthr_near	retinitis pigmentosa	10	25	0	0	0
+confirm	subthr_near	sleep-wake disorder	9	67	0	32	0
+confirm	subthr_near	monogenic diabetes	104	15	0	0	0
+confirm	subthr_near	ovarian carcinoma	129	16	1	6	1
+confirm	subthr_near	inherited deficiency anemia	71	12	0	0	0
+confirm	subthr_near	retinal vascular disorder	40	69	0	40	0
+confirm	subthr_near	thyroid cancer	54	17	1	9	1
+confirm	subthr_near	neutropenia	31	17	0	0	0
+confirm	subthr_near	syndromic dyslipidemia	112	42	2	17	2
+confirm	subthr_near	gastric cancer	48	34	0	27	0
+confirm	subthr_near	cataract	92	63	6	14	2
+confirm	subthr_near	familial hemolytic anemia	56	29	0	0	0
+confirm	subthr_near	inherited thrombocytopenia	51	36	0	11	0
+confirm	subthr_near	disorder of pharynx	60	43	0	14	0
+confirm	subthr_near	parathyroid disease	44	19	0	5	0
+confirm	subthr_near	colorectal carcinoma	64	19	1	7	1
+confirm	subthr_near	disorder of ear	42	70	0	22	0
+confirm	subthr_near	colonic neoplasm	121	51	6	18	4
+confirm	subthr_near	small intestine disorder	64	89	0	25	0
+confirm	subthr_near	Disorder of energy metabolism	38	17	0	0	0
+confirm	subthr_near	tooth disease	60	67	0	18	0
+confirm	subthr_near	liver cancer	54	17	0	0	0
+confirm	subthr_near	acute myeloid leukemia	47	14	0	0	0
+confirm	subthr_near	central nervous system infection	51	31	1	6	0
+confirm	subthr_near	bile duct disorder	111	48	0	7	0
+confirm	subthr_near	integumentary system benign neoplasm	192	34	1	15	1
+confirm	subthr_near	primary bacterial infectious disease	53	14	0	0	0
+confirm	subthr_cs2g	psoriasis vulgaris	10	17	0	11	0
+confirm	subthr_cs2g	Hereditary breast and ovarian cancer syndrome	27	13	0	0	0
+confirm	subthr_cs2g	diverticular disease	60	62	12	40	7
+confirm	subthr_cs2g	metabolic syndrome	26	109	3	50	2
+confirm	subthr_cs2g	insomnia	3	138	0	72	0
+confirm	subthr_cs2g	urinary tract obstruction	3	21	0	0	0
+confirm	subthr_cs2g	gastroesophageal reflux disease	25	37	0	15	0
+confirm	subthr_cs2g	Abdominal Aortic Aneurysm	4	42	0	24	0
+confirm	subthr_cs2g	nephrolithiasis	19	41	3	24	3
+confirm	subthr_cs2g	schizophrenia	9	91	0	28	0
+confirm	subthr_cs2g	familial colorectal cancer	28	12	0	0	0
+confirm	subthr_cs2g	endometriosis	11	34	1	15	1
+confirm	subthr_cs2g	Disorder of purine metabolism	5	17	0	0	0
+confirm	subthr_cs2g	ulcer disease	13	80	0	26	0
+confirm	subthr_cs2g	pulmonary fibrosis	15	18	1	0	0
+confirm	subthr_cs2g	hyperlipoproteinemia	1	41	0	19	0
+confirm	subthr_cs2g	drug dependence	8	18	0	9	0
+confirm	subthr_cs2g	endometrial carcinoma	11	18	0	9	0
+confirm	subthr_cs2g	hereditary nephritis	3	15	0	6	0
+confirm	subthr_cs2g	myeloproliferative disorder	10	21	1	6	1
+confirm	subthr_cs2g	age-related macular degeneration	29	30	1	13	0
+confirm	subthr_cs2g	combined pituitary hormone deficiencies, genetic form	7	10	0	0	0
+confirm	subthr_cs2g	familial amyotrophic lateral sclerosis	23	11	0	0	0
+confirm	subthr_cs2g	hereditary optic atrophy	0	11	0	0	0
+confirm	subthr_cs2g	telomere syndrome	15	22	0	0	0
+confirm	subthr_cs2g	glomerulonephritis	3	82	0	21	0
+confirm	subthr_cs2g	retinitis pigmentosa	5	25	0	0	0
+confirm	subthr_cs2g	sleep-wake disorder	3	67	0	32	0
+confirm	subthr_cs2g	monogenic diabetes	66	15	0	0	0
+confirm	subthr_cs2g	ovarian carcinoma	27	16	0	6	0
+confirm	subthr_cs2g	inherited deficiency anemia	7	12	0	0	0
+confirm	subthr_cs2g	retinal vascular disorder	10	69	0	40	0
+confirm	subthr_cs2g	thyroid cancer	12	17	0	9	0
+confirm	subthr_cs2g	neutropenia	2	17	0	0	0
+confirm	subthr_cs2g	syndromic dyslipidemia	27	42	1	17	1
+confirm	subthr_cs2g	gastric cancer	12	34	0	27	0
+confirm	subthr_cs2g	cataract	34	63	4	14	0
+confirm	subthr_cs2g	familial hemolytic anemia	5	29	0	0	0
+confirm	subthr_cs2g	inherited thrombocytopenia	7	36	0	11	0
+confirm	subthr_cs2g	disorder of pharynx	6	43	0	14	0
+confirm	subthr_cs2g	parathyroid disease	6	19	0	5	0
+confirm	subthr_cs2g	colorectal carcinoma	28	19	1	7	1
+confirm	subthr_cs2g	disorder of ear	1	70	0	22	0
+confirm	subthr_cs2g	colonic neoplasm	31	51	4	18	3
+confirm	subthr_cs2g	small intestine disorder	11	89	0	25	0
+confirm	subthr_cs2g	Disorder of energy metabolism	5	17	0	0	0
+confirm	subthr_cs2g	tooth disease	5	67	0	18	0
+confirm	subthr_cs2g	liver cancer	8	17	0	0	0
+confirm	subthr_cs2g	acute myeloid leukemia	5	14	0	0	0
+confirm	subthr_cs2g	central nervous system infection	16	31	0	6	0
+confirm	subthr_cs2g	bile duct disorder	13	48	0	7	0
+confirm	subthr_cs2g	integumentary system benign neoplasm	29	34	0	15	0
+confirm	subthr_cs2g	primary bacterial infectious disease	9	14	0	0	0
+confirm	subthr_win	psoriasis vulgaris	451	17	1	11	1
+confirm	subthr_win	Hereditary breast and ovarian cancer syndrome	923	13	2	0	0
+confirm	subthr_win	diverticular disease	1376	62	19	40	11
+confirm	subthr_win	metabolic syndrome	572	109	9	50	5
+confirm	subthr_win	insomnia	100	138	1	72	0
+confirm	subthr_win	urinary tract obstruction	474	21	0	0	0
+confirm	subthr_win	gastroesophageal reflux disease	749	37	1	15	0
+confirm	subthr_win	Abdominal Aortic Aneurysm	280	42	1	24	1
+confirm	subthr_win	nephrolithiasis	370	41	6	24	6
+confirm	subthr_win	schizophrenia	455	91	2	28	1
+confirm	subthr_win	familial colorectal cancer	617	12	0	0	0
+confirm	subthr_win	endometriosis	238	34	1	15	1
+confirm	subthr_win	Disorder of purine metabolism	296	17	0	0	0
+confirm	subthr_win	ulcer disease	411	80	0	26	0
+confirm	subthr_win	pulmonary fibrosis	507	18	1	0	0
+confirm	subthr_win	hyperlipoproteinemia	250	41	1	19	0
+confirm	subthr_win	drug dependence	409	18	0	9	0
+confirm	subthr_win	endometrial carcinoma	240	18	0	9	0
+confirm	subthr_win	hereditary nephritis	570	15	1	6	1
+confirm	subthr_win	myeloproliferative disorder	448	21	1	6	1
+confirm	subthr_win	age-related macular degeneration	558	30	2	13	0
+confirm	subthr_win	combined pituitary hormone deficiencies, genetic form	515	10	1	0	0
+confirm	subthr_win	familial amyotrophic lateral sclerosis	443	11	0	0	0
+confirm	subthr_win	hereditary optic atrophy	344	11	0	0	0
+confirm	subthr_win	telomere syndrome	506	22	0	0	0
+confirm	subthr_win	glomerulonephritis	570	82	1	21	1
+confirm	subthr_win	retinitis pigmentosa	107	25	0	0	0
+confirm	subthr_win	sleep-wake disorder	99	67	0	32	0
+confirm	subthr_win	monogenic diabetes	1000	15	0	0	0
+confirm	subthr_win	ovarian carcinoma	923	16	1	6	1
+confirm	subthr_win	inherited deficiency anemia	633	12	0	0	0
+confirm	subthr_win	retinal vascular disorder	408	69	1	40	0
+confirm	subthr_win	thyroid cancer	373	17	1	9	1
+confirm	subthr_win	neutropenia	308	17	0	0	0
+confirm	subthr_win	syndromic dyslipidemia	806	42	3	17	2
+confirm	subthr_win	gastric cancer	349	34	0	27	0
+confirm	subthr_win	cataract	910	63	8	14	3
+confirm	subthr_win	familial hemolytic anemia	496	29	0	0	0
+confirm	subthr_win	inherited thrombocytopenia	446	36	0	11	0
+confirm	subthr_win	disorder of pharynx	504	43	0	14	0
+confirm	subthr_win	parathyroid disease	323	19	1	5	1
+confirm	subthr_win	colorectal carcinoma	614	19	2	7	2
+confirm	subthr_win	disorder of ear	328	70	2	22	1
+confirm	subthr_win	colonic neoplasm	1000	51	12	18	6
+confirm	subthr_win	small intestine disorder	558	89	4	25	1
+confirm	subthr_win	Disorder of energy metabolism	296	17	1	0	0
+confirm	subthr_win	tooth disease	374	67	2	18	0
+confirm	subthr_win	liver cancer	427	17	0	0	0
+confirm	subthr_win	acute myeloid leukemia	318	14	0	0	0
+confirm	subthr_win	central nervous system infection	374	31	1	6	0
+confirm	subthr_win	bile duct disorder	999	48	1	7	0
+confirm	subthr_win	integumentary system benign neoplasm	1621	34	6	15	3
+confirm	subthr_win	primary bacterial infectious disease	412	14	0	0	0
+confirm	subthr_near_perm	psoriasis vulgaris	58	17	0	11	0
+confirm	subthr_near_perm	Hereditary breast and ovarian cancer syndrome	129	13	0	0	0
+confirm	subthr_near_perm	diverticular disease	160	62	1	40	1
+confirm	subthr_near_perm	metabolic syndrome	70	109	1	50	0
+confirm	subthr_near_perm	insomnia	9	138	0	72	0
+confirm	subthr_near_perm	urinary tract obstruction	48	21	0	0	0
+confirm	subthr_near_perm	gastroesophageal reflux disease	105	37	0	15	0
+confirm	subthr_near_perm	Abdominal Aortic Aneurysm	36	42	0	24	0
+confirm	subthr_near_perm	nephrolithiasis	55	41	0	24	0
+confirm	subthr_near_perm	schizophrenia	55	91	0	28	0
+confirm	subthr_near_perm	familial colorectal cancer	65	12	0	0	0
+confirm	subthr_near_perm	endometriosis	34	34	0	15	0
+confirm	subthr_near_perm	Disorder of purine metabolism	38	17	0	0	0
+confirm	subthr_near_perm	ulcer disease	59	80	0	26	0
+confirm	subthr_near_perm	pulmonary fibrosis	60	18	0	0	0
+confirm	subthr_near_perm	hyperlipoproteinemia	43	41	0	19	0
+confirm	subthr_near_perm	drug dependence	56	18	0	9	0
+confirm	subthr_near_perm	endometrial carcinoma	34	18	0	9	0
+confirm	subthr_near_perm	hereditary nephritis	60	15	0	6	0
+confirm	subthr_near_perm	myeloproliferative disorder	65	21	0	6	0
+confirm	subthr_near_perm	age-related macular degeneration	59	30	0	13	0
+confirm	subthr_near_perm	combined pituitary hormone deficiencies, genetic form	54	10	0	0	0
+confirm	subthr_near_perm	familial amyotrophic lateral sclerosis	45	11	0	0	0
+confirm	subthr_near_perm	hereditary optic atrophy	39	11	0	0	0
+confirm	subthr_near_perm	telomere syndrome	60	22	0	0	0
+confirm	subthr_near_perm	glomerulonephritis	60	82	0	21	0
+confirm	subthr_near_perm	retinitis pigmentosa	11	25	0	0	0
+confirm	subthr_near_perm	sleep-wake disorder	9	67	0	32	0
+confirm	subthr_near_perm	monogenic diabetes	104	15	0	0	0
+confirm	subthr_near_perm	ovarian carcinoma	129	16	0	6	0
+confirm	subthr_near_perm	inherited deficiency anemia	70	12	0	0	0
+confirm	subthr_near_perm	retinal vascular disorder	40	69	0	40	0
+confirm	subthr_near_perm	thyroid cancer	54	17	0	9	0
+confirm	subthr_near_perm	neutropenia	31	17	0	0	0
+confirm	subthr_near_perm	syndromic dyslipidemia	113	42	1	17	1
+confirm	subthr_near_perm	gastric cancer	48	34	0	27	0
+confirm	subthr_near_perm	cataract	93	63	0	14	0
+confirm	subthr_near_perm	familial hemolytic anemia	56	29	0	0	0
+confirm	subthr_near_perm	inherited thrombocytopenia	52	36	1	11	0
+confirm	subthr_near_perm	disorder of pharynx	60	43	0	14	0
+confirm	subthr_near_perm	parathyroid disease	44	19	0	5	0
+confirm	subthr_near_perm	colorectal carcinoma	65	19	0	7	0
+confirm	subthr_near_perm	disorder of ear	42	70	1	22	0
+confirm	subthr_near_perm	colonic neoplasm	122	51	0	18	0
+confirm	subthr_near_perm	small intestine disorder	64	89	0	25	0
+confirm	subthr_near_perm	Disorder of energy metabolism	38	17	0	0	0
+confirm	subthr_near_perm	tooth disease	60	67	0	18	0
+confirm	subthr_near_perm	liver cancer	55	17	0	0	0
+confirm	subthr_near_perm	acute myeloid leukemia	48	14	0	0	0
+confirm	subthr_near_perm	central nervous system infection	51	31	0	6	0
+confirm	subthr_near_perm	bile duct disorder	115	48	0	7	0
+confirm	subthr_near_perm	integumentary system benign neoplasm	192	34	1	15	0
+confirm	subthr_near_perm	primary bacterial infectious disease	53	14	0	0	0
+confirm	subthr_cs2g_perm	psoriasis vulgaris	10	17	0	11	0
+confirm	subthr_cs2g_perm	Hereditary breast and ovarian cancer syndrome	27	13	0	0	0
+confirm	subthr_cs2g_perm	diverticular disease	61	62	0	40	0
+confirm	subthr_cs2g_perm	metabolic syndrome	26	109	0	50	0
+confirm	subthr_cs2g_perm	insomnia	3	138	0	72	0
+confirm	subthr_cs2g_perm	urinary tract obstruction	3	21	0	0	0
+confirm	subthr_cs2g_perm	gastroesophageal reflux disease	25	37	0	15	0
+confirm	subthr_cs2g_perm	Abdominal Aortic Aneurysm	4	42	0	24	0
+confirm	subthr_cs2g_perm	nephrolithiasis	20	41	0	24	0
+confirm	subthr_cs2g_perm	schizophrenia	10	91	1	28	0
+confirm	subthr_cs2g_perm	familial colorectal cancer	28	12	0	0	0
+confirm	subthr_cs2g_perm	endometriosis	11	34	0	15	0
+confirm	subthr_cs2g_perm	Disorder of purine metabolism	5	17	0	0	0
+confirm	subthr_cs2g_perm	ulcer disease	13	80	0	26	0
+confirm	subthr_cs2g_perm	pulmonary fibrosis	15	18	0	0	0
+confirm	subthr_cs2g_perm	hyperlipoproteinemia	2	41	0	19	0
+confirm	subthr_cs2g_perm	drug dependence	8	18	0	9	0
+confirm	subthr_cs2g_perm	endometrial carcinoma	11	18	0	9	0
+confirm	subthr_cs2g_perm	hereditary nephritis	3	15	0	6	0
+confirm	subthr_cs2g_perm	myeloproliferative disorder	9	21	0	6	0
+confirm	subthr_cs2g_perm	age-related macular degeneration	30	30	0	13	0
+confirm	subthr_cs2g_perm	combined pituitary hormone deficiencies, genetic form	7	10	0	0	0
+confirm	subthr_cs2g_perm	familial amyotrophic lateral sclerosis	23	11	0	0	0
+confirm	subthr_cs2g_perm	hereditary optic atrophy	0	11	0	0	0
+confirm	subthr_cs2g_perm	telomere syndrome	15	22	0	0	0
+confirm	subthr_cs2g_perm	glomerulonephritis	3	82	0	21	0
+confirm	subthr_cs2g_perm	retinitis pigmentosa	5	25	0	0	0
+confirm	subthr_cs2g_perm	sleep-wake disorder	3	67	0	32	0
+confirm	subthr_cs2g_perm	monogenic diabetes	66	15	0	0	0
+confirm	subthr_cs2g_perm	ovarian carcinoma	27	16	0	6	0
+confirm	subthr_cs2g_perm	inherited deficiency anemia	7	12	0	0	0
+confirm	subthr_cs2g_perm	retinal vascular disorder	10	69	0	40	0
+confirm	subthr_cs2g_perm	thyroid cancer	12	17	0	9	0
+confirm	subthr_cs2g_perm	neutropenia	2	17	0	0	0
+confirm	subthr_cs2g_perm	syndromic dyslipidemia	28	42	0	17	0
+confirm	subthr_cs2g_perm	gastric cancer	12	34	0	27	0
+confirm	subthr_cs2g_perm	cataract	34	63	0	14	0
+confirm	subthr_cs2g_perm	familial hemolytic anemia	5	29	0	0	0
+confirm	subthr_cs2g_perm	inherited thrombocytopenia	7	36	0	11	0
+confirm	subthr_cs2g_perm	disorder of pharynx	7	43	0	14	0
+confirm	subthr_cs2g_perm	parathyroid disease	6	19	0	5	0
+confirm	subthr_cs2g_perm	colorectal carcinoma	28	19	0	7	0
+confirm	subthr_cs2g_perm	disorder of ear	1	70	0	22	0
+confirm	subthr_cs2g_perm	colonic neoplasm	31	51	1	18	1
+confirm	subthr_cs2g_perm	small intestine disorder	11	89	0	25	0
+confirm	subthr_cs2g_perm	Disorder of energy metabolism	5	17	0	0	0
+confirm	subthr_cs2g_perm	tooth disease	5	67	0	18	0
+confirm	subthr_cs2g_perm	liver cancer	8	17	0	0	0
+confirm	subthr_cs2g_perm	acute myeloid leukemia	5	14	0	0	0
+confirm	subthr_cs2g_perm	central nervous system infection	16	31	0	6	0
+confirm	subthr_cs2g_perm	bile duct disorder	15	48	0	7	0
+confirm	subthr_cs2g_perm	integumentary system benign neoplasm	29	34	0	15	0
+confirm	subthr_cs2g_perm	primary bacterial infectious disease	9	14	0	0	0
+confirm	subthr_win_perm	psoriasis vulgaris	451	17	0	11	0
+confirm	subthr_win_perm	Hereditary breast and ovarian cancer syndrome	921	13	0	0	0
+confirm	subthr_win_perm	diverticular disease	1378	62	7	40	5
+confirm	subthr_win_perm	metabolic syndrome	573	109	2	50	1
+confirm	subthr_win_perm	insomnia	100	138	0	72	0
+confirm	subthr_win_perm	urinary tract obstruction	472	21	0	0	0
+confirm	subthr_win_perm	gastroesophageal reflux disease	748	37	1	15	1
+confirm	subthr_win_perm	Abdominal Aortic Aneurysm	280	42	1	24	1
+confirm	subthr_win_perm	nephrolithiasis	371	41	1	24	1
+confirm	subthr_win_perm	schizophrenia	460	91	1	28	0
+confirm	subthr_win_perm	familial colorectal cancer	615	12	0	0	0
+confirm	subthr_win_perm	endometriosis	241	34	0	15	0
+confirm	subthr_win_perm	Disorder of purine metabolism	295	17	0	0	0
+confirm	subthr_win_perm	ulcer disease	411	80	2	26	0
+confirm	subthr_win_perm	pulmonary fibrosis	507	18	0	0	0
+confirm	subthr_win_perm	hyperlipoproteinemia	251	41	0	19	0
+confirm	subthr_win_perm	drug dependence	410	18	0	9	0
+confirm	subthr_win_perm	endometrial carcinoma	240	18	2	9	1
+confirm	subthr_win_perm	hereditary nephritis	569	15	0	6	0
+confirm	subthr_win_perm	myeloproliferative disorder	445	21	0	6	0
+confirm	subthr_win_perm	age-related macular degeneration	558	30	0	13	0
+confirm	subthr_win_perm	combined pituitary hormone deficiencies, genetic form	513	10	0	0	0
+confirm	subthr_win_perm	familial amyotrophic lateral sclerosis	443	11	0	0	0
+confirm	subthr_win_perm	hereditary optic atrophy	343	11	0	0	0
+confirm	subthr_win_perm	telomere syndrome	506	22	0	0	0
+confirm	subthr_win_perm	glomerulonephritis	570	82	2	21	1
+confirm	subthr_win_perm	retinitis pigmentosa	108	25	0	0	0
+confirm	subthr_win_perm	sleep-wake disorder	100	67	0	32	0
+confirm	subthr_win_perm	monogenic diabetes	998	15	0	0	0
+confirm	subthr_win_perm	ovarian carcinoma	923	16	1	6	1
+confirm	subthr_win_perm	inherited deficiency anemia	633	12	0	0	0
+confirm	subthr_win_perm	retinal vascular disorder	408	69	1	40	1
+confirm	subthr_win_perm	thyroid cancer	374	17	2	9	1
+confirm	subthr_win_perm	neutropenia	308	17	0	0	0
+confirm	subthr_win_perm	syndromic dyslipidemia	808	42	2	17	1
+confirm	subthr_win_perm	gastric cancer	349	34	1	27	1
+confirm	subthr_win_perm	cataract	910	63	6	14	3
+confirm	subthr_win_perm	familial hemolytic anemia	496	29	0	0	0
+confirm	subthr_win_perm	inherited thrombocytopenia	448	36	2	11	0
+confirm	subthr_win_perm	disorder of pharynx	505	43	1	14	0
+confirm	subthr_win_perm	parathyroid disease	323	19	0	5	0
+confirm	subthr_win_perm	colorectal carcinoma	615	19	0	7	0
+confirm	subthr_win_perm	disorder of ear	327	70	1	22	0
+confirm	subthr_win_perm	colonic neoplasm	1001	51	3	18	1
+confirm	subthr_win_perm	small intestine disorder	558	89	2	25	1
+confirm	subthr_win_perm	Disorder of energy metabolism	292	17	0	0	0
+confirm	subthr_win_perm	tooth disease	373	67	0	18	0
+confirm	subthr_win_perm	liver cancer	428	17	0	0	0
+confirm	subthr_win_perm	acute myeloid leukemia	322	14	0	0	0
+confirm	subthr_win_perm	central nervous system infection	374	31	0	6	0
+confirm	subthr_win_perm	bile duct disorder	1005	48	1	7	0
+confirm	subthr_win_perm	integumentary system benign neoplasm	1621	34	4	15	2
+confirm	subthr_win_perm	primary bacterial infectious disease	412	14	0	0	0
+confirm	subthr_gws_near	psoriasis vulgaris	1	17	0	11	0
+confirm	subthr_gws_near	Hereditary breast and ovarian cancer syndrome	1	13	0	0	0
+confirm	subthr_gws_near	diverticular disease	15	62	1	40	0
+confirm	subthr_gws_near	metabolic syndrome	16	109	10	50	0
+confirm	subthr_gws_near	insomnia	4	138	0	72	0
+confirm	subthr_gws_near	urinary tract obstruction	1	21	0	0	0
+confirm	subthr_gws_near	gastroesophageal reflux disease	3	37	0	15	0
+confirm	subthr_gws_near	Abdominal Aortic Aneurysm	0	42	0	24	0
+confirm	subthr_gws_near	nephrolithiasis	1	41	0	24	0
+confirm	subthr_gws_near	schizophrenia	1	91	0	28	0
+confirm	subthr_gws_near	familial colorectal cancer	13	12	0	0	0
+confirm	subthr_gws_near	endometriosis	0	34	0	15	0
+confirm	subthr_gws_near	Disorder of purine metabolism	3	17	0	0	0
+confirm	subthr_gws_near	ulcer disease	2	80	0	26	0
+confirm	subthr_gws_near	pulmonary fibrosis	16	18	3	0	0
+confirm	subthr_gws_near	hyperlipoproteinemia	0	41	0	19	0
+confirm	subthr_gws_near	drug dependence	1	18	0	9	0
+confirm	subthr_gws_near	endometrial carcinoma	0	18	0	9	0
+confirm	subthr_gws_near	hereditary nephritis	0	15	0	6	0
+confirm	subthr_gws_near	myeloproliferative disorder	3	21	1	6	0
+confirm	subthr_gws_near	age-related macular degeneration	18	30	1	13	0
+confirm	subthr_gws_near	combined pituitary hormone deficiencies, genetic form	0	10	0	0	0
+confirm	subthr_gws_near	familial amyotrophic lateral sclerosis	8	11	1	0	0
+confirm	subthr_gws_near	hereditary optic atrophy	0	11	0	0	0
+confirm	subthr_gws_near	telomere syndrome	18	22	0	0	0
+confirm	subthr_gws_near	glomerulonephritis	0	82	0	21	0
+confirm	subthr_gws_near	retinitis pigmentosa	1	25	1	0	0
+confirm	subthr_gws_near	sleep-wake disorder	2	67	0	32	0
+confirm	subthr_gws_near	monogenic diabetes	71	15	1	0	0
+confirm	subthr_gws_near	ovarian carcinoma	1	16	0	6	0
+confirm	subthr_gws_near	inherited deficiency anemia	0	12	0	0	0
+confirm	subthr_gws_near	retinal vascular disorder	0	69	0	40	0
+confirm	subthr_gws_near	thyroid cancer	1	17	0	9	0
+confirm	subthr_gws_near	neutropenia	0	17	0	0	0
+confirm	subthr_gws_near	syndromic dyslipidemia	17	42	7	17	5
+confirm	subthr_gws_near	gastric cancer	1	34	0	27	0
+confirm	subthr_gws_near	cataract	10	63	1	14	0
+confirm	subthr_gws_near	familial hemolytic anemia	0	29	0	0	0
+confirm	subthr_gws_near	inherited thrombocytopenia	1	36	0	11	0
+confirm	subthr_gws_near	disorder of pharynx	0	43	0	14	0
+confirm	subthr_gws_near	parathyroid disease	0	19	0	5	0
+confirm	subthr_gws_near	colorectal carcinoma	11	19	2	7	2
+confirm	subthr_gws_near	disorder of ear	2	70	0	22	0
+confirm	subthr_gws_near	colonic neoplasm	23	51	14	18	5
+confirm	subthr_gws_near	small intestine disorder	2	89	0	25	0
+confirm	subthr_gws_near	Disorder of energy metabolism	3	17	0	0	0
+confirm	subthr_gws_near	tooth disease	0	67	0	18	0
+confirm	subthr_gws_near	liver cancer	0	17	0	0	0
+confirm	subthr_gws_near	acute myeloid leukemia	0	14	0	0	0
+confirm	subthr_gws_near	central nervous system infection	2	31	0	6	0
+confirm	subthr_gws_near	bile duct disorder	2	48	0	7	0
+confirm	subthr_gws_near	integumentary system benign neoplasm	8	34	5	15	2
+confirm	subthr_gws_near	primary bacterial infectious disease	0	14	0	0	0
+confirm	subthr_gws_cs2g	psoriasis vulgaris	2	17	0	11	0
+confirm	subthr_gws_cs2g	Hereditary breast and ovarian cancer syndrome	0	13	0	0	0
+confirm	subthr_gws_cs2g	diverticular disease	13	62	1	40	0
+confirm	subthr_gws_cs2g	metabolic syndrome	16	109	9	50	0
+confirm	subthr_gws_cs2g	insomnia	2	138	0	72	0
+confirm	subthr_gws_cs2g	urinary tract obstruction	0	21	0	0	0
+confirm	subthr_gws_cs2g	gastroesophageal reflux disease	0	37	0	15	0
+confirm	subthr_gws_cs2g	Abdominal Aortic Aneurysm	0	42	0	24	0
+confirm	subthr_gws_cs2g	nephrolithiasis	1	41	0	24	0
+confirm	subthr_gws_cs2g	schizophrenia	0	91	0	28	0
+confirm	subthr_gws_cs2g	familial colorectal cancer	8	12	0	0	0
+confirm	subthr_gws_cs2g	endometriosis	0	34	0	15	0
+confirm	subthr_gws_cs2g	Disorder of purine metabolism	0	17	0	0	0
+confirm	subthr_gws_cs2g	ulcer disease	0	80	0	26	0
+confirm	subthr_gws_cs2g	pulmonary fibrosis	15	18	4	0	0
+confirm	subthr_gws_cs2g	hyperlipoproteinemia	0	41	0	19	0
+confirm	subthr_gws_cs2g	drug dependence	0	18	0	9	0
+confirm	subthr_gws_cs2g	endometrial carcinoma	0	18	0	9	0
+confirm	subthr_gws_cs2g	hereditary nephritis	0	15	0	6	0
+confirm	subthr_gws_cs2g	myeloproliferative disorder	0	21	0	6	0
+confirm	subthr_gws_cs2g	age-related macular degeneration	11	30	0	13	0
+confirm	subthr_gws_cs2g	combined pituitary hormone deficiencies, genetic form	0	10	0	0	0
+confirm	subthr_gws_cs2g	familial amyotrophic lateral sclerosis	3	11	1	0	0
+confirm	subthr_gws_cs2g	hereditary optic atrophy	0	11	0	0	0
+confirm	subthr_gws_cs2g	telomere syndrome	17	22	0	0	0
+confirm	subthr_gws_cs2g	glomerulonephritis	0	82	0	21	0
+confirm	subthr_gws_cs2g	retinitis pigmentosa	0	25	0	0	0
+confirm	subthr_gws_cs2g	sleep-wake disorder	1	67	0	32	0
+confirm	subthr_gws_cs2g	monogenic diabetes	26	15	1	0	0
+confirm	subthr_gws_cs2g	ovarian carcinoma	0	16	0	6	0
+confirm	subthr_gws_cs2g	inherited deficiency anemia	0	12	0	0	0
+confirm	subthr_gws_cs2g	retinal vascular disorder	0	69	0	40	0
+confirm	subthr_gws_cs2g	thyroid cancer	1	17	0	9	0
+confirm	subthr_gws_cs2g	neutropenia	0	17	0	0	0
+confirm	subthr_gws_cs2g	syndromic dyslipidemia	17	42	6	17	4
+confirm	subthr_gws_cs2g	gastric cancer	0	34	0	27	0
+confirm	subthr_gws_cs2g	cataract	6	63	2	14	0
+confirm	subthr_gws_cs2g	familial hemolytic anemia	0	29	0	0	0
+confirm	subthr_gws_cs2g	inherited thrombocytopenia	0	36	0	11	0
+confirm	subthr_gws_cs2g	disorder of pharynx	0	43	0	14	0
+confirm	subthr_gws_cs2g	parathyroid disease	0	19	0	5	0
+confirm	subthr_gws_cs2g	colorectal carcinoma	6	19	2	7	2
+confirm	subthr_gws_cs2g	disorder of ear	0	70	0	22	0
+confirm	subthr_gws_cs2g	colonic neoplasm	16	51	10	18	1
+confirm	subthr_gws_cs2g	small intestine disorder	1	89	0	25	0
+confirm	subthr_gws_cs2g	Disorder of energy metabolism	0	17	0	0	0
+confirm	subthr_gws_cs2g	tooth disease	0	67	0	18	0
+confirm	subthr_gws_cs2g	liver cancer	0	17	0	0	0
+confirm	subthr_gws_cs2g	acute myeloid leukemia	0	14	0	0	0
+confirm	subthr_gws_cs2g	central nervous system infection	1	31	0	6	0
+confirm	subthr_gws_cs2g	bile duct disorder	0	48	0	7	0
+confirm	subthr_gws_cs2g	integumentary system benign neoplasm	10	34	4	15	2
+confirm	subthr_gws_cs2g	primary bacterial infectious disease	0	14	0	0	0
+confirm	gwas_catlag	psoriasis vulgaris	345	17	10	11	8
+confirm	gwas_catlag	Hereditary breast and ovarian cancer syndrome	0	13	0	0	0
+confirm	gwas_catlag	diverticular disease	58	62	10	40	7
+confirm	gwas_catlag	metabolic syndrome	103	109	34	50	15
+confirm	gwas_catlag	insomnia	0	138	0	72	0
+confirm	gwas_catlag	urinary tract obstruction	0	21	0	0	0
+confirm	gwas_catlag	gastroesophageal reflux disease	0	37	0	15	0
+confirm	gwas_catlag	Abdominal Aortic Aneurysm	0	42	0	24	0
+confirm	gwas_catlag	nephrolithiasis	16	41	5	24	4
+confirm	gwas_catlag	schizophrenia	538	91	30	28	10
+confirm	gwas_catlag	familial colorectal cancer	0	12	0	0	0
+confirm	gwas_catlag	endometriosis	0	34	0	15	0
+confirm	gwas_catlag	Disorder of purine metabolism	25	17	13	0	0
+confirm	gwas_catlag	ulcer disease	23	80	4	26	1
+confirm	gwas_catlag	pulmonary fibrosis	17	18	3	0	0
+confirm	gwas_catlag	hyperlipoproteinemia	1	41	0	19	0
+confirm	gwas_catlag	drug dependence	40	18	0	9	0
+confirm	gwas_catlag	endometrial carcinoma	17	18	0	9	0
+confirm	gwas_catlag	hereditary nephritis	0	15	0	6	0
+confirm	gwas_catlag	myeloproliferative disorder	887	21	4	6	4
+confirm	gwas_catlag	age-related macular degeneration	25	30	1	13	1
+confirm	gwas_catlag	combined pituitary hormone deficiencies, genetic form	0	10	0	0	0
+confirm	gwas_catlag	familial amyotrophic lateral sclerosis	42	11	2	0	0
+confirm	gwas_catlag	hereditary optic atrophy	0	11	0	0	0
+confirm	gwas_catlag	telomere syndrome	51	22	3	0	0
+confirm	gwas_catlag	glomerulonephritis	39	82	3	21	1
+confirm	gwas_catlag	retinitis pigmentosa	0	25	0	0	0
+confirm	gwas_catlag	sleep-wake disorder	27	67	0	32	0
+confirm	gwas_catlag	monogenic diabetes	0	15	0	0	0
+confirm	gwas_catlag	ovarian carcinoma	42	16	0	6	0
+confirm	gwas_catlag	inherited deficiency anemia	0	12	0	0	0
+confirm	gwas_catlag	retinal vascular disorder	49	69	1	40	1
+confirm	gwas_catlag	thyroid cancer	10	17	1	9	1
+confirm	gwas_catlag	neutropenia	5	17	0	0	0
+confirm	gwas_catlag	syndromic dyslipidemia	0	42	0	17	0
+confirm	gwas_catlag	gastric cancer	17	34	0	27	0
+confirm	gwas_catlag	cataract	25	63	3	14	0
+confirm	gwas_catlag	familial hemolytic anemia	0	29	0	0	0
+confirm	gwas_catlag	inherited thrombocytopenia	0	36	0	11	0
+confirm	gwas_catlag	disorder of pharynx	109	43	0	14	0
+confirm	gwas_catlag	parathyroid disease	0	19	0	5	0
+confirm	gwas_catlag	colorectal carcinoma	2	19	0	7	0
+confirm	gwas_catlag	disorder of ear	136	70	5	22	0
+confirm	gwas_catlag	colonic neoplasm	2	51	0	18	0
+confirm	gwas_catlag	small intestine disorder	82	89	3	25	3
+confirm	gwas_catlag	Disorder of energy metabolism	0	17	0	0	0
+confirm	gwas_catlag	tooth disease	1	67	0	18	0
+confirm	gwas_catlag	liver cancer	13	17	0	0	0
+confirm	gwas_catlag	acute myeloid leukemia	0	14	0	0	0
+confirm	gwas_catlag	central nervous system infection	7	31	0	6	0
+confirm	gwas_catlag	bile duct disorder	130	48	1	7	0
+confirm	gwas_catlag	integumentary system benign neoplasm	8	34	1	15	1
+confirm	gwas_catlag	primary bacterial infectious disease	55	14	0	0	0

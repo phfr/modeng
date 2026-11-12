@@ -1,0 +1,8 @@
+=== v1_subthr subthr_near,subthr_cs2g,subthr_win Thu Nov 12 10:17:52 CET 2026
+[temporal] 68 channels built (3s)
+temporal  dev      stack_v1_subthr        AP 0.1741 nuAP 0.1505 AUROC 0.8547 R@100 0.3350 | onnet AP 0.1943 nuAP 0.2139
+temporal  confirm  stack_v1_subthr        AP 0.1527 nuAP 0.1756 AUROC 0.8654 R@100 0.3273 | onnet AP 0.1589 nuAP 0.2025
+=== v1_subthrperm subthr_near_perm,subthr_cs2g_perm,subthr_win_perm Thu Nov 12 10:18:46 CET 2026
+[temporal] 68 channels built (2s)
+temporal  dev      stack_v1_subthrperm    AP 0.1738 nuAP 0.1519 AUROC 0.8528 R@100 0.3334 | onnet AP 0.1937 nuAP 0.2135
+temporal  confirm  stack_v1_subthrperm    AP 0.1501 nuAP 0.1731 AUROC 0.8664 R@100 0.3266 | onnet AP 0.1581 nuAP 0.2029
