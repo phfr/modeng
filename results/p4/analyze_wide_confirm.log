@@ -1,0 +1,65 @@
+           method  n     ap   nuap  degbin_ap   p@20  onnet_ap  onnet_nuap  auroc  recall@100  sa_ap  sa_nuap  n_sa
+             A_v1 35 0.1047 0.1466     0.2386 0.0629    0.1012      0.1120 0.8582      0.3687 0.1181   0.0328     4
+        B_v1clean 35 0.1063 0.1423     0.2334 0.0643    0.1054      0.1116 0.8680      0.3644 0.1579   0.0541     4
+      C_W_v1clean 35 0.1153 0.1190     0.2586 0.0757    0.1473      0.1505 0.8844      0.4035 0.0921   0.0223     4
+D_W_v1clean_nolab 35 0.1182 0.1258     0.2589 0.0757    0.1520      0.1563 0.8722      0.3940 0.1033   0.0204     4
+ transfer_jaccard 35 0.0911 0.0835     0.1720 0.0529    0.0973      0.0928 0.6774      0.2722 0.0525   0.0126     4
+
+PRIMARY
+                a                b metric  n_tasks  n_clusters  mean_a  mean_b  delta   ci_lo  ci_hi  win_rate  claim
+             A_v1 transfer_jaccard     ap       35          28  0.1047  0.0911 0.0136 -0.0156 0.0426    0.6571  False
+             A_v1 transfer_jaccard   nuap       35          28  0.1466  0.0835 0.0631  0.0053 0.1453    0.7429  False
+        B_v1clean transfer_jaccard     ap       35          28  0.1063  0.0911 0.0152 -0.0174 0.0501    0.7429  False
+        B_v1clean transfer_jaccard   nuap       35          28  0.1423  0.0835 0.0588 -0.0035 0.1493    0.8571  False
+      C_W_v1clean transfer_jaccard     ap       35          28  0.1153  0.0911 0.0242 -0.0014 0.0471    0.8286  False
+      C_W_v1clean transfer_jaccard   nuap       35          28  0.1190  0.0835 0.0355  0.0007 0.0734    0.8571  False
+D_W_v1clean_nolab transfer_jaccard     ap       35          28  0.1182  0.0911 0.0271  0.0044 0.0487    0.7429   True
+D_W_v1clean_nolab transfer_jaccard   nuap       35          28  0.1258  0.0835 0.0424  0.0064 0.0855    0.8571   True
+
+SECONDARY
+                a                b     metric  n_tasks  n_clusters  mean_a  mean_b  delta   ci_lo  ci_hi  win_rate
+             A_v1 transfer_jaccard  degbin_ap       35          28  0.2386  0.1720 0.0665  0.0226 0.1115    0.8286
+             A_v1 transfer_jaccard       p@20       35          28  0.0629  0.0529 0.0100 -0.0029 0.0236    0.2857
+             A_v1 transfer_jaccard   onnet_ap       35          28  0.1012  0.0973 0.0039 -0.0402 0.0426    0.6857
+             A_v1 transfer_jaccard onnet_nuap       35          28  0.1120  0.0928 0.0192 -0.0419 0.0744    0.7429
+        B_v1clean transfer_jaccard  degbin_ap       35          28  0.2334  0.1720 0.0613  0.0249 0.0969    0.7429
+        B_v1clean transfer_jaccard       p@20       35          28  0.0643  0.0529 0.0114 -0.0029 0.0257    0.3429
+        B_v1clean transfer_jaccard   onnet_ap       35          28  0.1054  0.0973 0.0081 -0.0373 0.0530    0.6571
+        B_v1clean transfer_jaccard onnet_nuap       35          28  0.1116  0.0928 0.0188 -0.0353 0.0708    0.6857
+      C_W_v1clean transfer_jaccard  degbin_ap       35          28  0.2586  0.1720 0.0865  0.0436 0.1300    0.8571
+      C_W_v1clean transfer_jaccard       p@20       35          28  0.0757  0.0529 0.0229  0.0076 0.0382    0.4286
+      C_W_v1clean transfer_jaccard   onnet_ap       35          28  0.1473  0.0973 0.0500  0.0067 0.0985    0.7714
+      C_W_v1clean transfer_jaccard onnet_nuap       35          28  0.1505  0.0928 0.0577  0.0109 0.1101    0.7429
+D_W_v1clean_nolab transfer_jaccard  degbin_ap       35          28  0.2589  0.1720 0.0868  0.0428 0.1327    0.8857
+D_W_v1clean_nolab transfer_jaccard       p@20       35          28  0.0757  0.0529 0.0229  0.0078 0.0386    0.4286
+D_W_v1clean_nolab transfer_jaccard   onnet_ap       35          28  0.1520  0.0973 0.0547  0.0131 0.1029    0.7714
+D_W_v1clean_nolab transfer_jaccard onnet_nuap       35          28  0.1563  0.0928 0.0635  0.0184 0.1153    0.8000
+
+BETWEEN (descriptive)
+                a           b metric  n_tasks  n_clusters  mean_a  mean_b   delta   ci_lo  ci_hi  win_rate
+      C_W_v1clean   B_v1clean     ap       35          28  0.1153  0.1063  0.0090 -0.0207 0.0368    0.6857
+      C_W_v1clean   B_v1clean   nuap       35          28  0.1190  0.1423 -0.0233 -0.0844 0.0134    0.5714
+        B_v1clean        A_v1     ap       35          28  0.1063  0.1047  0.0016 -0.0156 0.0171    0.5714
+        B_v1clean        A_v1   nuap       35          28  0.1423  0.1466 -0.0043 -0.0244 0.0129    0.5143
+D_W_v1clean_nolab C_W_v1clean     ap       35          28  0.1182  0.1153  0.0029 -0.0070 0.0156    0.4286
+D_W_v1clean_nolab C_W_v1clean   nuap       35          28  0.1258  0.1190  0.0069 -0.0049 0.0223    0.4571
+      C_W_v1clean        A_v1     ap       35          28  0.1153  0.1047  0.0106 -0.0174 0.0385    0.6857
+      C_W_v1clean        A_v1   nuap       35          28  0.1190  0.1466 -0.0276 -0.0807 0.0093    0.5714
+
+STRATA
+           method stratum  n     ap   nuap
+             A_v1     3-5 13 0.1602 0.2512
+             A_v1    6-10 18 0.0801 0.0960
+             A_v1     >10  4 0.0350 0.0343
+        B_v1clean     3-5 13 0.1606 0.2392
+        B_v1clean    6-10 18 0.0820 0.0953
+        B_v1clean     >10  4 0.0389 0.0392
+      C_W_v1clean     3-5 13 0.1794 0.1795
+      C_W_v1clean    6-10 18 0.0895 0.0985
+      C_W_v1clean     >10  4 0.0231 0.0143
+D_W_v1clean_nolab     3-5 13 0.1962 0.2030
+D_W_v1clean_nolab    6-10 18 0.0825 0.0945
+D_W_v1clean_nolab     >10  4 0.0253 0.0157
+ transfer_jaccard     3-5 13 0.1569 0.1383
+ transfer_jaccard    6-10 18 0.0556 0.0586
+ transfer_jaccard     >10  4 0.0370 0.0170

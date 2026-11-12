@@ -1,0 +1,16 @@
+method	stratum	n	ap	nuap
+A_v1	3-5	13	0.1602	0.2512
+A_v1	6-10	18	0.0801	0.0960
+A_v1	>10	4	0.0350	0.0343
+B_v1clean	3-5	13	0.1606	0.2392
+B_v1clean	6-10	18	0.0820	0.0953
+B_v1clean	>10	4	0.0389	0.0392
+C_W_v1clean	3-5	13	0.1794	0.1795
+C_W_v1clean	6-10	18	0.0895	0.0985
+C_W_v1clean	>10	4	0.0231	0.0143
+D_W_v1clean_nolab	3-5	13	0.1962	0.2030
+D_W_v1clean_nolab	6-10	18	0.0825	0.0945
+D_W_v1clean_nolab	>10	4	0.0253	0.0157
+transfer_jaccard	3-5	13	0.1569	0.1383
+transfer_jaccard	6-10	18	0.0556	0.0586
+transfer_jaccard	>10	4	0.0370	0.0170

@@ -1,0 +1,74 @@
+=== A+B 2026-11-12 15:16:49 free 70 GB
+wide_confirm: 35 tasks, 297 targets
+temporal_wide wide_confirm transfer_jaccard       AP 0.0911 nuAP 0.0835 AUROC 0.6774 R@100 0.2722 | onnet AP 0.0973 nuAP 0.0928
+[v1] 65 channels, 160886 rows, 1886 pos (3s)
+temporal  confirm  stack_v1               AP 0.1532 nuAP 0.1770 AUROC 0.8644 R@100 0.3238 | onnet AP 0.1599 nuAP 0.2034
+[v1] temporal confirm AP 0.1532 (recipe row 0.1532; reproduced: True)
+temporal_wide wide_confirm stack_v1               AP 0.1047 nuAP 0.1466 AUROC 0.8582 R@100 0.3687 | onnet AP 0.1012 nuAP 0.1120
+[v1clean] 51 channels, 160886 rows, 1886 pos (3s)
+temporal  confirm  stack_v1clean          AP 0.1497 nuAP 0.1732 AUROC 0.8650 R@100 0.3301 | onnet AP 0.1595 nuAP 0.2049
+[v1clean] temporal confirm AP 0.1497 (recipe row 0.1497; reproduced: True)
+temporal_wide wide_confirm stack_v1clean          AP 0.1063 nuAP 0.1423 AUROC 0.8680 R@100 0.3644 | onnet AP 0.1054 nuAP 0.1116
+=== C 2026-11-12 15:22:31 free 70 GB
+[wide_train] 712 tasks, 51 channels, 838426 rows, 8926 pos; guard dropped 12287 positive pairs in 508 tasks (34s)
+temporal  dev      stackW_P4C_v1clean     AP 0.1919 nuAP 0.1851 AUROC 0.8672 R@100 0.3515 | onnet AP 0.2106 nuAP 0.2420
+temporal  confirm  stackW_P4C_v1clean     AP 0.1711 nuAP 0.2037 AUROC 0.8759 R@100 0.3605 | onnet AP 0.1774 nuAP 0.2238
+temporal_wide wide_dev stackW_P4C_v1clean     AP 0.1315 nuAP 0.1814 AUROC 0.8883 R@100 0.3854 | onnet AP 0.1431 nuAP 0.2079
+temporal_wide wide_confirm stackW_P4C_v1clean     AP 0.1153 nuAP 0.1190 AUROC 0.8844 R@100 0.4035 | onnet AP 0.1473 nuAP 0.1506
+dc_ridge_pos        68147.950115
+dc_ridge            62605.880791
+transfer_jaccard    59091.145497
+hz_gwas             36963.024363
+log_nseeds          24402.334210
+dA_pt               22799.120592
+r_degree            21012.285900
+r_dA_pt             17556.766880
+r_popularity        13211.916816
+r_pri_l2g_n         11479.737176
+r_hz_gwas            9614.771238
+vmax_prott5          8838.436480
+r_pri_mend_n         8657.188779
+pri_l2g_max          8576.828462
+r_pt_ridge           8517.880077
+vmax_depmap20q4      8233.403016
+pt_ridge_pos         8190.516224
+degree               8053.542650
+vmax_esmc            7420.373225
+pt_ridge             7372.355697
+r_pt_ridge_pos       6833.226714
+gwas_catlag          6597.714770
+r_pri_l2g_max        6212.665095
+pri_l2g_n            6053.067790
+ph_mean              5986.515520
+=== D (47 channels) 2026-11-12 15:24:00 free 70 GB
+[wide_train] 712 tasks, 47 channels, 838426 rows, 8926 pos; guard dropped 12287 positive pairs in 508 tasks (30s)
+temporal  dev      stackW_P4D_v1clean_nolab AP 0.1648 nuAP 0.1552 AUROC 0.8484 R@100 0.3284 | onnet AP 0.1817 nuAP 0.2015
+temporal  confirm  stackW_P4D_v1clean_nolab AP 0.1654 nuAP 0.1939 AUROC 0.8625 R@100 0.3479 | onnet AP 0.1715 nuAP 0.2112
+temporal_wide wide_dev stackW_P4D_v1clean_nolab AP 0.1319 nuAP 0.1896 AUROC 0.8735 R@100 0.3702 | onnet AP 0.1395 nuAP 0.2176
+temporal_wide wide_confirm stackW_P4D_v1clean_nolab AP 0.1181 nuAP 0.1257 AUROC 0.8722 R@100 0.3940 | onnet AP 0.1518 nuAP 0.1561
+dc_ridge             83666.324170
+transfer_jaccard     74200.461596
+dc_ridge_pos         34270.661355
+dA_pt                29411.242494
+r_popularity         28447.480589
+log_nseeds           23878.601811
+r_degree             22701.930348
+vmax_prott5          16971.199540
+popularity           15907.045618
+r_dA_pt              12436.642329
+r_pri_mend_n          8993.613002
+pt_ridge_pos          8390.842134
+r_pt_ridge            8328.545036
+vmax_depmap20q4       8319.464021
+degree                7854.639979
+vmax_esmc             7678.405541
+pt_ridge              7166.951156
+r_hz_mend             6653.542783
+r_dc_ridge            6524.104480
+ph_mean               6490.158605
+r_pt_ridge_pos        5759.719415
+vc_mean_hpa20_tis     5592.856612
+r_don_hpo2101         5503.286170
+vc_max_gtex8          5350.313624
+r_vc_max_gtex8        5064.321491
+=== done 2026-11-12 15:25:33

@@ -1,0 +1,9 @@
+a	b	metric	n_tasks	n_clusters	mean_a	mean_b	delta	ci_lo	ci_hi	p_le0	win_rate	ci_excl0	claim
+A_v1	transfer_jaccard	ap	35	28	0.1047	0.0911	0.0136	-0.0156	0.0426	0.1790	0.6571	False	False
+A_v1	transfer_jaccard	nuap	35	28	0.1466	0.0835	0.0631	0.0053	0.1453	0.0105	0.7429	True	False
+B_v1clean	transfer_jaccard	ap	35	28	0.1063	0.0911	0.0152	-0.0174	0.0501	0.1943	0.7429	False	False
+B_v1clean	transfer_jaccard	nuap	35	28	0.1423	0.0835	0.0588	-0.0035	0.1493	0.0381	0.8571	False	False
+C_W_v1clean	transfer_jaccard	ap	35	28	0.1153	0.0911	0.0242	-0.0014	0.0471	0.0308	0.8286	False	False
+C_W_v1clean	transfer_jaccard	nuap	35	28	0.1190	0.0835	0.0355	0.0007	0.0734	0.0234	0.8571	True	False
+D_W_v1clean_nolab	transfer_jaccard	ap	35	28	0.1182	0.0911	0.0271	0.0044	0.0487	0.0101	0.7429	True	True
+D_W_v1clean_nolab	transfer_jaccard	nuap	35	28	0.1258	0.0835	0.0424	0.0064	0.0855	0.0088	0.8571	True	True
