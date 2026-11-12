@@ -1,0 +1,15 @@
+bench	split	ch	cov	sec	ap	nuap	auroc	recall@100	onnet_ap	onnet_nuap	sa_ap	sa_nuap
+temporal	dev	catxfer_ridge	1.0	17.4	0.0232	0.0233	0.6865	0.0743	0.0283	0.0415	0.0239	0.0263
+temporal	confirm	catxfer_ridge	1.0	3.4	0.03	0.0264	0.6745	0.0867	0.0339	0.0348	0.0377	0.0356
+temporal	dev	catxfer_jac	1.0	0.4	0.0203	0.0215	0.5551	0.0525	0.0217	0.0327	0.0121	0.0133
+temporal	confirm	catxfer_jac	1.0	0.8	0.0276	0.0244	0.5699	0.0764	0.032	0.0323	0.0293	0.0325
+temporal	dev	catxfer_ridge_new	1.0	0.4	0.008	0.0096	0.6431	0.0277	0.0094	0.0179	0.0067	0.0113
+temporal	confirm	catxfer_ridge_new	1.0	0.8	0.0144	0.0137	0.645	0.045	0.0174	0.0207	0.0135	0.0169
+temporal	dev	catxfer_jac_new	1.0	0.4	0.0084	0.0097	0.5212	0.0262	0.01	0.0173	0.0066	0.0101
+temporal	confirm	catxfer_jac_new	1.0	0.6	0.0144	0.015	0.5483	0.0459	0.0168	0.0215	0.0126	0.0172
+temporal	dev	catxfer_ridge_perm	1.0	0.5	0.0024	0.0029	0.5065	0.0051	0.0031	0.0044	0.0019	0.0023
+temporal	confirm	catxfer_ridge_perm	1.0	1.1	0.0022	0.0025	0.5022	0.0043	0.0028	0.004	0.0013	0.0017
+temporal	dev	gwas_catlag	0.4528301886792453	0.3	0.0663	0.066	0.5499	0.1251	0.0753	0.0963	0.0295	0.034
+temporal	confirm	gwas_catlag	0.37681159420289856	0.5	0.0471	0.0491	0.5293	0.0694	0.0508	0.0565	0.0235	0.0267
+temporal	dev	dc_ridge_pos	1.0	0.5	0.1177	0.0919	0.6863	0.2623	0.1321	0.1357	0.0272	0.0347
+temporal	confirm	dc_ridge_pos	1.0	0.7	0.1128	0.1057	0.715	0.2806	0.1206	0.1258	0.0466	0.0455
