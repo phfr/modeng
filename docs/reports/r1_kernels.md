@@ -100,6 +100,12 @@ PLM, NPP) and the ML-1 imputation, and none of them beats popularity in the zero
 | + compact 5 (`kb_top5`: coldstart, lift depmap20q4/go_t0/prott5/paralog_wide) | confirm | 0.0780 | 0.1312 | 0.8137 | 0.2450 | -0.0030 [-0.012,+0.005] | -0.0029 [-0.014,+0.009] | +0.0216 [+0.015,+0.029] |
 | kb_top5 | dev | 0.0800 | 0.1150 | 0.7966 | 0.2322 | +0.0022 [-0.006,+0.011] | -0.0037 [-0.014,+0.008] | +0.0182 [+0.012,+0.026] |
 
+| + 5 permuted lifts (`kb_top5perm`, same-width NEG CONTROL) | confirm | 0.0829 | 0.1370 | 0.7910 | 0.2361 | +0.0019 | +0.0029 | -0.0010 |
+| kb_top5perm | dev | 0.0755 | 0.1175 | 0.7756 | 0.2319 | | | |
+
+kb_top5 vs its same-width permuted control (confirm): AP -0.0049 [-0.016,+0.003], nuAP -0.0058 [-0.020,+0.007], AUROC +0.0226 [+0.016,+0.030].
+The real kernels gain AUROC but give up a little at the top of the list.
+
 kb_top5 picks the five channels with the highest gain importance in the past-trained kb_all model. The choice used only past
 training, not temporal labels. Fewer channels mean less dilution: AP and nuAP are flat within the CI and AUROC is still +0.02, but the change is still not Pareto.
 Zero stratum for kb_top5 on confirm: z_nuAP +0.0036 [+0.001,+0.008], z_AUROC +0.048 [+0.033,+0.066], z_R@100 0.004 -> 0.016.
