@@ -109,10 +109,37 @@ Paired cluster bootstrap (5,000; delta [95 % CI], P(delta <= 0)):
   (bdv already contains `don_hpo2101`, HPO-term donor rows, which carries part of the phenotype signal.)
 - Negative control h_base_neg vs h_base: dev +0.0017 [-0.0042, +0.0077]; confirm -0.0044 [-0.0083, +0.0003]; AP +0.0016 / +0.0008. ~0, as required.
 
-Forward: FORWARD_STACK
+Forward (dev 842 / confirm 797; `--train cv`):
+| config | dev nuAP | conf nuAP | dev AP | conf AP | dev AUROC | conf AUROC | conf R@100 | conf onnet nuAP | LightGBM threads |
+|---|---|---|---|---|---|---|---|---|---|
+| h_base | 0.1447 | 0.1373 | 0.0809 | 0.0770 | 0.823 | 0.812 | 0.206 | 0.158 | 4 |
+| h_base_neg (perm controls) | 0.1502 | 0.1401 | 0.0843 | 0.0785 | 0.825 | 0.814 | 0.207 | 0.160 | 3 |
+| h_base_all (+pri,tr,ph) | **0.1680** | **0.1513** | **0.0969** | **0.0873** | 0.852 | 0.844 | 0.230 | 0.170 | 3 |
+Paired bootstrap (task = cluster on forward):
+- h_base_all vs h_base: nuAP dev +0.0233 [+0.0180, +0.0286], confirm +0.0140 [+0.0097, +0.0185]; AP dev +0.0160 [+0.0123, +0.0196],
+  confirm +0.0103 [+0.0076, +0.0131]; AUROC +0.029 / +0.032; R@100 +0.024 / +0.024 (all P < 0.001).
+- **Negative control is NOT zero on forward**: h_base_neg vs h_base nuAP dev +0.0054 [+0.0034, +0.0075], confirm +0.0028 [+0.0011, +0.0046];
+  AP +0.0034 / +0.0015. Cause not resolved: h_base ran with 4 LightGBM threads, neg/all with 3 (machine RAM / load), and two extra
+  noise columns change feature_fraction sampling. Either way it is a protocol-noise floor of ~0.003-0.005, not a leak of my channels
+  (the permuted channels carry no gene identity).
+- The clean comparison (same thread count, same number of added columns) is **h_base_all vs h_base_neg**: nuAP dev +0.0178
+  [+0.0127, +0.0230], confirm +0.0111 [+0.0068, +0.0158]; AP dev +0.0125 [+0.0089, +0.0161], confirm +0.0088 [+0.0061, +0.0117].
+  Both AP and nuAP improve on both splits (lead rule F2-3 satisfied).
+- Not run on forward (RAM at 83-85/90 GB, lead: one stacker at a time, >= 15 GB free): per-family ablations, bdv + mine.
+  The alone results suggest the forward gain comes mostly from the GWAS channel (tr_gwas, pri_l2g_n), unlike temporal.
 
 ## 4. Verdict
-VERDICT
+**Keep** (`ph_mean`, `ph_top3`, `pri_*`/`hz_*`/`pop_*`, `tr_*` as one family; phenotype matching is the core).
+- Temporal (temporal-clean): base + mine improves nuAP AND AP on dev (+0.020 / +0.024) and confirm (+0.020 / +0.022, CIs exclude 0 on confirm);
+  over base,donor,view +0.006 / +0.008 dev, +0.012 / +0.008 confirm (confirm CIs exclude 0). Negative control ~0 (dev +0.002, confirm -0.004).
+  h_base_all confirm nuAP 0.153 / AP 0.114 vs stackP_bdv 0.151 / 0.091 (different training protocol).
+- Ablation (temporal): the gain is HPO phenotype matching (h_base_ph: confirm +0.020 nuAP / +0.017 AP, Mendelian stratum +0.027);
+  channel priors improve AUROC (+0.03) and the GWAS stratum (+0.009 confirm) but cost nuAP on the Mendelian stratum, so they fail the
+  AP-and-nuAP rule alone; typed transfer adds nothing on top of transfer_jaccard (although alone it ranks each stratum better than full transfer).
+- Forward (temporal-clean): +0.018 / +0.011 nuAP and +0.013 / +0.009 AP over the matched noise control (dev / confirm); the
+  forward negative control itself is +0.003-0.005 over h_base (thread-count / extra-column noise floor; must be checked by the lead
+  before any claim < 0.01).
+- Caveats: dev = 53 tasks on temporal (dev CIs touch 0 for nuAP); temporal channels are NaN on `past`, so no `--train past` result yet.
 
 ## 5. Runtime, what failed, notes
 - Channel computation: temporal ~1-3 s per channel (evidence aggregation by duckdb 13 s once, cached in `data/cache/priors_h/`),
