@@ -3,13 +3,13 @@ Read `CLAUDE.md`, then **`docs/reports/FINAL_overnight_2026-11-12.md`** (result,
 `docs/ideas.md` (~110 ideas with status), `docs/reviews/R1_fable_redteam.md`.
 
 ## State
-- Leader: `stack_v3cv_ptr` = LightGBM stacker (`src/modeng/stack.py`, cv on 53 temporal dev diseases, positives deg^-0.5) over channels
-  base, donor, view, cs_donor, dA_pt, dc_ridge(_pos), gwas_catlag, pri_*/hz_* priors, ph_* HPO phenotype matching, pt_ridge(_pos).
-  Command: `PYTHONPATH=src python -m modeng.stack --bench temporal --channels <list> --tag <tag>` (`MODENG_SAVE_SCORES=1` saves score matrices).
-- Beats modet's headline on all arrivals (onnet AP +0.050, nuAP +0.039, degree-matched AP +0.077); TIES on strict-a (modet's primary endpoint).
-- Loses hub-gene AP vs raw transfer (deg^-0.5 weighting); power sweep (0.25 / 0.35) running at 06:30 -> `results/stack_v3ptr_p*.txt` (choose on DEV only).
-- Module calls: `scripts/module_cutoff.py` (isotonic, dev-fitted; shrink predictions by 0.7).
-- Running at 06:30: E-A4 catalog backlog transfer for strict-a (`docs/reports/r2_ea4.md` when done).
+- Final model **modeng-v1** = `stack_v3ptr_p0.35` (frozen, `docs/preregistration_modeng_v1.md`, tag `modeng-v1-prereg`): LightGBM stacker, cv on 53 temporal
+  dev diseases, positives deg^-0.35, channels base, donor, view, cs_donor, dA_pt, dc_ridge(_pos), gwas_catlag, pri_*/hz_*, ph_*, pt_ridge(_pos).
+  Prospective twin `stackP_v1past` (trained on 19.04->21.04; `src/modeng/ext/past_fill.py`). Command: `PYTHONPATH=src python -m modeng.stack ...`.
+- Robust: nuAP and onnet AP over transfer and over modet's headline, also prospectively. Not robust: AP over transfer prospectively (n.s.),
+  strict-a (tie with modet's headline in every variant), cross-window gains without label-process channels.
+- Module calls: `scripts/module_cutoff.py stack_v3ptr_p0.35` (dev-fitted isotonic; shrink ~0.8).
+- Sealed fold: NOT recommended now (its primary is strict-a); use the next OT release, no-label-process arm co-primary.
 
 ## Morning follow-up done (07:20-08:30): R3 red team, prospective version, forward no-label-process arm, strict-a attack (negative), calibration refit — see FINAL report section 9.
 
