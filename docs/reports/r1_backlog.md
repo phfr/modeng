@@ -1,6 +1,6 @@
 # R1 implementer E: curation backlog (IR-3 identity linking, LT-3 / WC-BACKLOG curation debt, IR-7 weak-evidence funnel, SG-7)
 
-Date 2026-11-12 (04:15-06:40). Module `src/modeng/ext/backlog_e.py` (commit 2989b3f). Scripts in the agent scratchpad
+Date 2026-11-12 (04:15-06:40). Module `src/modeng/ext/backlog_e.py` (commit 2989b3f). Result parquets: `results/{forward,temporal}/{dev,confirm}/stack_E_*.parquet`, `stackP_E_*`. Scripts in the agent scratchpad
 (`bl_mass.py`, `bl_temporal.py`, `bl_bins.py`, `runstack.py` = `modeng.stack.run/run_past` with LightGBM threads from `OMP_NUM_THREADS`).
 
 **What this is.** These channels forecast what the Open Targets *label pipeline* attaches next from evidence that is already in
@@ -68,7 +68,24 @@ On forward a single lookup (max sub-threshold genetic score in the family) beats
 doubles AP.
 
 ## 3. Increment over the stacker (LightGBM, modeng.stack; channels base + all bl_* except perm)
-FORWARD_TABLE
+Forward (`--train cv`: 5-fold OOF on 842 dev tasks; dev-trained model on 797 confirm tasks; paired bootstrap over tasks):
+| split | metric | stack_E_base | + bl_* | delta [95 % CI] |
+|---|---|---|---|---|
+| dev | AP | 0.0809 | 0.2026 | **+0.122 [+0.112, +0.132]** |
+| dev | nuAP | 0.1447 | 0.3174 | **+0.173 [+0.159, +0.187]** |
+| dev | AUROC | 0.823 | 0.911 | +0.088 [+0.081, +0.095] |
+| dev | R@100 | 0.221 | 0.462 | +0.241 [+0.221, +0.259] |
+| dev | onnet nuAP | 0.160 | 0.340 | +0.180 [+0.164, +0.195] |
+| confirm | AP | 0.0770 | 0.1955 | **+0.119 [+0.109, +0.128]** |
+| confirm | nuAP | 0.1373 | 0.3071 | **+0.170 [+0.156, +0.183]** |
+| confirm | AUROC | 0.812 | 0.911 | +0.099 [+0.092, +0.107] |
+| confirm | R@100 | 0.206 | 0.465 | +0.259 [+0.239, +0.279] |
+| confirm | onnet nuAP | 0.158 | 0.334 | +0.176 [+0.160, +0.192] |
+Win rate 82-93 % of tasks. Top features by gain: bl_genweak (first), transfer_jaccard, transfer_onto, ..., bl_any.
+This is by far the largest effect measured in the sprint, and it is almost entirely the sub-threshold genetic backlog
+(threshold crossings), i.e. the label pipeline. The `stack_bdv` forward reference was not available; bl_* would have to be
+re-tested on top of it, but no gene-similarity channel can see sub-threshold own-disease scores, so overlap should be small.
+
 
 Temporal (`--train cv`, 5-fold cluster OOF on dev, dev-trained model on confirm; paired cluster bootstrap, 5,000 draws):
 | split | metric | stack_E_base | + bl_* | delta [95 % CI] | P(delta<=0) |
@@ -105,7 +122,14 @@ not transfer much (in cv on temporal it is trained on 21.04 evidence of all sour
   confirm (fails there).
 - Rule "fused delta < +0.010 nuAP on the full endpoint": temporal +0.020 dev / +0.010 confirm (passes, CI excludes 0 both).
 - `sa`: ~0, as expected for a curation-pipeline effect.
-VERDICT
+- Forward: +0.12 AP and +0.17 nuAP on dev and confirm (both metrics, CIs far from 0): passes the F2-3 rule (AP and nuAP).
+- Temporal cv: +0.017 / +0.012 AP and +0.020 / +0.010 nuAP (dev / confirm), both metrics, CIs exclude 0. Passes F2-3.
+- Temporal past-trained: fails (train/test exclusion mismatch, see 3).
+
+**Verdict: KEEP as a mandatory control arm and stratum, not as a biology model.** On forward the label-process forecast
+(bl_genweak) dominates every gene-similarity method; forward claims about biology must be reported on the non-backlog stratum
+(bl_genweak == 0, 61 % of targets) or against a stack that includes bl_*. On temporal the remaining effect (+0.01-0.02 nuAP) is
+mostly the IR-3 exact-match arm and the non-genetic own-family evidence, ~0 on strict-a.
 
 ## 6. Leakage
 - forward: inputs are 25.09 files only (seed release); targets are 26.09-only genes. Temporal-clean. The weak-genetic genes are
@@ -123,7 +147,8 @@ VERDICT
 - `--train past` cannot test the non-genetic channels (19.04 file has genetic sources only) and penalises bl_genweak through the
   exclusion mismatch. A past-trained model should mask own-family weak genetic genes in training too (mirror of `unknown`).
 - Not done: SG-7 GWAS-catalog ingestion lag (no archived catalog arm), fuzzy / embedding identity linking (only exact match),
-  forward with the bdv stack (donor/view channels not built on forward in time), forward non-genetic-only arm (queued, see above).
+  forward with the bdv stack (donor/view channels not built on forward in time), forward non-genetic-only arm (bl_* without bl_genweak / bl_any: cancelled for time / RAM; needed to say how much of the forward gain is not threshold crossing).
+- Compute note: before the lead's RAM broadcast I ran two stackers at once (6 + 4 LightGBM threads) for ~40 min; after it, one at a time.
 
 ## 8. New ideas
 1. **Threshold-crossing forecaster**: the conversion curve is steep and monotone (0.2 % -> 26 %); a calibrated per-source model of
