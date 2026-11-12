@@ -139,8 +139,7 @@ def load_atlas(key, permute=False):
     Xc = X - X.mean(0, keepdims=True)
     Cn = np.ascontiguousarray((Xc / (np.linalg.norm(Xc, axis=0, keepdims=True) + 1e-6)).T)   # [R, P]
     a = dict(X=X, A=A, ri=ri, ci=ci, strata=strata, mX=mX, mA=mA, sdX=sdX, sdA=sdA, cmu=cmu, sdD=sdD, Cn=Cn)
-    _ATL[ck] = a
-    return a
+    return a                      # not kept in _ATL: six atlases x (X, |X|, cosine view) are ~8 GB; compute_all memoises results
 
 
 def _interp_sd(sd, n):
@@ -249,6 +248,7 @@ def compute_all(B, split_tag, permute=False, atlases=tuple(ATLASES)):
         _nanmax_into(rsm, Mc); _nanmax_into(rsx, Mx)
         print(f"[perturb_g] {B.name}/{split_tag} {k}{' PERM' if permute else ''}: P={a['X'].shape[0]} R={a['X'].shape[1]} "
               f"tasks with up {np.isfinite(cu).sum()}/{T}, dn {np.isfinite(cd).sum()}/{T}, median coh {np.nanmedian(cu):.3f}", flush=True)
+        del a, Mc, Mx, Mu, Mm, Md
     out = dict(up=up, upmag=mag, dn=dn, upr=upr, dnr=dnr, ups=_spec(up), dns=_spec(dn),
                rsm=rsm, rsx=rsx, coh=np.repeat(coh[:, None], G, 1).astype(np.float32))
     _MEMO[key] = out
