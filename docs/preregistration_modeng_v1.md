@@ -7,3 +7,9 @@ Purpose: one confirmatory run on diseases/time windows NOT used overnight (all t
 - **Candidate fresh folds (in order):** (1) the next Open Targets release after 26.09 (seeds 26.09, targets new), (2) diseases outside every panel used here with >= 5 seeds and >= 3 new genes in 25.09 -> 26.09 excluded from forward dev/confirm (none exist by construction: needs a new release), (3) modet's sealed fold only with the user's authorisation via modet's ledger.
 - **Leakage classes to report:** label-process channels (gwas_catlag, pri_l2g_*) and an arm without them; PubTator/GWAS-Catalog mapping vintage.
 - **Outcome sentences:** claim only if both CIs exclude 0; otherwise "not confirmed on a fresh fold".
+
+## Amendment 1 (2026-11-12 14:00, before any fresh-fold data exists)
+Add a co-primary **clean arm** `v1clean`: the v1 recipe with the post-dated views (hpa_sc, hpa_tissue, gtex [subex expr_*], ps_*) and their k-means donor families
+(km_hpa_sc, km_gtex, km_ps_k562, km_ps_cd4) removed and replaced by vc_mean_/vc_max_ of HPA v20.1 single-cell, HPA v20.1 tissue and GTEx v8
+(channel list: results/v1clean_channels.txt). On temporal confirm it is equivalent to v1 (all deltas within noise). Also report an arm without the
+label-process channels (gwas_catlag, pri_l2g_n, pri_l2g_max, hz_gwas), as recommended by the R3 red team.
