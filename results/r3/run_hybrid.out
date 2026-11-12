@@ -1,0 +1,8 @@
+[hybrid] past rows 1371887 + dev rows 160886 (107s)
+temporal  confirm  stackH_v1hyb           AP 0.1464 nuAP 0.1955 AUROC 0.8713 R@100 0.3385 | onnet AP 0.1529 nuAP 0.2181
+[hybrid] past rows 1371887 + dev rows 124537 (289s)
+[hybrid] past rows 1371887 + dev rows 136368 (471s)
+[hybrid] past rows 1371887 + dev rows 130584 (559s)
+[hybrid] past rows 1371887 + dev rows 124500 (626s)
+[hybrid] past rows 1371887 + dev rows 127555 (686s)
+temporal  dev      stackH_v1hyb           AP 0.1629 nuAP 0.1698 AUROC 0.8622 R@100 0.3269 | onnet AP 0.1861 nuAP 0.2271

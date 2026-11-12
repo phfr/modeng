@@ -1,0 +1,56 @@
+[past] 65 channels, 1371887 rows, 21887 pos (904s)
+temporal  dev      stackP_v1past          AP 0.1578 nuAP 0.1640 AUROC 0.8599 R@100 0.3262 | onnet AP 0.1825 nuAP 0.2227
+temporal  confirm  stackP_v1past          AP 0.1372 nuAP 0.1858 AUROC 0.8692 R@100 0.3306 | onnet AP 0.1419 nuAP 0.2050
+gwas_catlag         276161.753897
+transfer_jaccard    128703.381302
+ph_mean_pf           97448.022005
+ph_top3_pf           88356.616026
+hz_gwas_pf           81738.553342
+r_pri_mend_n_pf      71173.587403
+dc_ridge             63621.067664
+pt_ridge             56306.438708
+don_hpo2101          50597.508270
+r_degree             37051.825029
+r_gwas_catlag        35376.493710
+r_pri_l2g_n_pf       31863.400824
+pri_mend_n_pf        30298.669155
+r_hz_gwas_pf         26953.362578
+dA_pt                18480.994891
+r_dA_pt              18441.196059
+degree               17948.680068
+dc_ridge_pos         17354.317633
+log_nseeds           17063.174291
+pri_l2g_max_pf       16928.407979
+vmax_prott5          16112.458978
+r_popularity         15898.661433
+pt_ridge_pos         15443.958163
+pri_l2g_n_pf         14624.152656
+vmax_hpa_sc          14336.780460
+[past] 57 channels, 1371887 rows, 21887 pos (74s)
+temporal  dev      stackP_v1past_nopri    AP 0.1573 nuAP 0.1560 AUROC 0.8443 R@100 0.3251 | onnet AP 0.1777 nuAP 0.2077
+temporal  confirm  stackP_v1past_nopri    AP 0.1317 nuAP 0.1751 AUROC 0.8566 R@100 0.3238 | onnet AP 0.1361 nuAP 0.1902
+gwas_catlag           272909.422231
+transfer_jaccard      148625.536061
+dc_ridge              111466.286251
+don_hpo2101           103665.703020
+pt_ridge               79881.018991
+r_degree               47197.681373
+r_gwas_catlag          38798.677537
+r_don_hpo2101          32214.248527
+r_popularity           28652.672225
+r_dA_pt                27392.778788
+vmax_prott5            24792.372537
+pt_ridge_pos           23366.792318
+vmax_esmc              22550.262995
+dc_ridge_pos           19724.942917
+dA_pt                  17815.672583
+log_nseeds             15422.717778
+popularity             13861.014684
+vmax_depmap20q4        13516.685538
+vmax_hpa_sc            13515.680100
+degree                 12734.026182
+r_pt_ridge             11523.514286
+vmax_go_t0              9850.448525
+r_don_paralog30         9732.356381
+r_vmax_depmap20q4       9017.890010
+r_transfer_jaccard      8608.571373
