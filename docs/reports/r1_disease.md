@@ -85,7 +85,10 @@ and 4th on forward. Pre-registered keep rule (>= +0.005 nuAP on dev AND confirm)
 +0.003 (n.s., 53 tasks) while AP dev is significant; **over bdv (the current best) the rule is met on temporal too: +0.018 nuAP
 and +0.012..0.016 AP on dev and confirm, all P < 0.004** -> keep. stackP_bdv+ridge = new best temporal confirm (nuAP 0.169, AP 0.103;
 onnet nuAP 0.189 vs modet headline ~0.17).
-IR-6 / CI-04 stacker increments (temporal cv, forward cv): not finished by the deadline (one-stacker-at-a-time RAM rule; queued in `scripts/r1_disease_c_queue.sh`, output `results/disease_c/stack_queue.txt`). Given alone results (all negative or null, CIs mostly excluding gains) they are low priority.
+IR-6 / CI-04 stacker increment (temporal `--train cv`, base+dc_trend+dc_delta+dc_directed vs own cv base rerun 0.0811/0.1026 dev,
+0.0921/0.1331 confirm): dev OOF AP +0.007 [+0.001,+0.012], nuAP +0.012 [+0.001,+0.024]; **confirm AP +0.001 [-0.003,+0.006], nuAP
++0.002 [-0.004,+0.010] -> does not replicate on the larger split; discard** (most used: r_dc_directed). Forward cv not run (RAM rule,
+deadline).
 `dc_learned`: mixed sign dev/confirm -> discard.
 
 ### 3. Leakage / exactness
