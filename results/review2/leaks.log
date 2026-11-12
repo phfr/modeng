@@ -1,0 +1,55 @@
+brute-force tasks: [(11, 'EFO_0001063', 'deafness', 89, 25), (24, 'MONDO_0016660', 'autosomal recessive primary microcephaly', 37, 13), (32, 'Orphanet_79191', 'Disorder of purine metabolism', 41, 17), (107, 'MONDO_0000732', 'combined oxidative phosphorylation deficiency', 33, 25), (110, 'EFO_0008499', 'DNA repair deficiency', 55, 14), (136, 'MONDO_0020119', 'X-linked syndromic intellectual disability', 91, 20)]
+
+== 1. 21.04 evidence for (task family = own + descendants, gene): share of targets / sampled-negative candidates / unknown / seeds (mean over tasks)
+split              confirm      dev
+t_fam_any           0.4157   0.4175
+n_fam_any           0.1207   0.1320
+u_fam_any           0.2852   0.3012
+s_fam_any           0.8318   0.8012
+t_fam_gen           0.0764   0.0889
+n_fam_gen           0.0013   0.0025
+u_fam_gen           0.0861   0.0891
+t_fam_l2g           0.0021   0.0043
+n_fam_l2g           0.0001   0.0003
+t_fam_mend          0.0694   0.0787
+n_fam_mend          0.0008   0.0010
+t_anc_l2g           0.0277   0.0221
+n_anc_l2g           0.0007   0.0005
+t_anc_mend          0.1617   0.1468
+n_anc_mend          0.0029   0.0032
+n_tpairs_fam_l2g    0.0580   0.1132
+n_tpairs_fam_mend   1.4855   1.7358
+n_tpairs_fam_any   11.8043  12.1509
+target pairs total {'confirm': 4438, 'dev': 1886} | with family L2G>=0.5 evidence at 21.04: {'confirm': 8, 'dev': 6} | with family Mendelian evidence: {'confirm': 205, 'dev': 92} | any source: {'confirm': 1629, 'dev': 644}
+
+raw 21.04 ot_genetics_portal rows 188745 sources <ArrowStringArray>
+['ot_genetics_portal']
+Length: 1, dtype: str | mendelian rows 43062 ['clingen', 'eva', 'gene2phenotype', 'genomics_england', 'uniprot_literature', 'uniprot_variants']
+ot_genetics_portal 21.04 publicationYear max / n / n(>2021): [{'y': 2019, 'n': 388324, 'late': 0.0}]
+task 11 EFO_0001063: max|diff| pri_l2g_n 2.21e-07  pri_l2g_max 0.00e+00  pri_mend_n 1.06e-07
+task 24 MONDO_0016660: max|diff| pri_l2g_n 2.21e-07  pri_l2g_max 0.00e+00  pri_mend_n 1.06e-07
+task 32 Orphanet_79191: max|diff| pri_l2g_n 2.21e-07  pri_l2g_max 0.00e+00  pri_mend_n 1.06e-07
+task 107 MONDO_0000732: max|diff| pri_l2g_n 2.21e-07  pri_l2g_max 0.00e+00  pri_mend_n 1.06e-07
+task 110 EFO_0008499: max|diff| pri_l2g_n 2.21e-07  pri_l2g_max 0.00e+00  pri_mend_n 1.06e-07
+task 136 MONDO_0020119: max|diff| pri_l2g_n 2.21e-07  pri_l2g_max 0.00e+00  pri_mend_n 1.06e-07
+
+== 2. HPO: genes with a profile 2021-01-15 file 4241, 2025-09 file 5119, only-2025 924, only-2021 46; terms 2021 7729 / 2025 10265
+confirm target pairs with a 2021 HPO profile 0.496 (universe 0.220); target pairs whose gene gained its first HPO profile after 2021-01 (in 2025 file only): 0.089 (universe 0.048)
+task 11 EFO_0001063: max|diff| ph_mean 1.27e-07 ph_top3 1.23e-07; NaN pattern equal True; seeds with HPO 87/89
+task 24 MONDO_0016660: max|diff| ph_mean 2.66e-07 ph_top3 1.81e-07; NaN pattern equal True; seeds with HPO 35/37
+task 32 Orphanet_79191: max|diff| ph_mean 1.40e-07 ph_top3 1.29e-07; NaN pattern equal True; seeds with HPO 32/41
+task 107 MONDO_0000732: max|diff| ph_mean 9.08e-08 ph_top3 1.01e-07; NaN pattern equal True; seeds with HPO 29/33
+
+== 3. PubTator sets: a_pt19 (9408, 19255) nnz 1944620; a_pt21 (9687, 19255) nnz 2103651; a_pt25 (9997, 19255) nnz 2286698
+task 11 EFO_0001063: max|diff| pt_ridge 4.78e-08 pt_ridge_pos 5.31e-08 (score range -0.104..1.149); seeds get score mean 0.401, targets 0.106, others 0.0009
+task 24 MONDO_0016660: max|diff| pt_ridge 2.94e-08 pt_ridge_pos 2.71e-08 (score range -0.066..0.850); seeds get score mean 0.325, targets 0.003, others 0.0005
+task 32 Orphanet_79191: max|diff| pt_ridge 2.75e-08 pt_ridge_pos 5.49e-08 (score range -0.067..0.941); seeds get score mean 0.396, targets 0.008, others 0.0014
+task 107 MONDO_0000732: max|diff| pt_ridge 1.38e-08 pt_ridge_pos 1.45e-08 (score range -0.073..0.319); seeds get score mean 0.126, targets 0.034, others 0.0009
+
+== 4. GWAS catalog associations 1203840; added <= 2021-04-30: 252119; of these with study publication DATE > 2021-04-30: 0; PUBMEDID > 33750000 among them: 0
+confirm tasks with catlag coverage: 52 of 138
+task 1 EFO_1001494 psoriasis vulgaris: max|diff| gwas_catlag 0.00e+00; genes>0 356; targets with catlag>0 10/17; unknown with catlag>0 129/1899; seeds 11/15
+task 35 MONDO_0044996 cerebral cortex disorder: max|diff| gwas_catlag 0.00e+00; genes>0 5; targets with catlag>0 0/16; unknown with catlag>0 0/60; seeds 1/13
+task 51 EFO_0001356 familial amyotrophic lateral sclerosis: max|diff| gwas_catlag 0.00e+00; genes>0 42; targets with catlag>0 2/11; unknown with catlag>0 12/1637; seeds 0/26
+task 75 MONDO_0002311 retinal vascular disorder: max|diff| gwas_catlag 0.00e+00; genes>0 53; targets with catlag>0 1/69; unknown with catlag>0 4/531; seeds 4/16
+task 115 MONDO_0021205 disorder of ear: max|diff| gwas_catlag 0.00e+00; genes>0 138; targets with catlag>0 5/70; unknown with catlag>0 21/613; seeds 2/16

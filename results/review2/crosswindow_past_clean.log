@@ -1,0 +1,8 @@
+cache/task alignment, max|diff| transfer rows: 0.0
+past episodes 900; related to a temporal dev disease 153; transfer AP 0.0496 nuAP 0.0450
+clean 12 channels
+[clean] temporal-dev-trained -> past (all, n=900): AP 0.1095 vs transfer 0.0496: +0.0598 [+0.0519, +0.0682]; nuAP 0.1293 vs 0.0450: +0.0843 [+0.0750, +0.0942] (170s)
+[clean] temporal-dev-trained -> past (unrelated to training diseases, n=747): AP 0.1115 vs transfer 0.0503: +0.0611 [+0.0521, +0.0703]; nuAP 0.1342 vs 0.0489: +0.0853 [+0.0747, +0.0962] (170s)
+cleannocatlag 11 channels
+[cleannocatlag] temporal-dev-trained -> past (all, n=900): AP 0.0629 vs transfer 0.0496: +0.0132 [+0.0096, +0.0168]; nuAP 0.0775 vs 0.0450: +0.0325 [+0.0274, +0.0381] (122s)
+[cleannocatlag] temporal-dev-trained -> past (unrelated to training diseases, n=747): AP 0.0621 vs transfer 0.0503: +0.0117 [+0.0081, +0.0153]; nuAP 0.0813 vs 0.0489: +0.0323 [+0.0264, +0.0385] (122s)

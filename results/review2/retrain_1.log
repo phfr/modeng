@@ -1,0 +1,6 @@
+ref                    AP 0.1532 nuAP 0.1770 onnetAP 0.1599 onnet nuAP 0.2034 sa_onnet AP 0.0805 nuAP 0.1101 AUROC 0.8644 (165s)
+nogene                 AP 0.1471 nuAP 0.1625 onnetAP 0.1545 onnet nuAP 0.1819 sa_onnet AP 0.0679 nuAP 0.0845 AUROC 0.8511 (158s)
+permgene               AP 0.1501 nuAP 0.1643 onnetAP 0.1565 onnet nuAP 0.1806 sa_onnet AP 0.0682 nuAP 0.0816 AUROC 0.8543 (178s)
+halves_seen            AP 0.1434 nuAP 0.1536 onnetAP 0.1514 onnet nuAP 0.1811 sa_onnet AP 0.0738 nuAP 0.0977 AUROC 0.8667 (211s)
+halves_unseen          AP 0.1364 nuAP 0.1475 onnetAP 0.1451 onnet nuAP 0.1736 sa_onnet AP 0.0640 nuAP 0.0857 AUROC 0.8564 (212s)
+nolabelproc            AP 0.1461 nuAP 0.1688 onnetAP 0.1521 onnet nuAP 0.1937 sa_onnet AP 0.0655 nuAP 0.0904 AUROC 0.8549 (83s)

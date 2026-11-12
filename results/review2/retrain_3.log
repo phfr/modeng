@@ -1,0 +1,6 @@
+rand171                AP 0.1273 nuAP 0.1404 onnetAP 0.1345 onnet nuAP 0.1640 sa_onnet AP 0.0622 nuAP 0.0844 AUROC 0.8526 (71s)
+rand172                AP 0.1024 nuAP 0.1263 onnetAP 0.1091 onnet nuAP 0.1514 sa_onnet AP 0.0571 nuAP 0.0969 AUROC 0.8617 (73s)
+rand173                AP 0.1274 nuAP 0.1431 onnetAP 0.1352 onnet nuAP 0.1637 sa_onnet AP 0.0744 nuAP 0.0893 AUROC 0.8594 (70s)
+halves5_seen           AP 0.1445 nuAP 0.1551 onnetAP 0.1515 onnet nuAP 0.1829 sa_onnet AP 0.0758 nuAP 0.1048 AUROC 0.8661 (140s)
+halves5_unseen         AP 0.1413 nuAP 0.1507 onnetAP 0.1461 onnet nuAP 0.1701 sa_onnet AP 0.0679 nuAP 0.0896 AUROC 0.8617 (141s)
+permgene3              AP 0.1495 nuAP 0.1662 onnetAP 0.1557 onnet nuAP 0.1831 sa_onnet AP 0.0701 nuAP 0.0896 AUROC 0.8549 (76s)

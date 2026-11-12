@@ -1,0 +1,7 @@
+dA_pt pt19 vs pt21 corr (confirm) 0.9759238325997648
+pt_ridge pt19 vs pt21 corr (confirm) 0.9233188558315443
+pt_ridge_pos pt19 vs pt21 corr (confirm) 0.9861988298595928
+pt19                   AP 0.1515 nuAP 0.1771 onnetAP 0.1569 onnet nuAP 0.2020 sa_onnet AP 0.0755 nuAP 0.1105 AUROC 0.8645 (328s)
+norel: dev tasks kept 17 of 53
+norel                  AP 0.1225 nuAP 0.1499 onnetAP 0.1288 onnet nuAP 0.1731 sa_onnet AP 0.0672 nuAP 0.0903 AUROC 0.8488 (86s)
+catlag12               AP 0.1514 nuAP 0.1752 onnetAP 0.1576 onnet nuAP 0.2026 sa_onnet AP 0.0784 nuAP 0.1061 AUROC 0.8671 (96s)

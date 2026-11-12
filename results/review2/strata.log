@@ -1,0 +1,38 @@
+
+== all targets: 4438 of 4438 target pairs kept
+   all-gene ap   v1 0.1530 vs transfer  0.1189: +0.0341 [+0.0103, +0.0592]  (n tasks 138)
+   all-gene nuap v1 0.1769 vs transfer  0.1042: +0.0728 [+0.0525, +0.0983]  (n tasks 138)
+   onnet    ap   v1 0.1598 vs transfer  0.1278: +0.0321 [+0.0097, +0.0561]  (n tasks 138)
+   onnet    nuap v1 0.2036 vs transfer  0.1277: +0.0759 [+0.0502, +0.1059]  (n tasks 138)
+   onnet    ap   v1 0.1598 vs headline  0.0964: +0.0634 [+0.0496, +0.0811]  (n tasks 138)
+   onnet    nuap v1 0.2036 vs headline  0.1727: +0.0309 [+0.0109, +0.0539]  (n tasks 138)
+
+== targets without strong (Mendelian / L2G>=0.5) 21.04 family evidence: 4227 of 4438 target pairs kept
+   all-gene ap   v1 0.1229 vs transfer  0.0930: +0.0298 [+0.0092, +0.0521]  (n tasks 138)
+   all-gene nuap v1 0.1418 vs transfer  0.0773: +0.0645 [+0.0464, +0.0885]  (n tasks 138)
+   onnet    ap   v1 0.1318 vs transfer  0.1015: +0.0303 [+0.0102, +0.0525]  (n tasks 138)
+   onnet    nuap v1 0.1719 vs transfer  0.0987: +0.0732 [+0.0466, +0.1051]  (n tasks 138)
+   onnet    ap   v1 0.1318 vs headline  0.0835: +0.0483 [+0.0339, +0.0655]  (n tasks 138)
+   onnet    nuap v1 0.1719 vs headline  0.1505: +0.0214 [+0.0014, +0.0454]  (n tasks 138)
+
+== targets without strong 21.04 evidence in family or any ancestor: 3747 of 4438 target pairs kept
+   all-gene ap   v1 0.0904 vs transfer  0.0598: +0.0306 [+0.0148, +0.0482]  (n tasks 138)
+   all-gene nuap v1 0.1103 vs transfer  0.0548: +0.0556 [+0.0404, +0.0759]  (n tasks 138)
+   onnet    ap   v1 0.0965 vs transfer  0.0642: +0.0324 [+0.0161, +0.0501]  (n tasks 137)
+   onnet    nuap v1 0.1302 vs transfer  0.0654: +0.0648 [+0.0455, +0.0872]  (n tasks 137)
+   onnet    ap   v1 0.0965 vs headline  0.0645: +0.0320 [+0.0187, +0.0476]  (n tasks 137)
+   onnet    nuap v1 0.1302 vs headline  0.1210: +0.0092 [-0.0068, +0.0288]  (n tasks 137)
+
+== targets without ANY 21.04 family evidence (any source, incl. text mining): 2809 of 4438 target pairs kept
+   all-gene ap   v1 0.0798 vs transfer  0.0551: +0.0247 [+0.0124, +0.0398]  (n tasks 126)
+   all-gene nuap v1 0.0929 vs transfer  0.0508: +0.0421 [+0.0247, +0.0647]  (n tasks 126)
+   onnet    ap   v1 0.0905 vs transfer  0.0634: +0.0271 [+0.0136, +0.0433]  (n tasks 121)
+   onnet    nuap v1 0.1223 vs transfer  0.0680: +0.0543 [+0.0285, +0.0834]  (n tasks 121)
+   onnet    ap   v1 0.0905 vs headline  0.0634: +0.0271 [+0.0151, +0.0424]  (n tasks 121)
+   onnet    nuap v1 0.1223 vs headline  0.1113: +0.0110 [-0.0061, +0.0308]  (n tasks 121)
+
+== cluster overlap with training diseases: confirm tasks in a cluster that also holds dev (training) diseases 100, in confirm-only clusters 38
+   [shared cluster] ap: v1 0.1455 vs transfer 0.1213: +0.0242 [-0.0038, +0.0540]
+   [shared cluster] nuap: v1 0.1648 vs transfer 0.1058: +0.0589 [+0.0400, +0.0816]
+   [confirm-only cluster] ap: v1 0.1727 vs transfer 0.1127: +0.0599 [+0.0290, +0.0893]
+   [confirm-only cluster] nuap: v1 0.2089 vs transfer 0.0998: +0.1091 [+0.0619, +0.1582]

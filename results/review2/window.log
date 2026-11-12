@@ -1,0 +1,40 @@
+== (a) per-channel mean per-task AUROC / AP on confirm targets (top 15 by AUROC, then top 8 by AP)
+         channel  n_tasks  auroc  auroc_max  n_tasks_auroc_gt95     ap    p20  target_nonzero
+      popularity      138 0.7873     0.9789                   3 0.0192 0.0355          0.8739
+           dA_pt      138 0.7734     0.9980                   6 0.0932 0.1312          0.5487
+    pt_ridge_pos      138 0.7706     0.9839                   7 0.0299 0.0453          0.7039
+         ph_mean      138 0.7227     0.9953                   7 0.0762 0.1043          0.5839
+         ph_top3      138 0.7223     0.9958                   7 0.0594 0.0819          0.5839
+      pri_mend_n      138 0.7202     0.9711                   1 0.0186 0.0301          0.6278
+    dc_ridge_pos      138 0.7150     0.9940                   5 0.1128 0.1609          0.4768
+       pri_hpo_n      138 0.7073     0.9774                   3 0.0151 0.0170          0.5870
+transfer_jaccard      138 0.7045     0.9946                   3 0.1189 0.1678          0.4500
+        pt_ridge      138 0.7016     0.9953                   3 0.0746 0.1243          0.7372
+         hz_mend      138 0.6984     0.9774                   3 0.0149 0.0167          0.5588
+        dc_ridge      138 0.6708     0.9809                   1 0.1041 0.1543          0.8739
+       pri_l2g_n      138 0.6556     0.9569                   1 0.0202 0.0460          0.6318
+      rwr_string      138 0.6530     0.9124                   0 0.0139 0.0264          0.8135
+     vmax_prott5      138 0.6522     0.8834                   0 0.0136 0.0210          0.9991
+         channel  n_tasks  auroc  auroc_max  n_tasks_auroc_gt95     ap    p20  target_nonzero
+transfer_jaccard      138 0.7045     0.9946                   3 0.1189 0.1678          0.4500
+    dc_ridge_pos      138 0.7150     0.9940                   5 0.1128 0.1609          0.4768
+        dc_ridge      138 0.6708     0.9809                   1 0.1041 0.1543          0.8739
+           dA_pt      138 0.7734     0.9980                   6 0.0932 0.1312          0.5487
+     don_hpo2101      138 0.6475     0.9961                   1 0.0796 0.1040          0.3320
+         ph_mean      138 0.7227     0.9953                   7 0.0762 0.1043          0.5839
+        cs_donor      138 0.6116     0.9966                   2 0.0757 0.1163          0.2444
+        pt_ridge      138 0.7016     0.9953                   3 0.0746 0.1243          0.7372
+modeng-v1 saved scores: AP 0.1530 nuAP 0.1769 AUROC 0.8644; tasks with AUROC > 0.95: 17, AP > 0.8: 1, max AP 0.814
+
+== (b) genes that are a target of >= 1 dev task: 1578 of 19255 (0.082); confirm target pairs whose gene is a dev target: 0.325
+   confirm non-target candidates that are dev-target genes: 0.074
+   bootstrap clusters dev 35, confirm 41, shared 18; confirm tasks in a shared cluster: 100
+   confirm tasks with an ontology relative (ancestor/descendant) among dev tasks: 11 of 138; their targets that are also targets of that dev relative: 0.081
+   max target-set Jaccard with any dev task: median 0.042, > 0.2: 8 tasks, > 0.5: 0 tasks
+   dev-arrival-count scorer on confirm: AP 0.0176 nuAP 0.0134 AUROC 0.6225 | transfer AP 0.1189 nuAP 0.1042 AUROC 0.7045 | popularity AUROC see channel table
+   v1 - transfer, tasks [all] n=138: AP +0.0341 [+0.0103, +0.0592] nuAP +0.0728 [+0.0525, +0.0983]
+   v1 - transfer, tasks [no dev relative & target Jaccard <= 0.2] n=122: AP +0.0378 [+0.0151, +0.0612] nuAP +0.0744 [+0.0520, +0.1007]
+   v1 - transfer, tasks [dev relative or target Jaccard > 0.2] n=16: AP +0.0054 [-0.0352, +0.0777] nuAP +0.0604 [+0.0065, +0.1558]
+   targets whose gene is a dev target: tasks 121; v1 AP 0.1178 vs transfer 0.0891: +0.0287 [+0.0034, +0.0574]; nuAP 0.1434 vs 0.0725: +0.0709 [+0.0465, +0.0985]
+   targets whose gene is NOT a dev target: tasks 137; v1 AP 0.1241 vs transfer 0.1006: +0.0235 [+0.0017, +0.0467]; nuAP 0.1542 vs 0.1031: +0.0512 [+0.0279, +0.0805]
+   top-100 false positives that are dev-target genes: v1 0.297, transfer 0.230 (base rate 0.082)

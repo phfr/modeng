@@ -1,0 +1,2 @@
+seed1                  AP 0.1598 nuAP 0.1825 onnetAP 0.1676 onnet nuAP 0.2123 sa_onnet AP 0.0805 nuAP 0.1126 AUROC 0.8663 (81s)
+seed2                  AP 0.1544 nuAP 0.1769 onnetAP 0.1612 onnet nuAP 0.2017 sa_onnet AP 0.0862 nuAP 0.1148 AUROC 0.8666 (98s)

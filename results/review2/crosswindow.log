@@ -1,0 +1,9 @@
+forward confirm tasks 797
+forward confirm transfer_jaccard AP 0.0849 nuAP 0.0831
+forward cv-trained modeng-v1 (saved): AP 0.1509 nuAP 0.2140
+[full] temporal-dev-trained -> forward confirm: AP 0.1242 nuAP 0.1416 AUROC 0.8668 R@100 0.3122 onnet AP 0.1330 nuAP 0.1707 (256s)
+   vs forward transfer (task bootstrap, tasks treated as independent): AP +0.0394 [+0.0314, +0.0473] nuAP +0.0585 [+0.0493, +0.0683]
+   vs forward cv-trained modeng-v1: AP -0.0267 [-0.0322, -0.0210] nuAP -0.0723 [-0.0803, -0.0645]
+[nolabelproc] temporal-dev-trained -> forward confirm: AP 0.0816 nuAP 0.0982 AUROC 0.8301 R@100 0.2352 onnet AP 0.0881 nuAP 0.1221 (237s)
+   vs forward transfer (task bootstrap, tasks treated as independent): AP -0.0033 [-0.0088, +0.0023] nuAP +0.0151 [+0.0081, +0.0225]
+   vs forward cv-trained modeng-v1: AP -0.0693 [-0.0770, -0.0621] nuAP -0.1158 [-0.1266, -0.1058]

@@ -1,0 +1,25 @@
+stratum	cand	metric	ref	v1	ref_v	delta	lo	hi
+all targets	all	ap	transfer	0.1530	0.1189	0.0341	0.0103	0.0592
+all targets	all	nuap	transfer	0.1769	0.1042	0.0728	0.0525	0.0983
+all targets	onnet	ap	transfer	0.1598	0.1278	0.0321	0.0097	0.0561
+all targets	onnet	nuap	transfer	0.2036	0.1277	0.0759	0.0502	0.1059
+all targets	onnet	ap	headline	0.1598	0.0964	0.0634	0.0496	0.0811
+all targets	onnet	nuap	headline	0.2036	0.1727	0.0309	0.0109	0.0539
+targets without strong (Mendelian / L2G>=0.5) 21.04 family evidence	all	ap	transfer	0.1229	0.0930	0.0298	0.0092	0.0521
+targets without strong (Mendelian / L2G>=0.5) 21.04 family evidence	all	nuap	transfer	0.1418	0.0773	0.0645	0.0464	0.0885
+targets without strong (Mendelian / L2G>=0.5) 21.04 family evidence	onnet	ap	transfer	0.1318	0.1015	0.0303	0.0102	0.0525
+targets without strong (Mendelian / L2G>=0.5) 21.04 family evidence	onnet	nuap	transfer	0.1719	0.0987	0.0732	0.0466	0.1051
+targets without strong (Mendelian / L2G>=0.5) 21.04 family evidence	onnet	ap	headline	0.1318	0.0835	0.0483	0.0339	0.0655
+targets without strong (Mendelian / L2G>=0.5) 21.04 family evidence	onnet	nuap	headline	0.1719	0.1505	0.0214	0.0014	0.0454
+targets without strong 21.04 evidence in family or any ancestor	all	ap	transfer	0.0904	0.0598	0.0306	0.0148	0.0482
+targets without strong 21.04 evidence in family or any ancestor	all	nuap	transfer	0.1103	0.0548	0.0556	0.0404	0.0759
+targets without strong 21.04 evidence in family or any ancestor	onnet	ap	transfer	0.0965	0.0642	0.0324	0.0161	0.0501
+targets without strong 21.04 evidence in family or any ancestor	onnet	nuap	transfer	0.1302	0.0654	0.0648	0.0455	0.0872
+targets without strong 21.04 evidence in family or any ancestor	onnet	ap	headline	0.0965	0.0645	0.0320	0.0187	0.0476
+targets without strong 21.04 evidence in family or any ancestor	onnet	nuap	headline	0.1302	0.1210	0.0092	-0.0068	0.0288
+targets without ANY 21.04 family evidence (any source, incl. text mining)	all	ap	transfer	0.0798	0.0551	0.0247	0.0124	0.0398
+targets without ANY 21.04 family evidence (any source, incl. text mining)	all	nuap	transfer	0.0929	0.0508	0.0421	0.0247	0.0647
+targets without ANY 21.04 family evidence (any source, incl. text mining)	onnet	ap	transfer	0.0905	0.0634	0.0271	0.0136	0.0433
+targets without ANY 21.04 family evidence (any source, incl. text mining)	onnet	nuap	transfer	0.1223	0.0680	0.0543	0.0285	0.0834
+targets without ANY 21.04 family evidence (any source, incl. text mining)	onnet	ap	headline	0.0905	0.0634	0.0271	0.0151	0.0424
+targets without ANY 21.04 family evidence (any source, incl. text mining)	onnet	nuap	headline	0.1223	0.1113	0.0110	-0.0061	0.0308
