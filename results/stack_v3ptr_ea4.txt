@@ -1,0 +1,28 @@
+[temporal] 67 channels built (5s)
+temporal  dev      stack_v3ptr_ea4        AP 0.1622 nuAP 0.1568 AUROC 0.8494 R@100 0.3250 | onnet AP 0.1835 nuAP 0.2211
+temporal  confirm  stack_v3ptr_ea4        AP 0.1466 nuAP 0.1869 AUROC 0.8635 R@100 0.3165 | onnet AP 0.1542 nuAP 0.2188
+dc_ridge_pos          12911.398935
+hz_gwas               11051.656579
+gwas_catlag            9280.052811
+transfer_jaccard       8603.734978
+r_dc_ridge_pos         7080.971107
+catxfer_ridge          7034.243808
+r_transfer_jaccard     6774.341719
+r_degree               6042.102235
+r_dA_pt                5442.351433
+log_nseeds             4904.192578
+r_catxfer_ridge        4157.991818
+r_dc_ridge             3878.409422
+degree                 3750.452117
+r_pt_ridge             3012.117455
+r_gwas_catlag          2600.135695
+r_popularity           2350.990221
+pt_ridge               2113.301194
+don_hpo2101            2074.507496
+r_vmax_depmap20q4      1979.680365
+r_rwr_string           1965.719289
+dc_ridge               1876.847047
+pri_l2g_max            1752.621872
+r_vmax_go_t0           1712.206389
+r_pri_l2g_max          1710.539279
+vmax_go_t0             1695.286215

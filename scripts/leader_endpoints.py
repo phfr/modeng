@@ -6,7 +6,7 @@ from modeng import bench as BM
 out = []
 for split in ("dev", "confirm"):
     B = Bf.split(split)
-    S = {"leader": np.load(BM.RESULTS / "temporal" / split / "stack_v3cv_s.scores.npy").astype(np.float32),
+    S = {"leader": np.load(BM.RESULTS / "temporal" / split / f"{sys.argv[1] if len(sys.argv)>1 else 'stack_v3cv_s'}.scores.npy").astype(np.float32),
          "transfer": BL.transfer_jaccard(B.tasks, B), "headline": BL.modet_headline(B.tasks, B)}
     E = {k: endpoints(v, B) for k, v in S.items()}
     cl = E["leader"]["cluster"].to_numpy()
@@ -18,4 +18,4 @@ for split in ("dev", "confirm"):
             for _ in range(3000):
                 pick = rng.choice(uc, len(uc)); idx = np.concatenate([np.flatnonzero((cl == u) & ok) for u in pick]); ds.append(d[idx].mean())
             out.append(dict(split=split, ref=ref, metric=c, leader=np.nanmean(a[ok]), ref_v=np.nanmean(b[ok]), delta=d[ok].mean(), lo=np.percentile(ds, 2.5), hi=np.percentile(ds, 97.5), n=int(ok.sum())))
-r = pd.DataFrame(out); r.to_csv("results/review/leader_endpoints.tsv", sep="\t", index=False, float_format="%.4f"); print(r.round(4).to_string(index=False))
+r = pd.DataFrame(out); r.to_csv("results/review/leader_endpoints_" + (sys.argv[1] if len(sys.argv)>1 else "v3cv") + ".tsv", sep="\t", index=False, float_format="%.4f"); print(r.round(4).to_string(index=False))
