@@ -93,3 +93,12 @@ Status: NEW | SHORTLIST | IMPLEMENTING | TESTED-POSITIVE | TESTED-NEGATIVE | KIL
 | F2-8 | Critic by self-play: a set-level verifier trained on the ranker's confident errors, then search over modules | R2 island2 | NEW | `docs/ideation/r2_island2.md` |
 | C-RIDGE | Disease-disease ridge regression (EASE/SLIM) of the seed vector on masked disease rows | R1 implementer C (from critic eng.) | TESTED-POSITIVE (Pareto, temporal + forward) | docs/reports/r1_disease.md |
 | H-PHENO | HPO phenotype-profile matching of seeds to genes (IDF) + channel priors (L2G-winner, OMIM gene) | R1 biology critic -> implementer H | TESTED-POSITIVE (temporal + forward, Pareto) | docs/reports/r1_priors.md |
+| E-B1 | Query-wise LambdaRank with degree-scaled gains | R2 evolveB | NEW | `docs/ideation/r2_evolveB.md` |
+| E-B2 | Shape-constrained, coverage-aware stacker (monotone + missing-as-NaN + task-context gates) | R2 evolveB | NEW | `docs/ideation/r2_evolveB.md` |
+| E-B3 | Arrival-class heads x disease-type mixing (H's typed strata x the stacker) | R2 evolveB | NEW | `docs/ideation/r2_evolveB.md` |
+| E-B4 | Two episode families in one model (past arrivals x T0 hide-and-recover episodes, with an episode-type feature) | R2 evolveB | NEW | `docs/ideation/r2_evolveB.md` |
+| E-B5 | Vintage parity: give each training episode features of its own date | R2 evolveB | NEW | `docs/ideation/r2_evolveB.md` |
+| E-B6 | Take degree out of the relevance model, put it back as one dial (repair of the AP-for-nuAP trade) | R2 evolveB | NEW | `docs/ideation/r2_evolveB.md` |
+| E-B7 | Seed self-audit meta-features: each disease tells the stacker which channels work for it | R2 evolveB | NEW | `docs/ideation/r2_evolveB.md` |
+| E-B8 | Label-free shift correction of the training episodes (density-ratio weights from T0 features) | R2 evolveB | NEW | `docs/ideation/r2_evolveB.md` |
+| E-B9 | Two-layer module by conformal risk control over diseases (core = precision-controlled, shell = recall-controll | R2 evolveB | NEW | `docs/ideation/r2_evolveB.md` |
