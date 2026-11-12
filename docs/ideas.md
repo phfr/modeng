@@ -5,7 +5,7 @@ Status: NEW | SHORTLIST | IMPLEMENTING | TESTED-POSITIVE | TESTED-NEGATIVE | KIL
 | CI-01 | Upstream-of-core: knock-downs that move the seed program | R1 causal | NEW | `docs/ideation/r1_causal.md` |
 | CI-02 | Trans-QTL convergence: where the disease's own variants land | R1 causal | NEW | `docs/ideation/r1_causal.md` |
 | CI-03 | Genome-wide cis-MR + colocalisation as the non-transfer channel | R1 causal | NEW | `docs/ideation/r1_causal.md` |
-| CI-04 | Directed donor graph: genes flow down the causal arrow | R1 causal | NEW | `docs/ideation/r1_causal.md` |
+| CI-04 | Directed donor graph: genes flow down the causal arrow | R1 causal | TESTED-NEGATIVE (no confirm gain) | `docs/ideation/r1_causal.md` |
 | CI-05 | Power-jump hazard: per-disease gating between genetics and transfer | R1 causal | NEW | `docs/ideation/r1_causal.md` |
 | CI-06 | Discovery-channel physics: detectability as a second factor | R1 causal | NEW | `docs/ideation/r1_causal.md` |
 | CI-07 | Invariant predictors across discovery eras and channels | R1 causal | NEW | `docs/ideation/r1_causal.md` |
@@ -36,14 +36,14 @@ Status: NEW | SHORTLIST | IMPLEMENTING | TESTED-POSITIVE | TESTED-NEGATIVE | KIL
 | ML-5 | Identity-blind episodic set-completion transformer, many set families | R1 ml | TESTED-NEGATIVE (arrival-trained memorises; aux-only twin = transfer-level, no stacker gain) | `docs/ideation/r1_ml.md` |
 | ML-6 | Tabular in-context learner with neighbour-disease arrivals as context | R1 ml | NEW | `docs/ideation/r1_ml.md` |
 | ML-7 | Masked discrete diffusion over gene sets: the module as a sample | R1 ml | NEW | `docs/ideation/r1_ml.md` |
-| ML-8 | Disease encoder trained to predict future gene overlap | R1 ml | NEW | `docs/ideation/r1_ml.md` |
+| ML-8 | Disease encoder trained to predict future gene overlap | R1 ml | TESTED-NEGATIVE | `docs/ideation/r1_ml.md` |
 | ML-9 | Evidence-trajectory hazard model over sub-threshold evidence streams | R1 ml | NEW | `docs/ideation/r1_ml.md` |
 | IR-1 | Exposure-aware relevance: model why a pair is unobserved | R1 recsys | NEW | `docs/ideation/r1_recsys.md` |
 | IR-2 | Locus slates: transfer per locus, click model per gene | R1 recsys | NEW | `docs/ideation/r1_recsys.md` |
 | IR-3 | Identity linking: retrieve T0 evidence filed under another disease id | R1 recsys | TESTED-POSITIVE as label forecast (bl_xid) | `docs/ideation/r1_recsys.md` |
 | IR-4 | Impressions without clicks: powered nulls as negatives | R1 recsys | NEW | `docs/ideation/r1_recsys.md` |
 | IR-5 | Study-as-user: item-item similarity from evidence baskets | R1 recsys | NEW | `docs/ideation/r1_recsys.md` |
-| IR-6 | Trending items: time-decayed transfer on the 19.04 -> 21.04 delta | R1 recsys | NEW | `docs/ideation/r1_recsys.md` |
+| IR-6 | Trending items: time-decayed transfer on the 19.04 -> 21.04 delta | R1 recsys | TESTED-NEGATIVE | `docs/ideation/r1_recsys.md` |
 | IR-7 | Multi-behaviour funnel: weak evidence channels as views, labels as purchases | R1 recsys | TESTED-POSITIVE (forward nuAP 0.137 -> 0.307; label process) | `docs/ideation/r1_recsys.md` |
 | IR-8 | Cold-start item tower trained with interaction dropout | R1 recsys | NEW | `docs/ideation/r1_recsys.md` |
 | IR-9 | Next-item model over dated discovery sequences | R1 recsys | NEW | `docs/ideation/r1_recsys.md` |
@@ -91,3 +91,4 @@ Status: NEW | SHORTLIST | IMPLEMENTING | TESTED-POSITIVE | TESTED-NEGATIVE | KIL
 | F2-6 | Sequence-model verdicts at sub-threshold loci: which gene, in which tissue | R2 island2 | NEW | `docs/ideation/r2_island2.md` |
 | F2-7 | Literature as a perturbation atlas: an LLM extracts experiment outcomes, disease words removed | R2 island2 | NEW | `docs/ideation/r2_island2.md` |
 | F2-8 | Critic by self-play: a set-level verifier trained on the ranker's confident errors, then search over modules | R2 island2 | NEW | `docs/ideation/r2_island2.md` |
+| C-RIDGE | Disease-disease ridge regression (EASE/SLIM) of the seed vector on masked disease rows | R1 implementer C (from critic eng.) | TESTED-POSITIVE (Pareto, temporal + forward) | docs/reports/r1_disease.md |
