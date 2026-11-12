@@ -105,7 +105,7 @@ Status: NEW | SHORTLIST | IMPLEMENTING | TESTED-POSITIVE | TESTED-NEGATIVE | KIL
 | E-A1 | cs_donor with seed leave-out: per-task alpha and a reliability feature | R2 evolveA | NEW | `docs/ideation/r2_evolveA.md` |
 | E-A2 | dA_pt by disease identity instead of seed overlap (own-MeSH NPMI row) | R2 evolveA | NEW | `docs/ideation/r2_evolveA.md` |
 | E-A3 | Joint ridge over literature rows (dc_ridge solver x dA_pt matrix) | R2 evolveA | TESTED-POSITIVE (confirm Pareto, dev n.s.) | `docs/ideation/r2_evolveA.md` |
-| E-A4 | Backlog transfer: donor weights applied to the relatives' catalog lag (dc_ridge / cs_donor weights x gwas_catl | R2 evolveA | NEW | `docs/ideation/r2_evolveA.md` |
+| E-A4 | Backlog transfer: donor weights applied to the relatives' catalog lag (dc_ridge / cs_donor weights x gwas_catl | R2 evolveA | TESTED-NEGATIVE (no increment over v1; kill rule met) | `docs/ideation/r2_evolveA.md` |
 | E-A5 | Repair settx_auxonly: residual (offset) training and release-matched twins | R2 evolveA | NEW | `docs/ideation/r2_evolveA.md` |
 | E-A6 | Repair gwas_catlag confirm: locus window with a host-gene prior instead of MAPPED_GENE | R2 evolveA | NEW | `docs/ideation/r2_evolveA.md` |
 | E-A7 | Hubness correction in score space (CSLS / inverted softmax from cross-lingual retrieval) | R2 evolveA | NEW | `docs/ideation/r2_evolveA.md` |
