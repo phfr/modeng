@@ -1,0 +1,192 @@
+split	disease_id	name	dtype	area	ctx_mix_gwas	ctx_mix_mend	n_targets
+dev	EFO_0004799	cholelithiasis	GWAS-dominated	other	1.0	0.1176	54
+dev	EFO_0004616	osteoarthritis, knee	GWAS-dominated	other	1.0	0.0	116
+dev	EFO_0000731	uterine fibroid	GWAS-dominated	other	0.9545	0.0455	64
+dev	MONDO_0021661	coronary atherosclerosis	GWAS-dominated	cardiovascular	1.0	0.0	83
+dev	EFO_1001176	sensorineural hearing loss	Mendelian-dominated	nervous system	0.0	1.0	68
+dev	MONDO_0004235	diverticulitis	GWAS-dominated	other	0.16	0.0	16
+dev	EFO_0001422	cirrhosis of liver	GWAS-dominated	other	0.8974	0.1026	22
+dev	Orphanet_307055	Rare parkinsonian syndrome due to genetic neurodegenerative disease	Mendelian-dominated	nervous system	0.2812	0.7188	11
+dev	MONDO_0005301	multiple sclerosis	no genetic seed evidence	other	0.0	0.0	43
+dev	MONDO_0004979	asthma	GWAS-dominated	other	0.1447	0.0	106
+dev	MONDO_0005277	migraine disorder	Mendelian-dominated	cardiovascular	0.0	0.02	45
+dev	EFO_0000274	atopic eczema	GWAS-dominated	other	0.975	0.05	61
+dev	MONDO_0004892	refractive error	GWAS-dominated	other	0.8118	0.2	48
+dev	MONDO_0100576	hereditary generalized epilepsy	Mendelian-dominated	nervous system	0.3	0.4	11
+dev	MONDO_0018614	undetermined early-onset epileptic encephalopathy	Mendelian-dominated	nervous system	0.0	1.0	47
+dev	MONDO_0004634	vein disorder	GWAS-dominated	cardiovascular	0.9286	0.0714	91
+dev	MONDO_0005180	Parkinson disease	Mendelian-dominated	nervous system	0.1071	0.3214	48
+dev	MONDO_0031520	familial severe combined immunodeficiency	Mendelian-dominated	other	0.0	0.0667	12
+dev	MONDO_0020135	pontocerebellar hypoplasia	Mendelian-dominated	nervous system	0.0	0.15	12
+dev	EFO_0009554	malabsorption syndrome	GWAS-dominated	other	0.9	0.1333	23
+dev	MONDO_0018751	hereditary otorhinolaryngologic disease	Mendelian-dominated	genetic/congenital	0.1579	0.7895	30
+dev	EFO_0006788	anxiety disorder	GWAS-dominated	nervous system	0.5714	0.4286	71
+dev	EFO_0002618	pancreatic carcinoma	GWAS-dominated	other	0.6923	0.3077	17
+dev	MONDO_0000009	inherited bleeding disorder, platelet-type	Mendelian-dominated	other	0.0	1.0	11
+dev	MONDO_0021189	intestinal motility disease	Mendelian-dominated	other	0.1053	0.9211	12
+dev	EFO_0005531	urticaria	Mendelian-dominated	other	0.0909	0.9091	14
+dev	MONDO_0001713	inherited aplastic anemia	Mendelian-dominated	other	0.0	1.0	37
+dev	MONDO_0957408	type 1 interferonopathy of childhood	Mendelian-dominated	other	0.0	0.6364	15
+dev	MONDO_0018158	mitochondrial DNA depletion syndrome	Mendelian-dominated	genetic/congenital	0.0	0.2	20
+dev	MONDO_0015977	agammaglobulinemia	Mendelian-dominated	other	0.0	0.0213	10
+dev	MONDO_0015653	monogenic epilepsy	Mendelian-dominated	nervous system	0.0	0.4167	14
+dev	Orphanet_140162	Inherited cancer-predisposing syndrome	Mendelian-dominated	genetic/congenital	0.0	1.0	17
+dev	MONDO_0002279	iron metabolism disease	Mendelian-dominated	other	0.0196	0.9804	17
+dev	EFO_0000625	nevus	Mendelian-dominated	other	0.0	1.0	13
+dev	Orphanet_98640	Rare cataract	Mendelian-dominated	other	0.0	1.0	14
+dev	Orphanet_399980	Rare genetic male infertility	Mendelian-dominated	other	0.0	1.0	19
+dev	MONDO_0000066	mitochondrial complex deficiency	Mendelian-dominated	genetic/congenital	0.0	0.7	28
+dev	MONDO_0008903	lung cancer	GWAS-dominated	other	0.7193	0.2807	22
+dev	MONDO_0020380	autosomal dominant cerebellar ataxia	Mendelian-dominated	nervous system	0.0	0.2105	16
+dev	EFO_0005269	congenital heart malformation	Mendelian-dominated	cardiovascular	0.1714	0.8286	23
+dev	EFO_0009601	testicular disease	GWAS-dominated	other	0.9024	0.122	13
+dev	Orphanet_98054	Rare genetic cardiac disease	Mendelian-dominated	cardiovascular	0.0183	1.0	17
+dev	Orphanet_183518	Rare hereditary ataxia	Mendelian-dominated	genetic/congenital	0.0	1.0	11
+dev	MONDO_0015469	craniosynostosis	Mendelian-dominated	other	0.0	0.0233	23
+dev	EFO_0003863	urogenital neoplasm	Mendelian-dominated	other	0.0741	1.0	30
+dev	MONDO_0100062	developmental and epileptic encephalopathy	Mendelian-dominated	nervous system	0.0	0.2105	50
+dev	MONDO_0015962	inherited renal tubular disease	Mendelian-dominated	other	0.0	0.0667	28
+dev	EFO_0003824	eye neoplasm	Mendelian-dominated	other	0.1818	0.8182	29
+dev	Orphanet_364526	Primary bone dysplasia	Mendelian-dominated	other	0.0	1.0	17
+dev	MONDO_0019046	leukodystrophy	Mendelian-dominated	nervous system	0.0	0.2742	56
+dev	MONDO_0100329	primary viral infectious disease	GWAS-dominated	other	0.9478	0.0609	172
+dev	MONDO_0000761	syndrome caused by partial chromosomal deletion	Mendelian-dominated	genetic/congenital	0.0	0.3958	26
+dev	EFO_1000541	Soft Tissue Neoplasm	Mendelian-dominated	other	0.0	1.0	13
+confirm	EFO_1000391	Nasal Cavity Polyp	GWAS-dominated	other	1.0	0.0	12
+confirm	EFO_1001494	psoriasis vulgaris	GWAS-dominated	other	1.0	0.0	17
+confirm	Orphanet_145	Hereditary breast and ovarian cancer syndrome	Mendelian-dominated	other	0.0	1.0	13
+confirm	Orphanet_777	X-linked non-syndromic intellectual disability	Mendelian-dominated	genetic/congenital	0.0	1.0	12
+confirm	EFO_0003758	autism	Mendelian-dominated	nervous system	0.0167	0.9833	21
+confirm	EFO_1001055	myxedema	GWAS-dominated	other	1.0	0.0	17
+confirm	EFO_0009959	diverticular disease	GWAS-dominated	other	1.0	0.0	62
+confirm	EFO_0000195	metabolic syndrome	GWAS-dominated	other	0.913	0.087	109
+confirm	EFO_0004143	carpal tunnel syndrome	GWAS-dominated	nervous system	0.7692	0.2308	19
+confirm	Orphanet_1872	Cone rod dystrophy	Mendelian-dominated	other	0.0	1.0	12
+confirm	EFO_0003898	ankylosing spondylitis	GWAS-dominated	other	1.0	0.0	34
+confirm	EFO_0001063	deafness	Mendelian-dominated	nervous system	0.0	1.0	25
+confirm	EFO_0004698	insomnia	GWAS-dominated	nervous system	0.8696	0.1304	138
+confirm	EFO_0004274	gout	GWAS-dominated	other	0.95	0.05	172
+confirm	EFO_0009571	urinary tract obstruction	Mendelian-dominated	other	0.0625	0.9375	21
+confirm	EFO_0000401	diabetic nephropathy	GWAS-dominated	other	0.8571	0.1429	34
+confirm	EFO_0003948	gastroesophageal reflux disease	GWAS-dominated	other	0.6667	0.3333	37
+confirm	EFO_0004214	Abdominal Aortic Aneurysm	GWAS-dominated	cardiovascular	0.9167	0.1667	42
+confirm	EFO_0003888	attention deficit hyperactivity disorder	GWAS-dominated	nervous system	0.5581	0.4419	136
+confirm	EFO_0000095	chronic lymphocytic leukemia	GWAS-dominated	other	1.0	0.0	12
+confirm	EFO_0004253	nephrolithiasis	Mendelian-dominated	other	0.381	0.619	41
+confirm	MONDO_0005090	schizophrenia	GWAS-dominated	nervous system	0.0119	0.0	91
+confirm	MONDO_0018097	West syndrome	Mendelian-dominated	nervous system	0.0	0.0333	13
+confirm	MONDO_0019625	familial thoracic aortic aneurysm and aortic dissection	no genetic seed evidence	cardiovascular	0.0	0.0	11
+confirm	MONDO_0016660	autosomal recessive primary microcephaly	no genetic seed evidence	nervous system	0.0	0.0	13
+confirm	MONDO_0009723	Leigh syndrome	Mendelian-dominated	nervous system	0.0	0.2404	21
+confirm	MONDO_0019006	familial idiopathic steroid-resistant nephrotic syndrome	no genetic seed evidence	other	0.0	0.0	14
+confirm	MONDO_0023113	familial colorectal cancer	Mendelian-dominated	other	0.0	1.0	12
+confirm	EFO_0001065	endometriosis	GWAS-dominated	other	1.0	0.0	34
+confirm	EFO_0004273	scoliosis	GWAS-dominated	other	0.9289	0.0735	24
+confirm	EFO_0003882	osteoporosis	GWAS-dominated	other	0.6087	0.3478	17
+confirm	MONDO_0000414	childhood electroclinical syndrome	Mendelian-dominated	nervous system	0.1818	0.8182	32
+confirm	Orphanet_79191	Disorder of purine metabolism	Mendelian-dominated	genetic/congenital	0.122	0.878	17
+confirm	EFO_0000612	myocardial infarction	GWAS-dominated	cardiovascular	0.7222	0.3056	63
+confirm	EFO_0000275	atrial fibrillation	GWAS-dominated	cardiovascular	0.9014	0.1268	144
+confirm	MONDO_0044996	cerebral cortex disorder	Mendelian-dominated	nervous system	0.0769	0.9231	16
+confirm	MONDO_0043839	ulcer disease	GWAS-dominated	other	0.9615	0.0385	80
+confirm	EFO_0000389	cutaneous melanoma	GWAS-dominated	other	0.7037	0.3704	59
+confirm	MONDO_0024352	viral respiratory tract infection	GWAS-dominated	other	1.0	0.0	18
+confirm	EFO_0009448	pulmonary fibrosis	Mendelian-dominated	other	0.4	0.7333	18
+confirm	MONDO_0037748	hyperlipoproteinemia	Mendelian-dominated	other	0.0	1.0	41
+confirm	EFO_0000384	Crohn's disease	GWAS-dominated	other	0.9948	0.0209	33
+confirm	EFO_0003890	drug dependence	GWAS-dominated	nervous system	0.9444	0.1111	18
+confirm	EFO_0003875	peripheral vascular disease	GWAS-dominated	cardiovascular	0.8333	0.1667	16
+confirm	EFO_1001512	endometrial carcinoma	GWAS-dominated	other	0.9231	0.0769	18
+confirm	EFO_0004128	hereditary nephritis	GWAS-dominated	other	0.5	0.3333	15
+confirm	EFO_0004251	myeloproliferative disorder	Mendelian-dominated	other	0.2381	0.8095	21
+confirm	EFO_0005708	renal cell adenocarcinoma	Mendelian-dominated	other	0.0	0.9091	37
+confirm	EFO_0001365	age-related macular degeneration	Mendelian-dominated	nervous system	0.4722	0.5833	30
+confirm	EFO_0001663	prostate carcinoma	GWAS-dominated	other	0.876	0.1405	155
+confirm	MONDO_0013099	combined pituitary hormone deficiencies, genetic form	Mendelian-dominated	nervous system	0.0	0.3158	10
+confirm	EFO_0001356	familial amyotrophic lateral sclerosis	Mendelian-dominated	nervous system	0.0	1.0	11
+confirm	MONDO_0002185	hyperostosis	Mendelian-dominated	other	0.375	0.6875	67
+confirm	EFO_0005804	polycythemia	Mendelian-dominated	other	0.25	0.8333	16
+confirm	MONDO_0018612	congenital hypothyroidism	Mendelian-dominated	other	0.0	0.2308	13
+confirm	EFO_0000536	hyperplasia	GWAS-dominated	other	0.9333	0.0667	30
+confirm	MONDO_0000358	orofacial cleft	Mendelian-dominated	other	0.0303	1.0	21
+confirm	MONDO_0016575	primary ciliary dyskinesia	Mendelian-dominated	other	0.0	0.0769	24
+confirm	MONDO_0043878	hereditary optic atrophy	Mendelian-dominated	nervous system	0.0	1.0	11
+confirm	MONDO_0100137	telomere syndrome	GWAS-dominated	genetic/congenital	0.6591	0.3636	22
+confirm	MONDO_0002462	glomerulonephritis	Mendelian-dominated	other	0.4783	0.5217	82
+confirm	MONDO_0019200	retinitis pigmentosa	Mendelian-dominated	nervous system	0.0	0.0128	25
+confirm	EFO_0700118	developmental defect of the eye	Mendelian-dominated	other	0.0	1.0	15
+confirm	MONDO_0019313	lymphatic malformation	Mendelian-dominated	cardiovascular	0.0	0.0556	13
+confirm	MONDO_0003406	sleep-wake disorder	Mendelian-dominated	nervous system	0.5	0.5	67
+confirm	EFO_0008615	cystic kidney disease	Mendelian-dominated	other	0.0	1.0	29
+confirm	EFO_1001511	monogenic diabetes	Mendelian-dominated	other	0.0	0.3864	15
+confirm	MONDO_0015185	intestinal polyposis syndrome	Mendelian-dominated	other	0.0	1.0	12
+confirm	MONDO_0042973	familial osteosclerosis	Mendelian-dominated	other	0.0	1.0	11
+confirm	MONDO_0001926	ureteral disorder	Mendelian-dominated	other	0.2308	0.7692	24
+confirm	EFO_0001075	ovarian carcinoma	GWAS-dominated	other	0.7429	0.2857	16
+confirm	Orphanet_183628	Rare genetic hypothalamic or pituitary disease	Mendelian-dominated	other	0.0	1.0	14
+confirm	MONDO_0016624	inherited deficiency anemia	Mendelian-dominated	other	0.0	0.0213	12
+confirm	MONDO_0020248	vitreoretinal degeneration	Mendelian-dominated	nervous system	0.0	0.1111	17
+confirm	MONDO_0015929	thoracic malformation	Mendelian-dominated	other	0.0	0.9481	12
+confirm	MONDO_0002311	retinal vascular disorder	Mendelian-dominated	cardiovascular	0.375	0.5625	69
+confirm	EFO_0009455	lacrimal apparatus disease	GWAS-dominated	other	0.6154	0.4615	20
+confirm	MONDO_0002108	thyroid cancer	Mendelian-dominated	other	0.3158	0.7368	17
+confirm	MONDO_0020249	hereditary optic neuropathy	Mendelian-dominated	other	0.0	0.1613	16
+confirm	MONDO_0002078	heart septal defect	Mendelian-dominated	cardiovascular	0.0	0.5333	23
+confirm	MONDO_0001475	neutropenia	Mendelian-dominated	other	0.0	1.0	17
+confirm	MONDO_0015168	arthrogryposis multiplex congenita	Mendelian-dominated	genetic/congenital	0.0	0.0882	27
+confirm	MONDO_0003832	complement deficiency	Mendelian-dominated	other	0.0	0.8333	17
+confirm	MONDO_0017688	disorder of glycolysis	Mendelian-dominated	genetic/congenital	0.0	0.4348	13
+confirm	MONDO_0000577	congenital anemia	Mendelian-dominated	other	0.0	0.9268	11
+confirm	Orphanet_207015	Rare hereditary disease with peripheral neuropathy	Mendelian-dominated	genetic/congenital	0.0	1.0	13
+confirm	Orphanet_108987	Syndromic developmental defect of the eye	Mendelian-dominated	other	0.0	1.0	13
+confirm	MONDO_0015905	syndromic dyslipidemia	Mendelian-dominated	genetic/congenital	0.0	0.037	42
+confirm	MONDO_0019587	autosomal dominant nonsyndromic hearing loss	Mendelian-dominated	nervous system	0.0	0.2727	25
+confirm	MONDO_0001056	gastric cancer	Mendelian-dominated	other	0.3846	0.6154	34
+confirm	EFO_1001990	ocular motility disease	Mendelian-dominated	nervous system	0.0417	0.4583	27
+confirm	MONDO_0018838	lissencephaly spectrum disorders	Mendelian-dominated	nervous system	0.0	0.0417	10
+confirm	EFO_0005569	microphthalmia	Mendelian-dominated	other	0.0	0.7879	21
+confirm	MONDO_0020073	adolescent-onset epilepsy syndrome	Mendelian-dominated	nervous system	0.0	0.3235	35
+confirm	MONDO_0005129	cataract	Mendelian-dominated	other	0.0471	0.2353	63
+confirm	Orphanet_269564	Genetic syndrome with a central nervous system malformation as major feature	Mendelian-dominated	genetic/congenital	0.0	1.0	14
+confirm	MONDO_0003689	familial hemolytic anemia	Mendelian-dominated	other	0.0	0.8	29
+confirm	MONDO_0020242	hereditary macular dystrophy	Mendelian-dominated	nervous system	0.0	0.0645	32
+confirm	MONDO_0100241	inherited thrombocytopenia	Mendelian-dominated	other	0.0	1.0	36
+confirm	EFO_0009551	heart valve disease	Mendelian-dominated	cardiovascular	0.2727	0.7273	46
+confirm	MONDO_0021002	syndactyly	Mendelian-dominated	other	0.0	0.5882	18
+confirm	MONDO_0019852	inherited primary ovarian failure	Mendelian-dominated	other	0.0	0.1111	29
+confirm	MONDO_0020592	disorder of pharynx	GWAS-dominated	other	0.8462	0.1538	43
+confirm	EFO_0009682	pregnancy disorder	Mendelian-dominated	other	0.1364	0.8636	60
+confirm	Orphanet_98560	Rare palpebral disease	Mendelian-dominated	other	0.0	1.0	16
+confirm	MONDO_0017754	inborn disorder of porphyrin metabolism	Mendelian-dominated	genetic/congenital	0.0	0.5294	16
+confirm	EFO_0008525	spinal muscular atrophy	Mendelian-dominated	nervous system	0.0	1.0	15
+confirm	MONDO_0000732	combined oxidative phosphorylation deficiency	Mendelian-dominated	genetic/congenital	0.0	1.0	25
+confirm	EFO_0005754	parathyroid disease	Mendelian-dominated	other	0.0	1.0	19
+confirm	Orphanet_79161	Disorder of carbohydrate metabolism	Mendelian-dominated	genetic/congenital	0.0	0.9167	12
+confirm	EFO_0008499	DNA repair deficiency	Mendelian-dominated	genetic/congenital	0.0	1.0	14
+confirm	MONDO_0019713	non-syndromic limb reduction defect	Mendelian-dominated	other	0.0	0.3125	12
+confirm	EFO_1001951	colorectal carcinoma	Mendelian-dominated	other	0.0588	0.9412	19
+confirm	MONDO_0056803	sulfur metabolism disease	Mendelian-dominated	other	0.0	0.9	18
+confirm	MONDO_0021003	polydactyly	Mendelian-dominated	other	0.0	0.9753	18
+confirm	MONDO_0021205	disorder of ear	Mendelian-dominated	other	0.4375	0.5625	70
+confirm	EFO_0004288	colonic neoplasm	Mendelian-dominated	other	0.0	1.0	51
+confirm	MONDO_0024635	small intestine disorder	GWAS-dominated	other	0.8769	0.1231	89
+confirm	Orphanet_79200	Disorder of energy metabolism	Mendelian-dominated	genetic/congenital	0.0	1.0	17
+confirm	EFO_1001216	tooth disease	Mendelian-dominated	other	0.4773	0.5227	67
+confirm	MONDO_0002691	liver cancer	Mendelian-dominated	other	0.5	0.5	17
+confirm	EFO_0000222	acute myeloid leukemia	GWAS-dominated	other	0.8844	0.1181	14
+confirm	MONDO_0017757	disorder of metabolite absorption and transport	Mendelian-dominated	genetic/congenital	0.0127	0.1013	28
+confirm	EFO_1001456	central nervous system infection	GWAS-dominated	nervous system	0.6429	0.2857	31
+confirm	MONDO_0002887	bile duct disorder	GWAS-dominated	other	0.92	0.072	48
+confirm	MONDO_0000652	integumentary system benign neoplasm	Mendelian-dominated	other	0.0	1.0	34
+confirm	MONDO_0015160	multiple congenital anomalies/dysmorphic syndrome-variable intellectual disability syndrome	Mendelian-dominated	genetic/congenital	0.0	0.0247	41
+confirm	Orphanet_404571	Dysostosis of genetic origin with limb anomaly as a major feature	Mendelian-dominated	other	0.0	1.0	11
+confirm	Orphanet_98056	Rare genetic renal disease	Mendelian-dominated	other	0.0	1.0	33
+confirm	EFO_1000774	vesiculobullous skin disease	Mendelian-dominated	other	0.1964	0.8036	30
+confirm	EFO_1001901	neuroendocrine neoplasm	Mendelian-dominated	other	0.0833	0.9167	23
+confirm	MONDO_0016139	qualitative or quantitative protein defects in neuromuscular diseases	Mendelian-dominated	nervous system	0.0	0.3208	17
+confirm	MONDO_0000314	primary bacterial infectious disease	GWAS-dominated	other	0.8077	0.1923	14
+confirm	MONDO_0015286	congenital disorder of glycosylation	Mendelian-dominated	genetic/congenital	0.0	0.2524	33
+confirm	Orphanet_183500	Genetic neurodegenerative disease	Mendelian-dominated	nervous system	0.0082	1.0	25
+confirm	MONDO_0019287	ectodermal dysplasia syndrome	Mendelian-dominated	other	0.0	0.1075	32
+confirm	MONDO_0020119	X-linked syndromic intellectual disability	Mendelian-dominated	nervous system	0.0	0.7253	20
+confirm	MONDO_0020049	autosomal anomaly	Mendelian-dominated	genetic/congenital	0.0	0.0333	33

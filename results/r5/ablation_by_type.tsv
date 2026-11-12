@@ -1,0 +1,505 @@
+split	removed	metric	by	level	n	delta	lo	hi
+dev	base	ap	dtype	GWAS-dominated	16	-0.0011	-0.0065	0.0050
+dev	base	ap	dtype	Mendelian-dominated	36	0.0091	-0.0004	0.0186
+dev	base	ap	dtype	no genetic seed evidence	1	-0.0162	-0.0162	-0.0162
+dev	base	ap	area	cardiovascular	5	0.0117	-0.0025	0.0251
+dev	base	ap	area	genetic/congenital	6	0.0075	-0.0001	0.0148
+dev	base	ap	area	nervous system	11	0.0193	-0.0023	0.0379
+dev	base	ap	area	other	31	-0.0007	-0.0081	0.0050
+dev	base	nuap	dtype	GWAS-dominated	16	-0.0166	-0.0243	-0.0096
+dev	base	nuap	dtype	Mendelian-dominated	36	-0.0132	-0.0239	-0.0046
+dev	base	nuap	dtype	no genetic seed evidence	1	-0.0254	-0.0254	-0.0254
+dev	base	nuap	area	cardiovascular	5	-0.0141	-0.0360	0.0043
+dev	base	nuap	area	genetic/congenital	6	-0.0129	-0.0307	-0.0048
+dev	base	nuap	area	nervous system	11	-0.0081	-0.0243	0.0120
+dev	base	nuap	area	other	31	-0.0170	-0.0284	-0.0097
+dev	base	degbin_ap	dtype	GWAS-dominated	16	-0.0083	-0.0126	-0.0037
+dev	base	degbin_ap	dtype	Mendelian-dominated	36	-0.0041	-0.0117	0.0033
+dev	base	degbin_ap	dtype	no genetic seed evidence	1	-0.0113	-0.0113	-0.0113
+dev	base	degbin_ap	area	cardiovascular	5	-0.0050	-0.0155	0.0042
+dev	base	degbin_ap	area	genetic/congenital	6	-0.0120	-0.0277	0.0008
+dev	base	degbin_ap	area	nervous system	11	-0.0051	-0.0112	0.0016
+dev	base	degbin_ap	area	other	31	-0.0045	-0.0115	0.0034
+dev	donor	ap	dtype	GWAS-dominated	16	-0.0015	-0.0052	0.0021
+dev	donor	ap	dtype	Mendelian-dominated	36	0.0019	-0.0047	0.0087
+dev	donor	ap	dtype	no genetic seed evidence	1	-0.0065	-0.0065	-0.0065
+dev	donor	ap	area	cardiovascular	5	0.0101	0.0010	0.0200
+dev	donor	ap	area	genetic/congenital	6	-0.0049	-0.0084	-0.0010
+dev	donor	ap	area	nervous system	11	-0.0062	-0.0196	0.0039
+dev	donor	ap	area	other	31	0.0027	-0.0035	0.0100
+dev	donor	nuap	dtype	GWAS-dominated	16	0.0001	-0.0043	0.0046
+dev	donor	nuap	dtype	Mendelian-dominated	36	-0.0005	-0.0082	0.0062
+dev	donor	nuap	dtype	no genetic seed evidence	1	-0.0078	-0.0078	-0.0078
+dev	donor	nuap	area	cardiovascular	5	0.0093	0.0017	0.0174
+dev	donor	nuap	area	genetic/congenital	6	-0.0062	-0.0093	-0.0033
+dev	donor	nuap	area	nervous system	11	-0.0045	-0.0182	0.0054
+dev	donor	nuap	area	other	31	0.0005	-0.0064	0.0080
+dev	donor	degbin_ap	dtype	GWAS-dominated	16	0.0029	-0.0014	0.0076
+dev	donor	degbin_ap	dtype	Mendelian-dominated	36	0.0023	-0.0066	0.0108
+dev	donor	degbin_ap	dtype	no genetic seed evidence	1	0.0098	0.0098	0.0098
+dev	donor	degbin_ap	area	cardiovascular	5	0.0023	-0.0012	0.0059
+dev	donor	degbin_ap	area	genetic/congenital	6	-0.0074	-0.0187	0.0006
+dev	donor	degbin_ap	area	nervous system	11	-0.0102	-0.0207	0.0003
+dev	donor	degbin_ap	area	other	31	0.0092	0.0014	0.0172
+dev	view	ap	dtype	GWAS-dominated	16	-0.0005	-0.0098	0.0080
+dev	view	ap	dtype	Mendelian-dominated	36	0.0111	0.0038	0.0188
+dev	view	ap	dtype	no genetic seed evidence	1	0.0318	0.0318	0.0318
+dev	view	ap	area	cardiovascular	5	0.0001	-0.0125	0.0127
+dev	view	ap	area	genetic/congenital	6	0.0002	-0.0034	0.0043
+dev	view	ap	area	nervous system	11	0.0116	0.0007	0.0258
+dev	view	ap	area	other	31	0.0094	0.0012	0.0191
+dev	view	nuap	dtype	GWAS-dominated	16	0.0097	-0.0029	0.0210
+dev	view	nuap	dtype	Mendelian-dominated	36	0.0085	-0.0006	0.0163
+dev	view	nuap	dtype	no genetic seed evidence	1	0.0115	0.0115	0.0115
+dev	view	nuap	area	cardiovascular	5	0.0016	-0.0250	0.0204
+dev	view	nuap	area	genetic/congenital	6	0.0048	-0.0102	0.0155
+dev	view	nuap	area	nervous system	11	0.0125	-0.0000	0.0310
+dev	view	nuap	area	other	31	0.0096	0.0003	0.0176
+dev	view	degbin_ap	dtype	GWAS-dominated	16	0.0024	-0.0074	0.0115
+dev	view	degbin_ap	dtype	Mendelian-dominated	36	0.0059	-0.0051	0.0168
+dev	view	degbin_ap	dtype	no genetic seed evidence	1	0.0316	0.0316	0.0316
+dev	view	degbin_ap	area	cardiovascular	5	0.0026	-0.0117	0.0111
+dev	view	degbin_ap	area	genetic/congenital	6	-0.0151	-0.0204	-0.0059
+dev	view	degbin_ap	area	nervous system	11	-0.0051	-0.0213	0.0125
+dev	view	degbin_ap	area	other	31	0.0134	0.0046	0.0232
+dev	cs_donor	ap	dtype	GWAS-dominated	16	0.0012	-0.0037	0.0048
+dev	cs_donor	ap	dtype	Mendelian-dominated	36	-0.0000	-0.0098	0.0083
+dev	cs_donor	ap	dtype	no genetic seed evidence	1	0.0047	0.0047	0.0047
+dev	cs_donor	ap	area	cardiovascular	5	0.0166	0.0032	0.0325
+dev	cs_donor	ap	area	genetic/congenital	6	-0.0236	-0.0497	0.0000
+dev	cs_donor	ap	area	nervous system	11	0.0019	-0.0064	0.0146
+dev	cs_donor	ap	area	other	31	0.0020	-0.0070	0.0090
+dev	cs_donor	nuap	dtype	GWAS-dominated	16	0.0018	-0.0020	0.0051
+dev	cs_donor	nuap	dtype	Mendelian-dominated	36	0.0006	-0.0065	0.0069
+dev	cs_donor	nuap	dtype	no genetic seed evidence	1	-0.0091	-0.0091	-0.0091
+dev	cs_donor	nuap	area	cardiovascular	5	0.0131	0.0035	0.0227
+dev	cs_donor	nuap	area	genetic/congenital	6	-0.0130	-0.0291	0.0021
+dev	cs_donor	nuap	area	nervous system	11	-0.0002	-0.0067	0.0069
+dev	cs_donor	nuap	area	other	31	0.0018	-0.0054	0.0079
+dev	cs_donor	degbin_ap	dtype	GWAS-dominated	16	0.0017	-0.0025	0.0055
+dev	cs_donor	degbin_ap	dtype	Mendelian-dominated	36	0.0009	-0.0075	0.0085
+dev	cs_donor	degbin_ap	dtype	no genetic seed evidence	1	0.0026	0.0026	0.0026
+dev	cs_donor	degbin_ap	area	cardiovascular	5	0.0170	0.0028	0.0350
+dev	cs_donor	degbin_ap	area	genetic/congenital	6	-0.0178	-0.0287	-0.0079
+dev	cs_donor	degbin_ap	area	nervous system	11	-0.0047	-0.0124	0.0040
+dev	cs_donor	degbin_ap	area	other	31	0.0044	-0.0056	0.0122
+dev	dA_pt	ap	dtype	GWAS-dominated	16	-0.0026	-0.0061	0.0008
+dev	dA_pt	ap	dtype	Mendelian-dominated	36	-0.0005	-0.0043	0.0036
+dev	dA_pt	ap	dtype	no genetic seed evidence	1	0.0181	0.0181	0.0181
+dev	dA_pt	ap	area	cardiovascular	5	-0.0006	-0.0079	0.0085
+dev	dA_pt	ap	area	genetic/congenital	6	-0.0040	-0.0054	-0.0019
+dev	dA_pt	ap	area	nervous system	11	0.0062	-0.0034	0.0174
+dev	dA_pt	ap	area	other	31	-0.0026	-0.0060	0.0009
+dev	dA_pt	nuap	dtype	GWAS-dominated	16	-0.0011	-0.0050	0.0025
+dev	dA_pt	nuap	dtype	Mendelian-dominated	36	0.0008	-0.0035	0.0049
+dev	dA_pt	nuap	dtype	no genetic seed evidence	1	0.0155	0.0155	0.0155
+dev	dA_pt	nuap	area	cardiovascular	5	-0.0003	-0.0086	0.0098
+dev	dA_pt	nuap	area	genetic/congenital	6	0.0003	-0.0040	0.0036
+dev	dA_pt	nuap	area	nervous system	11	0.0042	-0.0073	0.0160
+dev	dA_pt	nuap	area	other	31	-0.0006	-0.0031	0.0019
+dev	dA_pt	degbin_ap	dtype	GWAS-dominated	16	-0.0033	-0.0079	0.0020
+dev	dA_pt	degbin_ap	dtype	Mendelian-dominated	36	-0.0035	-0.0093	0.0017
+dev	dA_pt	degbin_ap	dtype	no genetic seed evidence	1	0.0262	0.0262	0.0262
+dev	dA_pt	degbin_ap	area	cardiovascular	5	-0.0062	-0.0122	-0.0002
+dev	dA_pt	degbin_ap	area	genetic/congenital	6	-0.0022	-0.0081	0.0027
+dev	dA_pt	degbin_ap	area	nervous system	11	-0.0057	-0.0134	0.0016
+dev	dA_pt	degbin_ap	area	other	31	-0.0014	-0.0072	0.0043
+dev	dc_ridge	ap	dtype	GWAS-dominated	16	0.0015	-0.0051	0.0079
+dev	dc_ridge	ap	dtype	Mendelian-dominated	36	-0.0076	-0.0144	0.0007
+dev	dc_ridge	ap	dtype	no genetic seed evidence	1	0.0522	0.0522	0.0522
+dev	dc_ridge	ap	area	cardiovascular	5	-0.0113	-0.0248	0.0023
+dev	dc_ridge	ap	area	genetic/congenital	6	-0.0058	-0.0102	0.0004
+dev	dc_ridge	ap	area	nervous system	11	-0.0061	-0.0251	0.0140
+dev	dc_ridge	ap	area	other	31	-0.0013	-0.0071	0.0063
+dev	dc_ridge	nuap	dtype	GWAS-dominated	16	-0.0006	-0.0073	0.0049
+dev	dc_ridge	nuap	dtype	Mendelian-dominated	36	-0.0036	-0.0103	0.0037
+dev	dc_ridge	nuap	dtype	no genetic seed evidence	1	0.0462	0.0462	0.0462
+dev	dc_ridge	nuap	area	cardiovascular	5	-0.0074	-0.0163	0.0015
+dev	dc_ridge	nuap	area	genetic/congenital	6	-0.0038	-0.0092	0.0009
+dev	dc_ridge	nuap	area	nervous system	11	-0.0030	-0.0181	0.0137
+dev	dc_ridge	nuap	area	other	31	-0.0001	-0.0062	0.0072
+dev	dc_ridge	degbin_ap	dtype	GWAS-dominated	16	-0.0018	-0.0100	0.0070
+dev	dc_ridge	degbin_ap	dtype	Mendelian-dominated	36	-0.0099	-0.0169	-0.0033
+dev	dc_ridge	degbin_ap	dtype	no genetic seed evidence	1	0.0454	0.0454	0.0454
+dev	dc_ridge	degbin_ap	area	cardiovascular	5	-0.0205	-0.0389	-0.0053
+dev	dc_ridge	degbin_ap	area	genetic/congenital	6	-0.0041	-0.0182	0.0197
+dev	dc_ridge	degbin_ap	area	nervous system	11	-0.0110	-0.0246	-0.0001
+dev	dc_ridge	degbin_ap	area	other	31	-0.0029	-0.0113	0.0065
+dev	gwas_catlag	ap	dtype	GWAS-dominated	16	-0.0609	-0.1170	-0.0202
+dev	gwas_catlag	ap	dtype	Mendelian-dominated	36	-0.0031	-0.0092	0.0027
+dev	gwas_catlag	ap	dtype	no genetic seed evidence	1	-0.2386	-0.2386	-0.2386
+dev	gwas_catlag	ap	area	cardiovascular	5	-0.0399	-0.1026	0.0029
+dev	gwas_catlag	ap	area	genetic/congenital	6	0.0007	-0.0038	0.0041
+dev	gwas_catlag	ap	area	nervous system	11	-0.0088	-0.0221	0.0013
+dev	gwas_catlag	ap	area	other	31	-0.0334	-0.0710	-0.0084
+dev	gwas_catlag	nuap	dtype	GWAS-dominated	16	-0.0605	-0.1166	-0.0176
+dev	gwas_catlag	nuap	dtype	Mendelian-dominated	36	-0.0022	-0.0076	0.0029
+dev	gwas_catlag	nuap	dtype	no genetic seed evidence	1	-0.1642	-0.1642	-0.1642
+dev	gwas_catlag	nuap	area	cardiovascular	5	-0.0332	-0.0865	-0.0001
+dev	gwas_catlag	nuap	area	genetic/congenital	6	0.0064	-0.0113	0.0218
+dev	gwas_catlag	nuap	area	nervous system	11	-0.0047	-0.0139	0.0066
+dev	gwas_catlag	nuap	area	other	31	-0.0333	-0.0674	-0.0095
+dev	gwas_catlag	degbin_ap	dtype	GWAS-dominated	16	-0.0530	-0.1032	-0.0152
+dev	gwas_catlag	degbin_ap	dtype	Mendelian-dominated	36	-0.0050	-0.0115	0.0000
+dev	gwas_catlag	degbin_ap	dtype	no genetic seed evidence	1	-0.2653	-0.2653	-0.2653
+dev	gwas_catlag	degbin_ap	area	cardiovascular	5	-0.0438	-0.1105	0.0042
+dev	gwas_catlag	degbin_ap	area	genetic/congenital	6	-0.0017	-0.0102	0.0037
+dev	gwas_catlag	degbin_ap	area	nervous system	11	-0.0141	-0.0298	-0.0024
+dev	gwas_catlag	degbin_ap	area	other	31	-0.0294	-0.0660	-0.0047
+dev	priors	ap	dtype	GWAS-dominated	16	0.0020	-0.0039	0.0086
+dev	priors	ap	dtype	Mendelian-dominated	36	-0.0032	-0.0119	0.0027
+dev	priors	ap	dtype	no genetic seed evidence	1	0.0105	0.0105	0.0105
+dev	priors	ap	area	cardiovascular	5	0.0131	0.0002	0.0273
+dev	priors	ap	area	genetic/congenital	6	0.0006	-0.0023	0.0028
+dev	priors	ap	area	nervous system	11	-0.0151	-0.0300	-0.0015
+dev	priors	ap	area	other	31	0.0008	-0.0038	0.0043
+dev	priors	nuap	dtype	GWAS-dominated	16	-0.0041	-0.0095	0.0004
+dev	priors	nuap	dtype	Mendelian-dominated	36	-0.0006	-0.0076	0.0064
+dev	priors	nuap	dtype	no genetic seed evidence	1	-0.0064	-0.0064	-0.0064
+dev	priors	nuap	area	cardiovascular	5	0.0039	-0.0165	0.0256
+dev	priors	nuap	area	genetic/congenital	6	-0.0018	-0.0094	0.0036
+dev	priors	nuap	area	nervous system	11	-0.0112	-0.0212	-0.0007
+dev	priors	nuap	area	other	31	0.0007	-0.0039	0.0075
+dev	priors	degbin_ap	dtype	GWAS-dominated	16	-0.0026	-0.0094	0.0035
+dev	priors	degbin_ap	dtype	Mendelian-dominated	36	-0.0053	-0.0128	0.0013
+dev	priors	degbin_ap	dtype	no genetic seed evidence	1	0.0014	0.0014	0.0014
+dev	priors	degbin_ap	area	cardiovascular	5	-0.0044	-0.0169	0.0080
+dev	priors	degbin_ap	area	genetic/congenital	6	-0.0091	-0.0266	0.0212
+dev	priors	degbin_ap	area	nervous system	11	-0.0135	-0.0192	-0.0067
+dev	priors	degbin_ap	area	other	31	-0.0002	-0.0069	0.0051
+dev	ph	ap	dtype	GWAS-dominated	16	-0.0010	-0.0041	0.0019
+dev	ph	ap	dtype	Mendelian-dominated	36	-0.0053	-0.0120	0.0009
+dev	ph	ap	dtype	no genetic seed evidence	1	0.0080	0.0080	0.0080
+dev	ph	ap	area	cardiovascular	5	0.0159	0.0015	0.0283
+dev	ph	ap	area	genetic/congenital	6	-0.0139	-0.0300	0.0009
+dev	ph	ap	area	nervous system	11	-0.0034	-0.0151	0.0104
+dev	ph	ap	area	other	31	-0.0051	-0.0105	-0.0006
+dev	ph	nuap	dtype	GWAS-dominated	16	-0.0001	-0.0042	0.0035
+dev	ph	nuap	dtype	Mendelian-dominated	36	-0.0052	-0.0112	0.0004
+dev	ph	nuap	dtype	no genetic seed evidence	1	0.0217	0.0217	0.0217
+dev	ph	nuap	area	cardiovascular	5	0.0089	-0.0083	0.0248
+dev	ph	nuap	area	genetic/congenital	6	-0.0140	-0.0253	0.0009
+dev	ph	nuap	area	nervous system	11	-0.0031	-0.0143	0.0109
+dev	ph	nuap	area	other	31	-0.0030	-0.0080	0.0012
+dev	ph	degbin_ap	dtype	GWAS-dominated	16	0.0007	-0.0025	0.0047
+dev	ph	degbin_ap	dtype	Mendelian-dominated	36	-0.0048	-0.0128	0.0023
+dev	ph	degbin_ap	dtype	no genetic seed evidence	1	0.0130	0.0130	0.0130
+dev	ph	degbin_ap	area	cardiovascular	5	0.0069	-0.0009	0.0164
+dev	ph	degbin_ap	area	genetic/congenital	6	-0.0145	-0.0250	-0.0041
+dev	ph	degbin_ap	area	nervous system	11	-0.0063	-0.0187	0.0059
+dev	ph	degbin_ap	area	other	31	-0.0009	-0.0079	0.0046
+dev	pt_ridge	ap	dtype	GWAS-dominated	16	-0.0008	-0.0030	0.0014
+dev	pt_ridge	ap	dtype	Mendelian-dominated	36	-0.0026	-0.0077	0.0024
+dev	pt_ridge	ap	dtype	no genetic seed evidence	1	-0.0027	-0.0027	-0.0027
+dev	pt_ridge	ap	area	cardiovascular	5	0.0036	-0.0058	0.0133
+dev	pt_ridge	ap	area	genetic/congenital	6	0.0022	-0.0033	0.0085
+dev	pt_ridge	ap	area	nervous system	11	-0.0015	-0.0112	0.0104
+dev	pt_ridge	ap	area	other	31	-0.0040	-0.0078	-0.0004
+dev	pt_ridge	nuap	dtype	GWAS-dominated	16	-0.0023	-0.0058	0.0006
+dev	pt_ridge	nuap	dtype	Mendelian-dominated	36	0.0002	-0.0055	0.0056
+dev	pt_ridge	nuap	dtype	no genetic seed evidence	1	0.0007	0.0007	0.0007
+dev	pt_ridge	nuap	area	cardiovascular	5	0.0013	-0.0106	0.0132
+dev	pt_ridge	nuap	area	genetic/congenital	6	-0.0053	-0.0083	-0.0003
+dev	pt_ridge	nuap	area	nervous system	11	-0.0053	-0.0123	0.0023
+dev	pt_ridge	nuap	area	other	31	0.0018	-0.0039	0.0067
+dev	pt_ridge	degbin_ap	dtype	GWAS-dominated	16	-0.0019	-0.0060	0.0014
+dev	pt_ridge	degbin_ap	dtype	Mendelian-dominated	36	-0.0077	-0.0135	-0.0024
+dev	pt_ridge	degbin_ap	dtype	no genetic seed evidence	1	0.0062	0.0062	0.0062
+dev	pt_ridge	degbin_ap	area	cardiovascular	5	-0.0024	-0.0056	0.0008
+dev	pt_ridge	degbin_ap	area	genetic/congenital	6	-0.0143	-0.0248	-0.0075
+dev	pt_ridge	degbin_ap	area	nervous system	11	-0.0107	-0.0167	-0.0049
+dev	pt_ridge	degbin_ap	area	other	31	-0.0028	-0.0092	0.0031
+dev	view+donor	ap	dtype	GWAS-dominated	16	0.0044	-0.0041	0.0134
+dev	view+donor	ap	dtype	Mendelian-dominated	36	0.0173	0.0040	0.0313
+dev	view+donor	ap	dtype	no genetic seed evidence	1	0.0334	0.0334	0.0334
+dev	view+donor	ap	area	cardiovascular	5	0.0100	-0.0062	0.0282
+dev	view+donor	ap	area	genetic/congenital	6	0.0097	-0.0073	0.0263
+dev	view+donor	ap	area	nervous system	11	0.0055	-0.0078	0.0225
+dev	view+donor	ap	area	other	31	0.0180	0.0055	0.0337
+dev	view+donor	nuap	dtype	GWAS-dominated	16	0.0101	-0.0033	0.0247
+dev	view+donor	nuap	dtype	Mendelian-dominated	36	0.0187	0.0031	0.0331
+dev	view+donor	nuap	dtype	no genetic seed evidence	1	-0.0139	-0.0139	-0.0139
+dev	view+donor	nuap	area	cardiovascular	5	0.0144	-0.0190	0.0405
+dev	view+donor	nuap	area	genetic/congenital	6	0.0070	-0.0239	0.0308
+dev	view+donor	nuap	area	nervous system	11	0.0159	0.0010	0.0328
+dev	view+donor	nuap	area	other	31	0.0171	0.0009	0.0345
+dev	view+donor	degbin_ap	dtype	GWAS-dominated	16	0.0090	-0.0010	0.0194
+dev	view+donor	degbin_ap	dtype	Mendelian-dominated	36	0.0101	-0.0057	0.0246
+dev	view+donor	degbin_ap	dtype	no genetic seed evidence	1	0.0335	0.0335	0.0335
+dev	view+donor	degbin_ap	area	cardiovascular	5	-0.0008	-0.0186	0.0170
+dev	view+donor	degbin_ap	area	genetic/congenital	6	-0.0128	-0.0232	-0.0046
+dev	view+donor	degbin_ap	area	nervous system	11	-0.0046	-0.0231	0.0130
+dev	view+donor	degbin_ap	area	other	31	0.0217	0.0085	0.0359
+dev	modern	ap	dtype	GWAS-dominated	16	-0.0001	-0.0046	0.0042
+dev	modern	ap	dtype	Mendelian-dominated	36	0.0051	0.0003	0.0093
+dev	modern	ap	dtype	no genetic seed evidence	1	0.0312	0.0312	0.0312
+dev	modern	ap	area	cardiovascular	5	0.0039	-0.0074	0.0150
+dev	modern	ap	area	genetic/congenital	6	-0.0007	-0.0056	0.0017
+dev	modern	ap	area	nervous system	11	0.0054	-0.0047	0.0166
+dev	modern	ap	area	other	31	0.0045	0.0006	0.0081
+dev	modern	nuap	dtype	GWAS-dominated	16	0.0028	-0.0064	0.0113
+dev	modern	nuap	dtype	Mendelian-dominated	36	0.0020	-0.0051	0.0084
+dev	modern	nuap	dtype	no genetic seed evidence	1	0.0048	0.0048	0.0048
+dev	modern	nuap	area	cardiovascular	5	0.0065	-0.0179	0.0252
+dev	modern	nuap	area	genetic/congenital	6	0.0021	-0.0055	0.0071
+dev	modern	nuap	area	nervous system	11	0.0008	-0.0123	0.0156
+dev	modern	nuap	area	other	31	0.0022	-0.0046	0.0080
+dev	modern	degbin_ap	dtype	GWAS-dominated	16	0.0034	-0.0017	0.0087
+dev	modern	degbin_ap	dtype	Mendelian-dominated	36	0.0022	-0.0054	0.0085
+dev	modern	degbin_ap	dtype	no genetic seed evidence	1	0.0170	0.0170	0.0170
+dev	modern	degbin_ap	area	cardiovascular	5	-0.0005	-0.0146	0.0137
+dev	modern	degbin_ap	area	genetic/congenital	6	0.0006	-0.0014	0.0021
+dev	modern	degbin_ap	area	nervous system	11	-0.0028	-0.0149	0.0138
+dev	modern	degbin_ap	area	other	31	0.0059	0.0005	0.0107
+confirm	base	ap	dtype	GWAS-dominated	39	0.0055	0.0004	0.0109
+confirm	base	ap	dtype	Mendelian-dominated	96	0.0001	-0.0034	0.0037
+confirm	base	ap	dtype	no genetic seed evidence	3	0.0177	-0.0282	0.0785
+confirm	base	ap	area	cardiovascular	9	0.0083	-0.0085	0.0307
+confirm	base	ap	area	genetic/congenital	17	0.0113	0.0013	0.0194
+confirm	base	ap	area	nervous system	29	-0.0032	-0.0105	0.0027
+confirm	base	ap	area	other	83	0.0012	-0.0028	0.0054
+confirm	base	nuap	dtype	GWAS-dominated	39	-0.0134	-0.0199	-0.0071
+confirm	base	nuap	dtype	Mendelian-dominated	96	-0.0199	-0.0248	-0.0146
+confirm	base	nuap	dtype	no genetic seed evidence	3	0.0026	-0.0067	0.0201
+confirm	base	nuap	area	cardiovascular	9	-0.0108	-0.0227	-0.0001
+confirm	base	nuap	area	genetic/congenital	17	-0.0124	-0.0253	-0.0006
+confirm	base	nuap	area	nervous system	29	-0.0176	-0.0252	-0.0113
+confirm	base	nuap	area	other	83	-0.0194	-0.0255	-0.0133
+confirm	base	degbin_ap	dtype	GWAS-dominated	39	-0.0054	-0.0131	0.0026
+confirm	base	degbin_ap	dtype	Mendelian-dominated	96	-0.0061	-0.0134	0.0016
+confirm	base	degbin_ap	dtype	no genetic seed evidence	3	-0.0139	-0.0487	0.0083
+confirm	base	degbin_ap	area	cardiovascular	9	-0.0051	-0.0113	-0.0004
+confirm	base	degbin_ap	area	genetic/congenital	17	-0.0096	-0.0311	0.0030
+confirm	base	degbin_ap	area	nervous system	29	-0.0039	-0.0103	0.0033
+confirm	base	degbin_ap	area	other	83	-0.0061	-0.0131	0.0022
+confirm	donor	ap	dtype	GWAS-dominated	39	-0.0009	-0.0037	0.0019
+confirm	donor	ap	dtype	Mendelian-dominated	96	-0.0001	-0.0047	0.0035
+confirm	donor	ap	dtype	no genetic seed evidence	3	-0.0550	-0.1054	-0.0049
+confirm	donor	ap	area	cardiovascular	9	-0.0143	-0.0451	0.0042
+confirm	donor	ap	area	genetic/congenital	17	0.0021	-0.0110	0.0107
+confirm	donor	ap	area	nervous system	29	-0.0046	-0.0174	0.0050
+confirm	donor	ap	area	other	83	0.0001	-0.0030	0.0042
+confirm	donor	nuap	dtype	GWAS-dominated	39	-0.0048	-0.0089	-0.0004
+confirm	donor	nuap	dtype	Mendelian-dominated	96	-0.0005	-0.0072	0.0051
+confirm	donor	nuap	dtype	no genetic seed evidence	3	-0.0400	-0.0924	0.0001
+confirm	donor	nuap	area	cardiovascular	9	-0.0121	-0.0377	0.0009
+confirm	donor	nuap	area	genetic/congenital	17	-0.0005	-0.0105	0.0081
+confirm	donor	nuap	area	nervous system	29	-0.0083	-0.0254	0.0037
+confirm	donor	nuap	area	other	83	0.0000	-0.0054	0.0068
+confirm	donor	degbin_ap	dtype	GWAS-dominated	39	0.0019	-0.0032	0.0080
+confirm	donor	degbin_ap	dtype	Mendelian-dominated	96	0.0011	-0.0025	0.0045
+confirm	donor	degbin_ap	dtype	no genetic seed evidence	3	-0.0265	-0.0465	0.0035
+confirm	donor	degbin_ap	area	cardiovascular	9	-0.0043	-0.0187	0.0041
+confirm	donor	degbin_ap	area	genetic/congenital	17	0.0019	-0.0057	0.0097
+confirm	donor	degbin_ap	area	nervous system	29	-0.0001	-0.0104	0.0075
+confirm	donor	degbin_ap	area	other	83	0.0014	-0.0020	0.0054
+confirm	view	ap	dtype	GWAS-dominated	39	0.0005	-0.0044	0.0061
+confirm	view	ap	dtype	Mendelian-dominated	96	0.0095	0.0031	0.0164
+confirm	view	ap	dtype	no genetic seed evidence	3	-0.0263	-0.0583	0.0094
+confirm	view	ap	area	cardiovascular	9	0.0011	-0.0094	0.0119
+confirm	view	ap	area	genetic/congenital	17	0.0072	-0.0142	0.0233
+confirm	view	ap	area	nervous system	29	0.0090	-0.0010	0.0189
+confirm	view	ap	area	other	83	0.0055	-0.0011	0.0153
+confirm	view	nuap	dtype	GWAS-dominated	39	0.0019	-0.0053	0.0091
+confirm	view	nuap	dtype	Mendelian-dominated	96	0.0116	0.0050	0.0181
+confirm	view	nuap	dtype	no genetic seed evidence	3	-0.0196	-0.0559	0.0018
+confirm	view	nuap	area	cardiovascular	9	0.0066	-0.0004	0.0187
+confirm	view	nuap	area	genetic/congenital	17	0.0124	-0.0072	0.0273
+confirm	view	nuap	area	nervous system	29	0.0099	-0.0042	0.0211
+confirm	view	nuap	area	other	83	0.0069	0.0003	0.0165
+confirm	view	degbin_ap	dtype	GWAS-dominated	39	-0.0000	-0.0036	0.0039
+confirm	view	degbin_ap	dtype	Mendelian-dominated	96	0.0088	0.0033	0.0147
+confirm	view	degbin_ap	dtype	no genetic seed evidence	3	0.0409	0.0043	0.0668
+confirm	view	degbin_ap	area	cardiovascular	9	0.0129	-0.0012	0.0338
+confirm	view	degbin_ap	area	genetic/congenital	17	0.0063	-0.0065	0.0163
+confirm	view	degbin_ap	area	nervous system	29	0.0106	0.0047	0.0173
+confirm	view	degbin_ap	area	other	83	0.0053	0.0003	0.0099
+confirm	cs_donor	ap	dtype	GWAS-dominated	39	-0.0012	-0.0047	0.0032
+confirm	cs_donor	ap	dtype	Mendelian-dominated	96	0.0024	-0.0031	0.0075
+confirm	cs_donor	ap	dtype	no genetic seed evidence	3	0.0121	0.0015	0.0191
+confirm	cs_donor	ap	area	cardiovascular	9	0.0022	-0.0038	0.0086
+confirm	cs_donor	ap	area	genetic/congenital	17	0.0008	-0.0053	0.0080
+confirm	cs_donor	ap	area	nervous system	29	0.0013	-0.0057	0.0074
+confirm	cs_donor	ap	area	other	83	0.0017	-0.0036	0.0060
+confirm	cs_donor	nuap	dtype	GWAS-dominated	39	-0.0001	-0.0042	0.0053
+confirm	cs_donor	nuap	dtype	Mendelian-dominated	96	0.0010	-0.0055	0.0073
+confirm	cs_donor	nuap	dtype	no genetic seed evidence	3	0.0260	0.0104	0.0517
+confirm	cs_donor	nuap	area	cardiovascular	9	0.0110	-0.0006	0.0297
+confirm	cs_donor	nuap	area	genetic/congenital	17	-0.0048	-0.0109	0.0023
+confirm	cs_donor	nuap	area	nervous system	29	0.0043	-0.0041	0.0113
+confirm	cs_donor	nuap	area	other	83	0.0004	-0.0062	0.0065
+confirm	cs_donor	degbin_ap	dtype	GWAS-dominated	39	0.0010	-0.0041	0.0064
+confirm	cs_donor	degbin_ap	dtype	Mendelian-dominated	96	-0.0008	-0.0059	0.0033
+confirm	cs_donor	degbin_ap	dtype	no genetic seed evidence	3	0.0118	-0.0123	0.0294
+confirm	cs_donor	degbin_ap	area	cardiovascular	9	0.0046	-0.0046	0.0150
+confirm	cs_donor	degbin_ap	area	genetic/congenital	17	-0.0018	-0.0093	0.0034
+confirm	cs_donor	degbin_ap	area	nervous system	29	0.0009	-0.0026	0.0042
+confirm	cs_donor	degbin_ap	area	other	83	-0.0005	-0.0060	0.0039
+confirm	dA_pt	ap	dtype	GWAS-dominated	39	-0.0011	-0.0043	0.0022
+confirm	dA_pt	ap	dtype	Mendelian-dominated	96	0.0007	-0.0032	0.0048
+confirm	dA_pt	ap	dtype	no genetic seed evidence	3	0.0093	-0.0290	0.0583
+confirm	dA_pt	ap	area	cardiovascular	9	0.0094	-0.0024	0.0274
+confirm	dA_pt	ap	area	genetic/congenital	17	0.0002	-0.0085	0.0095
+confirm	dA_pt	ap	area	nervous system	29	0.0026	-0.0060	0.0107
+confirm	dA_pt	ap	area	other	83	-0.0013	-0.0042	0.0025
+confirm	dA_pt	nuap	dtype	GWAS-dominated	39	0.0006	-0.0034	0.0052
+confirm	dA_pt	nuap	dtype	Mendelian-dominated	96	0.0011	-0.0043	0.0060
+confirm	dA_pt	nuap	dtype	no genetic seed evidence	3	0.0163	-0.0230	0.0773
+confirm	dA_pt	nuap	area	cardiovascular	9	0.0197	-0.0046	0.0564
+confirm	dA_pt	nuap	area	genetic/congenital	17	0.0006	-0.0074	0.0086
+confirm	dA_pt	nuap	area	nervous system	29	0.0021	-0.0080	0.0125
+confirm	dA_pt	nuap	area	other	83	-0.0008	-0.0044	0.0032
+confirm	dA_pt	degbin_ap	dtype	GWAS-dominated	39	0.0008	-0.0040	0.0058
+confirm	dA_pt	degbin_ap	dtype	Mendelian-dominated	96	-0.0016	-0.0054	0.0023
+confirm	dA_pt	degbin_ap	dtype	no genetic seed evidence	3	0.0089	-0.0095	0.0371
+confirm	dA_pt	degbin_ap	area	cardiovascular	9	0.0127	-0.0012	0.0335
+confirm	dA_pt	degbin_ap	area	genetic/congenital	17	-0.0058	-0.0130	-0.0007
+confirm	dA_pt	degbin_ap	area	nervous system	29	0.0030	-0.0018	0.0074
+confirm	dA_pt	degbin_ap	area	other	83	-0.0024	-0.0070	0.0021
+confirm	dc_ridge	ap	dtype	GWAS-dominated	39	0.0003	-0.0030	0.0038
+confirm	dc_ridge	ap	dtype	Mendelian-dominated	96	-0.0038	-0.0080	0.0003
+confirm	dc_ridge	ap	dtype	no genetic seed evidence	3	-0.0427	-0.1452	0.0190
+confirm	dc_ridge	ap	area	cardiovascular	9	-0.0013	-0.0262	0.0131
+confirm	dc_ridge	ap	area	genetic/congenital	17	-0.0084	-0.0212	0.0034
+confirm	dc_ridge	ap	area	nervous system	29	0.0035	-0.0025	0.0088
+confirm	dc_ridge	ap	area	other	83	-0.0052	-0.0101	-0.0000
+confirm	dc_ridge	nuap	dtype	GWAS-dominated	39	-0.0011	-0.0055	0.0033
+confirm	dc_ridge	nuap	dtype	Mendelian-dominated	96	-0.0074	-0.0142	-0.0009
+confirm	dc_ridge	nuap	dtype	no genetic seed evidence	3	-0.0025	-0.0525	0.0588
+confirm	dc_ridge	nuap	area	cardiovascular	9	-0.0028	-0.0308	0.0198
+confirm	dc_ridge	nuap	area	genetic/congenital	17	-0.0156	-0.0383	0.0026
+confirm	dc_ridge	nuap	area	nervous system	29	0.0031	-0.0038	0.0090
+confirm	dc_ridge	nuap	area	other	83	-0.0067	-0.0126	-0.0020
+confirm	dc_ridge	degbin_ap	dtype	GWAS-dominated	39	-0.0051	-0.0134	0.0012
+confirm	dc_ridge	degbin_ap	dtype	Mendelian-dominated	96	-0.0077	-0.0128	-0.0024
+confirm	dc_ridge	degbin_ap	dtype	no genetic seed evidence	3	-0.0018	-0.0304	0.0187
+confirm	dc_ridge	degbin_ap	area	cardiovascular	9	0.0018	-0.0166	0.0128
+confirm	dc_ridge	degbin_ap	area	genetic/congenital	17	-0.0094	-0.0247	0.0068
+confirm	dc_ridge	degbin_ap	area	nervous system	29	-0.0049	-0.0125	0.0023
+confirm	dc_ridge	degbin_ap	area	other	83	-0.0079	-0.0153	-0.0010
+confirm	gwas_catlag	ap	dtype	GWAS-dominated	39	-0.0063	-0.0201	0.0050
+confirm	gwas_catlag	ap	dtype	Mendelian-dominated	96	-0.0030	-0.0132	0.0059
+confirm	gwas_catlag	ap	dtype	no genetic seed evidence	3	-0.0071	-0.0132	-0.0009
+confirm	gwas_catlag	ap	area	cardiovascular	9	0.0023	-0.0038	0.0074
+confirm	gwas_catlag	ap	area	genetic/congenital	17	-0.0333	-0.1228	0.0095
+confirm	gwas_catlag	ap	area	nervous system	29	-0.0011	-0.0177	0.0102
+confirm	gwas_catlag	ap	area	other	83	0.0002	-0.0078	0.0079
+confirm	gwas_catlag	nuap	dtype	GWAS-dominated	39	-0.0116	-0.0259	-0.0011
+confirm	gwas_catlag	nuap	dtype	Mendelian-dominated	96	-0.0052	-0.0159	0.0030
+confirm	gwas_catlag	nuap	dtype	no genetic seed evidence	3	0.0007	-0.0236	0.0151
+confirm	gwas_catlag	nuap	area	cardiovascular	9	0.0015	-0.0114	0.0151
+confirm	gwas_catlag	nuap	area	genetic/congenital	17	-0.0341	-0.1100	0.0027
+confirm	gwas_catlag	nuap	area	nervous system	29	-0.0029	-0.0199	0.0076
+confirm	gwas_catlag	nuap	area	other	83	-0.0036	-0.0127	0.0033
+confirm	gwas_catlag	degbin_ap	dtype	GWAS-dominated	39	-0.0145	-0.0277	-0.0024
+confirm	gwas_catlag	degbin_ap	dtype	Mendelian-dominated	96	-0.0046	-0.0144	0.0031
+confirm	gwas_catlag	degbin_ap	dtype	no genetic seed evidence	3	-0.0039	-0.0133	0.0029
+confirm	gwas_catlag	degbin_ap	area	cardiovascular	9	0.0010	-0.0090	0.0115
+confirm	gwas_catlag	degbin_ap	area	genetic/congenital	17	-0.0362	-0.1281	0.0071
+confirm	gwas_catlag	degbin_ap	area	nervous system	29	-0.0037	-0.0177	0.0047
+confirm	gwas_catlag	degbin_ap	area	other	83	-0.0037	-0.0132	0.0045
+confirm	priors	ap	dtype	GWAS-dominated	39	0.0022	-0.0058	0.0104
+confirm	priors	ap	dtype	Mendelian-dominated	96	0.0020	-0.0023	0.0067
+confirm	priors	ap	dtype	no genetic seed evidence	3	-0.0193	-0.0392	0.0018
+confirm	priors	ap	area	cardiovascular	9	-0.0103	-0.0171	-0.0022
+confirm	priors	ap	area	genetic/congenital	17	-0.0013	-0.0089	0.0058
+confirm	priors	ap	area	nervous system	29	0.0035	-0.0033	0.0112
+confirm	priors	ap	area	other	83	0.0028	-0.0043	0.0096
+confirm	priors	nuap	dtype	GWAS-dominated	39	-0.0002	-0.0071	0.0072
+confirm	priors	nuap	dtype	Mendelian-dominated	96	-0.0006	-0.0049	0.0031
+confirm	priors	nuap	dtype	no genetic seed evidence	3	-0.0079	-0.0393	0.0086
+confirm	priors	nuap	area	cardiovascular	9	-0.0010	-0.0099	0.0115
+confirm	priors	nuap	area	genetic/congenital	17	-0.0132	-0.0239	-0.0029
+confirm	priors	nuap	area	nervous system	29	0.0069	0.0006	0.0127
+confirm	priors	nuap	area	other	83	-0.0007	-0.0052	0.0036
+confirm	priors	degbin_ap	dtype	GWAS-dominated	39	-0.0006	-0.0117	0.0105
+confirm	priors	degbin_ap	dtype	Mendelian-dominated	96	-0.0012	-0.0053	0.0029
+confirm	priors	degbin_ap	dtype	no genetic seed evidence	3	-0.0119	-0.0159	-0.0075
+confirm	priors	degbin_ap	area	cardiovascular	9	-0.0084	-0.0233	0.0124
+confirm	priors	degbin_ap	area	genetic/congenital	17	-0.0035	-0.0089	0.0034
+confirm	priors	degbin_ap	area	nervous system	29	0.0007	-0.0055	0.0065
+confirm	priors	degbin_ap	area	other	83	-0.0007	-0.0094	0.0063
+confirm	ph	ap	dtype	GWAS-dominated	39	0.0008	-0.0021	0.0035
+confirm	ph	ap	dtype	Mendelian-dominated	96	-0.0031	-0.0082	0.0020
+confirm	ph	ap	dtype	no genetic seed evidence	3	-0.0037	-0.0179	0.0104
+confirm	ph	ap	area	cardiovascular	9	0.0018	-0.0036	0.0061
+confirm	ph	ap	area	genetic/congenital	17	0.0002	-0.0058	0.0082
+confirm	ph	ap	area	nervous system	29	0.0007	-0.0117	0.0105
+confirm	ph	ap	area	other	83	-0.0038	-0.0096	0.0007
+confirm	ph	nuap	dtype	GWAS-dominated	39	-0.0012	-0.0066	0.0037
+confirm	ph	nuap	dtype	Mendelian-dominated	96	-0.0057	-0.0114	0.0008
+confirm	ph	nuap	dtype	no genetic seed evidence	3	0.0112	0.0097	0.0124
+confirm	ph	nuap	area	cardiovascular	9	0.0016	-0.0024	0.0057
+confirm	ph	nuap	area	genetic/congenital	17	-0.0041	-0.0136	0.0070
+confirm	ph	nuap	area	nervous system	29	-0.0028	-0.0172	0.0081
+confirm	ph	nuap	area	other	83	-0.0051	-0.0112	0.0006
+confirm	ph	degbin_ap	dtype	GWAS-dominated	39	-0.0006	-0.0041	0.0028
+confirm	ph	degbin_ap	dtype	Mendelian-dominated	96	-0.0036	-0.0091	0.0019
+confirm	ph	degbin_ap	dtype	no genetic seed evidence	3	0.0120	-0.0288	0.0582
+confirm	ph	degbin_ap	area	cardiovascular	9	0.0083	-0.0009	0.0249
+confirm	ph	degbin_ap	area	genetic/congenital	17	-0.0007	-0.0065	0.0075
+confirm	ph	degbin_ap	area	nervous system	29	0.0000	-0.0080	0.0088
+confirm	ph	degbin_ap	area	other	83	-0.0048	-0.0102	-0.0001
+confirm	pt_ridge	ap	dtype	GWAS-dominated	39	-0.0015	-0.0046	0.0016
+confirm	pt_ridge	ap	dtype	Mendelian-dominated	96	-0.0058	-0.0100	-0.0024
+confirm	pt_ridge	ap	dtype	no genetic seed evidence	3	0.0023	-0.0141	0.0213
+confirm	pt_ridge	ap	area	cardiovascular	9	-0.0204	-0.0525	-0.0045
+confirm	pt_ridge	ap	area	genetic/congenital	17	-0.0039	-0.0116	0.0035
+confirm	pt_ridge	ap	area	nervous system	29	-0.0017	-0.0070	0.0022
+confirm	pt_ridge	ap	area	other	83	-0.0037	-0.0068	-0.0014
+confirm	pt_ridge	nuap	dtype	GWAS-dominated	39	-0.0035	-0.0089	0.0007
+confirm	pt_ridge	nuap	dtype	Mendelian-dominated	96	-0.0045	-0.0085	-0.0010
+confirm	pt_ridge	nuap	dtype	no genetic seed evidence	3	-0.0038	-0.0169	0.0072
+confirm	pt_ridge	nuap	area	cardiovascular	9	-0.0134	-0.0328	-0.0016
+confirm	pt_ridge	nuap	area	genetic/congenital	17	-0.0050	-0.0130	0.0042
+confirm	pt_ridge	nuap	area	nervous system	29	0.0005	-0.0056	0.0052
+confirm	pt_ridge	nuap	area	other	83	-0.0047	-0.0086	-0.0015
+confirm	pt_ridge	degbin_ap	dtype	GWAS-dominated	39	-0.0010	-0.0067	0.0043
+confirm	pt_ridge	degbin_ap	dtype	Mendelian-dominated	96	-0.0053	-0.0080	-0.0023
+confirm	pt_ridge	degbin_ap	dtype	no genetic seed evidence	3	0.0080	-0.0079	0.0219
+confirm	pt_ridge	degbin_ap	area	cardiovascular	9	-0.0048	-0.0145	0.0022
+confirm	pt_ridge	degbin_ap	area	genetic/congenital	17	-0.0072	-0.0122	-0.0027
+confirm	pt_ridge	degbin_ap	area	nervous system	29	-0.0023	-0.0086	0.0037
+confirm	pt_ridge	degbin_ap	area	other	83	-0.0036	-0.0062	-0.0010
+confirm	view+donor	ap	dtype	GWAS-dominated	39	-0.0018	-0.0053	0.0023
+confirm	view+donor	ap	dtype	Mendelian-dominated	96	0.0110	0.0030	0.0186
+confirm	view+donor	ap	dtype	no genetic seed evidence	3	-0.0875	-0.1785	-0.0003
+confirm	view+donor	ap	area	cardiovascular	9	-0.0159	-0.0671	0.0117
+confirm	view+donor	ap	area	genetic/congenital	17	0.0109	-0.0007	0.0235
+confirm	view+donor	ap	area	nervous system	29	0.0070	-0.0024	0.0169
+confirm	view+donor	ap	area	other	83	0.0057	-0.0035	0.0177
+confirm	view+donor	nuap	dtype	GWAS-dominated	39	-0.0009	-0.0077	0.0070
+confirm	view+donor	nuap	dtype	Mendelian-dominated	96	0.0130	0.0034	0.0224
+confirm	view+donor	nuap	dtype	no genetic seed evidence	3	-0.0577	-0.0901	0.0028
+confirm	view+donor	nuap	area	cardiovascular	9	-0.0018	-0.0313	0.0222
+confirm	view+donor	nuap	area	genetic/congenital	17	0.0152	0.0002	0.0302
+confirm	view+donor	nuap	area	nervous system	29	-0.0016	-0.0098	0.0058
+confirm	view+donor	nuap	area	other	83	0.0102	-0.0019	0.0262
+confirm	view+donor	degbin_ap	dtype	GWAS-dominated	39	0.0019	-0.0027	0.0075
+confirm	view+donor	degbin_ap	dtype	Mendelian-dominated	96	0.0123	0.0061	0.0178
+confirm	view+donor	degbin_ap	dtype	no genetic seed evidence	3	0.0252	0.0143	0.0307
+confirm	view+donor	degbin_ap	area	cardiovascular	9	0.0141	0.0037	0.0258
+confirm	view+donor	degbin_ap	area	genetic/congenital	17	0.0042	-0.0086	0.0152
+confirm	view+donor	degbin_ap	area	nervous system	29	0.0076	-0.0003	0.0137
+confirm	view+donor	degbin_ap	area	other	83	0.0110	0.0047	0.0187
+confirm	modern	ap	dtype	GWAS-dominated	39	-0.0001	-0.0043	0.0044
+confirm	modern	ap	dtype	Mendelian-dominated	96	-0.0006	-0.0049	0.0039
+confirm	modern	ap	dtype	no genetic seed evidence	3	-0.0139	-0.0475	0.0074
+confirm	modern	ap	area	cardiovascular	9	0.0059	-0.0003	0.0107
+confirm	modern	ap	area	genetic/congenital	17	0.0014	-0.0067	0.0139
+confirm	modern	ap	area	nervous system	29	0.0007	-0.0046	0.0065
+confirm	modern	ap	area	other	83	-0.0024	-0.0065	0.0032
+confirm	modern	nuap	dtype	GWAS-dominated	39	0.0001	-0.0050	0.0056
+confirm	modern	nuap	dtype	Mendelian-dominated	96	-0.0008	-0.0071	0.0063
+confirm	modern	nuap	dtype	no genetic seed evidence	3	0.0052	-0.0108	0.0293
+confirm	modern	nuap	area	cardiovascular	9	0.0124	0.0031	0.0228
+confirm	modern	nuap	area	genetic/congenital	17	-0.0037	-0.0143	0.0112
+confirm	modern	nuap	area	nervous system	29	0.0024	-0.0052	0.0117
+confirm	modern	nuap	area	other	83	-0.0020	-0.0080	0.0055
+confirm	modern	degbin_ap	dtype	GWAS-dominated	39	0.0007	-0.0040	0.0066
+confirm	modern	degbin_ap	dtype	Mendelian-dominated	96	0.0014	-0.0020	0.0050
+confirm	modern	degbin_ap	dtype	no genetic seed evidence	3	0.0008	-0.0156	0.0293
+confirm	modern	degbin_ap	area	cardiovascular	9	0.0074	-0.0007	0.0164
+confirm	modern	degbin_ap	area	genetic/congenital	17	0.0041	-0.0048	0.0157
+confirm	modern	degbin_ap	area	nervous system	29	0.0010	-0.0039	0.0077
+confirm	modern	degbin_ap	area	other	83	-0.0001	-0.0038	0.0041
