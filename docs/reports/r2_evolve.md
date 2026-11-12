@@ -31,3 +31,9 @@
   shrinkage ratio is reported.
 - **Kill rule (from the idea card).** Complement-past gain < 0.005 nuAP, or the stacker gain on confirm has a CI including 0
   -> "no usable gain".
+
+## 2. Selection (fixed 2026-11-12 04:35 CET, before any held-out number)
+
+40 candidates logged (cand_0..cand_39, 8 generations, all `ok`, all lint `ok`). Best fit600 nuAP = cand_32 (0.07039);
+the tie set (within 0.0005) is {17, 32, 33, 19, 36, 37}; tie-break by AP selects **cand_17** (nuAP 0.06990, AP 0.02874):
+cosine similarity, top-200 neighbours weighted cos^2, plus 1e-3 x all-row cosine transfer (tail), times (degree+1)^-0.6.

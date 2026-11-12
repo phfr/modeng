@@ -1,0 +1,41 @@
+cand	parent	mode	n	nuap	ap	auroc	r100	seconds	lint	status	desc	timestamp
+0		fit600	600	0.04062	0.04701	0.67672	0.16698	1.70000	ok	ok	cand_0: transfer_jaccard baseline (top-50 Jaccard-similar context diseases, sum of sim x label row).	2026-11-12 04:20:57
+1	0	fit600	600	0.04151	0.04729	0.69393	0.16558	2.10000	ok	ok	cand_1 (<- 0): cosine similarity instead of Jaccard, k=50.	2026-11-12 04:22:03
+2	0	fit600	600	0.04191	0.04687	0.72503	0.16784	2.60000	ok	ok	cand_2 (<- 0): Jaccard^2 weights (sharper), k=100.	2026-11-12 04:22:12
+3	0	fit600	600	0.04018	0.04626	0.67628	0.16759	2.40000	ok	ok	cand_3 (<- 0): Jaccard top-50, label rows scaled by |row|^-0.5 (large diseases spread less mass per gene).	2026-11-12 04:22:22
+4	0	fit600	600	0.04049	0.04682	0.67986	0.16707	1.60000	ok	ok	cand_4 (<- 0): IDF-weighted Jaccard (seed genes weighted log(N/df), df = masked column count), k=50.	2026-11-12 04:22:33
+5	0	fit600	600	0.05840	0.03348	0.67575	0.15016	2.00000	ok	ok	cand_5 (<- 0): transfer_jaccard x (degree+1)^-0.3 (nuAP favours low-degree genes); zero scores stay zero.	2026-11-12 04:22:41
+6	0	fit600	600	0.04034	0.04349	0.67609	0.16408	2.00000	ok	ok	cand_6 (<- 0): transfer_jaccard / (1 + gene popularity)^0.3 (popularity = masked column count).	2026-11-12 04:22:49
+7	5	fit600	600	0.06287	0.02661	0.67481	0.12566	2.30000	ok	ok	cand_7 (<- 5): transfer_jaccard x (degree+1)^-0.6 (stronger degree discount).	2026-11-12 04:23:22
+8	5,2	fit600	600	0.05856	0.03694	0.72410	0.15449	2.50000	ok	ok	cand_8 (<- 5 x 2): Jaccard^2 weights, k=100, x (degree+1)^-0.3.	2026-11-12 04:23:29
+9	5,1	fit600	600	0.06103	0.03248	0.69298	0.14647	2.60000	ok	ok	cand_9 (<- 5 x 1): cosine similarity, k=50, x (degree+1)^-0.3.	2026-11-12 04:23:38
+10	5	fit600	600	0.06054	0.03520	0.77375	0.15013	2.80000	ok	ok	cand_10 (<- 5): cand_5 plus a weak fallback for genes no neighbour carries: 1e-3 x global transfer over ALL rows with sim>0	2026-11-12 04:23:54
+11	5,2	fit600	600	0.06324	0.03448	0.75743	0.14642	2.10000	ok	ok	cand_11 (<- 5 x 2): Jaccard^2, k=200, x (degree+1)^-0.45.	2026-11-12 04:24:04
+12	11,9,10	fit600	600	0.06884	0.03198	0.76989	0.13852	6.60000	ok	ok	cand_12 (<- 11 x 9 x 10): cosine^2, k=200, x (degree+1)^-0.45, plus 1e-3 all-row tail.	2026-11-12 04:24:47
+13	11,10	fit600	600	0.06359	0.03469	0.77387	0.14646	2.40000	ok	ok	cand_13 (<- 11 x 10): Jaccard^2, k=200, x (degree+1)^-0.45, plus 1e-3 all-row tail.	2026-11-12 04:25:00
+14	11,7	fit600	600	0.06510	0.03153	0.75614	0.13690	2.30000	ok	ok	cand_14 (<- 11 x 7): Jaccard^2, k=200, x (degree+1)^-0.6.	2026-11-12 04:25:08
+15	11	fit600	600	0.06347	0.03317	0.75517	0.14286	6.20000	ok	ok	cand_15 (<- 11): Jaccard^2 k=200 x deg^-0.45, ontology relatives' rows get +0.05 similarity before ranking.	2026-11-12 04:25:28
+16	11	fit600	600	0.06524	0.02337	0.73259	0.08904	3.00000	ok	ok	cand_16 (<- 11): Jaccard^2 k=200 transfer (max-normalised) + 0.3 x item-item CF (max-normalised), x deg^-0.45.	2026-11-12 04:25:40
+17	12,14	fit600	600	0.06990	0.02874	0.76679	0.12267	2.50000	ok	ok	cand_17 (<- 12 x 14): cosine^2, k=200, x (degree+1)^-0.6, plus 1e-3 all-row tail.	2026-11-12 04:26:20
+18	12	fit600	600	0.06467	0.03346	0.77046	0.14451	2.50000	ok	ok	cand_18 (<- 12): cosine^3 over ALL rows with overlap (no k cut), x (degree+1)^-0.45, plus 1e-3 tail.	2026-11-12 04:26:28
+19	12,16	fit600	600	0.07021	0.02781	0.74504	0.11409	0.90000	ok	ok	cand_19 (<- 12 x 16): cand_12 (max-normalised) + 0.1 x item-item CF (max-normalised), x deg^-0.45.	2026-11-12 04:26:36
+20	12	fit600	600	0.06840	0.03489	0.77420	0.14673	2.10000	ok	ok	cand_20 (<- 12): weights inter^2 / |row|^1.5 (stronger large-row penalty than cosine^2), k=200, x deg^-0.45, plus tail.	2026-11-12 04:26:43
+21	12	fit600	600	0.06299	0.02854	0.77118	0.12064	72.70000	ok	ok	cand_21 (<- 12): hypergeometric similarity -log10 P(X >= inter) (gene universe = genes in any context row), weight = that^2,	2026-11-12 04:28:07
+22	19,17	fit600	600	0.06935	0.02381	0.73732	0.09606	4.20000	ok	ok	cand_22 (<- 19 x 17): cosine^2 k=200 transfer + 0.1 item-item CF + 1e-3 tail, x (degree+1)^-0.6.	2026-11-12 04:28:35
+23	17	fit600	600	0.05956	0.03107	0.76000	0.12928	1.90000	ok	ok	cand_23 (<- 17): softmax neighbour weights exp(cos / 0.05) over top-200 cosine rows, + 1e-3 tail, x deg^-0.6.	2026-11-12 04:28:46
+24	17	fit600	600	0.06507	0.02535	0.76323	0.10621	3.20000	ok	ok	cand_24 (<- 17): two-hop query expansion (Rocchio): first pass cosine^2 k=200 transfer; the query becomes	2026-11-12 04:29:07
+25	17	fit600	600	0.06806	0.02742	0.76515	0.11897	18.00000	ok	ok	cand_25 (<- 17): cand_17 / (1 + gene popularity)^0.2 (masked column count).	2026-11-12 04:29:31
+26	17	fit600	600	0.06952	0.02514	0.76238	0.10573	2.50000	ok	ok	cand_26 (<- 17): cosine^2, k=200, x (degree+1)^-0.8, plus 1e-3 tail.	2026-11-12 04:30:18
+27	17	fit600	600	0.06836	0.02962	0.76707	0.12944	5.40000	ok	ok	cand_27 (<- 17): cosine^2.5, k=400, x (degree+1)^-0.6, plus 1e-3 tail.	2026-11-12 04:30:35
+28	17	fit600	600	0.06969	0.02898	0.76645	0.12331	3.30000	ok	ok	cand_28 (<- 17): seed-count-adaptive neighbourhood k = clip(8 x n_seeds, 30, 300), cosine^2, x deg^-0.6, + tail.	2026-11-12 04:30:56
+29	17	fit600	600	0.06666	0.02795	0.76654	0.11878	2.20000	ok	ok	cand_29 (<- 17): degree-weighted cosine: seed overlaps weighted (deg+1)^-0.5 (a shared rare/low-degree gene is stronger	2026-11-12 04:31:17
+30	17,15	fit600	600	0.06347	0.02691	0.76611	0.11938	3.80000	ok	ok	cand_30 (<- 17 x 15): cosine^2 k=200 x deg^-0.6 + tail; ontology ANCESTOR/descendant rows' weights doubled (relatives	2026-11-12 04:31:26
+31	17	fit600	600	0.06342	0.02479	0.76215	0.10877	2.50000	ok	ok	cand_31 (<- 17): max aggregation: score = max_r cos_r^2 L[r,g] + 0.1 x sum (k=200), + 1e-3 tail, x deg^-0.6.	2026-11-12 04:32:09
+32	17	fit600	600	0.07039	0.02833	0.76527	0.12113	2.70000	ok	ok	cand_32 (<- 17): cosine^2 k=200 transfer + 0.05 x all-row tail (larger tail weight), x deg^-0.6.	2026-11-12 04:32:17
+33	19,32	fit600	600	0.07023	0.02785	0.74623	0.11392	2.70000	ok	ok	cand_33 (<- 19 x 32): cosine^2 k=200 transfer + 0.1 item-item CF + 0.05 tail (all max-normalised), x deg^-0.45.	2026-11-12 04:32:26
+34	28,19	fit600	600	0.06961	0.02625	0.74138	0.11019	4.60000	ok	ok	cand_34 (<- 28 x 19): adaptive k = clip(8 n_seeds, 30, 300), cosine^2 transfer + 0.1 item-item CF + 1e-3 tail, x deg^-0.5.	2026-11-12 04:32:37
+35	17	fit600	600	0.06742	0.02985	0.77067	0.13289	1.60000	ok	ok	cand_35 (<- 17): similarity = sqrt(Jaccard x cosine) (combined notion), weights sim^2, k=200, + 1e-3 tail, x deg^-0.6.	2026-11-12 04:32:43
+36	32	fit600	600	0.07006	0.02705	0.76286	0.11553	2.90000	ok	ok	cand_36 (<- 32): cosine^2 k=200 transfer + 0.2 x all-row tail, x deg^-0.6.	2026-11-12 04:33:08
+37	32	fit600	600	0.07022	0.02644	0.76250	0.10943	2.90000	ok	ok	cand_37 (<- 32): cosine^2 k=200 transfer + 0.05 tail, x deg^-0.7.	2026-11-12 04:33:18
+38	32	fit600	600	0.06831	0.02595	0.76435	0.10953	4.50000	ok	ok	cand_38 (<- 32): cosine^1.5 k=200 transfer + 0.05 tail, x deg^-0.6.	2026-11-12 04:33:39
+39	32	fit600	600	0.06805	0.02683	0.76577	0.11732	5.60000	ok	ok	cand_39 (<- 32): neighbour rows weighted cos^2 x (fraction of the row outside the seeds)^0.5 (rows that add new genes	2026-11-12 04:33:55
