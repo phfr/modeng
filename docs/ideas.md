@@ -9,7 +9,7 @@ Status: NEW | SHORTLIST | IMPLEMENTING | TESTED-POSITIVE | TESTED-NEGATIVE | KIL
 | CI-05 | Power-jump hazard: per-disease gating between genetics and transfer | R1 causal | NEW | `docs/ideation/r1_causal.md` |
 | CI-06 | Discovery-channel physics: detectability as a second factor | R1 causal | NEW | `docs/ideation/r1_causal.md` |
 | CI-07 | Invariant predictors across discovery eras and channels | R1 causal | NEW | `docs/ideation/r1_causal.md` |
-| CI-08 | Genetic-correlation-borrowed gene z (multi-trait posterior) | R1 causal | NEW | `docs/ideation/r1_causal.md` |
+| CI-08 | Genetic-correlation-borrowed gene z (multi-trait posterior) | R1 causal | TESTED-NEGATIVE | `docs/ideation/r1_causal.md` |
 | CI-09 | Allelic-series concordance: direction as evidence | R1 causal | NEW | `docs/ideation/r1_causal.md` |
 | EV-1 | Phenolog donors: model-organism phenotypes as transfer rows | R1 evostruct | TESTED-NEGATIVE (IMPC donors no increment) | `docs/ideation/r1_evostruct.md` |
 | EV-2 | Homology-lifted transfer through paralogs and shared folds | R1 evostruct | TESTED-NEGATIVE (homology lifts ~chance) | `docs/ideation/r1_evostruct.md` |
@@ -28,7 +28,7 @@ Status: NEW | SHORTLIST | IMPLEMENTING | TESTED-POSITIVE | TESTED-NEGATIVE | KIL
 | LT-6 | Mechanism cards: the module as a set of text queries | R1 llmtext | NEW | `docs/ideation/r1_llmtext.md` |
 | LT-7 | Arrival-hazard learner trained on the previous transition, with literature momentum | R1 llmtext | NEW | `docs/ideation/r1_llmtext.md` |
 | LT-8 | Time-locked two-tower text retrieval (the obvious baseline that must exist) | R1 llmtext | NEW | `docs/ideation/r1_llmtext.md` |
-| LT-9 | Language-selected proxy traits for sub-threshold GWAS | R1 llmtext | NEW | `docs/ideation/r1_llmtext.md` |
+| LT-9 | Language-selected proxy traits for sub-threshold GWAS | R1 llmtext | TESTED-NEGATIVE (weak) | `docs/ideation/r1_llmtext.md` |
 | ML-1 | Cold-start donor imputation: content-predicted association profiles | R1 ml | TESTED-NEGATIVE (AUROC only) | `docs/ideation/r1_ml.md` |
 | ML-2 | Ascertainment-simulator prior-fitted network | R1 ml | NEW | `docs/ideation/r1_ml.md` |
 | ML-3 | Gene-set language model on dated supplement-table gene sets | R1 ml | NEW | `docs/ideation/r1_ml.md` |
@@ -63,11 +63,11 @@ Status: NEW | SHORTLIST | IMPLEMENTING | TESTED-POSITIVE | TESTED-NEGATIVE | KIL
 | SG-4 | Phenotype-decomposed quantitative-trait GWAS for rare diseases | R1 statgen | NEW | `docs/ideation/r1_statgen.md` |
 | SG-5 | Sub-threshold rare-variant burden atlas as gene-first evidence | R1 statgen | NEW | `docs/ideation/r1_statgen.md` |
 | SG-6 | Trans-QTL regulators of the seed genes (natural-perturbation edges) | R1 statgen | NEW | `docs/ideation/r1_statgen.md` |
-| SG-7 | Ingestion-lag arbitrage: public associations not yet in the label source | R1 statgen | NEW | `docs/ideation/r1_statgen.md` |
+| SG-7 | Ingestion-lag arbitrage: public associations not yet in the label source | R1 statgen | TESTED-POSITIVE (gwas_catlag; dev sig, confirm n.s.; forward large, label-process) | `docs/ideation/r1_statgen.md` |
 | SG-8 | Channel-specific discovery hazard: importance times discoverability | R1 statgen | NEW | `docs/ideation/r1_statgen.md` |
 | SG-9 | Genetic-correlation donor weights that do not need seeds | R1 statgen | NEW | `docs/ideation/r1_statgen.md` |
 | WC-L2GEMU | Emulate the label generator: locus crossing times host-gene prior | R1 wildcard | NEW | `docs/ideation/r1_wildcard.md` |
-| WC-XPOWER | Crossing forecast for diseases without their own GWAS | R1 wildcard | NEW | `docs/ideation/r1_wildcard.md` |
+| WC-XPOWER | Crossing forecast for diseases without their own GWAS | R1 wildcard | TESTED-NEGATIVE (weak) | `docs/ideation/r1_wildcard.md` |
 | WC-BACKLOG | Forecast the curation backlog in raw source-label space | R1 wildcard | TESTED-POSITIVE (label process) | `docs/ideation/r1_wildcard.md` |
 | WC-SELFN | Survey selection function: channel-mixture arrival model | R1 wildcard | NEW | `docs/ideation/r1_wildcard.md` |
 | WC-HAWKES | Self-exciting evidence flux and transfer velocity | R1 wildcard | NEW | `docs/ideation/r1_wildcard.md` |
