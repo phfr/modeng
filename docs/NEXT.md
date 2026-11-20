@@ -1,10 +1,10 @@
-# modeng: CLOSED 2026-11-12 (packaged as modeng-v2, write-up docs/WRITEUP.md). Successor project: /home/ph/code/nebb (fwdbench parked).
-# modeng: RESUME HERE (updated 2026-11-12 ~06:30)
-Read `CLAUDE.md`, then **`docs/reports/FINAL_overnight_2026-11-12.md`** (result, claimable sentences), `docs/insights.md`, `docs/invalidations.md`,
-`docs/ideas.md` (~110 ideas with status), `docs/reviews/R1_fable_redteam.md`.
-
+# modeng: CLOSED 2026-11-12 (last docs check 2026-11-20). Nothing to resume here.
+- Read first: `docs/SUMMARY.md` (one page), then `docs/WRITEUP.md` (paper draft). Model in use: **modeng-v2** (`configs/modeng_v2.yaml`,
+  `python -m modeng.predict`, model + card `/mnt/msadb/modeng/models/modeng_v2_2104/`). Process lessons: `docs/PROCESS_v2.md`.
+- Successor: `/home/ph/code/nebb` (new-biology benchmark). `/home/ph/code/fwdbench` is parked.
+- The sections below are the state at closing, kept as history. The open items under 'Next' are carried by nebb; do them here only if modeng is reopened.
 ## State
-- Final model **modeng-v1** = `stack_v3ptr_p0.35` (frozen, `docs/preregistration_modeng_v1.md`, tag `modeng-v1-prereg`): LightGBM stacker, cv on 53 temporal
+- Overnight model **modeng-v1** (superseded by modeng-v2) = `stack_v3ptr_p0.35` (frozen, `docs/preregistration_modeng_v1.md`, tag `modeng-v1-prereg`): LightGBM stacker, cv on 53 temporal
   dev diseases, positives deg^-0.35, channels base, donor, view, cs_donor, dA_pt, dc_ridge(_pos), gwas_catlag, pri_*/hz_*, ph_*, pt_ridge(_pos).
   Prospective twin `stackP_v1past` (trained on 19.04->21.04; `src/modeng/ext/past_fill.py`). Command: `PYTHONPATH=src python -m modeng.stack ...`.
 - Robust: nuAP and onnet AP over transfer and over modet's headline, also prospectively. Not robust: AP over transfer prospectively (n.s.),
@@ -18,7 +18,7 @@ Read `CLAUDE.md`, then **`docs/reports/FINAL_overnight_2026-11-12.md`** (result,
 
 ## Morning follow-up done (07:20-08:30): R3 red team, prospective version, forward no-label-process arm, strict-a attack (negative), calibration refit — see FINAL report section 9.
 
-## Next (in order)
+## Next (in order; open at closing, handed to nebb)
 1. Fresh confirmation: everything was viewed on temporal confirm; build an untouched fold (e.g. next OT release, or diseases outside the panel)
    and pre-register the leader recipe + power before looking.
 2. Strict-a: genetic arrivals remain the hard stratum (E-A4, ML-4 power extrapolation, archived GWAS-catalog vintages).

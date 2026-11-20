@@ -23,7 +23,7 @@ at all. Many reported gains in the field may therefore measure bookkeeping, not 
 
 ## Use it
 `python -m modeng.predict --disease <id> --out ranked.tsv [--module m.tsv]` (`PYTHONPATH=src`); model + card `/mnt/msadb/modeng/models/modeng_v2_2104/`;
-config `configs/modeng_v2.yaml`; note: calibration shrink should be ~0.89 (model card).
+config `configs/modeng_v2.yaml`; calibrated P uses shrink 0.8 (carried over from modeng-v1); this model's dev cross-fit shrink is ~0.89, so P is conservative and approximate (model card).
 
 ## Where to read more
 `docs/WRITEUP.md` (paper draft), `docs/reports/FINAL_overnight_2026-11-12.md` (full log of results, sections 1-11), `docs/PROCESS_v2.md` (lessons),

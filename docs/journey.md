@@ -20,3 +20,5 @@
 - 2026-11-12 20:25 User decision: move all data to /mnt/msadb/modeng (as subex); data/<sub> are symlinks; CLAUDE.md rule added.
 - 2026-11-12 21:00 User request: package modeng-v2, write-up (docs/WRITEUP.md), scaffold successor projects ../fwdbench (new data / forward) and ../nebb (new-biology benchmark) using docs/PROCESS_v2.md. modeng-v2 = W_v1clean without label-process channels (the only arm passing the pre-registered fresh-fold rule).
 - 2026-11-12 22:10 Project closed: docs/SUMMARY.md + README; all results, reviews and decisions committed. Successor: nebb.
+- 2026-11-15 05:54 `.tmp/` (DuckDB temp files) added to .gitignore (commit 874ff32).
+- 2026-11-20 Docs check (user request): paths in README, CLAUDE.md, SUMMARY, NEXT, WRITEUP verified to exist; NEXT.md header rewritten for the closed state; SUMMARY calibration note aligned with the model card.
